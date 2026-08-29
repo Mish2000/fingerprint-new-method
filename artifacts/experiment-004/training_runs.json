@@ -1,0 +1,1493 @@
+{
+  "attempts": [
+    {
+      "ended_at_utc": "2026-08-29T16:04:01+00:00",
+      "error": "OpenCV/PyTorch OpenMP runtime collision before epoch 1; replaced unsafe same-process preprocessing with a deterministic workspace cache.",
+      "error_type": "NATIVE_RUNTIME_ABORT",
+      "seed": 40401,
+      "started_at_utc": "2026-08-29T15:59:53.192297+00:00",
+      "status": "FAILED"
+    },
+    {
+      "documented_at_utc": "2026-08-29T16:14:11.8221625+00:00",
+      "error": "Stopped during epoch 9 after a code audit found that early-stopping min_delta was incorrectly coupled to checkpoint selection; no test data had been opened.",
+      "error_type": "INTERRUPTED_CODE_AUDIT",
+      "seed": 40401,
+      "started_at_utc": "2026-08-29T16:04:01.306641+00:00",
+      "status": "FAILED"
+    },
+    {
+      "documented_at_utc": "2026-08-29T16:21:04.4630014+00:00",
+      "error": "Stopped during epoch 5 after runtime profiling showed that identical affine resampling could be batched on GPU; implementation-only optimization before any test access.",
+      "error_type": "INTERRUPTED_RUNTIME_OPTIMIZATION",
+      "seed": 40401,
+      "started_at_utc": "2026-08-29T16:14:25.704689+00:00",
+      "status": "FAILED"
+    },
+    {
+      "documented_at_utc": "2026-08-29T16:23:52.8462851+00:00",
+      "error": "Stopped after epoch 1 to apply a benchmarked channels-last tensor layout; model, data, seeds, loss and all scientific hyperparameters remained unchanged and test was unopened.",
+      "error_type": "INTERRUPTED_MEMORY_LAYOUT_OPTIMIZATION",
+      "seed": 40401,
+      "started_at_utc": "2026-08-29T16:21:15.957732+00:00",
+      "status": "FAILED"
+    },
+    {
+      "documented_at_utc": "2026-08-29T16:59:42.879495+00:00",
+      "error": "The detached training process was terminated by the operating environment during epoch 24 (last validation-selected checkpoint: epoch 23). No Python exception was raised, so the trainer could not record the failure itself. No test data had been opened.",
+      "error_type": "EXTERNAL_PROCESS_TERMINATION",
+      "last_checkpoint_epoch": 23,
+      "last_checkpoint_validation_loss": 0.0018915742899601657,
+      "seed": 40401,
+      "started_at_utc": "2026-08-29T16:24:35.382128+00:00",
+      "status": "FAILED"
+    },
+    {
+      "documented_at_utc": "2026-08-29T17:50:40.292797+00:00",
+      "error": "Deliberately terminated after epoch 2 to verify that the new epoch-boundary resume state restores an interrupted run. The restart resumed at epoch 3 and reproduced the pre-interruption validation losses exactly. No test data had been opened.",
+      "error_type": "INTERRUPTED_RESUME_VERIFICATION",
+      "last_checkpoint_epoch": 2,
+      "seed": 40401,
+      "started_at_utc": "2026-08-29T17:02:55.378221+00:00",
+      "status": "FAILED"
+    },
+    {
+      "documented_at_utc": "2026-08-29T17:50:40.292797+00:00",
+      "error": "Aborted during epoch 30 by a console window-CLOSE event: 'forrtl: error (200): program aborting due to window-CLOSE event'. The detached launcher had created a visible console window, and the Intel Fortran runtime inside the numerical stack aborts the process when that window is closed. This is the same mechanism that terminated the earlier attempt. No Python exception was raised and no test data had been opened; epochs 1-29 survived in the resume state.",
+      "error_type": "CONSOLE_CLOSE_ABORT",
+      "last_checkpoint_epoch": 29,
+      "last_checkpoint_validation_loss": 0.0018808607097404698,
+      "mitigation": "Relaunched with no console window and with FOR_DISABLE_CONSOLE_CTRL_HANDLER=1 so console control events cannot abort the run; training resumes from the epoch-29 boundary.",
+      "seed": 40401,
+      "started_at_utc": "2026-08-29T17:06:32.522823+00:00",
+      "status": "FAILED"
+    },
+    {
+      "checkpoint_sha256": "06ce96be30f336b48ee19f9107cbd19c83f2b4253dc1aa62440f84f43b60cfcb",
+      "completed_at_utc": "2026-08-29T18:25:35.576612+00:00",
+      "seed": 40401,
+      "started_at_utc": "2026-08-29T17:51:12.362428+00:00",
+      "status": "COMPLETED"
+    },
+    {
+      "checkpoint_sha256": "87903e2d7e237a404633725128243e29141dbb00ce1b9c4779dccb0cbbdf831b",
+      "completed_at_utc": "2026-08-29T19:15:24.118188+00:00",
+      "seed": 40402,
+      "started_at_utc": "2026-08-29T18:25:35.580119+00:00",
+      "status": "COMPLETED"
+    },
+    {
+      "checkpoint_sha256": "93c67137c54257c47fcb84ea977355e6b507d197f2a9ae60ad6e7ad7537b42d1",
+      "completed_at_utc": "2026-08-29T20:14:37.025751+00:00",
+      "seed": 40403,
+      "started_at_utc": "2026-08-29T19:15:24.121186+00:00",
+      "status": "COMPLETED"
+    }
+  ],
+  "configuration_id": "6a4ec24d7facfdc7c72e327827c31a0f3c3859046506d9b497f9c487661f8014",
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "model_configuration": {
+    "activation": "ReLU",
+    "architecture": "unet-4-level-groupnorm-v1",
+    "batch_size": 2,
+    "bottleneck_width": 512,
+    "convolutions_per_block": 2,
+    "downsampling": "MaxPool2d(2)",
+    "early_stopping_min_delta": 1e-05,
+    "early_stopping_patience": 12,
+    "encoder_widths": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "gradient_accumulation": 2,
+    "gradient_norm_clip": 1.0,
+    "input_channels": 1,
+    "loss": {
+      "alpha": 0.95,
+      "gamma": 2.0,
+      "name": "binary_focal_soft_targets"
+    },
+    "maximum_epochs": 80,
+    "minimum_epochs_before_early_stop": 20,
+    "normalization": "GroupNorm(8)",
+    "optimizer": {
+      "learning_rate": 0.0002,
+      "name": "AdamW",
+      "weight_decay": 0.0001
+    },
+    "output_channels": 1,
+    "pretrained": false,
+    "scheduler": {
+      "eta_min": 1e-06,
+      "name": "CosineAnnealingLR",
+      "t_max": 80
+    },
+    "target_sigma_px": 1.5,
+    "target_truncate_sigma": 4.0,
+    "training_seeds": [
+      40401,
+      40402,
+      40403
+    ],
+    "upsampling": "bilinear align_corners=False + 1x1 Conv"
+  },
+  "runs": {
+    "40401": {
+      "best_epoch": 57,
+      "best_validation_loss": 0.0018528595745253066,
+      "checkpoint_path": "artifacts/experiment-004/local-large/checkpoints/seed-40401/best.pt",
+      "checkpoint_sha256": "06ce96be30f336b48ee19f9107cbd19c83f2b4253dc1aa62440f84f43b60cfcb",
+      "checkpoint_size_bytes": 28986281,
+      "completed_at_utc": "2026-08-29T18:25:35.576612+00:00",
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_configuration_error": null,
+        "numpy_seed": 40401,
+        "python_random_seed": 40401,
+        "torch_seed": 40401
+      },
+      "device": "cuda",
+      "elapsed_seconds": 4224.663210500003,
+      "epochs_completed": 57,
+      "history": [
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 78.18355909999809,
+          "epoch": 1,
+          "learning_rate": 0.0002,
+          "training_loss": 0.003112339675003155,
+          "validation_loss": 0.00248930469310532
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 155.1028948999883,
+          "epoch": 2,
+          "learning_rate": 0.00019992328910595195,
+          "training_loss": 0.002228264947189018,
+          "validation_loss": 0.002217381519731134
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 233.8119529000105,
+          "epoch": 3,
+          "learning_rate": 0.00019969327470644626,
+          "training_loss": 0.0021056270311501893,
+          "validation_loss": 0.0021501896382930376
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 310.9694956000021,
+          "epoch": 4,
+          "learning_rate": 0.0001993103114670152,
+          "training_loss": 0.00203615034327165,
+          "validation_loss": 0.0020805771400531133
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 388.55197529999714,
+          "epoch": 5,
+          "learning_rate": 0.00019877498988921623,
+          "training_loss": 0.0020005901613992386,
+          "validation_loss": 0.002047701250606527
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 464.96749910000653,
+          "epoch": 6,
+          "learning_rate": 0.00019808813540012144,
+          "training_loss": 0.0019607825744473797,
+          "validation_loss": 0.00202628527302295
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 540.6455216000031,
+          "epoch": 7,
+          "learning_rate": 0.00019725080707956884,
+          "training_loss": 0.0019399104708678681,
+          "validation_loss": 0.002007373638916761
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 614.0264794000104,
+          "epoch": 8,
+          "learning_rate": 0.00019626429602713792,
+          "training_loss": 0.0019230898533185775,
+          "validation_loss": 0.0019888376514427364
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 689.6140194000036,
+          "epoch": 9,
+          "learning_rate": 0.00019513012337136782,
+          "training_loss": 0.0019027875127821145,
+          "validation_loss": 0.0020048383763059973
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 764.746553200006,
+          "epoch": 10,
+          "learning_rate": 0.00019385003792428721,
+          "training_loss": 0.0019016122419006107,
+          "validation_loss": 0.001967175885414084
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 840.0433833999996,
+          "epoch": 11,
+          "learning_rate": 0.00019242601348487304,
+          "training_loss": 0.0018858991939024153,
+          "validation_loss": 0.001969156578804056
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 913.9807863000024,
+          "epoch": 12,
+          "learning_rate": 0.0001908602457955956,
+          "training_loss": 0.001867172928442332,
+          "validation_loss": 0.0019418215045394996
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 990.4723717000015,
+          "epoch": 13,
+          "learning_rate": 0.0001891551491567426,
+          "training_loss": 0.0018557386726818302,
+          "validation_loss": 0.0019349839491769672
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1068.5549239000102,
+          "epoch": 14,
+          "learning_rate": 0.00018731335270374334,
+          "training_loss": 0.001849818393185904,
+          "validation_loss": 0.0019301461715561649
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1145.1294520000083,
+          "epoch": 15,
+          "learning_rate": 0.0001853376963532322,
+          "training_loss": 0.0018404284317512065,
+          "validation_loss": 0.0019298506815296909
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1220.0041631000058,
+          "epoch": 16,
+          "learning_rate": 0.0001832312264241033,
+          "training_loss": 0.001835946147118441,
+          "validation_loss": 0.001922093090446045
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1294.7771238999994,
+          "epoch": 17,
+          "learning_rate": 0.0001809971909403073,
+          "training_loss": 0.0018297958743377504,
+          "validation_loss": 0.0019353914454889793
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1370.907514000006,
+          "epoch": 18,
+          "learning_rate": 0.00017863903462263415,
+          "training_loss": 0.0018243840017186648,
+          "validation_loss": 0.0019103745534084738
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1446.4089039999963,
+          "epoch": 19,
+          "learning_rate": 0.00017616039357720313,
+          "training_loss": 0.0018159061839634722,
+          "validation_loss": 0.0019043039282162985
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1521.647363199998,
+          "epoch": 20,
+          "learning_rate": 0.00017356508968885076,
+          "training_loss": 0.0018136172380764037,
+          "validation_loss": 0.001909468264784664
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1595.6988226000103,
+          "epoch": 21,
+          "learning_rate": 0.00017085712472806152,
+          "training_loss": 0.0018060271162539721,
+          "validation_loss": 0.0019028202902215223
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1670.3388549000083,
+          "epoch": 22,
+          "learning_rate": 0.00016804067418052775,
+          "training_loss": 0.001805070018268783,
+          "validation_loss": 0.001905668960728993
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1744.6348103000055,
+          "epoch": 23,
+          "learning_rate": 0.00016512008080885333,
+          "training_loss": 0.001799028149848296,
+          "validation_loss": 0.0018915742899601657
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1816.0726001000003,
+          "epoch": 24,
+          "learning_rate": 0.00016209984795632852,
+          "training_loss": 0.0017890730433547022,
+          "validation_loss": 0.001893726037039111
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1887.2259838000027,
+          "epoch": 25,
+          "learning_rate": 0.00015898463260310112,
+          "training_loss": 0.0017852587588343093,
+          "validation_loss": 0.0018941670881273845
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1956.5714540000045,
+          "epoch": 26,
+          "learning_rate": 0.00015577923818545046,
+          "training_loss": 0.0017844310141464865,
+          "validation_loss": 0.0018891490041278304
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2025.8531884999975,
+          "epoch": 27,
+          "learning_rate": 0.00015248860718923695,
+          "training_loss": 0.001780645170947537,
+          "validation_loss": 0.0018808607097404698
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2093.962871399999,
+          "epoch": 28,
+          "learning_rate": 0.00014911781352894708,
+          "training_loss": 0.0017776528161696412,
+          "validation_loss": 0.0018916820517430703
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2164.469884200007,
+          "epoch": 29,
+          "learning_rate": 0.00014567205472408495,
+          "training_loss": 0.0017770308969457718,
+          "validation_loss": 0.0018851988925598561
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2242.3143141000037,
+          "epoch": 30,
+          "learning_rate": 0.00014215664388497415,
+          "training_loss": 0.0017672288284467702,
+          "validation_loss": 0.001875741589659204
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2317.474681599997,
+          "epoch": 31,
+          "learning_rate": 0.00013857700152032648,
+          "training_loss": 0.0017717555530411616,
+          "validation_loss": 0.0018725364825998743
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2392.7396429999935,
+          "epoch": 32,
+          "learning_rate": 0.0001349386471792106,
+          "training_loss": 0.0017626093901609156,
+          "validation_loss": 0.0018740119008968275
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2469.2455929999996,
+          "epoch": 33,
+          "learning_rate": 0.00013124719094030732,
+          "training_loss": 0.0017608281870541925,
+          "validation_loss": 0.0018733772914856673
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2545.0235669999965,
+          "epoch": 34,
+          "learning_rate": 0.00012750832476157495,
+          "training_loss": 0.00175978752033023,
+          "validation_loss": 0.0018728745076805353
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2621.281425299996,
+          "epoch": 35,
+          "learning_rate": 0.00012372781370366265,
+          "training_loss": 0.0017521504810164598,
+          "validation_loss": 0.0018683171023925146
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2696.6584723999986,
+          "epoch": 36,
+          "learning_rate": 0.00011991148704060482,
+          "training_loss": 0.0017504351361739365,
+          "validation_loss": 0.0018714672606438398
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2772.0664226999943,
+          "epoch": 37,
+          "learning_rate": 0.00011606522927150302,
+          "training_loss": 0.0017534299917646092,
+          "validation_loss": 0.001874577870282034
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2847.2680235000007,
+          "epoch": 38,
+          "learning_rate": 0.0001121949710470549,
+          "training_loss": 0.0017489487860902128,
+          "validation_loss": 0.0018642102756227057
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2922.183749699994,
+          "epoch": 39,
+          "learning_rate": 0.00010830668002492063,
+          "training_loss": 0.0017425269121304154,
+          "validation_loss": 0.0018683642490456502
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2996.850246599992,
+          "epoch": 40,
+          "learning_rate": 0.00010440635166802737,
+          "training_loss": 0.0017420419957488776,
+          "validation_loss": 0.0018681153655052186
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3071.3661397999967,
+          "epoch": 41,
+          "learning_rate": 0.00010050000000000003,
+          "training_loss": 0.0017380437908948146,
+          "validation_loss": 0.0018650564450460175
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 3144.997594100001,
+          "epoch": 42,
+          "learning_rate": 9.659364833197273e-05,
+          "training_loss": 0.0017410724730738862,
+          "validation_loss": 0.0018617886879170934
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 3219.955448499997,
+          "epoch": 43,
+          "learning_rate": 9.269331997507947e-05,
+          "training_loss": 0.0017325505582531067,
+          "validation_loss": 0.001861760871640096
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3295.6635703999928,
+          "epoch": 44,
+          "learning_rate": 8.88050289529452e-05,
+          "training_loss": 0.0017285341190555218,
+          "validation_loss": 0.0018635184147084752
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 3369.169125100001,
+          "epoch": 45,
+          "learning_rate": 8.493477072849708e-05,
+          "training_loss": 0.0017263360591393642,
+          "validation_loss": 0.0018578999970729152
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3441.7304999000044,
+          "epoch": 46,
+          "learning_rate": 8.108851295939528e-05,
+          "training_loss": 0.0017249097650743682,
+          "validation_loss": 0.0018642754557852944
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3514.492220400003,
+          "epoch": 47,
+          "learning_rate": 7.727218629633745e-05,
+          "training_loss": 0.0017245880497450178,
+          "validation_loss": 0.0018602123282228907
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3587.633991499999,
+          "epoch": 48,
+          "learning_rate": 7.349167523842512e-05,
+          "training_loss": 0.0017215271522714333,
+          "validation_loss": 0.0018587478940996032
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3661.4886755000043,
+          "epoch": 49,
+          "learning_rate": 6.975280905969277e-05,
+          "training_loss": 0.0017184910396198657,
+          "validation_loss": 0.0018629239732399583
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3733.647174999991,
+          "epoch": 50,
+          "learning_rate": 6.60613528207895e-05,
+          "training_loss": 0.0017189741118768737,
+          "validation_loss": 0.001860081828975429
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 3805.1120631999947,
+          "epoch": 51,
+          "learning_rate": 6.24229984796736e-05,
+          "training_loss": 0.0017188415227627212,
+          "validation_loss": 0.0018553304392844438
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3877.396577099993,
+          "epoch": 52,
+          "learning_rate": 5.8843356115025956e-05,
+          "training_loss": 0.0017154359629123726,
+          "validation_loss": 0.0018590137409046292
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3948.3265566999908,
+          "epoch": 53,
+          "learning_rate": 5.532794527591512e-05,
+          "training_loss": 0.0017145857209636068,
+          "validation_loss": 0.0018564612969445685
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 4017.450486799993,
+          "epoch": 54,
+          "learning_rate": 5.188218647105299e-05,
+          "training_loss": 0.001712788500696082,
+          "validation_loss": 0.0018618283001706004
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 4086.820969499997,
+          "epoch": 55,
+          "learning_rate": 4.8511392810763114e-05,
+          "training_loss": 0.0017078681277449836,
+          "validation_loss": 0.0018535363557748497
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 4155.627593600002,
+          "epoch": 56,
+          "learning_rate": 4.522076181454959e-05,
+          "training_loss": 0.001708720070415769,
+          "validation_loss": 0.0018562194860229889
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 4224.532348199995,
+          "epoch": 57,
+          "learning_rate": 4.201536739689895e-05,
+          "training_loss": 0.0017033994975711472,
+          "validation_loss": 0.0018528595745253066
+        }
+      ],
+      "memory_format": "channels_last",
+      "mixed_precision": true,
+      "parameter_count": 7240225,
+      "resume_events": [
+        {
+          "reason": "Interrupted process restarted from the last completed epoch boundary",
+          "resumed_after_epoch": 2,
+          "resumed_at_utc": "2026-08-29T17:06:35.831963+00:00"
+        },
+        {
+          "reason": "Interrupted process restarted from the last completed epoch boundary",
+          "resumed_after_epoch": 29,
+          "resumed_at_utc": "2026-08-29T17:51:15.322492+00:00"
+        }
+      ],
+      "seed": 40401,
+      "status": "COMPLETED"
+    },
+    "40402": {
+      "best_epoch": 41,
+      "best_validation_loss": 0.0018551289049598078,
+      "checkpoint_path": "artifacts/experiment-004/local-large/checkpoints/seed-40402/best.pt",
+      "checkpoint_sha256": "87903e2d7e237a404633725128243e29141dbb00ce1b9c4779dccb0cbbdf831b",
+      "checkpoint_size_bytes": 28986281,
+      "completed_at_utc": "2026-08-29T19:15:24.118188+00:00",
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_configuration_error": null,
+        "numpy_seed": 40402,
+        "python_random_seed": 40402,
+        "torch_seed": 40402
+      },
+      "device": "cuda",
+      "elapsed_seconds": 2986.5046872999956,
+      "epochs_completed": 42,
+      "history": [
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 67.53012019999733,
+          "epoch": 1,
+          "learning_rate": 0.0002,
+          "training_loss": 0.0026217663655353877,
+          "validation_loss": 0.002274525659158826
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 136.50482080000802,
+          "epoch": 2,
+          "learning_rate": 0.00019992328910595195,
+          "training_loss": 0.0021369831297885287,
+          "validation_loss": 0.002150465527859827
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 205.22262729999784,
+          "epoch": 3,
+          "learning_rate": 0.00019969327470644626,
+          "training_loss": 0.0020546404644846915,
+          "validation_loss": 0.002090960843488574
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 273.85937200000626,
+          "epoch": 4,
+          "learning_rate": 0.0001993103114670152,
+          "training_loss": 0.0019974216305523773,
+          "validation_loss": 0.0020540931494906546
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 349.2694349000085,
+          "epoch": 5,
+          "learning_rate": 0.00019877498988921623,
+          "training_loss": 0.0019616511348761957,
+          "validation_loss": 0.002019605463525901
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 427.2860510000028,
+          "epoch": 6,
+          "learning_rate": 0.00019808813540012144,
+          "training_loss": 0.0019361471561503342,
+          "validation_loss": 0.001998694089706987
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 503.60450860000856,
+          "epoch": 7,
+          "learning_rate": 0.00019725080707956884,
+          "training_loss": 0.0019141481691886755,
+          "validation_loss": 0.001971027172015359
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 579.3102369999979,
+          "epoch": 8,
+          "learning_rate": 0.00019626429602713792,
+          "training_loss": 0.0018950139013627035,
+          "validation_loss": 0.0019932515422503155
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 655.2832171000045,
+          "epoch": 9,
+          "learning_rate": 0.00019513012337136782,
+          "training_loss": 0.0018803606439508837,
+          "validation_loss": 0.0019555953470990063
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 730.3355029999948,
+          "epoch": 10,
+          "learning_rate": 0.00019385003792428721,
+          "training_loss": 0.0018690359662286936,
+          "validation_loss": 0.0019511697394773363
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 806.3248590000003,
+          "epoch": 11,
+          "learning_rate": 0.00019242601348487304,
+          "training_loss": 0.0018541896371805872,
+          "validation_loss": 0.0019408189412206411
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 881.4661468999984,
+          "epoch": 12,
+          "learning_rate": 0.0001908602457955956,
+          "training_loss": 0.0018480010494716804,
+          "validation_loss": 0.0019341921953794858
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 956.7405399999989,
+          "epoch": 13,
+          "learning_rate": 0.0001891551491567426,
+          "training_loss": 0.0018353805639146066,
+          "validation_loss": 0.0019207520006845394
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1032.443981000004,
+          "epoch": 14,
+          "learning_rate": 0.00018731335270374334,
+          "training_loss": 0.001829084682024338,
+          "validation_loss": 0.0019311135277772942
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1107.2968209999963,
+          "epoch": 15,
+          "learning_rate": 0.0001853376963532322,
+          "training_loss": 0.0018260204921137881,
+          "validation_loss": 0.0019131972128525376
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1183.6119795999984,
+          "epoch": 16,
+          "learning_rate": 0.0001832312264241033,
+          "training_loss": 0.0018144117895810103,
+          "validation_loss": 0.0019134579785168172
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1260.4203677000041,
+          "epoch": 17,
+          "learning_rate": 0.0001809971909403073,
+          "training_loss": 0.0018127481812949884,
+          "validation_loss": 0.0018966747851421435
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1335.5930268999946,
+          "epoch": 18,
+          "learning_rate": 0.00017863903462263415,
+          "training_loss": 0.0017993611669887535,
+          "validation_loss": 0.001891450781840831
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1409.8879870999954,
+          "epoch": 19,
+          "learning_rate": 0.00017616039357720313,
+          "training_loss": 0.0017996568100484597,
+          "validation_loss": 0.001891764890557776
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1485.5326122999977,
+          "epoch": 20,
+          "learning_rate": 0.00017356508968885076,
+          "training_loss": 0.0017976084480654786,
+          "validation_loss": 0.0018925234861671926
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1559.5037056,
+          "epoch": 21,
+          "learning_rate": 0.00017085712472806152,
+          "training_loss": 0.0017883965449238366,
+          "validation_loss": 0.001885558683425188
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1633.7161306000053,
+          "epoch": 22,
+          "learning_rate": 0.00016804067418052775,
+          "training_loss": 0.0017827602225059475,
+          "validation_loss": 0.0018837199150584637
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1707.721854000003,
+          "epoch": 23,
+          "learning_rate": 0.00016512008080885333,
+          "training_loss": 0.0017847528130832044,
+          "validation_loss": 0.0018802783886591593
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1782.7976207000029,
+          "epoch": 24,
+          "learning_rate": 0.00016209984795632852,
+          "training_loss": 0.0017785463757304984,
+          "validation_loss": 0.0018844151380471884
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1858.489299199995,
+          "epoch": 25,
+          "learning_rate": 0.00015898463260310112,
+          "training_loss": 0.0017770604098173365,
+          "validation_loss": 0.001874992346080641
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1936.641854600006,
+          "epoch": 26,
+          "learning_rate": 0.00015577923818545046,
+          "training_loss": 0.0017694911284541542,
+          "validation_loss": 0.0018704840377904474
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2009.7133825000055,
+          "epoch": 27,
+          "learning_rate": 0.00015248860718923695,
+          "training_loss": 0.0017687806901945308,
+          "validation_loss": 0.0018884342691550652
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2077.263380999997,
+          "epoch": 28,
+          "learning_rate": 0.00014911781352894708,
+          "training_loss": 0.0017627410897561773,
+          "validation_loss": 0.0018721781368367374
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2142.952749700009,
+          "epoch": 29,
+          "learning_rate": 0.00014567205472408495,
+          "training_loss": 0.001763414857189425,
+          "validation_loss": 0.0018776737091441948
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2210.699909899995,
+          "epoch": 30,
+          "learning_rate": 0.00014215664388497415,
+          "training_loss": 0.0017560097463005645,
+          "validation_loss": 0.001864264946586142
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2274.6405978999974,
+          "epoch": 31,
+          "learning_rate": 0.00013857700152032648,
+          "training_loss": 0.0017510270932689308,
+          "validation_loss": 0.0018639901117421687
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2339.523628099996,
+          "epoch": 32,
+          "learning_rate": 0.0001349386471792106,
+          "training_loss": 0.0017486832734324377,
+          "validation_loss": 0.0018709172680974008
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2404.2528634000046,
+          "epoch": 33,
+          "learning_rate": 0.00013124719094030732,
+          "training_loss": 0.0017491601799106734,
+          "validation_loss": 0.001865879907272756
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2468.8494623000006,
+          "epoch": 34,
+          "learning_rate": 0.00012750832476157495,
+          "training_loss": 0.0017471732582304289,
+          "validation_loss": 0.0018656849131609002
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2533.464796100001,
+          "epoch": 35,
+          "learning_rate": 0.00012372781370366265,
+          "training_loss": 0.001747980774697763,
+          "validation_loss": 0.0018611154503499468
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2598.2467180999956,
+          "epoch": 36,
+          "learning_rate": 0.00011991148704060482,
+          "training_loss": 0.001735110741256821,
+          "validation_loss": 0.0018642650598970551
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2663.631426299995,
+          "epoch": 37,
+          "learning_rate": 0.00011606522927150302,
+          "training_loss": 0.0017372659508096563,
+          "validation_loss": 0.001861263857378314
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2728.4677217999997,
+          "epoch": 38,
+          "learning_rate": 0.0001121949710470549,
+          "training_loss": 0.001736585974735631,
+          "validation_loss": 0.001860295964870602
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2793.062401899995,
+          "epoch": 39,
+          "learning_rate": 0.00010830668002492063,
+          "training_loss": 0.001732548473360525,
+          "validation_loss": 0.001860568744596094
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2857.7422882999963,
+          "epoch": 40,
+          "learning_rate": 0.00010440635166802737,
+          "training_loss": 0.0017281064843039282,
+          "validation_loss": 0.0018603981899408004
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2922.1468864000053,
+          "epoch": 41,
+          "learning_rate": 0.00010050000000000003,
+          "training_loss": 0.0017276709735266525,
+          "validation_loss": 0.0018551289049598078
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2986.3875243000075,
+          "epoch": 42,
+          "learning_rate": 9.659364833197273e-05,
+          "training_loss": 0.0017213345547630028,
+          "validation_loss": 0.0018602654399971167
+        }
+      ],
+      "memory_format": "channels_last",
+      "mixed_precision": true,
+      "parameter_count": 7240225,
+      "resume_events": [],
+      "seed": 40402,
+      "status": "COMPLETED"
+    },
+    "40403": {
+      "best_epoch": 45,
+      "best_validation_loss": 0.0018532415882994732,
+      "checkpoint_path": "artifacts/experiment-004/local-large/checkpoints/seed-40403/best.pt",
+      "checkpoint_sha256": "93c67137c54257c47fcb84ea977355e6b507d197f2a9ae60ad6e7ad7537b42d1",
+      "checkpoint_size_bytes": 28986281,
+      "completed_at_utc": "2026-08-29T20:14:37.025751+00:00",
+      "determinism": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_configuration_error": null,
+        "numpy_seed": 40403,
+        "python_random_seed": 40403,
+        "torch_seed": 40403
+      },
+      "device": "cuda",
+      "elapsed_seconds": 3551.4205721000035,
+      "epochs_completed": 57,
+      "history": [
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 64.19888490000449,
+          "epoch": 1,
+          "learning_rate": 0.0002,
+          "training_loss": 0.003539813572371548,
+          "validation_loss": 0.0024899650823014476
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 128.54815250000684,
+          "epoch": 2,
+          "learning_rate": 0.00019992328910595195,
+          "training_loss": 0.002284472033021633,
+          "validation_loss": 0.002261624528716008
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 192.92139680001128,
+          "epoch": 3,
+          "learning_rate": 0.00019969327470644626,
+          "training_loss": 0.0021324856741226873,
+          "validation_loss": 0.002149676551731924
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 257.87266200000886,
+          "epoch": 4,
+          "learning_rate": 0.0001993103114670152,
+          "training_loss": 0.0020528351702854375,
+          "validation_loss": 0.0021402804646641015
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 322.58566200001223,
+          "epoch": 5,
+          "learning_rate": 0.00019877498988921623,
+          "training_loss": 0.002012840800241313,
+          "validation_loss": 0.002062930218720188
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 387.4899950000108,
+          "epoch": 6,
+          "learning_rate": 0.00019808813540012144,
+          "training_loss": 0.001983338309219107,
+          "validation_loss": 0.00202980772824958
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 452.6864379000035,
+          "epoch": 7,
+          "learning_rate": 0.00019725080707956884,
+          "training_loss": 0.0019486516825219786,
+          "validation_loss": 0.002024073024125149
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 514.2928597999999,
+          "epoch": 8,
+          "learning_rate": 0.00019626429602713792,
+          "training_loss": 0.0019222245869142088,
+          "validation_loss": 0.00200058831833303
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 578.4084353000071,
+          "epoch": 9,
+          "learning_rate": 0.00019513012337136782,
+          "training_loss": 0.0019127958702897145,
+          "validation_loss": 0.001983573560913404
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 642.1836652000056,
+          "epoch": 10,
+          "learning_rate": 0.00019385003792428721,
+          "training_loss": 0.0019052848203996704,
+          "validation_loss": 0.001967576382836948
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 705.9884578000056,
+          "epoch": 11,
+          "learning_rate": 0.00019242601348487304,
+          "training_loss": 0.001886884952281517,
+          "validation_loss": 0.0019705589573519927
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 769.9042156000069,
+          "epoch": 12,
+          "learning_rate": 0.0001908602457955956,
+          "training_loss": 0.0018774768702728166,
+          "validation_loss": 0.0019559791024463874
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 833.878881800003,
+          "epoch": 13,
+          "learning_rate": 0.0001891551491567426,
+          "training_loss": 0.0018669542602517389,
+          "validation_loss": 0.0019440102421989043
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 898.1322542999987,
+          "epoch": 14,
+          "learning_rate": 0.00018731335270374334,
+          "training_loss": 0.0018528571246530523,
+          "validation_loss": 0.0019356736858996252
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 962.3670822999993,
+          "epoch": 15,
+          "learning_rate": 0.0001853376963532322,
+          "training_loss": 0.0018446609827647493,
+          "validation_loss": 0.001936053417933484
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1026.8134373000066,
+          "epoch": 16,
+          "learning_rate": 0.0001832312264241033,
+          "training_loss": 0.001841297683792866,
+          "validation_loss": 0.001924696828549107
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1091.4623504000047,
+          "epoch": 17,
+          "learning_rate": 0.0001809971909403073,
+          "training_loss": 0.0018313720647711307,
+          "validation_loss": 0.0019217003230005503
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1155.9280507000076,
+          "epoch": 18,
+          "learning_rate": 0.00017863903462263415,
+          "training_loss": 0.0018252909077670087,
+          "validation_loss": 0.0019236430176533758
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1220.459311300001,
+          "epoch": 19,
+          "learning_rate": 0.00017616039357720313,
+          "training_loss": 0.0018205805988558991,
+          "validation_loss": 0.0019135948658610383
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1284.3060478000116,
+          "epoch": 20,
+          "learning_rate": 0.00017356508968885076,
+          "training_loss": 0.0018167317220517858,
+          "validation_loss": 0.0019099792946750919
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1346.2613439000124,
+          "epoch": 21,
+          "learning_rate": 0.00017085712472806152,
+          "training_loss": 0.001815795332764868,
+          "validation_loss": 0.00190354604817306
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1408.051191999999,
+          "epoch": 22,
+          "learning_rate": 0.00016804067418052775,
+          "training_loss": 0.0018067513423209842,
+          "validation_loss": 0.001893842719340076
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1469.9938082000008,
+          "epoch": 23,
+          "learning_rate": 0.00016512008080885333,
+          "training_loss": 0.0018017682193947786,
+          "validation_loss": 0.001898797903365145
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1534.5317581999989,
+          "epoch": 24,
+          "learning_rate": 0.00016209984795632852,
+          "training_loss": 0.00179796817723069,
+          "validation_loss": 0.0018923360466336211
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1598.53581690001,
+          "epoch": 25,
+          "learning_rate": 0.00015898463260310112,
+          "training_loss": 0.0017936309042852372,
+          "validation_loss": 0.0018913275670881073
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1661.3647725000046,
+          "epoch": 26,
+          "learning_rate": 0.00015577923818545046,
+          "training_loss": 0.0017890430447137491,
+          "validation_loss": 0.0019015578739345073
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1722.3444113000005,
+          "epoch": 27,
+          "learning_rate": 0.00015248860718923695,
+          "training_loss": 0.0017860842572355812,
+          "validation_loss": 0.0018877112003974617
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1782.9721986000077,
+          "epoch": 28,
+          "learning_rate": 0.00014911781352894708,
+          "training_loss": 0.001779763409021226,
+          "validation_loss": 0.0018854071052434543
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1845.9439098000003,
+          "epoch": 29,
+          "learning_rate": 0.00014567205472408495,
+          "training_loss": 0.0017777566448785365,
+          "validation_loss": 0.0018743119287925462
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 1906.988282300008,
+          "epoch": 30,
+          "learning_rate": 0.00014215664388497415,
+          "training_loss": 0.0017752869880165566,
+          "validation_loss": 0.001883655875766029
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 1967.9093673000025,
+          "epoch": 31,
+          "learning_rate": 0.00013857700152032648,
+          "training_loss": 0.0017664897393181243,
+          "validation_loss": 0.0018732976936735213
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2028.9658332000108,
+          "epoch": 32,
+          "learning_rate": 0.0001349386471792106,
+          "training_loss": 0.00176454114632427,
+          "validation_loss": 0.0018856555929717919
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2089.4685622000106,
+          "epoch": 33,
+          "learning_rate": 0.00013124719094030732,
+          "training_loss": 0.0017625089459629222,
+          "validation_loss": 0.0018724700963745516
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2150.0736319999996,
+          "epoch": 34,
+          "learning_rate": 0.00012750832476157495,
+          "training_loss": 0.0017605315544642508,
+          "validation_loss": 0.0018804059744191666
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2210.998754,
+          "epoch": 35,
+          "learning_rate": 0.00012372781370366265,
+          "training_loss": 0.0017595459998119623,
+          "validation_loss": 0.0018707331495049098
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2271.558614300011,
+          "epoch": 36,
+          "learning_rate": 0.00011991148704060482,
+          "training_loss": 0.0017565203544853086,
+          "validation_loss": 0.0018658528989180922
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2332.342769300012,
+          "epoch": 37,
+          "learning_rate": 0.00011606522927150302,
+          "training_loss": 0.0017557011589153925,
+          "validation_loss": 0.0018639839525955418
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2393.5813568000012,
+          "epoch": 38,
+          "learning_rate": 0.0001121949710470549,
+          "training_loss": 0.0017473598423583263,
+          "validation_loss": 0.001862242544690768
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2456.0321896000096,
+          "epoch": 39,
+          "learning_rate": 0.00010830668002492063,
+          "training_loss": 0.0017479894571641292,
+          "validation_loss": 0.0018612051227440438
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2516.833029200003,
+          "epoch": 40,
+          "learning_rate": 0.00010440635166802737,
+          "training_loss": 0.001744339371692728,
+          "validation_loss": 0.0018638298544101416
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2577.2677799000085,
+          "epoch": 41,
+          "learning_rate": 0.00010050000000000003,
+          "training_loss": 0.0017424878415609286,
+          "validation_loss": 0.0018670981641237935
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2638.1489249000006,
+          "epoch": 42,
+          "learning_rate": 9.659364833197273e-05,
+          "training_loss": 0.0017369741134726528,
+          "validation_loss": 0.001870563596021384
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2698.677641100003,
+          "epoch": 43,
+          "learning_rate": 9.269331997507947e-05,
+          "training_loss": 0.0017384780189869079,
+          "validation_loss": 0.0018577853140110772
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2759.4916306000086,
+          "epoch": 44,
+          "learning_rate": 8.88050289529452e-05,
+          "training_loss": 0.001736438562246886,
+          "validation_loss": 0.0018660445992524425
+        },
+        {
+          "checkpoint_selected": true,
+          "elapsed_seconds": 2820.1500596000114,
+          "epoch": 45,
+          "learning_rate": 8.493477072849708e-05,
+          "training_loss": 0.0017316475748719478,
+          "validation_loss": 0.0018532415882994732
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2881.072831700003,
+          "epoch": 46,
+          "learning_rate": 8.108851295939528e-05,
+          "training_loss": 0.0017281939286145974,
+          "validation_loss": 0.0018641939712688326
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 2941.6756301999994,
+          "epoch": 47,
+          "learning_rate": 7.727218629633745e-05,
+          "training_loss": 0.0017241923836991192,
+          "validation_loss": 0.0018577657042381664
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3002.260477700009,
+          "epoch": 48,
+          "learning_rate": 7.349167523842512e-05,
+          "training_loss": 0.0017239563204136422,
+          "validation_loss": 0.001863327722530812
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3063.1486138000037,
+          "epoch": 49,
+          "learning_rate": 6.975280905969277e-05,
+          "training_loss": 0.0017218697001226246,
+          "validation_loss": 0.001857013350042204
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3124.4809374000033,
+          "epoch": 50,
+          "learning_rate": 6.60613528207895e-05,
+          "training_loss": 0.0017208696507044474,
+          "validation_loss": 0.0018652585754171014
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3185.2131761000055,
+          "epoch": 51,
+          "learning_rate": 6.24229984796736e-05,
+          "training_loss": 0.0017190126416442746,
+          "validation_loss": 0.0018577723593140641
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3246.170956400005,
+          "epoch": 52,
+          "learning_rate": 5.8843356115025956e-05,
+          "training_loss": 0.0017171667767053639,
+          "validation_loss": 0.0018591503736873469
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3306.5655675000016,
+          "epoch": 53,
+          "learning_rate": 5.532794527591512e-05,
+          "training_loss": 0.0017146350260273638,
+          "validation_loss": 0.0018537427523794274
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3367.537766300011,
+          "epoch": 54,
+          "learning_rate": 5.188218647105299e-05,
+          "training_loss": 0.0017149648084093562,
+          "validation_loss": 0.0018556721632679303
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3428.8551465000055,
+          "epoch": 55,
+          "learning_rate": 4.8511392810763114e-05,
+          "training_loss": 0.0017141425886868754,
+          "validation_loss": 0.001855252074698607
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3490.258858800007,
+          "epoch": 56,
+          "learning_rate": 4.522076181454959e-05,
+          "training_loss": 0.00170977338725193,
+          "validation_loss": 0.0018589958540784816
+        },
+        {
+          "checkpoint_selected": false,
+          "elapsed_seconds": 3551.3377823000046,
+          "epoch": 57,
+          "learning_rate": 4.201536739689895e-05,
+          "training_loss": 0.001708321717821739,
+          "validation_loss": 0.001867233047572275
+        }
+      ],
+      "memory_format": "channels_last",
+      "mixed_precision": true,
+      "parameter_count": 7240225,
+      "resume_events": [],
+      "seed": 40403,
+      "status": "COMPLETED"
+    }
+  },
+  "runtime": {
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+    "cuda_runtime": "12.8",
+    "cudnn": 91900,
+    "numpy": "2.5.2",
+    "opencv": "4.13.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "torch": "2.11.0+cu128"
+  },
+  "schema_version": 1
+}
