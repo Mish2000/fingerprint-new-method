@@ -1,0 +1,1162 @@
+[
+  {
+    "sample_index": 1,
+    "subject_id": "00001809",
+    "anatomical_position": 1,
+    "finger_name": "right_thumb",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001809_plain_500_11.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001809_plain_1000_11.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001809_plain_2000_11.png",
+    "sha256_500": "f4d3e13f527afef29d5ab71611744d39cf22a19d54c6fc88b217fafe3a96ddd7",
+    "sha256_1000": "3868a0d2fded84b21b794894e7f08278dad6c0f8bfff93d963f108303c0bf047",
+    "sha256_2000": "3e16c46aa03c5c54dd82b79c6398b66a863b773817525d2343287eb8f9527041",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1782,
+      762
+    ],
+    "high_shape_hw": [
+      3564,
+      1524
+    ],
+    "pearson_all_pixels": 0.9932344363554979,
+    "pearson_dark_union": 0.9922213043042833,
+    "mae_all_pixels": 3.280348777770996,
+    "mae_dark_union": 3.5807690620422363,
+    "dark_union_pixel_fraction": 0.8674312386035921,
+    "control_500_1000_pearson_all_pixels": 0.9958692496028102,
+    "control_500_1000_pearson_dark_union": 0.9951481195266036
+  },
+  {
+    "sample_index": 1,
+    "subject_id": "00001809",
+    "anatomical_position": 1,
+    "finger_name": "right_thumb",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001809_roll_500_01.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001809_roll_1000_01.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001809_roll_2000_01.png",
+    "sha256_500": "a09de71cfaf016cd9af02bcd2eca6f8b5f849d98dee52bc91f56a575d7df7f7f",
+    "sha256_1000": "7aedb4c0dc28c32f2e25739674288a87442befe573d051f0b808ceeb14a90f74",
+    "sha256_2000": "a80cb9c712cebbfcc397b561a6081649adc0b95946bbd5164a57479c462161fa",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1456,
+      1672
+    ],
+    "high_shape_hw": [
+      2912,
+      3344
+    ],
+    "pearson_all_pixels": 0.9761484652729604,
+    "pearson_dark_union": 0.9760330891203848,
+    "mae_all_pixels": 6.13974142074585,
+    "mae_dark_union": 6.152264595031738,
+    "dark_union_pixel_fraction": 0.997205919080919,
+    "control_500_1000_pearson_all_pixels": 0.9963448762027878,
+    "control_500_1000_pearson_dark_union": 0.9963071874499337
+  },
+  {
+    "sample_index": 2,
+    "subject_id": "00001718",
+    "anatomical_position": 1,
+    "finger_name": "right_thumb",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001718_plain_500_11.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001718_plain_1000_11.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001718_plain_2000_11.png",
+    "sha256_500": "8eae0eb22f3a705ad86e5b93aeeed7bce14ccab72cb5981e6aa9159c517eb15f",
+    "sha256_1000": "04ec58a85d8e9d47dde06636134a625a1fa63236d9025c158ca16f22658be64d",
+    "sha256_2000": "aeb3f244ebe218f18468c6a148df54e84b4e8c2d0af059079e8b10b338cca88e",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1782,
+      762
+    ],
+    "high_shape_hw": [
+      3564,
+      1524
+    ],
+    "pearson_all_pixels": 0.9507231234830379,
+    "pearson_dark_union": 0.9507231234830379,
+    "mae_all_pixels": 58.098453521728516,
+    "mae_dark_union": 58.098453521728516,
+    "dark_union_pixel_fraction": 1.0,
+    "control_500_1000_pearson_all_pixels": 0.9918076662020934,
+    "control_500_1000_pearson_dark_union": 0.9918076662020934
+  },
+  {
+    "sample_index": 2,
+    "subject_id": "00001718",
+    "anatomical_position": 1,
+    "finger_name": "right_thumb",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001718_roll_500_01.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001718_roll_1000_01.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001718_roll_2000_01.png",
+    "sha256_500": "9aab199414644725d8f08610ae4db0d69960e915f6b4d20326f06e5845adac07",
+    "sha256_1000": "154eefda49bf36d5014238217d0bbb8476d3b3428f1e93d2a5a5faa5b47577cf",
+    "sha256_2000": "fcc7b7e403cf6f5614d3e5d6d9d90242ce395a07b2aa38b40a5078af410c2a8b",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1456,
+      1672
+    ],
+    "high_shape_hw": [
+      2912,
+      3344
+    ],
+    "pearson_all_pixels": 0.9630879371814264,
+    "pearson_dark_union": 0.9629344939991632,
+    "mae_all_pixels": 5.875831604003906,
+    "mae_dark_union": 5.886743068695068,
+    "dark_union_pixel_fraction": 0.9969101622062149,
+    "control_500_1000_pearson_all_pixels": 0.9946350641512142,
+    "control_500_1000_pearson_dark_union": 0.9945976082644314
+  },
+  {
+    "sample_index": 3,
+    "subject_id": "00001335",
+    "anatomical_position": 2,
+    "finger_name": "right_index",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001335_plain_500_02.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001335_plain_1000_02.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001335_plain_2000_02.png",
+    "sha256_500": "3e1a3d6f6af58cb75b4f44d69fa1a6170dd3d274bcaf2ee023b63e45ead591aa",
+    "sha256_1000": "9fac26259fcb2325aea9ed26ba3b4241a763cb25bab5a8b6f4346e72919ce749",
+    "sha256_2000": "2bf634d29b28f80caa45704a6fa90572c13ad96061d277543280d87e6d50f00f",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      953,
+      614
+    ],
+    "high_shape_hw": [
+      1904,
+      1228
+    ],
+    "pearson_all_pixels": 0.9510787424625,
+    "pearson_dark_union": 0.9480255909203925,
+    "mae_all_pixels": 4.293709754943848,
+    "mae_dark_union": 4.272719860076904,
+    "dark_union_pixel_fraction": 0.9930016987329572,
+    "control_500_1000_pearson_all_pixels": 0.9783191310094403,
+    "control_500_1000_pearson_dark_union": 0.9813007323769429
+  },
+  {
+    "sample_index": 3,
+    "subject_id": "00001335",
+    "anatomical_position": 2,
+    "finger_name": "right_index",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001335_roll_500_02.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001335_roll_1000_02.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001335_roll_2000_02.png",
+    "sha256_500": "acb303c2cd34d0cfccf1806bd74d402b629c8e64f048705edeace6f1b38a9168",
+    "sha256_1000": "5aabef2ca4689e15e4c46bd7b567a0597fcf185923db447a50022a3819ad8808",
+    "sha256_2000": "05fdffb93afdcfbdd715de1bdfc39bb48e4e111f0e6d93d0820a7c240382fb2d",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1566,
+      1510
+    ],
+    "high_shape_hw": [
+      3132,
+      3020
+    ],
+    "pearson_all_pixels": 0.9796935429472101,
+    "pearson_dark_union": 0.979686198653342,
+    "mae_all_pixels": 4.09834098815918,
+    "mae_dark_union": 4.098910808563232,
+    "dark_union_pixel_fraction": 0.9997610650156894,
+    "control_500_1000_pearson_all_pixels": 0.9988013297190274,
+    "control_500_1000_pearson_dark_union": 0.9988009621807542
+  },
+  {
+    "sample_index": 4,
+    "subject_id": "00001593",
+    "anatomical_position": 2,
+    "finger_name": "right_index",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001593_plain_500_02.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001593_plain_1000_02.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001593_plain_2000_02.png",
+    "sha256_500": "15ffd2b94172b448dbb390674558ed0f5255247ffbce7bc2e7702a7ae7161a66",
+    "sha256_1000": "10c633deb024285ebf164725fd2685a9d82d400c376bdb32587477751482bc50",
+    "sha256_2000": "2d6065737c705933231729162bebc45ebaf2a674861cdfacf05ab0973b5e215a",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      1049,
+      578
+    ],
+    "high_shape_hw": [
+      2097,
+      1153
+    ],
+    "pearson_all_pixels": 0.9803465193407723,
+    "pearson_dark_union": 0.958201912696249,
+    "mae_all_pixels": 6.420204162597656,
+    "mae_dark_union": 7.987977027893066,
+    "dark_union_pixel_fraction": 0.7970137979489447,
+    "control_500_1000_pearson_all_pixels": 0.990954984648609,
+    "control_500_1000_pearson_dark_union": 0.9807635188613086
+  },
+  {
+    "sample_index": 4,
+    "subject_id": "00001593",
+    "anatomical_position": 2,
+    "finger_name": "right_index",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001593_roll_500_02.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001593_roll_1000_02.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001593_roll_2000_02.png",
+    "sha256_500": "d802e802a4ea89cd220b6c4656b00d95554587c2bb0a527f84c9dfec4c7e80cd",
+    "sha256_1000": "c1b8b8d7cd82aff5f733865b1424fa69a597db185c35345ca2b71c4a6d90d296",
+    "sha256_2000": "364eee7f17ccbac5d1359f4af21196e811b0ce9a0375c7c82d71829530f77768",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1550,
+      1496
+    ],
+    "high_shape_hw": [
+      3100,
+      2992
+    ],
+    "pearson_all_pixels": 0.9597426456589059,
+    "pearson_dark_union": 0.9597259841520684,
+    "mae_all_pixels": 7.341480255126953,
+    "mae_dark_union": 7.342541217803955,
+    "dark_union_pixel_fraction": 0.9998007590132827,
+    "control_500_1000_pearson_all_pixels": 0.994931553337625,
+    "control_500_1000_pearson_dark_union": 0.9949273449088472
+  },
+  {
+    "sample_index": 5,
+    "subject_id": "00001314",
+    "anatomical_position": 3,
+    "finger_name": "right_middle",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001314_plain_500_03.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001314_plain_1000_03.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001314_plain_2000_03.png",
+    "sha256_500": "68d0d3f260f12b60bb465b3edde5cb5008cdb28521271f68d9002da8d972eb54",
+    "sha256_1000": "e9a8f188c4f43ece0cc9bf3c573aa949cb0cc81399b77dfb32a4f9e59d4840bb",
+    "sha256_2000": "998c4d0803a9d66791852dac5314425ee0cdac1c4edf7fcd3b7d7455017a48bb",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      541,
+      734
+    ],
+    "high_shape_hw": [
+      1082,
+      1468
+    ],
+    "pearson_all_pixels": 0.9764666347959888,
+    "pearson_dark_union": 0.9599193745215354,
+    "mae_all_pixels": 5.197257995605469,
+    "mae_dark_union": 5.757691383361816,
+    "dark_union_pixel_fraction": 0.8556286420847456,
+    "control_500_1000_pearson_all_pixels": 0.9889815942456411,
+    "control_500_1000_pearson_dark_union": 0.9827284012149294
+  },
+  {
+    "sample_index": 5,
+    "subject_id": "00001314",
+    "anatomical_position": 3,
+    "finger_name": "right_middle",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001314_roll_500_03.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001314_roll_1000_03.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001314_roll_2000_03.png",
+    "sha256_500": "bdb79694b710786a58e57aa01b29b8e5dc218a0a313742a54837e1f74bb05c84",
+    "sha256_1000": "d6908c9be259d7a8c74221136ce48b559579313a7496bf6009786b60425da48a",
+    "sha256_2000": "5ae05c1bcf8f973d2ebd0e04b41b3e7adb63bf9cadaeb1bf548a489347fc02df",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1578,
+      1522
+    ],
+    "high_shape_hw": [
+      3156,
+      3044
+    ],
+    "pearson_all_pixels": 0.9650071864151993,
+    "pearson_dark_union": 0.9560353788165041,
+    "mae_all_pixels": 5.462113380432129,
+    "mae_dark_union": 6.148221969604492,
+    "dark_union_pixel_fraction": 0.8209884099535498,
+    "control_500_1000_pearson_all_pixels": 0.9980717289689713,
+    "control_500_1000_pearson_dark_union": 0.9974218220890737
+  },
+  {
+    "sample_index": 6,
+    "subject_id": "00001267",
+    "anatomical_position": 3,
+    "finger_name": "right_middle",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001267_plain_500_03.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001267_plain_1000_03.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001267_plain_2000_03.png",
+    "sha256_500": "105a9e5f05d287c7f895487018bcd6fe6241d288ced77b5de060ba981b77c45b",
+    "sha256_1000": "687f471442d5887b1c1212bcccfaf9752b16c3bf420a1efe649ec06ab5276bdf",
+    "sha256_2000": "81de3397324fe0cbb22531d62113ddf24073f2e932eda7e4982ca2c0409a294e",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      923,
+      643
+    ],
+    "high_shape_hw": [
+      1846,
+      1284
+    ],
+    "pearson_all_pixels": 0.9476276913569535,
+    "pearson_dark_union": 0.9171092296029356,
+    "mae_all_pixels": 8.09465503692627,
+    "mae_dark_union": 8.41718864440918,
+    "dark_union_pixel_fraction": 0.9535981290301926,
+    "control_500_1000_pearson_all_pixels": 0.9509701070445656,
+    "control_500_1000_pearson_dark_union": 0.9208276102431341
+  },
+  {
+    "sample_index": 6,
+    "subject_id": "00001267",
+    "anatomical_position": 3,
+    "finger_name": "right_middle",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001267_roll_500_03.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001267_roll_1000_03.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001267_roll_2000_03.png",
+    "sha256_500": "c6ad7477911d7c479576099a8d32aab7a58f8e55cf84bc58b4b61d53ee7b9215",
+    "sha256_1000": "a1db28e8425462bff9f741980b7f51058f28113cd09947e142e6583a5064ce4d",
+    "sha256_2000": "08fc850815ea230bd0214b87b1b4aa01269bdaffb48e39ad32df82c44818affa",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1550,
+      1510
+    ],
+    "high_shape_hw": [
+      3100,
+      3020
+    ],
+    "pearson_all_pixels": 0.9978965054320462,
+    "pearson_dark_union": 0.9978938558984498,
+    "mae_all_pixels": 1.7829233407974243,
+    "mae_dark_union": 1.7837024927139282,
+    "dark_union_pixel_fraction": 0.9992766502884,
+    "control_500_1000_pearson_all_pixels": 0.9813895461074348,
+    "control_500_1000_pearson_dark_union": 0.9813754366249328
+  },
+  {
+    "sample_index": 7,
+    "subject_id": "00001061",
+    "anatomical_position": 4,
+    "finger_name": "right_ring",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001061_plain_500_04.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001061_plain_1000_04.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001061_plain_2000_04.png",
+    "sha256_500": "57940c7eebb8c0c857c7dd2133cf689e5e348e131ba0c0ea48bb147d4668150a",
+    "sha256_1000": "98ea489f206f0b5204289fce4a85e6ba7ed23301bf72e910dd76f875c5e0bf51",
+    "sha256_2000": "8d08bf838077a69931c0fc5417f2299842ff64e4bede438fb098058a991b9e7e",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      955,
+      618
+    ],
+    "high_shape_hw": [
+      1908,
+      1235
+    ],
+    "pearson_all_pixels": 0.9869124870410098,
+    "pearson_dark_union": 0.9812835701410959,
+    "mae_all_pixels": 2.7479116916656494,
+    "mae_dark_union": 2.9321913719177246,
+    "dark_union_pixel_fraction": 0.9015503481929548,
+    "control_500_1000_pearson_all_pixels": 0.984609421779086,
+    "control_500_1000_pearson_dark_union": 0.9782135646815361
+  },
+  {
+    "sample_index": 7,
+    "subject_id": "00001061",
+    "anatomical_position": 4,
+    "finger_name": "right_ring",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001061_roll_500_04.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001061_roll_1000_04.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001061_roll_2000_04.png",
+    "sha256_500": "fb7e3cf4faa6a6bad90f5409002f8a4237167821a1b5e6768c25a087248f9408",
+    "sha256_1000": "1d19c01b8971872ed47d7863f674708d54783135d650ae0b204eec3475d3d09d",
+    "sha256_2000": "a79d8f1d4aa8ed9ae0a11e49db41370d9b8d62329f590445197934d183c31ed5",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1374,
+      1468
+    ],
+    "high_shape_hw": [
+      2748,
+      2936
+    ],
+    "pearson_all_pixels": 0.9961825869589482,
+    "pearson_dark_union": 0.9938311643805596,
+    "mae_all_pixels": 2.0819804668426514,
+    "mae_dark_union": 2.581239938735962,
+    "dark_union_pixel_fraction": 0.6917034533909229,
+    "control_500_1000_pearson_all_pixels": 0.9824181664021749,
+    "control_500_1000_pearson_dark_union": 0.9706446485697853
+  },
+  {
+    "sample_index": 8,
+    "subject_id": "00001050",
+    "anatomical_position": 4,
+    "finger_name": "right_ring",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001050_plain_500_04.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001050_plain_1000_04.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001050_plain_2000_04.png",
+    "sha256_500": "704b911c290fddd2969eeae7d82a57d06b692d0159ca5ed5cf1506088ff9b1fd",
+    "sha256_1000": "deabeb785e3f47c6372521f230070c2004b28f219d0cca8c5836da00a650454d",
+    "sha256_2000": "c4acd4b44065c8776c6cc7a2b64b72ea2f7eef7214392857932988f02360a7df",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      983,
+      549
+    ],
+    "high_shape_hw": [
+      1965,
+      1095
+    ],
+    "pearson_all_pixels": 0.7731737653694372,
+    "pearson_dark_union": 0.7606265145280746,
+    "mae_all_pixels": 10.212488174438477,
+    "mae_dark_union": 10.300163269042969,
+    "dark_union_pixel_fraction": 0.9795466463578466,
+    "control_500_1000_pearson_all_pixels": 0.9166363032828809,
+    "control_500_1000_pearson_dark_union": 0.9083663566426383
+  },
+  {
+    "sample_index": 8,
+    "subject_id": "00001050",
+    "anatomical_position": 4,
+    "finger_name": "right_ring",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001050_roll_500_04.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001050_roll_1000_04.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001050_roll_2000_04.png",
+    "sha256_500": "394ec37467a38ff580bc9f4b7d8a9b2e13e55d3c6b51401ff8d5c01bc44b0e4f",
+    "sha256_1000": "24080dc5ad68c1cdb999a95211c569ccfeb93fb9176a05e51a9fe8c69b96baf0",
+    "sha256_2000": "07c907f52d813fc491906a4c0c29a73a77b559940207a708103118571d4b9993",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1266,
+      1468
+    ],
+    "high_shape_hw": [
+      2532,
+      2936
+    ],
+    "pearson_all_pixels": 0.9918684442684177,
+    "pearson_dark_union": 0.9904452089097356,
+    "mae_all_pixels": 2.3323044776916504,
+    "mae_dark_union": 2.5377235412597656,
+    "dark_union_pixel_fraction": 0.8519414707009139,
+    "control_500_1000_pearson_all_pixels": 0.9852043112192541,
+    "control_500_1000_pearson_dark_union": 0.9820342400482762
+  },
+  {
+    "sample_index": 9,
+    "subject_id": "00001187",
+    "anatomical_position": 5,
+    "finger_name": "right_little",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001187_plain_500_05.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001187_plain_1000_05.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001187_plain_2000_05.png",
+    "sha256_500": "b847d11ed754f0449127d1fbc1146e2cb8d70b512cee0c3169dabb345a4261fb",
+    "sha256_1000": "46a75f85a176e1365483ed43fce0de2919c1d37dcf53ebb18049b3bbccbc431f",
+    "sha256_2000": "e8360bea9daa70283b8532cbea9cca55c19328135790419a04cc8e22ebbda6dd",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      787,
+      629
+    ],
+    "high_shape_hw": [
+      1573,
+      1257
+    ],
+    "pearson_all_pixels": 0.9714694092479202,
+    "pearson_dark_union": 0.9718778609573507,
+    "mae_all_pixels": 3.2645676136016846,
+    "mae_dark_union": 3.2278881072998047,
+    "dark_union_pixel_fraction": 0.9984061346644499,
+    "control_500_1000_pearson_all_pixels": 0.9464801346231103,
+    "control_500_1000_pearson_dark_union": 0.9461283727462592
+  },
+  {
+    "sample_index": 9,
+    "subject_id": "00001187",
+    "anatomical_position": 5,
+    "finger_name": "right_little",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001187_roll_500_05.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001187_roll_1000_05.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001187_roll_2000_05.png",
+    "sha256_500": "b6d720fccc2cf0db8000d0acd2ab41bdc7d9b2f0f023eda305ff587bfde46e3d",
+    "sha256_1000": "c46346976ef53b8a18a70c50af77deefe842251635dd3fb46b7a907fc56c33fd",
+    "sha256_2000": "9ba1b12ae843d395ed8fcbbc8be98a6540a16d49d6e3c87c88c9accb2440ea3c",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1552,
+      1672
+    ],
+    "high_shape_hw": [
+      3104,
+      3344
+    ],
+    "pearson_all_pixels": 0.9927917388136875,
+    "pearson_dark_union": 0.9927917349869825,
+    "mae_all_pixels": 2.668553113937378,
+    "mae_dark_union": 2.6685540676116943,
+    "dark_union_pixel_fraction": 0.9999996146352291,
+    "control_500_1000_pearson_all_pixels": 0.9859288051964269,
+    "control_500_1000_pearson_dark_union": 0.9859288051964269
+  },
+  {
+    "sample_index": 10,
+    "subject_id": "00001668",
+    "anatomical_position": 5,
+    "finger_name": "right_little",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001668_plain_500_05.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001668_plain_1000_05.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001668_plain_2000_05.png",
+    "sha256_500": "9a4a3afa067864c80fae727ea7583eae46aaf5260d501e5add292c975aaaa0fc",
+    "sha256_1000": "a137c73856b6082cecb00e9bedc5b023c2c86bfadaab8b60ee9886057c9d1bed",
+    "sha256_2000": "d8d4ae5efc035a2846d527bc6b8ccdd94256208d03694727a8d22feddec85d23",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      881,
+      547
+    ],
+    "high_shape_hw": [
+      1761,
+      1091
+    ],
+    "pearson_all_pixels": 0.9543626603706987,
+    "pearson_dark_union": 0.9083223972948627,
+    "mae_all_pixels": 7.85953950881958,
+    "mae_dark_union": 11.016700744628906,
+    "dark_union_pixel_fraction": 0.610833625575059,
+    "control_500_1000_pearson_all_pixels": 0.9868419698389954,
+    "control_500_1000_pearson_dark_union": 0.9717551309848453
+  },
+  {
+    "sample_index": 10,
+    "subject_id": "00001668",
+    "anatomical_position": 5,
+    "finger_name": "right_little",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001668_roll_500_05.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001668_roll_1000_05.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001668_roll_2000_05.png",
+    "sha256_500": "c6bc40c19e6770a3141c9a2f4b595f514669522fbaea7881878c6e8a6d656e2e",
+    "sha256_1000": "66743be7588817016533cb434c437d1a7692712c69c17eb8fe88599db33b7cc8",
+    "sha256_2000": "481a4e5e3a5827f706a64f2d264668b1e5eff3965ba53947e1240befe819f22c",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1700,
+      1672
+    ],
+    "high_shape_hw": [
+      3400,
+      3344
+    ],
+    "pearson_all_pixels": 0.9815498500945449,
+    "pearson_dark_union": 0.9304936785534381,
+    "mae_all_pixels": 4.806735038757324,
+    "mae_dark_union": 9.337274551391602,
+    "dark_union_pixel_fraction": 0.35603187447227697,
+    "control_500_1000_pearson_all_pixels": 0.9928706187611603,
+    "control_500_1000_pearson_dark_union": 0.9698968618899796
+  },
+  {
+    "sample_index": 11,
+    "subject_id": "00001595",
+    "anatomical_position": 6,
+    "finger_name": "left_thumb",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001595_plain_500_12.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001595_plain_1000_12.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001595_plain_2000_12.png",
+    "sha256_500": "d7accd8ee263ef649813a5e55785ac6d309457d69126b6b74088686365d035f4",
+    "sha256_1000": "2c0b180854e46c5603e58da0b608115540a5473525ed08789293a0e599f9b354",
+    "sha256_2000": "be244b1680b4bc7bf79609bcaec76c7f4a17a8aed98b156ec4b5b6e7deb3f50f",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1972,
+      748
+    ],
+    "high_shape_hw": [
+      3944,
+      1496
+    ],
+    "pearson_all_pixels": 0.9627083043254855,
+    "pearson_dark_union": 0.9491146560239038,
+    "mae_all_pixels": 6.9525556564331055,
+    "mae_dark_union": 8.031576156616211,
+    "dark_union_pixel_fraction": 0.8117400288531419,
+    "control_500_1000_pearson_all_pixels": 0.9941851082591526,
+    "control_500_1000_pearson_dark_union": 0.9917386863662607
+  },
+  {
+    "sample_index": 11,
+    "subject_id": "00001595",
+    "anatomical_position": 6,
+    "finger_name": "left_thumb",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001595_roll_500_06.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001595_roll_1000_06.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001595_roll_2000_06.png",
+    "sha256_500": "3a44609479ae5c2e12eb7fe206e96530569143c5a673b9c39f7945930e80d91a",
+    "sha256_1000": "c6b97648a66a089407ea0bea6b5d1446baced4ccaa3bba47d59d9c81b29f9e00",
+    "sha256_2000": "ffe045ca5a895d2254400a2054f286ef7b7c7a9d5281bb1aa61404e8abfd9bc9",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1416,
+      1618
+    ],
+    "high_shape_hw": [
+      2832,
+      3236
+    ],
+    "pearson_all_pixels": 0.95492129730669,
+    "pearson_dark_union": 0.9487355199194312,
+    "mae_all_pixels": 6.6013569831848145,
+    "mae_dark_union": 7.103487014770508,
+    "dark_union_pixel_fraction": 0.9046828406416515,
+    "control_500_1000_pearson_all_pixels": 0.9940228490114194,
+    "control_500_1000_pearson_dark_union": 0.9928090935689264
+  },
+  {
+    "sample_index": 12,
+    "subject_id": "00001159",
+    "anatomical_position": 6,
+    "finger_name": "left_thumb",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001159_plain_500_12.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001159_plain_1000_12.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001159_plain_2000_12.png",
+    "sha256_500": "17be1dcdffdf8d5931d0355171699d8dc1a1c32fc1ab19a8726b6c10cf7ce9e4",
+    "sha256_1000": "0d235a85229e84d14c89dd0a29cc08130baf4b0803e1fc69bdebdaf94baa299a",
+    "sha256_2000": "13cd9e2e39971de63c2cb3ddceb36dab071fcbd24d53bb44cad1a4a5e3f96d48",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1862,
+      734
+    ],
+    "high_shape_hw": [
+      3724,
+      1468
+    ],
+    "pearson_all_pixels": 0.8292034107485682,
+    "pearson_dark_union": 0.8292005756438597,
+    "mae_all_pixels": 17.6370849609375,
+    "mae_dark_union": 17.637256622314453,
+    "dark_union_pixel_fraction": 0.9999839029258627,
+    "control_500_1000_pearson_all_pixels": 0.9805540972386694,
+    "control_500_1000_pearson_dark_union": 0.9803403357171327
+  },
+  {
+    "sample_index": 12,
+    "subject_id": "00001159",
+    "anatomical_position": 6,
+    "finger_name": "left_thumb",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001159_roll_500_06.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001159_roll_1000_06.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001159_roll_2000_06.png",
+    "sha256_500": "dab744ec6f561da6a2f9f6990357ba8d1ef9852e6bb4696e9897344c59935dd7",
+    "sha256_1000": "396c594f1f2c0fdd93992885748f83a5f60959b0883dc1f0987d8fb1ec94ba89",
+    "sha256_2000": "b47cdd3f9f1b7b414fea07f532e377381ba7f61996354bdb208af58e58c6fe4b",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1402,
+      1646
+    ],
+    "high_shape_hw": [
+      2804,
+      3292
+    ],
+    "pearson_all_pixels": 0.8646991316955752,
+    "pearson_dark_union": 0.8646875346435023,
+    "mae_all_pixels": 16.670364379882812,
+    "mae_dark_union": 16.671262741088867,
+    "dark_union_pixel_fraction": 0.9999410666588089,
+    "control_500_1000_pearson_all_pixels": 0.9895504603090887,
+    "control_500_1000_pearson_dark_union": 0.9895441180708786
+  },
+  {
+    "sample_index": 13,
+    "subject_id": "00001741",
+    "anatomical_position": 7,
+    "finger_name": "left_index",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001741_plain_500_07.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001741_plain_1000_07.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001741_plain_2000_07.png",
+    "sha256_500": "c962dc3c3610118938c466bfc383b14bb91ef1fc36c221a803ee5fda8a3cc69b",
+    "sha256_1000": "c1623b71c7c2c75a600ec86687c697efa4c2a4ee76988e55aee9a8d8f79f5f2d",
+    "sha256_2000": "433d7794aba28e3fb9db42b716357584b8c1551e31750eadb032c53f1752110c",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      1015,
+      664
+    ],
+    "high_shape_hw": [
+      2031,
+      1328
+    ],
+    "pearson_all_pixels": 0.96500589698208,
+    "pearson_dark_union": 0.9565246426391509,
+    "mae_all_pixels": 6.9760518074035645,
+    "mae_dark_union": 7.252391338348389,
+    "dark_union_pixel_fraction": 0.9297198646803965,
+    "control_500_1000_pearson_all_pixels": 0.9955381491574228,
+    "control_500_1000_pearson_dark_union": 0.9946730906187087
+  },
+  {
+    "sample_index": 13,
+    "subject_id": "00001741",
+    "anatomical_position": 7,
+    "finger_name": "left_index",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001741_roll_500_07.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001741_roll_1000_07.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001741_roll_2000_07.png",
+    "sha256_500": "3ac4713c4d4591adb3552595774b71e75eca8ea9f9f81097282436436332be8f",
+    "sha256_1000": "57ad1b65ade88845c7cad3a8b28f8edd3c6230d127697136037e7a357b6a355d",
+    "sha256_2000": "46bd808079ad8af210ce4a8ade064622ec52b9148e83fb191cec05da22ec080f",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1496,
+      1510
+    ],
+    "high_shape_hw": [
+      2992,
+      3020
+    ],
+    "pearson_all_pixels": 0.9788023346909723,
+    "pearson_dark_union": 0.9785178180432553,
+    "mae_all_pixels": 5.011472225189209,
+    "mae_dark_union": 5.044407367706299,
+    "dark_union_pixel_fraction": 0.9897103091688211,
+    "control_500_1000_pearson_all_pixels": 0.994420066784643,
+    "control_500_1000_pearson_dark_union": 0.9942894577673882
+  },
+  {
+    "sample_index": 14,
+    "subject_id": "00001411",
+    "anatomical_position": 7,
+    "finger_name": "left_index",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001411_plain_500_07.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001411_plain_1000_07.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001411_plain_2000_07.png",
+    "sha256_500": "584bbc3b5b94e8e21f268e7aa257dc81425e7bad008e223203ff5701c2cdc4fc",
+    "sha256_1000": "d76a3afe74a0fac5c0f5dd570adf7b07d20e0962db6ec529f6637f6b56b151cb",
+    "sha256_2000": "3e98be3212773d13f8ad3b968ee6743910770431a655efcc32de993b725e90d6",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      958,
+      707
+    ],
+    "high_shape_hw": [
+      1915,
+      1411
+    ],
+    "pearson_all_pixels": 0.9096333171539895,
+    "pearson_dark_union": 0.9090579614338532,
+    "mae_all_pixels": 9.887201309204102,
+    "mae_dark_union": 9.859820365905762,
+    "dark_union_pixel_fraction": 0.9972036273117321,
+    "control_500_1000_pearson_all_pixels": 0.9862312396748961,
+    "control_500_1000_pearson_dark_union": 0.9866433919635327
+  },
+  {
+    "sample_index": 14,
+    "subject_id": "00001411",
+    "anatomical_position": 7,
+    "finger_name": "left_index",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001411_roll_500_07.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001411_roll_1000_07.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001411_roll_2000_07.png",
+    "sha256_500": "ba3e5793eaf2d119b5f658fb5660b74e75ddc05a4d15ce8b86cea512ad1f9ed1",
+    "sha256_1000": "a47bce6f44dcd1f1770a3f375860cda8363f7c36861efb3b0c824baef4af09ea",
+    "sha256_2000": "f1427b58a253caad02d58ddd4a574cf392b1bc7d937396ec9def68fbd5108cd6",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1428,
+      1510
+    ],
+    "high_shape_hw": [
+      2856,
+      3020
+    ],
+    "pearson_all_pixels": 0.9553223888302024,
+    "pearson_dark_union": 0.9553077951479976,
+    "mae_all_pixels": 7.105064868927002,
+    "mae_dark_union": 7.1067280769348145,
+    "dark_union_pixel_fraction": 0.999697627395329,
+    "control_500_1000_pearson_all_pixels": 0.9931347611818427,
+    "control_500_1000_pearson_dark_union": 0.9931290339279417
+  },
+  {
+    "sample_index": 15,
+    "subject_id": "00001234",
+    "anatomical_position": 8,
+    "finger_name": "left_middle",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001234_plain_500_08.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001234_plain_1000_08.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001234_plain_2000_08.png",
+    "sha256_500": "6824fe36c02b64aff785862545c0b8bb7c2176ece3d6477892f2a6536934eafd",
+    "sha256_1000": "c7f3924534b31d60ff2862602d5f8029f823f8edb80d668260dabbf93257fa2d",
+    "sha256_2000": "0e99018aaebe717dd1c8085d6dffc18c80bb7e0f2fdb5086ff80d20c55251a8d",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      512,
+      512
+    ],
+    "high_shape_hw": [
+      1024,
+      1024
+    ],
+    "pearson_all_pixels": 0.8662329913811166,
+    "pearson_dark_union": 0.8036030420318508,
+    "mae_all_pixels": 10.974647521972656,
+    "mae_dark_union": 11.262683868408203,
+    "dark_union_pixel_fraction": 0.9719276428222656,
+    "control_500_1000_pearson_all_pixels": 0.9842284903941056,
+    "control_500_1000_pearson_dark_union": 0.9811727076109419
+  },
+  {
+    "sample_index": 15,
+    "subject_id": "00001234",
+    "anatomical_position": 8,
+    "finger_name": "left_middle",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001234_roll_500_08.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001234_roll_1000_08.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001234_roll_2000_08.png",
+    "sha256_500": "7d1203d1c029d71e87356477f67494470bbc6b7dcad8242419e3192aded111a1",
+    "sha256_1000": "d1d969bb9795812afdb706763ccbed071b690641af0b0a7d5f4e7b7412c8ae15",
+    "sha256_2000": "dc7cf65507dbf376c427991621ed541d836d21189e74f75fc54f12d387ba7721",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1374,
+      1468
+    ],
+    "high_shape_hw": [
+      2748,
+      2936
+    ],
+    "pearson_all_pixels": 0.9948809833514322,
+    "pearson_dark_union": 0.9921478172847221,
+    "mae_all_pixels": 2.141498565673828,
+    "mae_dark_union": 2.6130268573760986,
+    "dark_union_pixel_fraction": 0.6573896695739085,
+    "control_500_1000_pearson_all_pixels": 0.9840242012739951,
+    "control_500_1000_pearson_dark_union": 0.9746396345662086
+  },
+  {
+    "sample_index": 16,
+    "subject_id": "00001711",
+    "anatomical_position": 8,
+    "finger_name": "left_middle",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001711_plain_500_08.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001711_plain_1000_08.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001711_plain_2000_08.png",
+    "sha256_500": "9fe5992e59960f2c62ef92cd9aaa4e3175a693698ada79c7e23d365e9ca86c03",
+    "sha256_1000": "4aff67a6573a57f9e8ac70c1015c66101d6939da8012856399c6a7f0886ad240",
+    "sha256_2000": "1640b1a3603e2cd91469b1f1c818396c3dc00b1bc7e6a263f9b45a18258c5bf5",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      1006,
+      733
+    ],
+    "high_shape_hw": [
+      2011,
+      1467
+    ],
+    "pearson_all_pixels": 0.8687728708203556,
+    "pearson_dark_union": 0.8503804714772111,
+    "mae_all_pixels": 9.72982120513916,
+    "mae_dark_union": 10.28867244720459,
+    "dark_union_pixel_fraction": 0.926880734691442,
+    "control_500_1000_pearson_all_pixels": 0.9856256553184264,
+    "control_500_1000_pearson_dark_union": 0.9845771137666498
+  },
+  {
+    "sample_index": 16,
+    "subject_id": "00001711",
+    "anatomical_position": 8,
+    "finger_name": "left_middle",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001711_roll_500_08.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001711_roll_1000_08.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001711_roll_2000_08.png",
+    "sha256_500": "c00197e3ac8caeea1c8a7eb62776e401283cfc91ab1ed61a08a0bc7238203746",
+    "sha256_1000": "760fb4f42f6329fc306854de1dcb59c0c24d10da5f81b6d0e9dc5c50b86a2826",
+    "sha256_2000": "c6aa587ab63bb1661a8415b87e48495ae03d41522f83701c4367aa80b6f7803a",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1498,
+      1510
+    ],
+    "high_shape_hw": [
+      2996,
+      3020
+    ],
+    "pearson_all_pixels": 0.9647044836768874,
+    "pearson_dark_union": 0.9561554482960045,
+    "mae_all_pixels": 7.311196804046631,
+    "mae_dark_union": 8.510993003845215,
+    "dark_union_pixel_fraction": 0.8118988673639909,
+    "control_500_1000_pearson_all_pixels": 0.9959998144100659,
+    "control_500_1000_pearson_dark_union": 0.9946439733473706
+  },
+  {
+    "sample_index": 17,
+    "subject_id": "00001036",
+    "anatomical_position": 9,
+    "finger_name": "left_ring",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001036_plain_500_09.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001036_plain_1000_09.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001036_plain_2000_09.png",
+    "sha256_500": "2e7ee8ed49baa207db36d6e2c4dc7a98fd5c83ba89188daab4930aaed15b42cb",
+    "sha256_1000": "31cf5f6ad2b071bc9405b052bc3f94e20a0034155eba673bbe5760063c1fee76",
+    "sha256_2000": "26247962c2b721e881012a53120857e2b8ac0128a9a0fab28f1eb3b9abb46dfa",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      1063,
+      676
+    ],
+    "high_shape_hw": [
+      2127,
+      1351
+    ],
+    "pearson_all_pixels": 0.9781448445309192,
+    "pearson_dark_union": 0.9779649815708583,
+    "mae_all_pixels": 3.4634768962860107,
+    "mae_dark_union": 3.4525041580200195,
+    "dark_union_pixel_fraction": 0.989792481922882,
+    "control_500_1000_pearson_all_pixels": 0.9538565213193221,
+    "control_500_1000_pearson_dark_union": 0.9535952417889006
+  },
+  {
+    "sample_index": 17,
+    "subject_id": "00001036",
+    "anatomical_position": 9,
+    "finger_name": "left_ring",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001036_roll_500_09.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001036_roll_1000_09.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001036_roll_2000_09.png",
+    "sha256_500": "a48e6419642d450e3bda62b32e11315972e0a4b0555cc4830f376ad94fa94a42",
+    "sha256_1000": "bad69c7fd3b9a68ce2e5eaf5dc8f6cc8116d7968a41b6c05cbe94bf00778209d",
+    "sha256_2000": "f9bcebefba5cf2cb74249ce95b7d92d31018cd1e4837f94248e964763f8dce14",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1522,
+      1508
+    ],
+    "high_shape_hw": [
+      3044,
+      3016
+    ],
+    "pearson_all_pixels": 0.9674348702696969,
+    "pearson_dark_union": 0.9655900248206619,
+    "mae_all_pixels": 5.3002238273620605,
+    "mae_dark_union": 5.506636142730713,
+    "dark_union_pixel_fraction": 0.9461958472901425,
+    "control_500_1000_pearson_all_pixels": 0.975195288141044,
+    "control_500_1000_pearson_dark_union": 0.9741171940813272
+  },
+  {
+    "sample_index": 18,
+    "subject_id": "00001580",
+    "anatomical_position": 9,
+    "finger_name": "left_ring",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001580_plain_500_09.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001580_plain_1000_09.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001580_plain_2000_09.png",
+    "sha256_500": "e8b89ffd8bf764245ab9d1c5b4dca8598dff332f9126fcd918602ccc9f664f82",
+    "sha256_1000": "5ae6e079cc2eb7fe43262f8ff30e2d2e5de0338bebd3610e29698f86ac9756bd",
+    "sha256_2000": "afc9de304e67e7cd70b23c2579a9abaa369c1714741f29047f2649d3bdbb0125",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      856,
+      734
+    ],
+    "high_shape_hw": [
+      1711,
+      1466
+    ],
+    "pearson_all_pixels": 0.9092883754863953,
+    "pearson_dark_union": 0.8976243345348528,
+    "mae_all_pixels": 11.907814025878906,
+    "mae_dark_union": 12.182700157165527,
+    "dark_union_pixel_fraction": 0.9721281417912349,
+    "control_500_1000_pearson_all_pixels": 0.9871695077472344,
+    "control_500_1000_pearson_dark_union": 0.9856870831756035
+  },
+  {
+    "sample_index": 18,
+    "subject_id": "00001580",
+    "anatomical_position": 9,
+    "finger_name": "left_ring",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001580_roll_500_09.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001580_roll_1000_09.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001580_roll_2000_09.png",
+    "sha256_500": "960f2885c79b45389590ea937fe44e1bdc2581109cb04ca769c745303ec336fc",
+    "sha256_1000": "e7821fc5cc898ea4c737752a44982d7f7e788be6c1b4f605cae5272dab4349c8",
+    "sha256_2000": "6388e19867f9d9740e9d02ade95c86275a9383bbc233138abf2f4e0e0492450f",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1374,
+      1468
+    ],
+    "high_shape_hw": [
+      2748,
+      2936
+    ],
+    "pearson_all_pixels": 0.9531546588200646,
+    "pearson_dark_union": 0.9477493661440669,
+    "mae_all_pixels": 8.239869117736816,
+    "mae_dark_union": 8.964159965515137,
+    "dark_union_pixel_fraction": 0.894635285905231,
+    "control_500_1000_pearson_all_pixels": 0.9951540750874329,
+    "control_500_1000_pearson_dark_union": 0.9942514948675939
+  },
+  {
+    "sample_index": 19,
+    "subject_id": "00001085",
+    "anatomical_position": 10,
+    "finger_name": "left_little",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001085_plain_500_10.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001085_plain_1000_10.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001085_plain_2000_10.png",
+    "sha256_500": "9e8cd48020a898e9e8293a355a5d9bc7f9d30d8be2b94520a0bc1819826dc507",
+    "sha256_1000": "0463ca977d43c043598c39b78ab999d62350d76bfdaff8bf76ec1733956461cf",
+    "sha256_2000": "1d661e315990780c6c42e1d224faffdf36f4515247b0af45737db86d3c36c069",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      549,
+      512
+    ],
+    "high_shape_hw": [
+      1099,
+      1024
+    ],
+    "pearson_all_pixels": 0.8908511868248608,
+    "pearson_dark_union": 0.7480998138322434,
+    "mae_all_pixels": 9.277997970581055,
+    "mae_dark_union": 9.914606094360352,
+    "dark_union_pixel_fraction": 0.9294171220400729,
+    "control_500_1000_pearson_all_pixels": 0.98901918254905,
+    "control_500_1000_pearson_dark_union": 0.978217367162105
+  },
+  {
+    "sample_index": 19,
+    "subject_id": "00001085",
+    "anatomical_position": 10,
+    "finger_name": "left_little",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001085_roll_500_10.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001085_roll_1000_10.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001085_roll_2000_10.png",
+    "sha256_500": "368357bcab38849d7159b02d697e52585070854796980ccbbc2c236ea08f3698",
+    "sha256_1000": "0e69ad0d902d3dd2a3d90ac51585482d19f6b14cb10906cda06b1c50f3608b85",
+    "sha256_2000": "36404d2838e42529e44b6539fb968c01d5186e0c296e71a1757b71a9ff4ddf0f",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1510,
+      1538
+    ],
+    "high_shape_hw": [
+      3020,
+      3076
+    ],
+    "pearson_all_pixels": 0.9293748367149969,
+    "pearson_dark_union": 0.9033189839714267,
+    "mae_all_pixels": 6.669189453125,
+    "mae_dark_union": 8.05532169342041,
+    "dark_union_pixel_fraction": 0.7626533986686072,
+    "control_500_1000_pearson_all_pixels": 0.9901003412585262,
+    "control_500_1000_pearson_dark_union": 0.986102251267971
+  },
+  {
+    "sample_index": 20,
+    "subject_id": "00001027",
+    "anatomical_position": 10,
+    "finger_name": "left_little",
+    "impression": "plain",
+    "source_500": "sd300a/images/500/png/plain/00001027_plain_500_10.png",
+    "source_1000": "sd300b/images/1000/png/plain/00001027_plain_1000_10.png",
+    "source_2000": "sd300c/images/2000/png/plain/00001027_plain_2000_10.png",
+    "sha256_500": "ff7da73b357d1e37a767dd4d82871098c973f8158834011b0ef6925579deaa11",
+    "sha256_1000": "8ef9ec89dd745afdf9a66e3b38565190a4fc89188966bba6b1bc49f08fc8db9f",
+    "sha256_2000": "88809cc68433f34006a17139fce50843579b3228695867ec5d298714f30cfc99",
+    "exact_2x_dimensions": false,
+    "low_shape_hw": [
+      995,
+      664
+    ],
+    "high_shape_hw": [
+      1991,
+      1328
+    ],
+    "pearson_all_pixels": 0.589219210885199,
+    "pearson_dark_union": 0.589219210885199,
+    "mae_all_pixels": 22.592748641967773,
+    "mae_dark_union": 22.592748641967773,
+    "dark_union_pixel_fraction": 1.0,
+    "control_500_1000_pearson_all_pixels": 0.9484766807059684,
+    "control_500_1000_pearson_dark_union": 0.9484766807059684
+  },
+  {
+    "sample_index": 20,
+    "subject_id": "00001027",
+    "anatomical_position": 10,
+    "finger_name": "left_little",
+    "impression": "roll",
+    "source_500": "sd300a/images/500/png/roll/00001027_roll_500_10.png",
+    "source_1000": "sd300b/images/1000/png/roll/00001027_roll_1000_10.png",
+    "source_2000": "sd300c/images/2000/png/roll/00001027_roll_2000_10.png",
+    "sha256_500": "3bcc51d19eb72e48ca6d377973c0860db24ee95684a0c7fa211614b2dc5d2ca8",
+    "sha256_1000": "e2210dbd9f22b888e7523f580bfb6f1032f90b3479f046616527159744e77e69",
+    "sha256_2000": "91922e6dd5cca459b103441a668462db6f452ec1e9993cb9fbed5e5cde31be3b",
+    "exact_2x_dimensions": true,
+    "low_shape_hw": [
+      1346,
+      1688
+    ],
+    "high_shape_hw": [
+      2692,
+      3376
+    ],
+    "pearson_all_pixels": 0.9812571950472665,
+    "pearson_dark_union": 0.9791205384607433,
+    "mae_all_pixels": 5.422399044036865,
+    "mae_dark_union": 5.714907646179199,
+    "dark_union_pixel_fraction": 0.9324094385329887,
+    "control_500_1000_pearson_all_pixels": 0.9771406165465392,
+    "control_500_1000_pearson_dark_union": 0.9746562331819799
+  }
+]

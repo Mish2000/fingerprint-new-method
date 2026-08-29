@@ -1,0 +1,14 @@
+name: fingerprint-new-method
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip>=26,<27
+  - setuptools>=75,<82
+  - wheel>=0.45,<1
+  - numpy>=2,<3
+  - py-opencv=4.13=headless_py312*
+  - pillow>=11,<13
+  - pytest>=8,<10
+  - ruff>=0.9,<1

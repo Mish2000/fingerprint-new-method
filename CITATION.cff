@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the applicable source datasets when using this work."
+title: "fingerprint-new-method"
+type: software
+authors:
+  - family-names: "Sirkovich"
+    given-names: "Michael"
+repository-code: "https://github.com/Mish2000/fingerprint-new-method"
+version: 0.1.0

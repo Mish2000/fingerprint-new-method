@@ -1,0 +1,24 @@
+{
+  "status": "NAVIGATION_ONLY_NOT_A_CLASSIFIER",
+  "frozen_annotation_count": 1000,
+  "method": {
+    "center": "mean grayscale in Euclidean disk radius <= 2 px",
+    "context": "mean grayscale in Euclidean annulus radius 4..8 px",
+    "texture": "grayscale standard deviation in clipped 25x25 px neighborhood",
+    "use": "fixed post-freeze ordering for human visual reinspection only"
+  },
+  "center_minus_annulus_gray_percentiles": {
+    "p00": -6.5308641975308745,
+    "p05": 13.429731781376507,
+    "p50": 30.938006072874487,
+    "p95": 47.257059716599194,
+    "p100": 74.67459514170041
+  },
+  "local_r12_std_gray_percentiles": {
+    "p00": 4.057820183300389,
+    "p05": 18.807598120872573,
+    "p50": 26.020188964873583,
+    "p95": 32.8858967946478,
+    "p100": 38.69065003330908
+  }
+}

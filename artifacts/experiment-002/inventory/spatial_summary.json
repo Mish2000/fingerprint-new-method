@@ -1,0 +1,96 @@
+{
+  "experiment_id": "002-l3sf-pore-annotation-feasibility",
+  "annotation_count": 306009,
+  "annotations_per_image": {
+    "count": 740,
+    "minimum": 282.0,
+    "p05": 333.0,
+    "median": 410.0,
+    "p95": 504.0,
+    "maximum": 551.0,
+    "mean": 413.5256756756757
+  },
+  "density_per_100k_estimated_fingerprint_px": {
+    "count": 740,
+    "minimum": 108.19147589286743,
+    "p05": 127.410888671875,
+    "median": 157.54365238497311,
+    "p95": 193.02497023864876,
+    "maximum": 210.1898193359375,
+    "mean": 158.51030261987236
+  },
+  "nearest_neighbor_distance_px": {
+    "count": 306009,
+    "minimum": 0.0,
+    "p05": 3.1622776601683795,
+    "median": 15.620499351813308,
+    "p95": 27.202941017470888,
+    "maximum": 56.356011214421486,
+    "mean": 15.417735182548082
+  },
+  "normalized_x_histogram_10_bins": {
+    "edges": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "counts": [
+      30109,
+      29792,
+      30016,
+      30287,
+      30069,
+      30314,
+      30784,
+      31352,
+      31487,
+      31799
+    ]
+  },
+  "normalized_y_histogram_10_bins": {
+    "edges": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "counts": [
+      30104,
+      30849,
+      30814,
+      29976,
+      30041,
+      30416,
+      31075,
+      31150,
+      30590,
+      30994
+    ]
+  },
+  "within_16px_of_edge": {
+    "count": 38263,
+    "fraction": 0.12503880604818812
+  },
+  "within_5pct_of_edge": {
+    "count": 57756,
+    "fraction": 0.18873954687607228
+  },
+  "exact_duplicate_coordinate_records": 241,
+  "estimated_fingerprint_mask_method": "Otsu dark-ridge mask; 31x31 elliptical close; 9x9 dilation; retain components >=1% image area",
+  "scientific_role": "Basic artifact/bias screen only; not an anatomical distribution model"
+}

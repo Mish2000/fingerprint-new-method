@@ -1,0 +1,275 @@
+{
+  "experiment_id": "002-l3sf-pore-annotation-feasibility",
+  "status": "COMPLETE_HUMAN_VISUAL_REVIEW",
+  "review_design": {
+    "image_count": 50,
+    "annotations_per_image": 20,
+    "annotation_count": 1000,
+    "blind_sample_frozen_before_pixel_review": true,
+    "source_pixel_crops_reviewed": true,
+    "navigation_metrics_used_for_label_assignment": false,
+    "navigation_metrics_role": "post-freeze human reinspection ordering only",
+    "pre_review_pilot_images_excluded_from_sampling": 10
+  },
+  "label_definitions": {
+    "CLEAR": "Discrete pore-like opening/structure is reasonably visible on a ridge at the TSV coordinate.",
+    "AMBIGUOUS": "A plausible structure is present, but exact separate-pore placement is not confident; uncertainty is preferred.",
+    "NOT_MATCH": "No suitable visible ridge-pore structure is present at the coordinate, or the coordinate is in background/clearly wrong structure."
+  },
+  "counts": {
+    "CLEAR": 936,
+    "AMBIGUOUS": 60,
+    "NOT_MATCH": 4,
+    "CLEAR_OR_AMBIGUOUS": 996,
+    "TOTAL": 1000
+  },
+  "rates": {
+    "CLEAR": 0.936,
+    "AMBIGUOUS": 0.06,
+    "NOT_MATCH": 0.004,
+    "CLEAR_OR_AMBIGUOUS": 0.996
+  },
+  "per_run_counts": {
+    "R1": {
+      "CLEAR": 190,
+      "AMBIGUOUS": 10
+    },
+    "R2": {
+      "CLEAR": 185,
+      "AMBIGUOUS": 13,
+      "NOT_MATCH": 2
+    },
+    "R3": {
+      "CLEAR": 187,
+      "AMBIGUOUS": 13
+    },
+    "R4": {
+      "CLEAR": 189,
+      "AMBIGUOUS": 11
+    },
+    "R5": {
+      "CLEAR": 185,
+      "AMBIGUOUS": 13,
+      "NOT_MATCH": 2
+    }
+  },
+  "per_pattern_counts": {
+    "left_loop": {
+      "CLEAR": 95,
+      "AMBIGUOUS": 5
+    },
+    "plain_arch": {
+      "CLEAR": 95,
+      "AMBIGUOUS": 5
+    },
+    "right_loop": {
+      "CLEAR": 373,
+      "AMBIGUOUS": 25,
+      "NOT_MATCH": 2
+    },
+    "tented_arch": {
+      "CLEAR": 93,
+      "AMBIGUOUS": 7
+    },
+    "whorl": {
+      "CLEAR": 280,
+      "AMBIGUOUS": 18,
+      "NOT_MATCH": 2
+    }
+  },
+  "per_image_counts": {
+    "R1/12_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R1/21_whorl": {
+      "CLEAR": 18,
+      "AMBIGUOUS": 2
+    },
+    "R1/2_left_loop": {
+      "CLEAR": 20
+    },
+    "R1/2_plain_arch": {
+      "CLEAR": 20
+    },
+    "R1/2_tented_arch": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R1/42_whorl": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R1/48_whorl": {
+      "CLEAR": 20
+    },
+    "R1/4_right_loop": {
+      "CLEAR": 17,
+      "AMBIGUOUS": 3
+    },
+    "R1/73_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R1/9_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R2/1_left_loop": {
+      "CLEAR": 20
+    },
+    "R2/21_whorl": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R2/25_right_loop": {
+      "CLEAR": 17,
+      "AMBIGUOUS": 3
+    },
+    "R2/2_tented_arch": {
+      "CLEAR": 20
+    },
+    "R2/38_right_loop": {
+      "AMBIGUOUS": 2,
+      "CLEAR": 16,
+      "NOT_MATCH": 2
+    },
+    "R2/3_plain_arch": {
+      "AMBIGUOUS": 3,
+      "CLEAR": 17
+    },
+    "R2/43_whorl": {
+      "CLEAR": 20
+    },
+    "R2/50_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R2/54_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R2/56_whorl": {
+      "AMBIGUOUS": 2,
+      "CLEAR": 18
+    },
+    "R3/16_whorl": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R3/19_whorl": {
+      "CLEAR": 18,
+      "AMBIGUOUS": 2
+    },
+    "R3/21_whorl": {
+      "CLEAR": 17,
+      "AMBIGUOUS": 3
+    },
+    "R3/2_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R3/38_right_loop": {
+      "CLEAR": 20
+    },
+    "R3/3_left_loop": {
+      "CLEAR": 18,
+      "AMBIGUOUS": 2
+    },
+    "R3/3_plain_arch": {
+      "CLEAR": 20
+    },
+    "R3/3_tented_arch": {
+      "AMBIGUOUS": 2,
+      "CLEAR": 18
+    },
+    "R3/57_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R3/5_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R4/14_right_loop": {
+      "CLEAR": 17,
+      "AMBIGUOUS": 3
+    },
+    "R4/21_right_loop": {
+      "CLEAR": 18,
+      "AMBIGUOUS": 2
+    },
+    "R4/33_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R4/3_tented_arch": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R4/44_right_loop": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R4/4_plain_arch": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R4/54_whorl": {
+      "CLEAR": 20
+    },
+    "R4/59_whorl": {
+      "CLEAR": 18,
+      "AMBIGUOUS": 2
+    },
+    "R4/5_left_loop": {
+      "CLEAR": 20
+    },
+    "R4/9_whorl": {
+      "CLEAR": 20
+    },
+    "R5/16_right_loop": {
+      "CLEAR": 20
+    },
+    "R5/1_plain_arch": {
+      "CLEAR": 19,
+      "AMBIGUOUS": 1
+    },
+    "R5/1_tented_arch": {
+      "CLEAR": 17,
+      "AMBIGUOUS": 3
+    },
+    "R5/21_whorl": {
+      "AMBIGUOUS": 1,
+      "CLEAR": 18,
+      "NOT_MATCH": 1
+    },
+    "R5/28_right_loop": {
+      "CLEAR": 20
+    },
+    "R5/28_whorl": {
+      "CLEAR": 18,
+      "AMBIGUOUS": 2
+    },
+    "R5/33_whorl": {
+      "CLEAR": 18,
+      "AMBIGUOUS": 1,
+      "NOT_MATCH": 1
+    },
+    "R5/40_right_loop": {
+      "AMBIGUOUS": 2,
+      "CLEAR": 18
+    },
+    "R5/4_left_loop": {
+      "CLEAR": 17,
+      "AMBIGUOUS": 3
+    },
+    "R5/64_right_loop": {
+      "CLEAR": 20
+    }
+  },
+  "threshold_checks": {
+    "clear_or_ambiguous_at_least_90_percent": true,
+    "clear_at_least_75_percent": true
+  }
+}

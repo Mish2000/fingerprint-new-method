@@ -1,0 +1,21 @@
+{
+  "experiment_id": "002-l3sf-pore-annotation-feasibility",
+  "image_decode_failures": [],
+  "full_filename_parse_failures": [],
+  "annotation_image_name_parse_failures": [],
+  "orphan_annotation_files": [],
+  "annotated_images_without_annotation_file": [],
+  "malformed_annotation_files": [],
+  "out_of_bounds_annotation_count": 0,
+  "duplicate_coordinate_record_count": 241,
+  "duplicate_coordinate_record_fraction": 0.0007875585358600564,
+  "duplicate_coordinate_affected_image_count": 210,
+  "maximum_duplicate_coordinate_records_in_one_image": 3,
+  "byte_identical_image_duplicate_group_count": 0,
+  "byte_identical_image_duplicate_groups": [],
+  "byte_identical_annotation_file_duplicate_group_count": 0,
+  "byte_identical_annotation_file_duplicate_groups": [],
+  "canonical_image_id_duplicate_count": 0,
+  "incomplete_full_identities": {},
+  "integrity_systemic_problem": false
+}

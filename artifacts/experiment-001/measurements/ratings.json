@@ -1,0 +1,202 @@
+[
+  {
+    "sample_index": 1,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S01_00001809_P01/plates/patch_01_cross_impression.png",
+    "reason": "Multiple small intraridge voids form a consistent local configuration in both impressions after ridge-level alignment."
+  },
+  {
+    "sample_index": 2,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S02_00001718_P01/plates/patch_01_cross_impression.png",
+    "reason": "A repeatable cluster is visible despite localized excess ink and broken-ridge texture."
+  },
+  {
+    "sample_index": 3,
+    "plain_2000_observability": "AMBIGUOUS",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "AMBIGUOUS",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S03_00001335_P02/plates/patch_01_cross_impression.png",
+    "reason": "The plain impression is faint and mottled; no three-candidate configuration can be separated confidently from ridge breakup."
+  },
+  {
+    "sample_index": 4,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S04_00001593_P02/plates/patch_01_cross_impression.png",
+    "reason": "Several circular intraridge voids preserve their relative order and ridge context across impressions."
+  },
+  {
+    "sample_index": 5,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "AMBIGUOUS",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S05_00001314_P03/overview_2000.png",
+    "reason": "Candidate voids are present in each impression, but the local plain-to-roll navigation alignment is unreliable and no convincing anatomical cluster was verified."
+  },
+  {
+    "sample_index": 6,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S06_00001267_P03/plates/patch_01_cross_impression.png",
+    "reason": "Strongest case: numerous well-bounded candidate pores preserve a multi-ridge local configuration in independent plain and rolled impressions."
+  },
+  {
+    "sample_index": 7,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S07_00001061_P04/plates/patch_01_cross_impression.png",
+    "reason": "A local sequence of candidate pores remains traceable in both impressions despite faint and partly broken ridges."
+  },
+  {
+    "sample_index": 8,
+    "plain_2000_observability": "AMBIGUOUS",
+    "roll_2000_observability": "AMBIGUOUS",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "AMBIGUOUS",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S08_00001050_P04/overview_2000.png",
+    "reason": "Both impressions are faint and patchy, and the local navigation alignment is not trustworthy enough to establish a three-candidate configuration."
+  },
+  {
+    "sample_index": 9,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S09_00001187_P05/plates/patch_01_cross_impression.png",
+    "reason": "A cluster around the loop preserves candidate positions and relative ridge context across impressions."
+  },
+  {
+    "sample_index": 10,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "AMBIGUOUS",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S10_00001668_P05/plates/patch_01_cross_impression.png",
+    "reason": "The only navigated overlap contains many ridge-edge irregularities; fewer than three isolated pore candidates can be confirmed conservatively in both impressions."
+  },
+  {
+    "sample_index": 11,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S11_00001595_P06/plates/patch_01_cross_impression.png",
+    "reason": "Strong case with multiple circular intraridge voids repeated around the same ridge flow and local singular structure."
+  },
+  {
+    "sample_index": 12,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S12_00001159_P06/plates/patch_01_cross_impression.png",
+    "reason": "At least one local multi-candidate configuration repeats, although surrounding ridges contain additional fragmentation."
+  },
+  {
+    "sample_index": 13,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S13_00001741_P07/plates/patch_01_cross_impression.png",
+    "reason": "Multiple small voids retain their order along corresponding ridges across the two impressions."
+  },
+  {
+    "sample_index": 14,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S14_00001411_P07/plates/patch_01_cross_impression.png",
+    "reason": "Strong, geometrically stable overlap with several repeatable intraridge voids across multiple neighboring ridges."
+  },
+  {
+    "sample_index": 15,
+    "plain_2000_observability": "AMBIGUOUS",
+    "roll_2000_observability": "AMBIGUOUS",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "AMBIGUOUS",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S15_00001234_P08/overview_2000.png",
+    "reason": "Fine texture is dominated by fuzzy ridge edges, and the plain-to-roll navigation transform is objectively unstable."
+  },
+  {
+    "sample_index": 16,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "CLEAR",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S16_00001711_P08/plates/patch_01_cross_impression.png",
+    "reason": "Stable ridge-level alignment exposes a repeatable local configuration of small candidate voids."
+  },
+  {
+    "sample_index": 17,
+    "plain_2000_observability": "AMBIGUOUS",
+    "roll_2000_observability": "AMBIGUOUS",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "AMBIGUOUS",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S17_00001036_P09/plates/patch_01_cross_impression.png",
+    "reason": "Ridge flow aligns, but mottled low-contrast texture prevents a confident three-pore configuration."
+  },
+  {
+    "sample_index": 18,
+    "plain_2000_observability": "CLEAR",
+    "roll_2000_observability": "CLEAR",
+    "plain_cross_resolution_1000_2000": "CLEAR",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "AMBIGUOUS",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S18_00001580_P09/plates/patch_01_cross_impression.png",
+    "reason": "Heavy ink granularity and broken-ridge artifacts confound candidate identity across impressions despite a valid ridge-level alignment."
+  },
+  {
+    "sample_index": 19,
+    "plain_2000_observability": "AMBIGUOUS",
+    "roll_2000_observability": "AMBIGUOUS",
+    "plain_cross_resolution_1000_2000": "AMBIGUOUS",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "NONE",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S19_00001085_P10/overview_2000.png",
+    "reason": "The plain impression is extremely faint, no valid local overlap was recovered, and no repeatable Level-3 configuration was observed."
+  },
+  {
+    "sample_index": 20,
+    "plain_2000_observability": "AMBIGUOUS",
+    "roll_2000_observability": "AMBIGUOUS",
+    "plain_cross_resolution_1000_2000": "AMBIGUOUS",
+    "roll_cross_resolution_1000_2000": "CLEAR",
+    "cross_impression_repeatability": "AMBIGUOUS",
+    "evidence_reference": "artifacts/experiment-001/evidence-pixels/S20_00001027_P10/plates/patch_01_cross_impression.png",
+    "reason": "Only isolated dot-like structures are visible; no local configuration of about three candidates is repeated across impressions."
+  }
+]

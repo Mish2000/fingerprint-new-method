@@ -1,0 +1,18 @@
+# Pixel-bearing evidence derived from restricted SD300 source images stays local.
+/artifacts/experiment-001/evidence-pixels/
+/artifacts/experiment-002/evidence-pixels/
+
+# Large, deterministic inventories are regenerated from the local datasets.
+/artifacts/experiment-002/inventory/annotations.csv
+
+# Project-local environments, IDE state, and tool caches.
+/.idea/
+__pycache__/
+*.pyc
+/.conda-env/
+/.pytest_cache/
+/.ruff_cache/
+/.mypy_cache/
+*.egg-info/
+/build/
+/dist/

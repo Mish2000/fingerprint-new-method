@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=77,<82"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fingerprint-new-method"
+version = "0.1.0"
+description = "Reproducible research code for fingerprint Level-3 primitives."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "LicenseRef-Proprietary"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Michael Sirkovich" },
+]
+keywords = ["biometrics", "fingerprints", "level-3", "research"]
+classifiers = [
+  "Private :: Do Not Upload",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "numpy>=2,<3",
+  "opencv-python-headless>=4.12,<5",
+  "Pillow>=11,<13",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "ruff>=0.9,<1",
+]
+
+[project.urls]
+Repository = "https://github.com/Mish2000/fingerprint-new-method"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+extend-exclude = [
+  ".conda-env",
+  "artifacts",
+]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

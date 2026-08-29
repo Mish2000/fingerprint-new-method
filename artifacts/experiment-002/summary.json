@@ -1,0 +1,96 @@
+{
+  "experiment_id": "002-l3sf-pore-annotation-feasibility",
+  "decision": "STRONG_PASS",
+  "decision_scope": "Initial pore-localization ground-truth development on the 740-image annotated-master subset only",
+  "gate_checks": {
+    "1_image_annotation_mapping_unambiguous": true,
+    "2_no_systemic_corruption_or_integrity_problem": true,
+    "3_clear_or_ambiguous_at_least_90_percent": true,
+    "4_clear_at_least_75_percent": true,
+    "5_identity_disjoint_split_feasible": true,
+    "6_unambiguous_localization_metric_feasible": true,
+    "7_no_structural_artifact_invalidates_task": true
+  },
+  "key_counts": {
+    "all_images_on_disk": 8140,
+    "full_l3sf_images": 7400,
+    "annotated_images": 740,
+    "annotation_files": 740,
+    "annotation_records": 306009,
+    "reviewed_images": 50,
+    "reviewed_annotations": 1000,
+    "clear": 936,
+    "ambiguous": 60,
+    "not_match": 4,
+    "exact_duplicate_coordinate_records": 241,
+    "images_affected_by_exact_duplicate_coordinates": 210
+  },
+  "review_rates": {
+    "CLEAR": 0.936,
+    "AMBIGUOUS": 0.06,
+    "NOT_MATCH": 0.004,
+    "CLEAR_OR_AMBIGUOUS": 0.996
+  },
+  "integrity_systemic_problem": false,
+  "spatial_red_flags": {
+    "coordinate_out_of_bounds": 0,
+    "axis_histograms_show_obvious_grid_or_single_region_concentration": false,
+    "fixed_coordinate_displacement_observed_in_visual_review": false
+  },
+  "split_protocol": {
+    "unit": "canonical annotated master R{run}/{pattern-index_stem}",
+    "identity_disjoint": true,
+    "all_patches_or_derivatives_from_one_master_stay_in_one_partition": true,
+    "restriction": "Do not mix the full numeric-identity branch with the annotated-master branch until an explicit crosswalk is established."
+  },
+  "future_measurement_protocol": {
+    "target": "Direct array address (x=column, y=row) at a pore center/location in a 512x512 annotated master; use the tabulated integers without a one-pixel origin correction",
+    "primary_tolerance_px": 4.0,
+    "normalized_axis_tolerance": 0.0078125,
+    "matching": "one-to-one maximum-cardinality assignment within Euclidean tolerance; minimize total distance among maximum-cardinality assignments",
+    "physical_scale_available": false,
+    "metrics": [
+      "precision",
+      "recall",
+      "F1",
+      "mean_localization_error_px",
+      "false_positives_per_image",
+      "recall_per_image"
+    ]
+  },
+  "required_preprocessing": [
+    "Remove exact duplicate (x,y) rows within each TSV before scoring so a point is not counted twice.",
+    "Keep evaluation pixel-based at native 512x512 scale; record any deterministic coordinate transform."
+  ],
+  "coordinate_registration_check": {
+    "observed_range": {
+      "x_min": 1,
+      "x_max": 511,
+      "y_min": 1,
+      "y_max": 511
+    },
+    "best_fixed_shift": {
+      "dx": 0,
+      "dy": 0,
+      "mean_gray": 142.8646052893869
+    },
+    "direct_mean_gray": 142.8646052893869,
+    "minus_one_mean_gray": 136.6090441784392,
+    "axis_swapped_mean_gray": 121.7034891130653
+  },
+  "claim_limits": [
+    "Synthetic L3-SF pores do not establish human anatomical representativeness.",
+    "L3-SF localization success does not establish generalization to SD300.",
+    "This experiment does not evaluate recognition, real-vs-synthetic classification, descriptors, or matching."
+  ],
+  "source_artifacts": {
+    "inventory": "artifacts/experiment-002/inventory/dataset_inventory.json",
+    "integrity": "artifacts/experiment-002/inventory/integrity_findings.json",
+    "spatial": "artifacts/experiment-002/inventory/spatial_summary.json",
+    "coordinate_convention": "artifacts/experiment-002/inventory/coordinate_convention_check.json",
+    "sample_manifest": "artifacts/experiment-002/review/review_sample_manifest.json",
+    "ratings": "artifacts/experiment-002/review/review_ratings.csv",
+    "review_summary": "artifacts/experiment-002/review/review_summary.json"
+  },
+  "spatial_annotation_count_checked": 306009
+}

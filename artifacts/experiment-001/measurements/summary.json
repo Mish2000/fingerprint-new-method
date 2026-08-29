@@ -1,0 +1,74 @@
+{
+  "experiment_id": "001-sd300-level3-feasibility",
+  "selection_revision": 2,
+  "sampling_seed": "nist-sd300-level3-exp001-v1",
+  "selected_finger_count": 20,
+  "unique_subject_count": 20,
+  "per_position_counts": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 2,
+    "8": 2,
+    "9": 2,
+    "10": 2
+  },
+  "selected_source_integrity": "PASS_ALL_120_FILES_MATCH_OFFICIAL_SHA256",
+  "level3_usable_count": 11,
+  "level3_usable_fraction": 0.55,
+  "decision": "CONDITIONAL",
+  "decision_rule": "STRONG_PASS=14..20; CONDITIONAL=6..13; FAIL=0..5",
+  "final_classification_counts": {
+    "LEVEL3_USABLE": 11,
+    "SCAN_REPEATABLE_BUT_ANATOMICALLY_UNVALIDATED": 7,
+    "NOT_LEVEL3_USABLE": 2
+  },
+  "rating_counts": {
+    "plain_2000_observability": {
+      "CLEAR": 14,
+      "AMBIGUOUS": 6
+    },
+    "roll_2000_observability": {
+      "CLEAR": 15,
+      "AMBIGUOUS": 5
+    },
+    "plain_cross_resolution_1000_2000": {
+      "CLEAR": 18,
+      "AMBIGUOUS": 2
+    },
+    "roll_cross_resolution_1000_2000": {
+      "CLEAR": 20
+    },
+    "cross_impression_repeatability": {
+      "CLEAR": 11,
+      "AMBIGUOUS": 8,
+      "NONE": 1
+    }
+  },
+  "cross_resolution_1000_2000_dark_union_pearson_descriptive": {
+    "n_impressions": 40,
+    "minimum": 0.589219210885199,
+    "median": 0.9560954135562543,
+    "maximum": 0.9978938558984498,
+    "scientific_role": "DESCRIPTIVE_SUPPORT_ONLY_NOT_A_CLASSIFICATION_THRESHOLD"
+  },
+  "objective_exclusions_and_replacements": [
+    {
+      "subject_id": "00001724",
+      "anatomical_position": 5,
+      "selection_rank_sha256": "008494428688a967be7383e8fd26fc8983332aa1301a559fc165d4d60135c1eb",
+      "reason": "OBJECTIVE_SOURCE_CORRUPTION",
+      "source_id": "sd300c/images/2000/png/plain/00001724_plain_2000_05.png",
+      "details": "The 500 and 1000 ppi plain files decode as the expected fingerprint, but the 2000 ppi plain file decodes as horizontal scan-line noise over a large black field. The file matches the distributed checksum, so the corruption is present in the local official source payload.",
+      "identified_after_initial_freeze": true
+    }
+  ],
+  "ratings_sha256": "ded4048946cadd6ff8f9f7cbc73a785feef253feb1b50b15155234ef50bfea7e",
+  "selection_manifest_sha256": "a5b8e572b54a83b47d526a48c182d483d7328c97110749cd894cd8374f78d7f5",
+  "measurement_csv_sha256": "b8e4a0c6cb799dd4bc0746aab153e4b33c73088121bfd05736139ec53b92f9f4",
+  "review_policy": "Conservative visual review of original source pixels; when in doubt AMBIGUOUS; detector and alignment outputs used for navigation only.",
+  "pixel_evidence_git_policy": "LOCAL_ONLY_EXCLUDED_FROM_GIT"
+}

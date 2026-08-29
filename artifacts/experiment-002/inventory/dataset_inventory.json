@@ -1,0 +1,89 @@
+{
+  "experiment_id": "002-l3sf-pore-annotation-feasibility",
+  "data_root_read_only": "${FINGERPRINT_DATASETS_ROOT}/L3_SF_V2/L3SF_V2",
+  "observed_top_level_entries": [
+    "L3-SF",
+    "L3-SF - Level Three Synthetic Fingerprint Generation.txt",
+    "Pore ground truth"
+  ],
+  "all_image_count": 8140,
+  "image_formats": {
+    "png": 7400,
+    "jpg": 740
+  },
+  "decoded_image_shapes": {
+    "320x240x3": 7400,
+    "512x512x3": 740
+  },
+  "decode_failure_count": 0,
+  "full_l3sf": {
+    "image_count": 7400,
+    "run_counts": {
+      "R1": 1480,
+      "R2": 1480,
+      "R3": 1480,
+      "R4": 1480,
+      "R5": 1480
+    },
+    "canonical_identity_count": 740,
+    "images_per_identity_distribution": {
+      "10": 740
+    },
+    "filename_semantics_observed": "R{run}/{numeric_identity}_{capture_group}_{instance}.png",
+    "capture_group_values": [
+      1,
+      2
+    ],
+    "instance_values": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "incomplete_identity_count": 0
+  },
+  "annotation_subset": {
+    "image_count": 740,
+    "annotation_file_count": 740,
+    "run_counts": {
+      "R1": 148,
+      "R2": 148,
+      "R3": 148,
+      "R4": 148,
+      "R5": 148
+    },
+    "pattern_counts": {
+      "right_loop": 370,
+      "whorl": 300,
+      "left_loop": 25,
+      "plain_arch": 30,
+      "tented_arch": 15
+    },
+    "canonical_annotated_identity_count": 740,
+    "total_annotation_count": 306009,
+    "annotations_per_image": {
+      "count": 740,
+      "minimum": 282.0,
+      "p05": 333.0,
+      "median": 410.0,
+      "p95": 504.0,
+      "maximum": 551.0,
+      "mean": 413.5256756756757
+    },
+    "image_annotation_correspondence": "Exact one-to-one pairing by R-directory and filename stem",
+    "coordinate_fields": [
+      "x",
+      "y"
+    ],
+    "coordinate_value_type": "integer",
+    "coordinate_origin_and_axes": "Candidate zero-based x=column, y=row; range audit plus visual overlays required for semantic confirmation",
+    "annotation_representation": "point_coordinate_only",
+    "open_closed_pore_label_present": false,
+    "additional_annotation_types_present": false
+  },
+  "crosswalk_between_annotated_masters_and_full_numeric_identities": {
+    "status": "NOT_EXPLICITLY_PRESENT_ON_DISK",
+    "note": "The two branches use different filename schemes; no mapping file was found. Do not infer a crosswalk from numeric substrings alone."
+  }
+}
