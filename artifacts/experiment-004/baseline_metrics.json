@@ -1,0 +1,24 @@
+{
+  "configuration_id": "6a4ec24d7facfdc7c72e327827c31a0f3c3859046506d9b497f9c487661f8014",
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "schema_version": 1,
+  "selected_configuration": {
+    "nms_radius_px": 4,
+    "percentile": 99.25,
+    "sigma": 2.0
+  },
+  "selection_partition": "validation",
+  "test": {
+    "status": "NOT_RUN_BEFORE_PIPELINE_FREEZE"
+  },
+  "validation_metrics_at_4px": {
+    "f1": 0.7799832738816541,
+    "false_negatives": 16613,
+    "false_positives": 9169,
+    "ground_truth": 62313,
+    "precision": 0.832892890338807,
+    "predictions": 54869,
+    "recall": 0.7333943157928522,
+    "true_positives": 45700
+  }
+}
