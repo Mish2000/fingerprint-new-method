@@ -1,18 +1,32 @@
 {
   "experiment_id": "004-pore-localization-and-sd300-transfer",
   "partition_counts": {
-    "test": 0,
+    "test": 150,
     "train": 440,
     "validation": 150
   },
   "preprocessing": "robust p01/p99 -> uint8 -> CLAHE(2.0,8x8)",
   "records": {
+    "R1/10_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/10_right_loop.npy",
+      "sha256": "7a8bdd9439475dfb04b83ea8568725a3b7caa53b559f4ec54a14a979d4691297",
+      "size_bytes": 262272,
+      "source_sha256": "ddad833966f20c1afa5f7294c154847f69a854b23b82a6ad36a20bbee2cbc80f"
+    },
     "R1/10_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/10_whorl.npy",
       "sha256": "d6cefde1c0d0010a96ef1ec41f3638e4fb115366bd32a886b2a4aa9122d0708a",
       "size_bytes": 262272,
       "source_sha256": "43776532b57fc8bf75bbd05bef34d0c2209c99aa25677e88e8c89a1a66d34c5f"
+    },
+    "R1/11_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/11_right_loop.npy",
+      "sha256": "4fcb0beda00a734c0bf0dd07d5adbb9beefd4c104b879f95ffdccff3dac6488f",
+      "size_bytes": 262272,
+      "source_sha256": "1e9a65abde20f10880bb229f5a3094ed48e4ec107ff9f0c873c7a06fe779b53a"
     },
     "R1/11_whorl": {
       "partition": "train",
@@ -28,6 +42,13 @@
       "size_bytes": 262272,
       "source_sha256": "61a1fc76dcfe16d5ffcd461ef9223c3f8c8e631dfd4af65bb24000027f32b777"
     },
+    "R1/12_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/12_whorl.npy",
+      "sha256": "0d6973bd0bb9693928ba816c632714afcdac171a2344c33d33e0b3fc33150e3b",
+      "size_bytes": 262272,
+      "source_sha256": "dc479fa346c7ff6a90aca0d0e2e2fbcda3809fbeb79c488973b87b04306f00a8"
+    },
     "R1/13_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/13_right_loop.npy",
@@ -41,6 +62,13 @@
       "sha256": "62b0aa96a15db38ada0706c9001d2c8843fce48124ec73f5855f1e3cf440df4f",
       "size_bytes": 262272,
       "source_sha256": "38a4255ab00294a17b5a43e17dd54862ebdc3a0ed180d436664648537313b266"
+    },
+    "R1/14_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/14_right_loop.npy",
+      "sha256": "04abc32a7001b115f4ab6c2a4fcb2598f86798eebd7929a3f90f5ad573a73cbf",
+      "size_bytes": 262272,
+      "source_sha256": "abc618deb5aaaf7048ff26d9fd61ce42108e0d9c70b39baa2e5f7737e08e7ad9"
     },
     "R1/14_whorl": {
       "partition": "validation",
@@ -63,12 +91,33 @@
       "size_bytes": 262272,
       "source_sha256": "30d26c51e8573d64c4ff501c03c0e984080f2f62ef59723a78c82ac3ad67c067"
     },
+    "R1/16_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/16_right_loop.npy",
+      "sha256": "bd437ab04aa51bfb21b9cd8beaa2307d64b16bf6b9b791ed8129a9dfc7ee523a",
+      "size_bytes": 262272,
+      "source_sha256": "d8860bfe001ee7368217376b42c0025d7d2397d3f93ce0f4c9919118d6269a05"
+    },
+    "R1/16_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/16_whorl.npy",
+      "sha256": "b3dc39716169eee7ff379facbb5e59408a355c641709d7d14e5877b0a92ca947",
+      "size_bytes": 262272,
+      "source_sha256": "3a9fc0fd31fbae653088a55fbf6cbfd2850b7d296f78787884a81b21290abc82"
+    },
     "R1/17_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/17_right_loop.npy",
       "sha256": "f897224cd300a2bb8658454bc7e5efb87551439bb35c402ca83b52d979d51e19",
       "size_bytes": 262272,
       "source_sha256": "9ea297c71e7e72df46e4eb69c5abadeebb29ef635577b270823e30fd2ce0a08c"
+    },
+    "R1/17_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/17_whorl.npy",
+      "sha256": "51a446948c4edbf69f4f541ae7cf882e64991222c7789584c4b0d15b8ac52751",
+      "size_bytes": 262272,
+      "source_sha256": "544d3eeaee1bd3f348a1ae2b10b9c1dc13f1eca37bef6e730ec79e8b72394718"
     },
     "R1/18_right_loop": {
       "partition": "train",
@@ -98,6 +147,13 @@
       "size_bytes": 262272,
       "source_sha256": "e8d767e768aec06a61843c391aae88d26188bb7a88583fdd9f74cf77a6cf37e1"
     },
+    "R1/1_left_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/1_left_loop.npy",
+      "sha256": "25cbec9d3406f052007ee0d29ac572e7ecfdead2ad1ca065dba1ec51248669d1",
+      "size_bytes": 262272,
+      "source_sha256": "bd74db956a8adb54491704e878f62116f195bff18056ccd08d045b66253e1a0e"
+    },
     "R1/1_plain_arch": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/1_plain_arch.npy",
@@ -111,6 +167,13 @@
       "sha256": "d0567fd8ab23cc1a98896da8e989b40112b77f235b9fd8bcad25100c302d92f3",
       "size_bytes": 262272,
       "source_sha256": "16aa1bff1180f32fe28ca296a43d52d4554298c02811a43450f2b0c7d8e9d313"
+    },
+    "R1/1_tented_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/1_tented_arch.npy",
+      "sha256": "80f7bbd951518ad6cb79786e1b6743df037b05df9acc2e8b781e659125441d09",
+      "size_bytes": 262272,
+      "source_sha256": "ecd5afe59281e8b98d8189b7a66c40dd1308eefe2f1ea560f85d2c447fdf13f2"
     },
     "R1/1_whorl": {
       "partition": "train",
@@ -210,6 +273,13 @@
       "size_bytes": 262272,
       "source_sha256": "a4737e69f9c8e87a15fe5306b7bfc6779daa29b62712861eb1802b701f78c527"
     },
+    "R1/26_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/26_whorl.npy",
+      "sha256": "3ce12a92cc48e7fcf18da8caf0bb6ab33175b7f54a41f16a3a407c7937b3283d",
+      "size_bytes": 262272,
+      "source_sha256": "9daf9650d2480453863173f1e3e933f0cb213880512b0dd6c3210e0e3f8b2cbb"
+    },
     "R1/27_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/27_right_loop.npy",
@@ -245,12 +315,33 @@
       "size_bytes": 262272,
       "source_sha256": "7970dcf965c34122cf286b558a95179302701dd8af8ce962c3bec099b5b13ea7"
     },
+    "R1/29_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/29_whorl.npy",
+      "sha256": "bd8108c1f7aea2505931ce32063b4b77dc5169d6a70852e8bfb67e0993c2661b",
+      "size_bytes": 262272,
+      "source_sha256": "407d30e1bc49a2ee77c801399b4d0132db4170af481723c7c520f60e39d94d0e"
+    },
     "R1/2_left_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/2_left_loop.npy",
       "sha256": "78157249b024e48524d368e5e70fb50c34a0cf02833540f6485346c8aad05d0e",
       "size_bytes": 262272,
       "source_sha256": "5dc8fc46dcd33d38d9f9692f07b269770988fc616371ee3f3544208bdf0d01b0"
+    },
+    "R1/2_plain_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/2_plain_arch.npy",
+      "sha256": "fd915488d77cfccab3847908d1d5fbef071d75caa907db1ce230108534153738",
+      "size_bytes": 262272,
+      "source_sha256": "200604fc996a2aa428b77e750d208fc4870d9d6736acaee0dd7e27f4c8bdfb6c"
+    },
+    "R1/2_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/2_right_loop.npy",
+      "sha256": "d3a43f82521af62bd8dd0726d44bf2bd0bdb92d5495aa74e6b8d7a252e14e0af",
+      "size_bytes": 262272,
+      "source_sha256": "1ca369de0d264b8c466d259642c6711f909dacc2de6650988b723ebf66ee2fb5"
     },
     "R1/2_tented_arch": {
       "partition": "train",
@@ -265,6 +356,13 @@
       "sha256": "2c426a0db361c3f91cd0476e74720244731c37d2d4ccf94bb834b3dd38277afd",
       "size_bytes": 262272,
       "source_sha256": "5a1dbe82bb1f4f01bde1903f596f592288328b61fc0fd622c242986a0685d345"
+    },
+    "R1/30_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/30_right_loop.npy",
+      "sha256": "45de3c0e81351d80840cb50c75a2b39ce9fcd5a2816191a1614439a6990ca4a3",
+      "size_bytes": 262272,
+      "source_sha256": "a3ef880cb441939d0c37c2620781c217def9c9086cc4990a9cd1f408a293802c"
     },
     "R1/30_whorl": {
       "partition": "train",
@@ -287,12 +385,26 @@
       "size_bytes": 262272,
       "source_sha256": "6cc06afe52746fd80896a681ccef91aa964ea90d0f620f8b97879779447fdca8"
     },
+    "R1/32_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/32_right_loop.npy",
+      "sha256": "a5b803b66b27a90af2774d2fef2428e68cf3489fa4ba4473a40ab399a17901c6",
+      "size_bytes": 262272,
+      "source_sha256": "62c9791232d95179b7ba7cfc6e5df8ee58dc40f68abf9bf0dac1d8f571368a63"
+    },
     "R1/32_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/32_whorl.npy",
       "sha256": "d8e5f8bc67b746ed28c11b37ee01dec54dc3cd485ec210548e0cb40676d4f79c",
       "size_bytes": 262272,
       "source_sha256": "0110db959e9c6c7bf0b0ef781bbd80fa356944ec71e0ad598daa3f6740bfc9bf"
+    },
+    "R1/33_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/33_right_loop.npy",
+      "sha256": "06b9104185edf29351184027c146f0207ef7dd59e17b29c9b95db4c9de11fd24",
+      "size_bytes": 262272,
+      "source_sha256": "e04f5961bd234c9237f76c3febc1d727bd2ef2c17d259de4e6bee97df2f9bad8"
     },
     "R1/33_whorl": {
       "partition": "train",
@@ -434,12 +546,33 @@
       "size_bytes": 262272,
       "source_sha256": "2017272370bdc4d67e4a927ffe39d118657750d2658babae331b3264f7a66a58"
     },
+    "R1/41_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/41_right_loop.npy",
+      "sha256": "97d7e3deb7ea7637f3cf65466454d108358b78588a3e27e408e9e4acb6fae59e",
+      "size_bytes": 262272,
+      "source_sha256": "69cae04bb6cc63e4f27178c8efdf86b55732da7da31419634376d00dee0ffb2c"
+    },
+    "R1/41_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/41_whorl.npy",
+      "sha256": "ae8d19c9f97394e98a5ef080b83d973ba4d098c27d6c8d145da6fddeb3148aef",
+      "size_bytes": 262272,
+      "source_sha256": "077facbc9b97c7caeb726666674947b0651c815e17c2bf618c77bec2115b95f3"
+    },
     "R1/42_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/42_right_loop.npy",
       "sha256": "cf2c5487f29cb86d57e253f39a1d0546efd61d4fa7e7e7149a85f09de0b89405",
       "size_bytes": 262272,
       "source_sha256": "c28104bc734cdf4771494b493478c74dfd220274a9071aacd18a0816140569c2"
+    },
+    "R1/42_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/42_whorl.npy",
+      "sha256": "96901c952be4a47384027e381f35fb2fa8760643383a6f28379aa8117b166532",
+      "size_bytes": 262272,
+      "source_sha256": "51d0cbe3f662a1e1cbfdebe45f175f7502a12bc1666e0b13cf0bc58961e3e571"
     },
     "R1/43_right_loop": {
       "partition": "train",
@@ -468,6 +601,13 @@
       "sha256": "a432e0682d8da35de52f3673836c3b513923288829f46595ce12c7c41b26dc48",
       "size_bytes": 262272,
       "source_sha256": "1430f3ec01a56d2662f3878a85203820cf56a75e248d3eac9565699f3d489fcf"
+    },
+    "R1/45_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/45_right_loop.npy",
+      "sha256": "fe8ed6cb8866ee572b457769c319f6dcea02ec9ec4d0b45258f7bcc6cea94e8f",
+      "size_bytes": 262272,
+      "source_sha256": "47cbe792c23570bdd0d810d8a62bd1bc6343c7da88f7cdf2d2dd9d82f3360ab3"
     },
     "R1/45_whorl": {
       "partition": "train",
@@ -567,6 +707,20 @@
       "size_bytes": 262272,
       "source_sha256": "dad208bdff83f27d4f1b663588fc3f9c10052e26535436d444368b38cb9ac4d5"
     },
+    "R1/50_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/50_whorl.npy",
+      "sha256": "0760cfb18532327b6c5732ad7f2a0738c7bc0ebafb9b5460e5ea93ec0c8e36be",
+      "size_bytes": 262272,
+      "source_sha256": "c32f8667fdad5d6f6e439aaee639df27e68e2a00012ffc1ddcdd937a0478f0ef"
+    },
+    "R1/51_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/51_right_loop.npy",
+      "sha256": "be726c8717e022a6016d1c04d4971c07d33f6770d3e0aca2f3b9c239867e3350",
+      "size_bytes": 262272,
+      "source_sha256": "ac4738f463c5055c7fd5b484ea3d6a423e91ab6b544c186b0728432f8bba4534"
+    },
     "R1/51_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/51_whorl.npy",
@@ -580,6 +734,13 @@
       "sha256": "33c1ca5603b6aec57248ba49c2b9eba647761f859b14c719c5a60c5cd8b29fdb",
       "size_bytes": 262272,
       "source_sha256": "bc822202a85eed7fc341b29195478b22e23facb872ec76dbb4aec54309c6f326"
+    },
+    "R1/52_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/52_whorl.npy",
+      "sha256": "dbf05a5e011f2afcbe3fa454f14207880c4de1f00a352752ea2ab143b52f522d",
+      "size_bytes": 262272,
+      "source_sha256": "045d819144d2acb4765d703e0297ea97e4595c5503e29f6749998b72fd2ea807"
     },
     "R1/53_right_loop": {
       "partition": "train",
@@ -601,6 +762,13 @@
       "sha256": "a04ed5c4375b347557401bc52216bdcbf953df9ad13fbe1e3536aa55dc8a8a09",
       "size_bytes": 262272,
       "source_sha256": "3140f16f4df7719b587851050259d19fb66521744cfe4a6a898a121be4e7236f"
+    },
+    "R1/54_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/54_whorl.npy",
+      "sha256": "a3ad1459a49423d330eb0ac46003b464b357ca0a1ab5a8ed1ead7b6b22042536",
+      "size_bytes": 262272,
+      "source_sha256": "8e91636623801898157c72fef901ba43d26399bf56b2aa6bc8b1991997f81645"
     },
     "R1/55_right_loop": {
       "partition": "validation",
@@ -630,6 +798,13 @@
       "size_bytes": 262272,
       "source_sha256": "01bb9ba7f479221b2d7f31098e00e57e1a6988e7f38b97d55f6673582cdee2a0"
     },
+    "R1/57_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/57_right_loop.npy",
+      "sha256": "a6276d0dc03efea4b0743b8aef4215e55ff6573286a43ba07e7c7dd17c294f61",
+      "size_bytes": 262272,
+      "source_sha256": "c7d38d974678d47eb0ea7a68bb1f262052e0775b1658e89d2d358276e67d9db3"
+    },
     "R1/57_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/57_whorl.npy",
@@ -643,6 +818,13 @@
       "sha256": "381e1a9d94ab3fe0616f87fafca943340b60a4e8f7e67e89b93cbdb28573b05e",
       "size_bytes": 262272,
       "source_sha256": "0723f144cfe032f61da9d0d5fa05d40a5de5ebedc1b9be362ab188d1b65f9aac"
+    },
+    "R1/58_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/58_whorl.npy",
+      "sha256": "033a3a22adc34d3942a5b7dff1c162842290c8bd2903f01a87a12c3c313ee620",
+      "size_bytes": 262272,
+      "source_sha256": "7af890ebef1ae51a95eb96201e283f2be14aeafc8ccd605fab078b04ba556c45"
     },
     "R1/59_right_loop": {
       "partition": "train",
@@ -700,6 +882,13 @@
       "size_bytes": 262272,
       "source_sha256": "48e4ab375678350fb6421519930b6fb3366f1822d4a2face4b87c32313c4ba90"
     },
+    "R1/61_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/61_right_loop.npy",
+      "sha256": "429524dcddb1a13c5b4448523b1d41bdaca00f37ab8a2c13585a90352e38955f",
+      "size_bytes": 262272,
+      "source_sha256": "9dc5c09a212355f6641ac07d9be48d749f871d65a9183a167d5b7a53f40060eb"
+    },
     "R1/62_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/62_right_loop.npy",
@@ -735,6 +924,13 @@
       "size_bytes": 262272,
       "source_sha256": "60aac2a7ed114f92732115ecdde30112f254ab362533ae2ccf7a4df373d8e332"
     },
+    "R1/67_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/67_right_loop.npy",
+      "sha256": "e71a08513440efe34e33dae1a610b36d0b68e4a283dba1cb1672ee7c8485f3d1",
+      "size_bytes": 262272,
+      "source_sha256": "b2c0c804529869c82a13b5a4d6111c591dccb9fb70d377637a30202263b88afc"
+    },
     "R1/68_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/68_right_loop.npy",
@@ -763,6 +959,13 @@
       "size_bytes": 262272,
       "source_sha256": "c6bb2e214ab988ada602558bf8dc7c66c438d9c436188ffaeb0aa67f5fc5793e"
     },
+    "R1/6_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/6_whorl.npy",
+      "sha256": "60f5daf52ad3f4eeeab05896a687f5b1a1bcaad9ac4d798ba58405ba646ad1cb",
+      "size_bytes": 262272,
+      "source_sha256": "7bb4451e3e14e1c382a8bd042d5bdfea91814ac0aeb10bb34043d4fb2f376213"
+    },
     "R1/70_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/70_right_loop.npy",
@@ -783,6 +986,13 @@
       "sha256": "210a3466234e1942db08e334869e1a405297c8bf9ae7fef21503354be08edeb1",
       "size_bytes": 262272,
       "source_sha256": "4c9f89895978f2746de58d4f089ce10d2f31a1d12e202b11444a67f44ae4d101"
+    },
+    "R1/73_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R1/73_right_loop.npy",
+      "sha256": "63c9ecda622de371e1700416f57fefb09b3acc69972a539cf1fe2a75db26916f",
+      "size_bytes": 262272,
+      "source_sha256": "df7f5f3c504273645cbfa34952f4be401ed2b32e09e310000050f0a76e473d92"
     },
     "R1/74_right_loop": {
       "partition": "train",
@@ -833,12 +1043,26 @@
       "size_bytes": 262272,
       "source_sha256": "cec0876fd06fe4b0687242a145026f5f018fb92ac1196f7010c3466f6dc9a8fc"
     },
+    "R2/10_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/10_right_loop.npy",
+      "sha256": "c048ef345cc9f57cb9c0b47f72d8ca5ff55c232addc622f4c66ce58aa51ab2a5",
+      "size_bytes": 262272,
+      "source_sha256": "27f21cde65294a8dd9cdd74269772b8a58d7552bf06ddbd95dbf3cf765d83648"
+    },
     "R2/10_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/10_whorl.npy",
       "sha256": "11bddb8686b7b520c8ec76a42bc53eff63a978979fbfeb4443a7ed45590fdd06",
       "size_bytes": 262272,
       "source_sha256": "2172d9bb4e4ae8988fe0bd1cad4e1845a333f35029adfa114674abc23035d496"
+    },
+    "R2/11_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/11_right_loop.npy",
+      "sha256": "1a23e912472a4bb1c0331becbe2ac1180135870a025fbf9886ff3ae65c72fa37",
+      "size_bytes": 262272,
+      "source_sha256": "0df20bcb1bac03630d339b7a8880a0296917c6f204997a0b0c35de319f2f2ae7"
     },
     "R2/11_whorl": {
       "partition": "train",
@@ -854,6 +1078,13 @@
       "size_bytes": 262272,
       "source_sha256": "37fc674a545a0663f68402ebfab373548e025eafd96fd98696a25baf6a6fc362"
     },
+    "R2/12_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/12_whorl.npy",
+      "sha256": "0a18afef3a7b9b63d7ced46969a383ea75f1e733054e512f5fceb47e9bc99887",
+      "size_bytes": 262272,
+      "source_sha256": "716699617ffc11b295b0a7c440aee6b99ba132fa3691f5920293da42a1bfaf87"
+    },
     "R2/13_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/13_right_loop.npy",
@@ -867,6 +1098,13 @@
       "sha256": "38b0273993772cce6de833f92d9f3a3d625f202fe16d78aa33d2eecaae4716ba",
       "size_bytes": 262272,
       "source_sha256": "f044464bcf652bda49a5614ceef1007dab4bb00d3b47559142dc58455de5333f"
+    },
+    "R2/14_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/14_right_loop.npy",
+      "sha256": "3006406198fa8bc51e5b35913b00e58c37607ee5796756231e8aefbd4a6f4986",
+      "size_bytes": 262272,
+      "source_sha256": "d97a4ca8170e14ef67b95e6dbf47d9da4335068319d7fbb2f4dde082938686ac"
     },
     "R2/14_whorl": {
       "partition": "validation",
@@ -889,12 +1127,33 @@
       "size_bytes": 262272,
       "source_sha256": "2fcadc31a0be10e420815af5312ace9c7728bb6d0d2abef9871fa63e1819a687"
     },
+    "R2/16_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/16_right_loop.npy",
+      "sha256": "27fdade8688e1713a06bd3de2dbdd56387eb90212a935531fb76f30374076ae8",
+      "size_bytes": 262272,
+      "source_sha256": "6e1e39dfbdbae89975700f15d412e54e715abb2f971082dbda1e8453256b9fd1"
+    },
+    "R2/16_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/16_whorl.npy",
+      "sha256": "25f18e3194ab1dc1c11490cdd3441331239a647fbd2eb976b23dbaaa2fc0c67c",
+      "size_bytes": 262272,
+      "source_sha256": "5fbd6025c84f99a3a31d162cbee72fdf7538bcd1b5c2f4131fdcbbbb5174a634"
+    },
     "R2/17_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/17_right_loop.npy",
       "sha256": "8727a9a4d90f45b7056fa5b339f090c85e0a444ae154a29c0f09fd030773656e",
       "size_bytes": 262272,
       "source_sha256": "a924e14d354d66a60ef6d57931739fe88b061adbf2b39ff2696265b004a28cde"
+    },
+    "R2/17_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/17_whorl.npy",
+      "sha256": "d78cb0d28cf7e06c4149b3bf230f369c0981108859548c976e05096a35542118",
+      "size_bytes": 262272,
+      "source_sha256": "dd78c7377b867a5a17c231e1b2d08b53d91696b00ebbb327550a93ee36f42551"
     },
     "R2/18_right_loop": {
       "partition": "train",
@@ -924,6 +1183,13 @@
       "size_bytes": 262272,
       "source_sha256": "8579974a42121cfd3ee1e80da4223ba3dda65662d191e7f771614c6bcd28df75"
     },
+    "R2/1_left_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/1_left_loop.npy",
+      "sha256": "d63fee523d2af213bde6a31b2dd4198eb54e3e9eb8d65350a23acfff883c18b9",
+      "size_bytes": 262272,
+      "source_sha256": "9d0bbd92f10c7e98bf7399707bc039664df148cba9aa1d251d15d3b7fc3ccd71"
+    },
     "R2/1_plain_arch": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/1_plain_arch.npy",
@@ -937,6 +1203,13 @@
       "sha256": "d8e29d6f973b7643c5d3b0402e132421d27b3923d468ed1c073aa7c195c21c28",
       "size_bytes": 262272,
       "source_sha256": "b5e0ff8abea767c3a06a54ff835b9345b8c99343c129ad577b730217f7361616"
+    },
+    "R2/1_tented_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/1_tented_arch.npy",
+      "sha256": "b8a8943dbb7a0d7767b3c6e60c4ef8fc99a7a4cdf2ef8c9fa58d10106505f5ae",
+      "size_bytes": 262272,
+      "source_sha256": "922e388f63895c3df114e2b72839473cbb508edece0c13cef2501981af67b5f9"
     },
     "R2/1_whorl": {
       "partition": "train",
@@ -1036,6 +1309,13 @@
       "size_bytes": 262272,
       "source_sha256": "1456c98011fe67cc4336706628367f8e010c51962b3a36115f2d184eb057ff5e"
     },
+    "R2/26_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/26_whorl.npy",
+      "sha256": "0b5ad734a863018c7e7d82240bb9855135bde82f2e734a51e5f51f6780fc9607",
+      "size_bytes": 262272,
+      "source_sha256": "8e6e224c0b0c257b67698d4687d60ebe5d465180760c10dc89a955936a51b2ca"
+    },
     "R2/27_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/27_right_loop.npy",
@@ -1071,12 +1351,33 @@
       "size_bytes": 262272,
       "source_sha256": "c553badd38218c395482f78e6d3321b3b9018650a27bba859b03c248b6274361"
     },
+    "R2/29_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/29_whorl.npy",
+      "sha256": "3c92f2d8b6029107860a37fc3b6012bc77ddeae79977a129b8049e996fa25d6c",
+      "size_bytes": 262272,
+      "source_sha256": "246644c795a89889012e8327b3bb3b5b247d6dd6430187700b99bae81ff478c5"
+    },
     "R2/2_left_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/2_left_loop.npy",
       "sha256": "1f7210dd7a4075b6436eaebd1441552875d614da2b4f7b9c3e5fb4c104a95007",
       "size_bytes": 262272,
       "source_sha256": "68a04a4dc4b05112327d92b9abc59ea50e61bd67fe19e8926e51988c5353352d"
+    },
+    "R2/2_plain_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/2_plain_arch.npy",
+      "sha256": "777abf09439b1602e45b075d31a0cae6b0b5744305dc9f0061a82708c3d2d3ce",
+      "size_bytes": 262272,
+      "source_sha256": "94f5cfa1f022ba042fe5730cf28758ea761cf1a288f3663eb4c773779d40c44c"
+    },
+    "R2/2_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/2_right_loop.npy",
+      "sha256": "50a38383374091cfb7c5daf6e4bada51f5974196e6cb0cbfa915125f6480091d",
+      "size_bytes": 262272,
+      "source_sha256": "8ae9d948cf3670912255a3e377fd01227216083597a267c4644338e976b2ccb9"
     },
     "R2/2_tented_arch": {
       "partition": "train",
@@ -1091,6 +1392,13 @@
       "sha256": "2e739bc6ecae23eb24cc9c010f0161b0fd8031c27cb7498371f86cb020125fe6",
       "size_bytes": 262272,
       "source_sha256": "4f4c5f490b634ab26f5440f630fc9dbb89ccfd5cfc72f27da21e6537cddad79e"
+    },
+    "R2/30_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/30_right_loop.npy",
+      "sha256": "8e24d9469fcc7f44103fcaebb4e8216f2aedf5a7f01331f88b7337cddb2703c3",
+      "size_bytes": 262272,
+      "source_sha256": "6b4aa6b519e687826c703dd7e79a932d6122fab99a59e437882371ccda589850"
     },
     "R2/30_whorl": {
       "partition": "train",
@@ -1113,12 +1421,26 @@
       "size_bytes": 262272,
       "source_sha256": "967b5066b68d948559ff2775fe3e51854090919059fe739cf6010b18b8fb6229"
     },
+    "R2/32_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/32_right_loop.npy",
+      "sha256": "d00678af8d211d96edba22a13c94228a5548879f27ddae5a7955b702daf4627a",
+      "size_bytes": 262272,
+      "source_sha256": "9f0223ed03d42c590ba9cce103a6965f42702ad47058e3ea618ac413540f4d33"
+    },
     "R2/32_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/32_whorl.npy",
       "sha256": "d6e1ae7e7338550a6a6e52e5b05998a8a9d97d41fbd688ecadc5e209d3f4a13e",
       "size_bytes": 262272,
       "source_sha256": "130f6d657ea18e112cee25e3aa3c20e9f2caf33bfc514bf56ae9285dbbbe9f32"
+    },
+    "R2/33_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/33_right_loop.npy",
+      "sha256": "9ebab734ccb3d19bc4d88e6493be066cbbeb437eba2045e3c8b0ccadbf5c7561",
+      "size_bytes": 262272,
+      "source_sha256": "e9e674d6327d82aadcf2b7c24187d0d1c9943cd53ae1d3482161f0ac84f6bef7"
     },
     "R2/33_whorl": {
       "partition": "train",
@@ -1260,12 +1582,33 @@
       "size_bytes": 262272,
       "source_sha256": "06bc8e4c5b2d7c1f6d9f55026df3ca7ab734d32727ab88fe472a11d6ba47e95a"
     },
+    "R2/41_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/41_right_loop.npy",
+      "sha256": "3414785b19bf88e9ee2c052099367f4832330e45bdc014869b05d0deb5813ab8",
+      "size_bytes": 262272,
+      "source_sha256": "f44dab6d171422478136e9048a63618cf03f074be929e385fec01f8c08158f8e"
+    },
+    "R2/41_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/41_whorl.npy",
+      "sha256": "95aaebb89acf935861188bd546c024e3c8d6f6dbff982b6381bb06578f995ad1",
+      "size_bytes": 262272,
+      "source_sha256": "be89e3fe312de74a6d621108378635a9306b6fa922c883ec0cb1b74571ce8615"
+    },
     "R2/42_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/42_right_loop.npy",
       "sha256": "0cb4a8fdadecaf828dafa57bb164f651e5dd1890a5ec9abcef1c37ee2c11c77c",
       "size_bytes": 262272,
       "source_sha256": "26696d2c17021c46b2aa4b6319d5c875cd0f4c10f7f55613dd0c22bc9241fe90"
+    },
+    "R2/42_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/42_whorl.npy",
+      "sha256": "153436835fdc62ab44aed5e5827c5f16fae4651ea764989ee897ac98cc147def",
+      "size_bytes": 262272,
+      "source_sha256": "53c72bedf205b33d8ee5ba981b5ef55c9f83a7e6f331435fd961d76e6b3f0948"
     },
     "R2/43_right_loop": {
       "partition": "train",
@@ -1294,6 +1637,13 @@
       "sha256": "371bbbfd907c2943349925877f03d29c9b8ffc09685647f6aae6b709bc963454",
       "size_bytes": 262272,
       "source_sha256": "9a14a2839e2afa33b3ad4daf14e1c7a0631ca1b0211b3c3d8598d38d8c167bea"
+    },
+    "R2/45_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/45_right_loop.npy",
+      "sha256": "017c7d172df1f2f95f7c20e8f1040c1f312a3172ba90167695de705e4d79e517",
+      "size_bytes": 262272,
+      "source_sha256": "de88adad6cd73a3d97d08d2fa553c09ecfe831388900ebf7bafa8a53f18abcb6"
     },
     "R2/45_whorl": {
       "partition": "train",
@@ -1393,6 +1743,20 @@
       "size_bytes": 262272,
       "source_sha256": "415e2fce432dc23401a867534357424f76e387d4d8655b6b7e8c1e599dad3381"
     },
+    "R2/50_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/50_whorl.npy",
+      "sha256": "516d84421bb26fb1592dc4f5d92869b7e0503e2569271c3275b2f20421c3b402",
+      "size_bytes": 262272,
+      "source_sha256": "f927830e157cb921a2d9f0686c1f8a4bce1f3f10b822e94713ac290ac3464d8d"
+    },
+    "R2/51_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/51_right_loop.npy",
+      "sha256": "2c5a68d6b89aa355550e3131b30ee0592e0a585c41376ff3c4c3dd20ccffe70f",
+      "size_bytes": 262272,
+      "source_sha256": "55b92612d0959ee510d0d70d70254265cb350c7f024dc62f8f8ab60424194c34"
+    },
     "R2/51_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/51_whorl.npy",
@@ -1406,6 +1770,13 @@
       "sha256": "c68b9ef7a4bf1f03c5fb250dd2d7aa4b641b96f75209eced287d1d5e80d2be90",
       "size_bytes": 262272,
       "source_sha256": "2a10863de719e6f1f7467ea1d4bf6a5f30a73e992958b058c5efce890441acd0"
+    },
+    "R2/52_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/52_whorl.npy",
+      "sha256": "a16c87c9b3b523b1a0a7f07169bb6706f403143be7ad703a9745dba2eeddcb54",
+      "size_bytes": 262272,
+      "source_sha256": "4840fba8bb2069d58813c425ffb39ccc2c856446d00e74339cf4740b3da9e97f"
     },
     "R2/53_right_loop": {
       "partition": "train",
@@ -1427,6 +1798,13 @@
       "sha256": "440ab9b47a849ad2ef44532c5fdf3dea7b4a27d73547fd1a727cfafed76eea46",
       "size_bytes": 262272,
       "source_sha256": "4a3b8cfd802f530cd108b92685d9c7ef7a2de40d59d003dadfc4e542f6581c5b"
+    },
+    "R2/54_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/54_whorl.npy",
+      "sha256": "777e8759de79f2f4c3e17fe6015c8b3f6014c4fe3aa9aae2d4ea2c9872ca9e71",
+      "size_bytes": 262272,
+      "source_sha256": "74beba3371dd1f5f9227af8eb33ed02dc7616b20fe576707ea283ba5d496a978"
     },
     "R2/55_right_loop": {
       "partition": "validation",
@@ -1456,6 +1834,13 @@
       "size_bytes": 262272,
       "source_sha256": "c6824207b650134f67b3999b44ff8453efff208d17136fa91e6c6fc0d00b13b4"
     },
+    "R2/57_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/57_right_loop.npy",
+      "sha256": "11b8458b2ce789e15bed9022702ded9bd9eccec2f5abf4ff8ceff83bfaa1043f",
+      "size_bytes": 262272,
+      "source_sha256": "0a36d51c6bcc1318b9a7cabdcb8d9c31aa0b3c71dca514ff938f2ec35ae32a2c"
+    },
     "R2/57_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/57_whorl.npy",
@@ -1469,6 +1854,13 @@
       "sha256": "48cc868d472988bec7f36a0da3d52ec63bfe9306597ce3094e51dc222e0d7f70",
       "size_bytes": 262272,
       "source_sha256": "92c53b5028e4ffd5edda1b85ea731a62b8a94c68a9ee3a3d33d48b56ef262d17"
+    },
+    "R2/58_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/58_whorl.npy",
+      "sha256": "c9ad0aa6ee3982eee66f748bf997303c3bbbb0af6f1422d0a589e43ee90a811f",
+      "size_bytes": 262272,
+      "source_sha256": "404e468bc9b15138cb27e704ebeff6c992105077641310eade06c392d58a9902"
     },
     "R2/59_right_loop": {
       "partition": "train",
@@ -1526,6 +1918,13 @@
       "size_bytes": 262272,
       "source_sha256": "2964e2b6dd154f3b2c67d3f95d6bfa9dbf5013c38c0bd6191fe1167ebaa3c007"
     },
+    "R2/61_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/61_right_loop.npy",
+      "sha256": "b85c3bc1238d8e9e93d9e660fc11503f740ca41ba43cfb8648296e696cbbacf9",
+      "size_bytes": 262272,
+      "source_sha256": "c9c05c1df1ca5fa56e16bb4b1987d769f67acf8f8c06409dbcef81ef21bdada5"
+    },
     "R2/62_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/62_right_loop.npy",
@@ -1561,6 +1960,13 @@
       "size_bytes": 262272,
       "source_sha256": "3bb81ada5f807e0082252fe4ed8ced4e019a585c0952a042f13eabdc7dcfc493"
     },
+    "R2/67_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/67_right_loop.npy",
+      "sha256": "e63e083034cf77c89326564cae43c69cd990895e8dada9e342e205449d5aac8c",
+      "size_bytes": 262272,
+      "source_sha256": "8ea8bcda518f2752923be2836e86e270c7633d51eaada771cdd6b57374f77fe6"
+    },
     "R2/68_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/68_right_loop.npy",
@@ -1589,6 +1995,13 @@
       "size_bytes": 262272,
       "source_sha256": "46be5f85c27f38ebb10168eddb384d67b3080c843eba868f148a3496731c11e9"
     },
+    "R2/6_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/6_whorl.npy",
+      "sha256": "d61a99dc61fe6a64e1ff9013587fbd6c06dc1cecaf12034475b32032ba8c9660",
+      "size_bytes": 262272,
+      "source_sha256": "8d435e328aff201f614b2957cea454cbc87790a36ec954368b8a93769ef200d0"
+    },
     "R2/70_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/70_right_loop.npy",
@@ -1609,6 +2022,13 @@
       "sha256": "f99447b2b61dbc7b0c6a4998026a7617e48bdb77840874afd1c9292800c1834f",
       "size_bytes": 262272,
       "source_sha256": "70e5e6c6ecec488743725eadce85b3958bfea10d1c454d62a8dfe1479088a682"
+    },
+    "R2/73_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R2/73_right_loop.npy",
+      "sha256": "d7e80895b83bb3f4ce9c302aad2e383aab5250549a844bc48b76edf7c3217423",
+      "size_bytes": 262272,
+      "source_sha256": "973ca19a4398b56a93ace4b793fe30d39226ee4480874231fa44873a0cbc8744"
     },
     "R2/74_right_loop": {
       "partition": "train",
@@ -1659,12 +2079,26 @@
       "size_bytes": 262272,
       "source_sha256": "72bf20ce2898dda6ad3fe46688d44478d2e60978e56ed8b9b9b9ad4ac9724b64"
     },
+    "R3/10_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/10_right_loop.npy",
+      "sha256": "43ab80544f8efe3c9f0c79b7a460452f9baaabf9c3ce4b202eaf4959286880f0",
+      "size_bytes": 262272,
+      "source_sha256": "acac8168841ad3ebd71dd2800306f87af1bcc3b0f95e8d99eaf24425ba2c3efd"
+    },
     "R3/10_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/10_whorl.npy",
       "sha256": "205300e2041381476972d5bc7cee207fe523c331dde017c68e65667472c6003a",
       "size_bytes": 262272,
       "source_sha256": "7766a9a5b90401a121815b76d723b8521042e6368713e59fbede25d70ca5a8bd"
+    },
+    "R3/11_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/11_right_loop.npy",
+      "sha256": "82a150a2b8de47dcd0a3dc091c0c3fc06ad72bf4e838d9aa21ce0074b4b28e47",
+      "size_bytes": 262272,
+      "source_sha256": "bf2957038edf6fe5a38f0adc5dd6bef36bbb1882ba74e913db1717d4d0dcbd70"
     },
     "R3/11_whorl": {
       "partition": "train",
@@ -1680,6 +2114,13 @@
       "size_bytes": 262272,
       "source_sha256": "ffd1b2437fe55c70ab8c509cb99396f8bd66514b461df28a1e45993abcafe20e"
     },
+    "R3/12_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/12_whorl.npy",
+      "sha256": "015b1fd50edf0cff316986c725b29c697967a271ebca6ba57cac5a56ab15870e",
+      "size_bytes": 262272,
+      "source_sha256": "f4f023a0bcf8da926a96957d2e0d34ef3ff5859b1beb11e5c0c4618e8751adcb"
+    },
     "R3/13_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/13_right_loop.npy",
@@ -1693,6 +2134,13 @@
       "sha256": "81468d069dc7dbc9866fbfe27aaff8ba2c88ec02d8e65b9f293a6614f2807747",
       "size_bytes": 262272,
       "source_sha256": "8e7e57f16eeb5829c4389f9f2fad8efcf54879a73ccff6e53236a3853fcd1015"
+    },
+    "R3/14_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/14_right_loop.npy",
+      "sha256": "247973ea02e7ffd0c1e1465acdc971bbb2b461c4e97734413aa05d5e9128cdcd",
+      "size_bytes": 262272,
+      "source_sha256": "82781b33cbda5a9d0ff39a9a5b085bb1a4ce3838ce9c920fc8eea8e34eff33d1"
     },
     "R3/14_whorl": {
       "partition": "validation",
@@ -1715,12 +2163,33 @@
       "size_bytes": 262272,
       "source_sha256": "98335f09d598d5ac5eb41f2de958d122a48ebb5ddec1911042a68e806d14cfbc"
     },
+    "R3/16_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/16_right_loop.npy",
+      "sha256": "8d5a7808f0aa3e6bb950e75d3869472876f3389c1759596e83a06170a6709a72",
+      "size_bytes": 262272,
+      "source_sha256": "21d34e3a66608ebb294354f6586cf29abdaf2e6742cfa6966f8be745a10824a9"
+    },
+    "R3/16_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/16_whorl.npy",
+      "sha256": "08e5b0d7ec993bf68e2b1c65318ab190187c159a29ed83e7e3f31e0b10748518",
+      "size_bytes": 262272,
+      "source_sha256": "8c27a0be3d92b5c5ac001945f64bbcc7ef5de38091125272541004669cb09896"
+    },
     "R3/17_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/17_right_loop.npy",
       "sha256": "3be1bb72fe48af699866616d92488bafd0728e40aeafa0fec1d8c70254755362",
       "size_bytes": 262272,
       "source_sha256": "74bde5fa3ce5129d898ce893fd913b761559871ae6aeefbb2de4ce54d3bfca11"
+    },
+    "R3/17_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/17_whorl.npy",
+      "sha256": "71f28123aa429ca5b98967434f97f35e22f67a4867920eea9fcf5369361232f5",
+      "size_bytes": 262272,
+      "source_sha256": "42a7d0b3d64129505a9ca1228bbb90182846eb9f423d4ec613d1ae1b99ed4f8c"
     },
     "R3/18_right_loop": {
       "partition": "train",
@@ -1750,6 +2219,13 @@
       "size_bytes": 262272,
       "source_sha256": "8d2a5811c6d0619f8db6828c6e1c6553fb2127a4faf273bea1fb25df094bca68"
     },
+    "R3/1_left_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/1_left_loop.npy",
+      "sha256": "e6d81de6939f97ca0374d96e9bcfb85691d21203ad732f593c66ea39857bf3ce",
+      "size_bytes": 262272,
+      "source_sha256": "05c9dce9ef2677fb521ba78b25141a6792a7a4ecf295293039b77ce89a9031d1"
+    },
     "R3/1_plain_arch": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/1_plain_arch.npy",
@@ -1763,6 +2239,13 @@
       "sha256": "e56284ad9f83d29fc88a04ca45aa398d6f0848cbf2ed8626da548c0d5ab0a231",
       "size_bytes": 262272,
       "source_sha256": "4b64111772e1c0aadbcc3fb834f302fde40dbde54273a731687813b10e58a58a"
+    },
+    "R3/1_tented_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/1_tented_arch.npy",
+      "sha256": "c9484cadd2f5a1b288376c085b22eef5dbe79812bd365d82a3b32b75b87d8fcd",
+      "size_bytes": 262272,
+      "source_sha256": "0353217d1d1babc71294f9d6f71653b81d6379b90f23f084e93839216f4ed491"
     },
     "R3/1_whorl": {
       "partition": "train",
@@ -1862,6 +2345,13 @@
       "size_bytes": 262272,
       "source_sha256": "01969a8495002424f73917b75090bf653345f09e936dff95e571d66e1bc61cb9"
     },
+    "R3/26_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/26_whorl.npy",
+      "sha256": "a9b740d1b410d55d28908344bed1de116aa8a78422d2379a6d0485605ff0e631",
+      "size_bytes": 262272,
+      "source_sha256": "a0e7b6516aa789cc9f410e2b0650208b44b9ba2863324e73eeb5198506c26f5c"
+    },
     "R3/27_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/27_right_loop.npy",
@@ -1897,12 +2387,33 @@
       "size_bytes": 262272,
       "source_sha256": "9dce52bd669b59162183c60012e262a910cedc3ce8586fed9425b82f8dd5ceaa"
     },
+    "R3/29_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/29_whorl.npy",
+      "sha256": "d834fd1adb2a4e9895c2813e4c3fedefbd7cd0708993993073aaad72ed4bb555",
+      "size_bytes": 262272,
+      "source_sha256": "28fb127a91aebb31a37cc404eb42ba0e215374da276a3fe223a46cb3fe4df83f"
+    },
     "R3/2_left_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/2_left_loop.npy",
       "sha256": "a93ff3906ccec1a12b5712b7612a8f39f1688d66698167dad60a5b04fbe44e55",
       "size_bytes": 262272,
       "source_sha256": "7d7403accaba5acef8204eb261303094e1bf453fcd94e9a37bb3ae3fbe02feb0"
+    },
+    "R3/2_plain_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/2_plain_arch.npy",
+      "sha256": "30b907f1798adf3de7bccba62581382721a3bdc5359c808284f8457164d351c1",
+      "size_bytes": 262272,
+      "source_sha256": "c8a3c82ca5161223b10219d2d503a6166210cb1d8c44f278064ed4502dc03022"
+    },
+    "R3/2_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/2_right_loop.npy",
+      "sha256": "05b6a8c81276988e553710253a8c869642f5bba78258612ff88cf21541129ce9",
+      "size_bytes": 262272,
+      "source_sha256": "55cbdcf13516a159b62bbd0f161a981f1dbcdcd62bae88ef501b9d49a96bbaaf"
     },
     "R3/2_tented_arch": {
       "partition": "train",
@@ -1917,6 +2428,13 @@
       "sha256": "532b266a0b19235a207117fa15062a5fa84e4a3b2b73f440548d045f3d50ba9b",
       "size_bytes": 262272,
       "source_sha256": "c3de2532c14a884fe3d027deefeeeb345ba9802c6e15b4ec11edd0e843cf3f2a"
+    },
+    "R3/30_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/30_right_loop.npy",
+      "sha256": "fff1760de0ca6601dad6c21cc5fbebb71482cb9172ace4e69cf0ed8fde4d977f",
+      "size_bytes": 262272,
+      "source_sha256": "fce31e2f8faa429e7c5bb40d3813fb2de0e50a88a4c46d19465d50e81149de56"
     },
     "R3/30_whorl": {
       "partition": "train",
@@ -1939,12 +2457,26 @@
       "size_bytes": 262272,
       "source_sha256": "5b848f5d87ba44bb9cf97e380f8cd5300341d64ade841cde56f5228b04ae4811"
     },
+    "R3/32_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/32_right_loop.npy",
+      "sha256": "f592f417b9840c4aba263260fd17a7f567351351dc8969e0a5100eb4750b58c9",
+      "size_bytes": 262272,
+      "source_sha256": "32b90923271d9293c794a50e962e04c7f4eb74256a358ba8fa168a12da1ec1e9"
+    },
     "R3/32_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/32_whorl.npy",
       "sha256": "47663137b9b55e99e5371d9292aa66d0580e9ac643171eb0a187db8d0d01ccde",
       "size_bytes": 262272,
       "source_sha256": "c27c3bf00af64f72774022767c032320044465252d58959bce81e8a79d0fbd8d"
+    },
+    "R3/33_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/33_right_loop.npy",
+      "sha256": "929f8773348b84ceaa1ba6c3e8f61765db8cda6fb6a18c6664aada4c392f2f56",
+      "size_bytes": 262272,
+      "source_sha256": "0a4442611f515969cea485879726efafe1bc23fa1f8a223773592500589e8e12"
     },
     "R3/33_whorl": {
       "partition": "train",
@@ -2086,12 +2618,33 @@
       "size_bytes": 262272,
       "source_sha256": "efeb1948791cd927eb4ab4879ef0f42251bb25f0aded7f34fd8607229c1ae211"
     },
+    "R3/41_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/41_right_loop.npy",
+      "sha256": "3323ae2e901e97b1bd16a82ce7440e601fcc5c676b316ba0f14f2b56bcf20b08",
+      "size_bytes": 262272,
+      "source_sha256": "40cf182b1bb1650873c84a88aef50cb690aa1849d6f6e4868e5fbd42fef786cf"
+    },
+    "R3/41_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/41_whorl.npy",
+      "sha256": "02b54ffbcb22ebe8758774cb4eaf15646642bedd5b9631e66cccd2ba89bbc2f3",
+      "size_bytes": 262272,
+      "source_sha256": "195a8e2442ccf17caef4c772961a388993de642150f2fd6dbd5cc5344f0b3e9a"
+    },
     "R3/42_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/42_right_loop.npy",
       "sha256": "04fdcb8b24e384510a07763c3fbad1b8ecbf79da15ca23b6683d9b1e1acc9d70",
       "size_bytes": 262272,
       "source_sha256": "18c38e124c04c6616515432d44bc5adcf4d8dafbcb3f1226773039e568f9cdba"
+    },
+    "R3/42_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/42_whorl.npy",
+      "sha256": "22f515b376308c3160bcfc784922743907059eb5d25177848d797ce83db1f12c",
+      "size_bytes": 262272,
+      "source_sha256": "f009b24c9ddc9e2cadf2235023b7c4257e059814eace05c894acbb4cd5deabaa"
     },
     "R3/43_right_loop": {
       "partition": "train",
@@ -2120,6 +2673,13 @@
       "sha256": "f9d3993428e89c26cbb1f75c0db54e5084b409a7fcc7dce1e4bbeeafc2f5ea3a",
       "size_bytes": 262272,
       "source_sha256": "302c69305c9c1398c0109381548f04b89fa581ef799ead637348285b9bc62bb6"
+    },
+    "R3/45_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/45_right_loop.npy",
+      "sha256": "ae1688e43fecabaef4daff4a0bacde39d39237cef8c56d56109bcf831cbb19e4",
+      "size_bytes": 262272,
+      "source_sha256": "e8bee941c7196ae43fefd884adb0dfb2878e59c1ce9bbfe844574491a7b39d88"
     },
     "R3/45_whorl": {
       "partition": "train",
@@ -2219,6 +2779,20 @@
       "size_bytes": 262272,
       "source_sha256": "ee50fa76c388b44461c9d6752340d897fbc0e49227e27998466eaffe62ad5972"
     },
+    "R3/50_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/50_whorl.npy",
+      "sha256": "6ba7361d8a02979d40f375bb57a88627d71ad53d705bf95cabfe3d080e1c2016",
+      "size_bytes": 262272,
+      "source_sha256": "4279a24b3e83f3b8c48bde1f6a9335f7b5b94195fb4c9d749a0929e81fd68c22"
+    },
+    "R3/51_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/51_right_loop.npy",
+      "sha256": "26c82b9be3627e7794044593de4176007988cf0410163429a59829c5f372c062",
+      "size_bytes": 262272,
+      "source_sha256": "d7fdcc7efd8987eb1b794e8153807f085a7f27373503d13cc5789d38fea2a8cf"
+    },
     "R3/51_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/51_whorl.npy",
@@ -2232,6 +2806,13 @@
       "sha256": "c5db6dcc77ecfc0569d9490ac0557cff813e37f6239683a8a7506ee0fbfd9d91",
       "size_bytes": 262272,
       "source_sha256": "560729a35d15b10aa39a9a2570553b4ad0cae31cea7cc83fe89b266ebc8eeb94"
+    },
+    "R3/52_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/52_whorl.npy",
+      "sha256": "a18aa45ab59fd9f9b99f3289c2f41d6cd2902b38567647b1f110b5e324459026",
+      "size_bytes": 262272,
+      "source_sha256": "f00de87598254073a68fa8896d89aac07d71f761fed256a7f0d3ecc4fa7cbbb2"
     },
     "R3/53_right_loop": {
       "partition": "train",
@@ -2253,6 +2834,13 @@
       "sha256": "f002d13d8c197037e2f476bf776816702c0e5586212c5a18aff19bf25ab11682",
       "size_bytes": 262272,
       "source_sha256": "47a0764d81ec22f68345c1002acb2e9fc6d3aa77888770f9fc017bf02b34eab7"
+    },
+    "R3/54_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/54_whorl.npy",
+      "sha256": "8f9704e1680f1a2a725cea4e95dc061c65dd712d5466da8dad63380df3c2cac8",
+      "size_bytes": 262272,
+      "source_sha256": "965328565b60509961bb0ecc4bb7cfed983ea8e3c926b944952449a637e24df9"
     },
     "R3/55_right_loop": {
       "partition": "validation",
@@ -2282,6 +2870,13 @@
       "size_bytes": 262272,
       "source_sha256": "7059ba865341bb83103cd74c2a617958711a92067b078a072e5910d368e289e6"
     },
+    "R3/57_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/57_right_loop.npy",
+      "sha256": "25b9fa95a5c8a5affda110e8b9c17671dbf9fc39cc6d3a39aeb6f808c6afded0",
+      "size_bytes": 262272,
+      "source_sha256": "92d070b886d55bea379ef271d5948eb8fe44af56b709a9a78be90275e376cd81"
+    },
     "R3/57_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/57_whorl.npy",
@@ -2295,6 +2890,13 @@
       "sha256": "cd5539ec359a4087cad56796d4d3f014960523ef94d864df76736a0042343c04",
       "size_bytes": 262272,
       "source_sha256": "41c16c1c69e6eb9fce9ffe3d3f57b586fe19b68ac74fa27855aededc3438c1b4"
+    },
+    "R3/58_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/58_whorl.npy",
+      "sha256": "3bed782631885aef8f82c629e20827b92d255e9d434429889b0e39063f555759",
+      "size_bytes": 262272,
+      "source_sha256": "874915862fd51dd47dc6025536dd1f3282d8bd4f039b0272bd9af1bb0fe657b7"
     },
     "R3/59_right_loop": {
       "partition": "train",
@@ -2352,6 +2954,13 @@
       "size_bytes": 262272,
       "source_sha256": "564a6a85dffbaa8997bf07de6cb0e1c699ba4d6d58f6fa7ee6b76b1524c1088c"
     },
+    "R3/61_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/61_right_loop.npy",
+      "sha256": "875800bbd6c5a73df3ee64a323f3451a1736db893434bc4b2320d02a51f285ba",
+      "size_bytes": 262272,
+      "source_sha256": "220c81214ffd6896d82ff4d557a2a1baac20dfc41ab250742435be4587b777c6"
+    },
     "R3/62_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/62_right_loop.npy",
@@ -2387,6 +2996,13 @@
       "size_bytes": 262272,
       "source_sha256": "bdcd22a9e8fe99d06750dcfefec1218685f11c1a8ebb069f3653e3316dfe79b7"
     },
+    "R3/67_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/67_right_loop.npy",
+      "sha256": "1abda1214f89d9e2de23d9165d1196c2a0c5cc7ca02f883cab702f38bb394509",
+      "size_bytes": 262272,
+      "source_sha256": "aa1acb66f447301d3523cd6a428d9cae8650276fa565d4d1cf1450eeeecdf12e"
+    },
     "R3/68_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/68_right_loop.npy",
@@ -2415,6 +3031,13 @@
       "size_bytes": 262272,
       "source_sha256": "d9fb5b077c13e7c96c570b7feeb65731c7d90816b9fc77857702d6c6e9435108"
     },
+    "R3/6_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/6_whorl.npy",
+      "sha256": "0e4362a6d9ca69e12064579b49c15f7a40af8d35f3c37ef4ef6483cb83f77153",
+      "size_bytes": 262272,
+      "source_sha256": "0995eeed467509520166dd368dcf8e144ebba952fe6298c1c89800eeba8f0648"
+    },
     "R3/70_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/70_right_loop.npy",
@@ -2435,6 +3058,13 @@
       "sha256": "8b2e84f8158b30441985504342eef0475a6518ca3fb695b2d4368e1eb0601628",
       "size_bytes": 262272,
       "source_sha256": "505500d30d996d8c4edaa256b0e2cf0a3c9a2f97a6581a8e29e701404fa3558f"
+    },
+    "R3/73_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R3/73_right_loop.npy",
+      "sha256": "61092fe0d9b907d793109536d67fb816d46b68abdf3220eadb495807bd0c86ed",
+      "size_bytes": 262272,
+      "source_sha256": "efb6c62668b55c4414e787b85742f0f22878b467ef8ddb687e40905c35d7fa30"
     },
     "R3/74_right_loop": {
       "partition": "train",
@@ -2485,12 +3115,26 @@
       "size_bytes": 262272,
       "source_sha256": "c68108348bb85d904c639dbc5969c65e2a0495d4f3b6d41555fd7613e3dc5b16"
     },
+    "R4/10_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/10_right_loop.npy",
+      "sha256": "bef4755ac48ca0a520c54277ebd7fb5acc52f92f61980364360cdd9b7670471a",
+      "size_bytes": 262272,
+      "source_sha256": "c5fb1b01b267f908ede957fdd7c6607141bd7ccdba6395680e36815ab2d554b0"
+    },
     "R4/10_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/10_whorl.npy",
       "sha256": "b1ac1060a5cf0b173f4f24da6dd0056704a0a0f4207f49fc5663384baa08b85f",
       "size_bytes": 262272,
       "source_sha256": "b22d8c7ce51bb792b31d091130fc4c7c34f0635de55cfcb0484f1042cc8b9eb2"
+    },
+    "R4/11_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/11_right_loop.npy",
+      "sha256": "b8503c883e4aaa6f85dac362aa1ba31762669a62564141dda9af28a4721fdbd5",
+      "size_bytes": 262272,
+      "source_sha256": "71a46e8fde72a19faa8c5738876bd0fb13f0ffba7d73df46b8626df0ffbb0d36"
     },
     "R4/11_whorl": {
       "partition": "train",
@@ -2506,6 +3150,13 @@
       "size_bytes": 262272,
       "source_sha256": "76d03ef65ba22d3f5ac5cb9ff8f0fc64b9f7f8130935d5da2ae09f153e20f676"
     },
+    "R4/12_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/12_whorl.npy",
+      "sha256": "44e6edb117c2465804a647ea545d0adcbf755d0534b832581b71c1a913dc580b",
+      "size_bytes": 262272,
+      "source_sha256": "5592d2810aeb9b1ace78e2af07a23627932e574844d2e9ae0f350989d6d86ba2"
+    },
     "R4/13_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/13_right_loop.npy",
@@ -2519,6 +3170,13 @@
       "sha256": "a04924ca5c311eeea0eac9493269274048b8684f16a5a02d572bcd6a21901503",
       "size_bytes": 262272,
       "source_sha256": "1a4e26e98af132ae487f31dc0498d822b5935ead9ae444c84f86ea26b7defc3a"
+    },
+    "R4/14_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/14_right_loop.npy",
+      "sha256": "4096363f23878a23657a7facb7ecb48404c137c5a75546a06d19df817413b002",
+      "size_bytes": 262272,
+      "source_sha256": "1a766c0f8dfc6f3476eee4774a384f75885f701069dfaaeab61771880e024055"
     },
     "R4/14_whorl": {
       "partition": "validation",
@@ -2541,12 +3199,33 @@
       "size_bytes": 262272,
       "source_sha256": "6f202cc809d6a561fb1d5b29b1db9197f40bea114301ad7a33e83f95cf2aab43"
     },
+    "R4/16_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/16_right_loop.npy",
+      "sha256": "b5478d3abefa71290de0ac9e7f783a8de4da49f1f744a217ee245612ae9bfbb0",
+      "size_bytes": 262272,
+      "source_sha256": "d84b5caffa88378f42bb33d58d52b3fd3e4711d60adaa283357d0f1b72a1dfed"
+    },
+    "R4/16_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/16_whorl.npy",
+      "sha256": "302ee248f84c94100b2dc9a2cbbdd6911e4f8465a1da768799a1c020abd24c7a",
+      "size_bytes": 262272,
+      "source_sha256": "b0babe77939e7cd3473812d4cf1daa7ea815592380a6f60ba582e955102a675a"
+    },
     "R4/17_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/17_right_loop.npy",
       "sha256": "efd8a62394e4a4934a249b2471ab09b4b95551ded0aef327d5d5c195de8046e2",
       "size_bytes": 262272,
       "source_sha256": "d549536af65d11fce01d2ac51b7ee795218cf1edf95db9028ccf002f8cfa0e37"
+    },
+    "R4/17_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/17_whorl.npy",
+      "sha256": "8f7a2334d4b77b502ec10b2236c3d5df4f74119d86316e90bb18a11dcddb8253",
+      "size_bytes": 262272,
+      "source_sha256": "c62616ab1253e66bd2316e2a8c3824250c151b0f023227222f6f7c5c3105a714"
     },
     "R4/18_right_loop": {
       "partition": "train",
@@ -2576,6 +3255,13 @@
       "size_bytes": 262272,
       "source_sha256": "1691b0e6c7d2d7c9c520a08f9414f125af37c48b320fdd4c764710e4a41640e4"
     },
+    "R4/1_left_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/1_left_loop.npy",
+      "sha256": "765fa8b3d5cc2fbe35bf04d0e1247e637efac53af308935546c5a806cc28a8b6",
+      "size_bytes": 262272,
+      "source_sha256": "9306ca9547307fa3ec64a3c6984a6d63d25c6776b42752941bf7856016499ce5"
+    },
     "R4/1_plain_arch": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/1_plain_arch.npy",
@@ -2589,6 +3275,13 @@
       "sha256": "1a404154fe601b222f53b4ec3c04c422f1887b833a61d419cbc2bd8a7a2463b4",
       "size_bytes": 262272,
       "source_sha256": "0efb5f7b5be9b4827d3897c24f7756361e0ebcbfbd8b9097e42f6e0730d92fc3"
+    },
+    "R4/1_tented_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/1_tented_arch.npy",
+      "sha256": "c2126a823da71299c19b476c0062d23e7dc82610f78a87f7e6bb57c40f9addb2",
+      "size_bytes": 262272,
+      "source_sha256": "4c3d0186abbea54c32d8ee05ed3cbd05cdd4aee4a3a83084d0bbe339074a8058"
     },
     "R4/1_whorl": {
       "partition": "train",
@@ -2688,6 +3381,13 @@
       "size_bytes": 262272,
       "source_sha256": "5c620e3122f67fc7379cfcfab9c93e18288cf3f2409779d8ce4ed5a9a95ab24e"
     },
+    "R4/26_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/26_whorl.npy",
+      "sha256": "309e2f03c05cc8f8837e7735ebc2c07dccdec532a72c2a78038e4b68b12817e0",
+      "size_bytes": 262272,
+      "source_sha256": "071e4238114e8b670a69e097e6e2eeaa0609228ba1e467632114320188bbb6eb"
+    },
     "R4/27_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/27_right_loop.npy",
@@ -2723,12 +3423,33 @@
       "size_bytes": 262272,
       "source_sha256": "073d42c39cbf2a1f044be016dae3959793043f16a985deb26ff15f43a01d49f7"
     },
+    "R4/29_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/29_whorl.npy",
+      "sha256": "f687aa78c78bf6d80e3f1a6dacbaa74bcdaf258d9b7bd1264be7a6699bb12378",
+      "size_bytes": 262272,
+      "source_sha256": "7771ef7ee0fefc098efccc5c83008333c31b949a41b99e1f96f38f0d99ec2331"
+    },
     "R4/2_left_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/2_left_loop.npy",
       "sha256": "d18c37f39d70c1a660f98103d0eb2db90723d34341a2add11d6e1d9cf113d416",
       "size_bytes": 262272,
       "source_sha256": "243e0dfc076a58bca3a580a1e310bd4520fe55beb410a633c0bad380a7bcc408"
+    },
+    "R4/2_plain_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/2_plain_arch.npy",
+      "sha256": "ff596c6ef5db23929439c96770ae2e5e2f14a6965b67c628dda12a35c30e6184",
+      "size_bytes": 262272,
+      "source_sha256": "6b9ea75ea19300621b616acffb30e9d45fed590f151e89bc84da3099749eda96"
+    },
+    "R4/2_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/2_right_loop.npy",
+      "sha256": "379602753b1d447660961eaf0149040791dfe4682859bae09859bbd1cc0d3463",
+      "size_bytes": 262272,
+      "source_sha256": "a45fd3cdee5c3a51197e38a61ac91f6e78a699d41fdcd91b0c94a0fa39cdd40c"
     },
     "R4/2_tented_arch": {
       "partition": "train",
@@ -2743,6 +3464,13 @@
       "sha256": "d7f894e583997b50cfc12107a3d87c0e669217be4ee2abe84c8d349db1ab0ddb",
       "size_bytes": 262272,
       "source_sha256": "ae24e5f8868eb51f0a5233786fd711a0356b35d1c3c2768a7e1fced7ad0fa957"
+    },
+    "R4/30_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/30_right_loop.npy",
+      "sha256": "dac142802c3f6f0240ef512f292d1b585ab54e0d19f07046b980200c9b36a603",
+      "size_bytes": 262272,
+      "source_sha256": "96a75fcb9387a925ff5ad1d97baf2f2bb8d45c72c6e215a17b0b09316c63ce23"
     },
     "R4/30_whorl": {
       "partition": "train",
@@ -2765,12 +3493,26 @@
       "size_bytes": 262272,
       "source_sha256": "e5929554060140206d07dca80eb5ca5f4780a968499bcaba301ab76dc84e3e93"
     },
+    "R4/32_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/32_right_loop.npy",
+      "sha256": "cbc6ad90f9aa18bd6ec0c87668378cc65974b3a7f2e20873520a594ddf8de2d8",
+      "size_bytes": 262272,
+      "source_sha256": "99179d69eb54062e6d68b14bc4b315cfb55b05627b2bc3ca6b446f0ad340910f"
+    },
     "R4/32_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/32_whorl.npy",
       "sha256": "cdf292387e80e0f5e0045fef52228c8564c83b62aab285bcacb3a1d112df9ffb",
       "size_bytes": 262272,
       "source_sha256": "f6bf77efb27c264b542b5caf4cb984b74e77381103e0fc8211a8969e6af559ea"
+    },
+    "R4/33_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/33_right_loop.npy",
+      "sha256": "6201c6a186815cadd667be7249534cd9dd5ede629cc379ce26929aaa5d285349",
+      "size_bytes": 262272,
+      "source_sha256": "00d6a80a2b676cf252a1844a05ee622494782f1afd37b4e6c05d1aafe97405e3"
     },
     "R4/33_whorl": {
       "partition": "train",
@@ -2912,12 +3654,33 @@
       "size_bytes": 262272,
       "source_sha256": "f5b3595cc7580bc8672b4b60afd9d6fe7664a1bc8e483ba85a5eddb63696aa47"
     },
+    "R4/41_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/41_right_loop.npy",
+      "sha256": "07abb2fcb53704d46a1ba0e3079ae313389c4b686eebfd01329d77161d697aaa",
+      "size_bytes": 262272,
+      "source_sha256": "e057ae9cc242e39a8cca2a4564af436aa742b6535b78a1efaa8a4cd3680811cf"
+    },
+    "R4/41_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/41_whorl.npy",
+      "sha256": "137b3b2b2acb83d50ae277cf87285c0bc50e5ffdb69f0be1b431321e592625da",
+      "size_bytes": 262272,
+      "source_sha256": "097cf5c4f82c3b4996519ecf9da7d0a500ab623f25dc2787be28ab0a188c743c"
+    },
     "R4/42_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/42_right_loop.npy",
       "sha256": "c82908371002ab6edea8c4c9a23b7c90adfeeda23c46c8a61ba814829f45e1df",
       "size_bytes": 262272,
       "source_sha256": "e93825a6bd36a0ad7d12976ebb29dceb99dbdf3abcafb65530ddc3921f35d9a7"
+    },
+    "R4/42_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/42_whorl.npy",
+      "sha256": "030176aa3ed984f979fc346414bfe5c8e9ac77626c6504288126913d3f37062b",
+      "size_bytes": 262272,
+      "source_sha256": "fecb2042856a745da470fc0747613b21cb26ab84a4132d2ecee16dc793ecea52"
     },
     "R4/43_right_loop": {
       "partition": "train",
@@ -2946,6 +3709,13 @@
       "sha256": "41b78175d95471ace6076e559879fa035ab1091ff516e1fe424b11721aad1ac9",
       "size_bytes": 262272,
       "source_sha256": "bd385b938530ad60589ed5a605ccc806cefdd2a2b5649ea76ed7efa04b24b275"
+    },
+    "R4/45_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/45_right_loop.npy",
+      "sha256": "84ece5d1649e6ddf624d20b6a427d9e9c59bc99307dcd214fe71822faae8de01",
+      "size_bytes": 262272,
+      "source_sha256": "cb606766014a2b5960fe4865076d75cc663db3b778cc8099ad2e18e83a905458"
     },
     "R4/45_whorl": {
       "partition": "train",
@@ -3045,6 +3815,20 @@
       "size_bytes": 262272,
       "source_sha256": "62fcdbbfa97c414849ba91be058bffce7d64cee05f189e5bcd0f33e2839abadf"
     },
+    "R4/50_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/50_whorl.npy",
+      "sha256": "5f7a1de415618bbb4f08380a0fc380ded3688b54dbb13e0356428e869c523b79",
+      "size_bytes": 262272,
+      "source_sha256": "fe8cbaa66463ec7cb68af89166b85f6b2771bfe5b79e60f525eab62f631f0e1c"
+    },
+    "R4/51_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/51_right_loop.npy",
+      "sha256": "3437b07f837a36bd86e613e49ea1fe8dd3423bc82933a069072253a6ec91620a",
+      "size_bytes": 262272,
+      "source_sha256": "4070697382b2f700c3a7e304811f0531458ef768c572fd0114891821cc26df8b"
+    },
     "R4/51_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/51_whorl.npy",
@@ -3058,6 +3842,13 @@
       "sha256": "9d20c27a23803dd39beb22e0ee5544bf20d9ba6c02d8869190223a2968ba1ef5",
       "size_bytes": 262272,
       "source_sha256": "e87e4de6b2a713f9d073d2de2f7278c02a25022e6c98c18292cad967a2ee5d00"
+    },
+    "R4/52_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/52_whorl.npy",
+      "sha256": "86cdaaa59efe875b1d4311c5abe38d26a4433329b256f6db9848ed5d7ef41cf1",
+      "size_bytes": 262272,
+      "source_sha256": "cd769afaa20869f9c2e3960c54c9f1f38ee5e010ae71f1ab7d695e51c1d787d7"
     },
     "R4/53_right_loop": {
       "partition": "train",
@@ -3079,6 +3870,13 @@
       "sha256": "ca4e3f813ffeba0eba84fc701eb4f9cf414fc6d2d038ff2801ce4593e2b7cd1a",
       "size_bytes": 262272,
       "source_sha256": "6ba60632a8a51e42552a73b52066c626d4a5bf5c15d9f9c96885d1ce0beda64d"
+    },
+    "R4/54_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/54_whorl.npy",
+      "sha256": "e62cc1fd5ff50e455369d57ee3b18e4cdc03cf9b7265b5706626068f40df1dd6",
+      "size_bytes": 262272,
+      "source_sha256": "dba5338db74f894b2d4f6d97085a926c5444fa8b25a148408e2ce8bf70562a6b"
     },
     "R4/55_right_loop": {
       "partition": "validation",
@@ -3108,6 +3906,13 @@
       "size_bytes": 262272,
       "source_sha256": "f4d18ae2f8b8faa269930b7cf6e037094fe9a886b519befc747636af21692dbd"
     },
+    "R4/57_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/57_right_loop.npy",
+      "sha256": "ed27004d8221f60b6c81186a9baf119f619ef4f9bdc3d810f8d63d0e4346e198",
+      "size_bytes": 262272,
+      "source_sha256": "15d50742e19cc29d1b48d4abca0a45207d8055d8e3d84e7ca0dfa4ef65b297ca"
+    },
     "R4/57_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/57_whorl.npy",
@@ -3121,6 +3926,13 @@
       "sha256": "db88b025a152283f7767d4fb2999e0e86658ec09a833e01b20fa9ac8dc402dd6",
       "size_bytes": 262272,
       "source_sha256": "eda334eb20f60e4a393810ccef1e33c67fb7ef4c39f6c2913ac08af3751dc033"
+    },
+    "R4/58_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/58_whorl.npy",
+      "sha256": "c742cd0e44f3a54063c4efea73f799674ba33ec1382587ce05d490ee9297f875",
+      "size_bytes": 262272,
+      "source_sha256": "2b8b276e7547daa16947e8aa99fb06ab5c825b2742492a7b391a49e918479e2b"
     },
     "R4/59_right_loop": {
       "partition": "train",
@@ -3178,6 +3990,13 @@
       "size_bytes": 262272,
       "source_sha256": "33a4b32959343d2c78a37e797f31ae394f1dc2c41e403ebd76e0eee25a7899ee"
     },
+    "R4/61_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/61_right_loop.npy",
+      "sha256": "8bd3945db910a0fcd02f1e65e2e81b5f5146f33b7a924d9a41eca9fe46068974",
+      "size_bytes": 262272,
+      "source_sha256": "ee7e99fad85c25569b8edfaa4a93966f79d829faf625000dc59e3bdb4c859f84"
+    },
     "R4/62_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/62_right_loop.npy",
@@ -3213,6 +4032,13 @@
       "size_bytes": 262272,
       "source_sha256": "a8680ff48f10faae77ee4394b8fd2ab175cc6e51f6b013c0c83b00c08a89de52"
     },
+    "R4/67_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/67_right_loop.npy",
+      "sha256": "83c4cbc69db2567abfb08ff236296c7630365f58a655ae183a5d16b41b991618",
+      "size_bytes": 262272,
+      "source_sha256": "dc614d798bf88e30d49811982863df79fbc16c743f5265424e5fcb474bb573d2"
+    },
     "R4/68_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/68_right_loop.npy",
@@ -3241,6 +4067,13 @@
       "size_bytes": 262272,
       "source_sha256": "8d7e64ba4ed0195fac118941e5abe94d22fd3efc4ba9fdc8cef15af5a4fcf6c0"
     },
+    "R4/6_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/6_whorl.npy",
+      "sha256": "ff64f53d0002be621ad0de98fa00779b5694a4920688801401551927d3d92f7f",
+      "size_bytes": 262272,
+      "source_sha256": "481150cc1a1007cf1433188d0be15fadbfbf9edb91e685067db44767e553d5b2"
+    },
     "R4/70_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/70_right_loop.npy",
@@ -3261,6 +4094,13 @@
       "sha256": "63d0020cce2e334ea2d052f9890130406bff93ed99af20fb20b81785cf10b26f",
       "size_bytes": 262272,
       "source_sha256": "ac08587f45f9916175a4743e002eb13b53352e0c97d99d635f7ba09a5f5fd46c"
+    },
+    "R4/73_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R4/73_right_loop.npy",
+      "sha256": "06bbc381a123e5d37b5546beff1ba0a4347741192eb1af43cfbaa970ea9d4619",
+      "size_bytes": 262272,
+      "source_sha256": "be3c01498b6b5c5f62ba0cde2f714211494f25e3ec216cd181e24dd313a4d46a"
     },
     "R4/74_right_loop": {
       "partition": "train",
@@ -3311,12 +4151,26 @@
       "size_bytes": 262272,
       "source_sha256": "a99b84130ccbd98a8bdf04921bbb0b0306a9272fa06feab8e3bb7d532b7adb93"
     },
+    "R5/10_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/10_right_loop.npy",
+      "sha256": "92582e930af7d6469f603cfb8d2c9f77053b264453ff7dd54db7f0b31ab49f63",
+      "size_bytes": 262272,
+      "source_sha256": "c758474ffda9a97739efc852949ae2689141266c2504b735622871837129555e"
+    },
     "R5/10_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/10_whorl.npy",
       "sha256": "dc6dadff5396f4c365baf7c25472fa8ff3ea7b5c6d792e35655af2a035ee6542",
       "size_bytes": 262272,
       "source_sha256": "47c6d31b8f3870c92fbee8ddf39596bed72dbef178b4b474b735fb997914a19e"
+    },
+    "R5/11_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/11_right_loop.npy",
+      "sha256": "eb9d2308664174da137ff0c72eef634e10715502ce2d696e122f3edd536beaed",
+      "size_bytes": 262272,
+      "source_sha256": "347b8c7a530a49c4a96a4c117cb457dfdc6fa6f425344b82a11ea5e87f58588b"
     },
     "R5/11_whorl": {
       "partition": "train",
@@ -3332,6 +4186,13 @@
       "size_bytes": 262272,
       "source_sha256": "21ecd81d99b574d036954107e985eabc5929a33b0930aaf60efeb452746846c8"
     },
+    "R5/12_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/12_whorl.npy",
+      "sha256": "e2fbf9e9dc4051f4bfec713e7df1091799a5be3ab9565bb7715d52c986521ba1",
+      "size_bytes": 262272,
+      "source_sha256": "531617d44a21ca8180ed3b3a60acd76028a5f009f4aeeb913c3294838150bb9f"
+    },
     "R5/13_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/13_right_loop.npy",
@@ -3345,6 +4206,13 @@
       "sha256": "3176a015901ea40a9cea17ea0a5956e717f474c99663513cdf494712f9376bf5",
       "size_bytes": 262272,
       "source_sha256": "a857a51e57413c2ad38b464c5421f32e85623e619d64f631d9db22384210d7cd"
+    },
+    "R5/14_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/14_right_loop.npy",
+      "sha256": "417bf82af33a2caf8dd61783b67034edcf261a107292de0296bd16fa7f7b61b0",
+      "size_bytes": 262272,
+      "source_sha256": "fe2346f17da86f228f84814fe139e1dbeeb207f831ea0a2aaca1bf16033813e4"
     },
     "R5/14_whorl": {
       "partition": "validation",
@@ -3367,12 +4235,33 @@
       "size_bytes": 262272,
       "source_sha256": "a69645c935bc97ea23df8991fca38ad770ca0d7d17defa6720f6b0e1031b12bb"
     },
+    "R5/16_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/16_right_loop.npy",
+      "sha256": "e0ab8e32a38759574ffa752a7f77625d5c00bf1a1dc4d48e26daeeb7d7902245",
+      "size_bytes": 262272,
+      "source_sha256": "f1413fc61b5fc69aed504c8a82762272ad83449bd4335aedd5c5a4472ba3d392"
+    },
+    "R5/16_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/16_whorl.npy",
+      "sha256": "77dfebf9b15761a9a0c9ada0d0007a7c1e64c920b227e4560b3926be4b48c1cb",
+      "size_bytes": 262272,
+      "source_sha256": "80931921a4920843190433817f48bdbf79e4e524c8be27d6ca8cc6870f58e64f"
+    },
     "R5/17_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/17_right_loop.npy",
       "sha256": "eaa7f99c0ddd31174cbd0c950d9848f3daf63ed3abe5beaddddf7ce74b3b8ea2",
       "size_bytes": 262272,
       "source_sha256": "93b64bc0794f1c9810336bab7e8fb19b3a5f53aef8235463ba9afb6b1b43ddc9"
+    },
+    "R5/17_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/17_whorl.npy",
+      "sha256": "0577f0ab672d00fb3202e909545f7ac3f4a2e3abb38281729a3cd90f6c5d0016",
+      "size_bytes": 262272,
+      "source_sha256": "9e624a9d44a9d97975b38d0cfdb211e900709a6ac67a71741d8f0b91a553f96e"
     },
     "R5/18_right_loop": {
       "partition": "train",
@@ -3402,6 +4291,13 @@
       "size_bytes": 262272,
       "source_sha256": "5b061a75e92c9c6e6e74476d7558f6c821d96e5d9343eccdc7e4ebb316772af9"
     },
+    "R5/1_left_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/1_left_loop.npy",
+      "sha256": "644f765f87db0d189b952f179b7ae7a05f4c5952f590a2cbc87c91f4103efdbb",
+      "size_bytes": 262272,
+      "source_sha256": "99c6413ea5ada18e64bf72660c0733a8a02dfa73c256a6cee8105785574f7512"
+    },
     "R5/1_plain_arch": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/1_plain_arch.npy",
@@ -3415,6 +4311,13 @@
       "sha256": "5b2276681d37ebca414a6a8848a726b7a20ed437b26f18bae167d53c54dd7d3d",
       "size_bytes": 262272,
       "source_sha256": "d0ff79f92827f43e845ceabaff6a736b5bd4040afce32c3433c6bf5271bb565a"
+    },
+    "R5/1_tented_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/1_tented_arch.npy",
+      "sha256": "e32ea57f79cf63884bd29bcb6c34e0034370f57bf332093b6157ae926ea78eb7",
+      "size_bytes": 262272,
+      "source_sha256": "85d66c56282e5f662f8aa7a5b55046f44f553a3d151ae0d7715ea7f91a1799a5"
     },
     "R5/1_whorl": {
       "partition": "train",
@@ -3514,6 +4417,13 @@
       "size_bytes": 262272,
       "source_sha256": "7a7d991bbb62565b255753df0edba9c2e2c2a1887dbad918145b9f097a14dc75"
     },
+    "R5/26_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/26_whorl.npy",
+      "sha256": "10606e78a9aa26f706fab3d60cd35e21daab4dd2cba1f656b066f258d9ae9f67",
+      "size_bytes": 262272,
+      "source_sha256": "8f4dd2d8c75e4555c895bc6fe9e13d5f5bd71469a41b7051383f0d790b8d190d"
+    },
     "R5/27_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/27_right_loop.npy",
@@ -3549,12 +4459,33 @@
       "size_bytes": 262272,
       "source_sha256": "fca808959ad22c407d3e2df79ef3c906f4f536a2de4d0ff5cf83237331818299"
     },
+    "R5/29_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/29_whorl.npy",
+      "sha256": "4b037edff918a6bcd8a6f15ed08b66903c3981f8a045dcd58a91d8dcf33f83b4",
+      "size_bytes": 262272,
+      "source_sha256": "a9434e63de2bcf8a7c0641715defbfb622a6216f944126a12e36d1c66e41ae07"
+    },
     "R5/2_left_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/2_left_loop.npy",
       "sha256": "13aec14a2124b6fb710b53aba80908e61b93e5b5d7dd944dcdccb736e684c5a8",
       "size_bytes": 262272,
       "source_sha256": "19a11554823f421f8a4ca5adeef70825afbd29faf0298489b34c6a3216f194bd"
+    },
+    "R5/2_plain_arch": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/2_plain_arch.npy",
+      "sha256": "7b141bde5574a941da84b7e9ef581b4109e0b8bb09f470e8c5944571bb7b5f6b",
+      "size_bytes": 262272,
+      "source_sha256": "7aae0d5f9cfbb53866b974f0238f60db702294a244314d82005d521b6ee85950"
+    },
+    "R5/2_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/2_right_loop.npy",
+      "sha256": "b9e06b9b9964fb3f527f77fbeb10fde6b0aa2bd8cf159d1dc71a6cf1f822aee7",
+      "size_bytes": 262272,
+      "source_sha256": "b94e3b2d73216f7bef504507c516c30c792a4843d57c63fb02bbf358237486eb"
     },
     "R5/2_tented_arch": {
       "partition": "train",
@@ -3569,6 +4500,13 @@
       "sha256": "583eff0396270ac91bfb94be90d32d71d0ea6cd48ba9a42a3668ad37e4899d2f",
       "size_bytes": 262272,
       "source_sha256": "e0171f9279b6044d6769e67230166e20fc5bd87a0d336fa5fbbdda8af63a3ea9"
+    },
+    "R5/30_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/30_right_loop.npy",
+      "sha256": "437211116f391ae20f6be93327a13b1e98e141bf4a03dd39c44229d94efaff02",
+      "size_bytes": 262272,
+      "source_sha256": "7c4791c63582b1488573cfec828c1fc439395220ae43798e5e0fe4aa70fba669"
     },
     "R5/30_whorl": {
       "partition": "train",
@@ -3591,12 +4529,26 @@
       "size_bytes": 262272,
       "source_sha256": "67337eaae9389213f4d091fcc23da65d3d63cd226b98616f0e94709581d87933"
     },
+    "R5/32_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/32_right_loop.npy",
+      "sha256": "fb6c1da7b65801ee5939c7818909f36af63487dbf870bdf5d9a717e474d2a48e",
+      "size_bytes": 262272,
+      "source_sha256": "13d33bee16f3dbb78fa7384b0b6a7319de3d893f26f7b31b6cf4735fed01d2cb"
+    },
     "R5/32_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/32_whorl.npy",
       "sha256": "ea05cfb01791132d779898ae3b7c8982ff047768ba6de8826827f91980b3bea4",
       "size_bytes": 262272,
       "source_sha256": "a86f4c0f268d40989624febd4fa4b94525fc115b9b34fd9ab4991215eede99ad"
+    },
+    "R5/33_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/33_right_loop.npy",
+      "sha256": "8e3d255552b322ae4b3647afa9f11a7c5ab316804e85c830eab19fc95917409f",
+      "size_bytes": 262272,
+      "source_sha256": "a31b30d876371e8d4e6fc1ef2704416ff5b7c8f0d0b163dd3e0ab1467f9fddc4"
     },
     "R5/33_whorl": {
       "partition": "train",
@@ -3738,12 +4690,33 @@
       "size_bytes": 262272,
       "source_sha256": "9c4922ba9c7e71c9a08bda1df6d0094617ca1d5b6ab18a3b355e94cce9a3a83f"
     },
+    "R5/41_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/41_right_loop.npy",
+      "sha256": "0b95243cea43b60729d359c2eda5e663a71bf1573c0c9306dfe25960540ab4b7",
+      "size_bytes": 262272,
+      "source_sha256": "14619cfa9a6238aa2206f33f03211ce152342f2fb9684c80246b9e07cafca0ce"
+    },
+    "R5/41_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/41_whorl.npy",
+      "sha256": "a4641c557be22cefdb4709e59bc17cb0c0d5b1e3e16be717f3c41103a0a67db8",
+      "size_bytes": 262272,
+      "source_sha256": "d193ab921e1c4f57d5e433ce96befddedaef4b3fae2aea6d0298cd0fdebda240"
+    },
     "R5/42_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/42_right_loop.npy",
       "sha256": "6296aec6244499f4a9703a8e6e129513a205d1cb5badf884474ada824f008267",
       "size_bytes": 262272,
       "source_sha256": "d666ae6a6e2315a325e8880e8511f2750798409769500d9fd90a6d9566c1740e"
+    },
+    "R5/42_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/42_whorl.npy",
+      "sha256": "ddab4329cd9b9d9522bda937e099cd00d884fbe3307c22b86a1cd0ff5e40814d",
+      "size_bytes": 262272,
+      "source_sha256": "219f264341cb2cb7948610916f54d7e5845255cc05aa017db00960cdc41b060d"
     },
     "R5/43_right_loop": {
       "partition": "train",
@@ -3772,6 +4745,13 @@
       "sha256": "f66a4581e521c1790b0323874acf32d379e5d644704d37d8a9d78f6f7a3d5592",
       "size_bytes": 262272,
       "source_sha256": "c5b18a28f164be9257cbb7b4e04160f6e6b4f8f5037a8d3c1ddb058aa875c025"
+    },
+    "R5/45_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/45_right_loop.npy",
+      "sha256": "fd763a2fff45da56d7abbc0917db465e2b6fbf0d859a5f0905514c8368044b0e",
+      "size_bytes": 262272,
+      "source_sha256": "7982401b3f6ca30c07ac77e4f2ef7ce958e6198f944b537fdb8d7cefe3b8f6aa"
     },
     "R5/45_whorl": {
       "partition": "train",
@@ -3871,6 +4851,20 @@
       "size_bytes": 262272,
       "source_sha256": "2cfacdad749bfcc569d5157b56e41b0826bc2102ad1fed00dce490de9765bbca"
     },
+    "R5/50_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/50_whorl.npy",
+      "sha256": "bbccd3bd192cb7372f7b52ac740511a895a830e79a6aa19de4f0a74b4a186fd9",
+      "size_bytes": 262272,
+      "source_sha256": "97f4bca6c62c0caf3dd2d4c2900e95bfa26fd3ea0c203e94ee844dd0b25f03b6"
+    },
+    "R5/51_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/51_right_loop.npy",
+      "sha256": "8d3bf27869ff0f4bd8cfa72b89ff910d03c2dfa01da94f2b613958adfba6905d",
+      "size_bytes": 262272,
+      "source_sha256": "f97ec682b3ef1304ada7975d9568095251974113db6362c2ad4a60ade733dcd7"
+    },
     "R5/51_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/51_whorl.npy",
@@ -3884,6 +4878,13 @@
       "sha256": "2e50fd50ab4e162d281944ad85d7ad9a14f8d248f899fc5f044ccfc1397b8670",
       "size_bytes": 262272,
       "source_sha256": "6c0d7e168d447f02e7840f14ade2f68426f1a07241912b7268fc3647155a3a40"
+    },
+    "R5/52_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/52_whorl.npy",
+      "sha256": "372e1547ba64d0f5b2f6a2214ac71e9ac1bde7944c78237c5b761cdf0a04dd93",
+      "size_bytes": 262272,
+      "source_sha256": "7ae5a83a297f62d0984b3554ceedaa9c216b857cf782e77325de78c9fe1724b0"
     },
     "R5/53_right_loop": {
       "partition": "train",
@@ -3905,6 +4906,13 @@
       "sha256": "6c86cc566359297a2d639b990b2e52598e1413d87db3b5d9c6ef7b1cdb875eaf",
       "size_bytes": 262272,
       "source_sha256": "9a1bca1f55e403dcbaea002d5687e30d165fa9a8a83a2a6c4d2c73b4cfa6bcd7"
+    },
+    "R5/54_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/54_whorl.npy",
+      "sha256": "f3ab836b244dc53e01130c51b32f2bfe5fe550b5f580d9dde5b1aecc3261a4c3",
+      "size_bytes": 262272,
+      "source_sha256": "a1cd6f143855b4c00938fee6de2b765c0a657576d5aab1a6614249a6df0ff35c"
     },
     "R5/55_right_loop": {
       "partition": "validation",
@@ -3934,6 +4942,13 @@
       "size_bytes": 262272,
       "source_sha256": "93f858f1d3551fcd5a4be2152022a6a1010ab06ab6bfa8439bd56a13ed635b3b"
     },
+    "R5/57_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/57_right_loop.npy",
+      "sha256": "6136a3b6fa09affa0e5ecdb6f3e8b3b6606d1b72971d190d19f24e72de9e8555",
+      "size_bytes": 262272,
+      "source_sha256": "5d93cefda663dcc75ef268b1005096879ff9e4b41c3203ff55f60626a30155b9"
+    },
     "R5/57_whorl": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/57_whorl.npy",
@@ -3947,6 +4962,13 @@
       "sha256": "c065aa339bf4f1958242620c12b57e35beef25d56ae13b2511cdc96dd4f5c52d",
       "size_bytes": 262272,
       "source_sha256": "e450d2aa073add1c559468f8273092810f63839a387429280e86c9cea2c2435a"
+    },
+    "R5/58_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/58_whorl.npy",
+      "sha256": "9ade3700fb7fae14f96364aed16634e26354305b4431de1d6b3c3a2ec476b787",
+      "size_bytes": 262272,
+      "source_sha256": "1f30e9e25e0b86bcfaaa346c0239ad28f534102788203c80ab30fe814f967e79"
     },
     "R5/59_right_loop": {
       "partition": "train",
@@ -4004,6 +5026,13 @@
       "size_bytes": 262272,
       "source_sha256": "516d015626a8835bf08f0d340fa7f6f660bfed20ba6e6d75dbccbb5b45814f06"
     },
+    "R5/61_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/61_right_loop.npy",
+      "sha256": "1f6d1422f4b4f25098fab7fb75b4eb46ffccc60bcb99966ab8ab64532b18dca7",
+      "size_bytes": 262272,
+      "source_sha256": "21adf33fa09dbaaec036e7abe4354428699c301cdc959a1a4ff9e40cdfae9194"
+    },
     "R5/62_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/62_right_loop.npy",
@@ -4039,6 +5068,13 @@
       "size_bytes": 262272,
       "source_sha256": "9964dc3e857ba078da52d146c2396fb0fadf45d2f16ce33cf06c2aba508ce922"
     },
+    "R5/67_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/67_right_loop.npy",
+      "sha256": "de54a055556b353448dec3d6e07ce50c9657e51c63827331a2c5ef56ce84c180",
+      "size_bytes": 262272,
+      "source_sha256": "c92e697cba86be01434ff88413a70bbd493e3657ed21b89ad1ffae9153b58896"
+    },
     "R5/68_right_loop": {
       "partition": "train",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/68_right_loop.npy",
@@ -4067,6 +5103,13 @@
       "size_bytes": 262272,
       "source_sha256": "81b989c944579d714c5daf0fab3417d18200222a64b94301c8c9622c806c9f22"
     },
+    "R5/6_whorl": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/6_whorl.npy",
+      "sha256": "5a0c96a6f51aace468a03ebaed3dabd654c9edfd8a1d27a6e795c3858538e294",
+      "size_bytes": 262272,
+      "source_sha256": "d556aaf355fdea7f1dfbe31834db334964a10a7e68f2fb7a7a9adb27dcef4854"
+    },
     "R5/70_right_loop": {
       "partition": "validation",
       "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/70_right_loop.npy",
@@ -4087,6 +5130,13 @@
       "sha256": "fac8c76b6d0502e2775d573053ed44859da302bac0a74dc7fb43f10fa3d99f00",
       "size_bytes": 262272,
       "source_sha256": "b3ab5bbb5f2c93c4e93ce5f8994af0501e10b95f7bc765659d47846d4aef0b0b"
+    },
+    "R5/73_right_loop": {
+      "partition": "test",
+      "relative_local_path": "artifacts/experiment-004/local-large/preprocessed/l3sf/R5/73_right_loop.npy",
+      "sha256": "23991b51f151e51da0d980654c608ee3fa7d525cf97b45e8668a4bd0cd299c93",
+      "size_bytes": 262272,
+      "source_sha256": "4302bff1c7337b38c563bd8aa9fb0b3e3c6257fab01c4afebaac7f94683a096f"
     },
     "R5/74_right_loop": {
       "partition": "train",
@@ -4139,5 +5189,5 @@
     }
   },
   "schema_version": 1,
-  "updated_at_utc": "2026-08-29T16:01:58.593768+00:00"
+  "updated_at_utc": "2026-08-29T20:16:27.594955+00:00"
 }
