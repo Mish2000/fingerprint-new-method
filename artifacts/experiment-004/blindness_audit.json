@@ -1,0 +1,10 @@
+{
+  "experiment_001_item_level_ratings_accessed_before_sd300_freeze": false,
+  "experiment_001_ratings_json_accessed_before_sd300_freeze": false,
+  "notes": [
+    "The frozen Experiment 001 selection manifest was read to understand its schema; this is expressly permitted by the Experiment 004 protocol.",
+    "An initial batched repository-inspection command requested the Experiment 001 results Markdown together with several large files. The tool truncated the combined output before any per-finger classification content was surfaced. No item-level label was extracted, stored, or used.",
+    "Experiment 001 finalization source code was later read to implement the already-specified post-freeze classification rule; the ratings data file itself remained unopened."
+  ],
+  "status": "ITEM_LEVEL_LABEL_BLINDNESS_MAINTAINED"
+}

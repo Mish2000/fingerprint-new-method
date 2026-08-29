@@ -1,0 +1,5209 @@
+{
+  "deduplication_key": "(canonical_image_id, x, y); preserve first occurrence",
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "partition_totals": {
+    "test": {
+      "after": 63172,
+      "before": 63230,
+      "duplicates_removed": 58
+    },
+    "train": {
+      "after": 180283,
+      "before": 180419,
+      "duplicates_removed": 136
+    },
+    "validation": {
+      "after": 62313,
+      "before": 62360,
+      "duplicates_removed": 47
+    }
+  },
+  "per_image": [
+    {
+      "after": 404,
+      "before": 404,
+      "canonical_image_id": "R1/10_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 359,
+      "before": 359,
+      "canonical_image_id": "R1/10_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 484,
+      "before": 484,
+      "canonical_image_id": "R1/11_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 335,
+      "before": 336,
+      "canonical_image_id": "R1/11_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 397,
+      "before": 397,
+      "canonical_image_id": "R1/12_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 423,
+      "before": 423,
+      "canonical_image_id": "R1/12_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 344,
+      "before": 344,
+      "canonical_image_id": "R1/13_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 368,
+      "before": 368,
+      "canonical_image_id": "R1/13_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 449,
+      "before": 449,
+      "canonical_image_id": "R1/14_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 491,
+      "before": 491,
+      "canonical_image_id": "R1/14_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 494,
+      "before": 495,
+      "canonical_image_id": "R1/15_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 321,
+      "before": 321,
+      "canonical_image_id": "R1/15_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 409,
+      "before": 410,
+      "canonical_image_id": "R1/16_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 351,
+      "before": 352,
+      "canonical_image_id": "R1/16_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 442,
+      "before": 442,
+      "canonical_image_id": "R1/17_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 499,
+      "before": 499,
+      "canonical_image_id": "R1/17_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 468,
+      "before": 468,
+      "canonical_image_id": "R1/18_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 386,
+      "before": 386,
+      "canonical_image_id": "R1/18_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 458,
+      "before": 459,
+      "canonical_image_id": "R1/19_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 329,
+      "before": 329,
+      "canonical_image_id": "R1/19_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 339,
+      "before": 339,
+      "canonical_image_id": "R1/1_left_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 397,
+      "before": 397,
+      "canonical_image_id": "R1/1_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 402,
+      "before": 402,
+      "canonical_image_id": "R1/1_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 518,
+      "before": 520,
+      "canonical_image_id": "R1/1_tented_arch",
+      "duplicates_removed": 2,
+      "partition": "test"
+    },
+    {
+      "after": 454,
+      "before": 454,
+      "canonical_image_id": "R1/1_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 363,
+      "before": 363,
+      "canonical_image_id": "R1/20_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 425,
+      "before": 427,
+      "canonical_image_id": "R1/20_whorl",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 349,
+      "before": 349,
+      "canonical_image_id": "R1/21_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 370,
+      "before": 371,
+      "canonical_image_id": "R1/21_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 435,
+      "before": 435,
+      "canonical_image_id": "R1/22_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 456,
+      "before": 456,
+      "canonical_image_id": "R1/22_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 480,
+      "before": 480,
+      "canonical_image_id": "R1/23_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 351,
+      "before": 351,
+      "canonical_image_id": "R1/23_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 433,
+      "before": 433,
+      "canonical_image_id": "R1/24_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 490,
+      "before": 490,
+      "canonical_image_id": "R1/24_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 397,
+      "before": 399,
+      "canonical_image_id": "R1/25_right_loop",
+      "duplicates_removed": 2,
+      "partition": "validation"
+    },
+    {
+      "after": 449,
+      "before": 450,
+      "canonical_image_id": "R1/25_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 429,
+      "before": 430,
+      "canonical_image_id": "R1/26_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 313,
+      "before": 314,
+      "canonical_image_id": "R1/26_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 395,
+      "before": 396,
+      "canonical_image_id": "R1/27_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 480,
+      "before": 480,
+      "canonical_image_id": "R1/27_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 388,
+      "before": 389,
+      "canonical_image_id": "R1/28_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 411,
+      "before": 411,
+      "canonical_image_id": "R1/28_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 413,
+      "before": 413,
+      "canonical_image_id": "R1/29_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 374,
+      "before": 374,
+      "canonical_image_id": "R1/29_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 392,
+      "before": 392,
+      "canonical_image_id": "R1/2_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 471,
+      "before": 471,
+      "canonical_image_id": "R1/2_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 453,
+      "before": 455,
+      "canonical_image_id": "R1/2_right_loop",
+      "duplicates_removed": 2,
+      "partition": "test"
+    },
+    {
+      "after": 448,
+      "before": 448,
+      "canonical_image_id": "R1/2_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 397,
+      "before": 397,
+      "canonical_image_id": "R1/2_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 344,
+      "before": 345,
+      "canonical_image_id": "R1/30_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 445,
+      "before": 445,
+      "canonical_image_id": "R1/30_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 372,
+      "before": 372,
+      "canonical_image_id": "R1/31_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 411,
+      "before": 411,
+      "canonical_image_id": "R1/31_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 395,
+      "before": 395,
+      "canonical_image_id": "R1/32_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 444,
+      "before": 444,
+      "canonical_image_id": "R1/32_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 418,
+      "before": 418,
+      "canonical_image_id": "R1/33_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 339,
+      "before": 339,
+      "canonical_image_id": "R1/33_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 453,
+      "before": 453,
+      "canonical_image_id": "R1/34_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 319,
+      "before": 319,
+      "canonical_image_id": "R1/34_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 416,
+      "before": 416,
+      "canonical_image_id": "R1/35_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 397,
+      "before": 397,
+      "canonical_image_id": "R1/35_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 428,
+      "before": 428,
+      "canonical_image_id": "R1/36_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 450,
+      "before": 451,
+      "canonical_image_id": "R1/36_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 420,
+      "before": 420,
+      "canonical_image_id": "R1/37_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 480,
+      "before": 481,
+      "canonical_image_id": "R1/37_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 398,
+      "before": 399,
+      "canonical_image_id": "R1/38_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 345,
+      "before": 345,
+      "canonical_image_id": "R1/38_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 473,
+      "before": 473,
+      "canonical_image_id": "R1/39_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 399,
+      "before": 400,
+      "canonical_image_id": "R1/39_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 471,
+      "before": 471,
+      "canonical_image_id": "R1/3_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 385,
+      "before": 386,
+      "canonical_image_id": "R1/3_plain_arch",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 347,
+      "before": 347,
+      "canonical_image_id": "R1/3_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 487,
+      "before": 487,
+      "canonical_image_id": "R1/3_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 385,
+      "before": 385,
+      "canonical_image_id": "R1/3_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 421,
+      "before": 422,
+      "canonical_image_id": "R1/40_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 390,
+      "before": 391,
+      "canonical_image_id": "R1/40_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 425,
+      "before": 426,
+      "canonical_image_id": "R1/41_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 342,
+      "before": 343,
+      "canonical_image_id": "R1/41_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 347,
+      "before": 348,
+      "canonical_image_id": "R1/42_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 437,
+      "before": 437,
+      "canonical_image_id": "R1/42_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 406,
+      "before": 406,
+      "canonical_image_id": "R1/43_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 450,
+      "before": 450,
+      "canonical_image_id": "R1/43_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 418,
+      "before": 418,
+      "canonical_image_id": "R1/44_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 475,
+      "before": 475,
+      "canonical_image_id": "R1/44_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 425,
+      "before": 425,
+      "canonical_image_id": "R1/45_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 344,
+      "before": 344,
+      "canonical_image_id": "R1/45_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 383,
+      "before": 383,
+      "canonical_image_id": "R1/46_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 486,
+      "before": 486,
+      "canonical_image_id": "R1/46_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 333,
+      "before": 334,
+      "canonical_image_id": "R1/47_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 475,
+      "before": 476,
+      "canonical_image_id": "R1/47_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 391,
+      "before": 391,
+      "canonical_image_id": "R1/48_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 335,
+      "before": 335,
+      "canonical_image_id": "R1/48_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 413,
+      "before": 414,
+      "canonical_image_id": "R1/49_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 328,
+      "before": 328,
+      "canonical_image_id": "R1/49_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 347,
+      "before": 348,
+      "canonical_image_id": "R1/4_left_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 434,
+      "before": 434,
+      "canonical_image_id": "R1/4_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 334,
+      "before": 335,
+      "canonical_image_id": "R1/4_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 363,
+      "before": 363,
+      "canonical_image_id": "R1/4_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 370,
+      "before": 370,
+      "canonical_image_id": "R1/50_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 349,
+      "before": 350,
+      "canonical_image_id": "R1/50_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 362,
+      "before": 362,
+      "canonical_image_id": "R1/51_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 343,
+      "before": 343,
+      "canonical_image_id": "R1/51_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 398,
+      "before": 399,
+      "canonical_image_id": "R1/52_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 455,
+      "before": 455,
+      "canonical_image_id": "R1/52_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 343,
+      "before": 344,
+      "canonical_image_id": "R1/53_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 433,
+      "before": 433,
+      "canonical_image_id": "R1/53_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 452,
+      "before": 453,
+      "canonical_image_id": "R1/54_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 452,
+      "before": 452,
+      "canonical_image_id": "R1/54_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 338,
+      "before": 338,
+      "canonical_image_id": "R1/55_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 401,
+      "before": 401,
+      "canonical_image_id": "R1/55_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 417,
+      "before": 418,
+      "canonical_image_id": "R1/56_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 382,
+      "before": 382,
+      "canonical_image_id": "R1/56_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 476,
+      "before": 477,
+      "canonical_image_id": "R1/57_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 436,
+      "before": 436,
+      "canonical_image_id": "R1/57_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 482,
+      "before": 484,
+      "canonical_image_id": "R1/58_right_loop",
+      "duplicates_removed": 2,
+      "partition": "validation"
+    },
+    {
+      "after": 486,
+      "before": 486,
+      "canonical_image_id": "R1/58_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 503,
+      "before": 503,
+      "canonical_image_id": "R1/59_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 502,
+      "before": 502,
+      "canonical_image_id": "R1/59_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 462,
+      "before": 463,
+      "canonical_image_id": "R1/5_left_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 455,
+      "before": 455,
+      "canonical_image_id": "R1/5_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 458,
+      "before": 459,
+      "canonical_image_id": "R1/5_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 440,
+      "before": 440,
+      "canonical_image_id": "R1/5_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 341,
+      "before": 342,
+      "canonical_image_id": "R1/60_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 484,
+      "before": 485,
+      "canonical_image_id": "R1/60_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 482,
+      "before": 482,
+      "canonical_image_id": "R1/61_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 398,
+      "before": 398,
+      "canonical_image_id": "R1/62_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 424,
+      "before": 424,
+      "canonical_image_id": "R1/63_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 340,
+      "before": 340,
+      "canonical_image_id": "R1/64_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 474,
+      "before": 474,
+      "canonical_image_id": "R1/65_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 454,
+      "before": 454,
+      "canonical_image_id": "R1/66_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 359,
+      "before": 360,
+      "canonical_image_id": "R1/67_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 402,
+      "before": 403,
+      "canonical_image_id": "R1/68_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 333,
+      "before": 333,
+      "canonical_image_id": "R1/69_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 323,
+      "before": 323,
+      "canonical_image_id": "R1/6_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 408,
+      "before": 409,
+      "canonical_image_id": "R1/6_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 338,
+      "before": 339,
+      "canonical_image_id": "R1/6_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 519,
+      "before": 519,
+      "canonical_image_id": "R1/70_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 431,
+      "before": 431,
+      "canonical_image_id": "R1/71_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 371,
+      "before": 372,
+      "canonical_image_id": "R1/72_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 353,
+      "before": 353,
+      "canonical_image_id": "R1/73_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 503,
+      "before": 503,
+      "canonical_image_id": "R1/74_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 482,
+      "before": 482,
+      "canonical_image_id": "R1/7_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 405,
+      "before": 405,
+      "canonical_image_id": "R1/7_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 325,
+      "before": 326,
+      "canonical_image_id": "R1/8_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 494,
+      "before": 495,
+      "canonical_image_id": "R1/8_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 415,
+      "before": 415,
+      "canonical_image_id": "R1/9_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 380,
+      "before": 380,
+      "canonical_image_id": "R1/9_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 471,
+      "before": 471,
+      "canonical_image_id": "R2/10_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 510,
+      "before": 510,
+      "canonical_image_id": "R2/10_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 417,
+      "before": 418,
+      "canonical_image_id": "R2/11_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 356,
+      "before": 357,
+      "canonical_image_id": "R2/11_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 384,
+      "before": 384,
+      "canonical_image_id": "R2/12_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 361,
+      "before": 361,
+      "canonical_image_id": "R2/12_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 403,
+      "before": 403,
+      "canonical_image_id": "R2/13_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 363,
+      "before": 363,
+      "canonical_image_id": "R2/13_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 516,
+      "before": 518,
+      "canonical_image_id": "R2/14_right_loop",
+      "duplicates_removed": 2,
+      "partition": "test"
+    },
+    {
+      "after": 528,
+      "before": 528,
+      "canonical_image_id": "R2/14_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 336,
+      "before": 336,
+      "canonical_image_id": "R2/15_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 399,
+      "before": 400,
+      "canonical_image_id": "R2/15_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 439,
+      "before": 439,
+      "canonical_image_id": "R2/16_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 466,
+      "before": 467,
+      "canonical_image_id": "R2/16_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 362,
+      "before": 362,
+      "canonical_image_id": "R2/17_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 478,
+      "before": 479,
+      "canonical_image_id": "R2/17_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 466,
+      "before": 466,
+      "canonical_image_id": "R2/18_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 537,
+      "before": 537,
+      "canonical_image_id": "R2/18_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 344,
+      "before": 344,
+      "canonical_image_id": "R2/19_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 339,
+      "before": 339,
+      "canonical_image_id": "R2/19_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 450,
+      "before": 450,
+      "canonical_image_id": "R2/1_left_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 462,
+      "before": 462,
+      "canonical_image_id": "R2/1_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 374,
+      "before": 375,
+      "canonical_image_id": "R2/1_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 435,
+      "before": 435,
+      "canonical_image_id": "R2/1_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 498,
+      "before": 498,
+      "canonical_image_id": "R2/1_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 492,
+      "before": 493,
+      "canonical_image_id": "R2/20_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 321,
+      "before": 321,
+      "canonical_image_id": "R2/20_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 462,
+      "before": 462,
+      "canonical_image_id": "R2/21_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 471,
+      "before": 472,
+      "canonical_image_id": "R2/21_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 411,
+      "before": 411,
+      "canonical_image_id": "R2/22_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 442,
+      "before": 442,
+      "canonical_image_id": "R2/22_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 397,
+      "before": 397,
+      "canonical_image_id": "R2/23_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 454,
+      "before": 454,
+      "canonical_image_id": "R2/23_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 377,
+      "before": 377,
+      "canonical_image_id": "R2/24_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 476,
+      "before": 476,
+      "canonical_image_id": "R2/24_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 380,
+      "before": 380,
+      "canonical_image_id": "R2/25_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 314,
+      "before": 314,
+      "canonical_image_id": "R2/25_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 418,
+      "before": 419,
+      "canonical_image_id": "R2/26_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 521,
+      "before": 521,
+      "canonical_image_id": "R2/26_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 339,
+      "before": 339,
+      "canonical_image_id": "R2/27_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 347,
+      "before": 348,
+      "canonical_image_id": "R2/27_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 490,
+      "before": 490,
+      "canonical_image_id": "R2/28_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 379,
+      "before": 380,
+      "canonical_image_id": "R2/28_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 411,
+      "before": 411,
+      "canonical_image_id": "R2/29_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 463,
+      "before": 463,
+      "canonical_image_id": "R2/29_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 394,
+      "before": 394,
+      "canonical_image_id": "R2/2_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 487,
+      "before": 487,
+      "canonical_image_id": "R2/2_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 339,
+      "before": 339,
+      "canonical_image_id": "R2/2_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 433,
+      "before": 433,
+      "canonical_image_id": "R2/2_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 459,
+      "before": 459,
+      "canonical_image_id": "R2/2_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 519,
+      "before": 521,
+      "canonical_image_id": "R2/30_right_loop",
+      "duplicates_removed": 2,
+      "partition": "test"
+    },
+    {
+      "after": 381,
+      "before": 382,
+      "canonical_image_id": "R2/30_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 386,
+      "before": 388,
+      "canonical_image_id": "R2/31_right_loop",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 396,
+      "before": 396,
+      "canonical_image_id": "R2/31_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 394,
+      "before": 395,
+      "canonical_image_id": "R2/32_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 408,
+      "before": 408,
+      "canonical_image_id": "R2/32_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 360,
+      "before": 360,
+      "canonical_image_id": "R2/33_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 429,
+      "before": 429,
+      "canonical_image_id": "R2/33_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 403,
+      "before": 403,
+      "canonical_image_id": "R2/34_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 477,
+      "before": 477,
+      "canonical_image_id": "R2/34_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 466,
+      "before": 466,
+      "canonical_image_id": "R2/35_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 336,
+      "before": 336,
+      "canonical_image_id": "R2/35_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 390,
+      "before": 390,
+      "canonical_image_id": "R2/36_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 487,
+      "before": 488,
+      "canonical_image_id": "R2/36_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 405,
+      "before": 405,
+      "canonical_image_id": "R2/37_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 397,
+      "before": 398,
+      "canonical_image_id": "R2/37_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 307,
+      "before": 307,
+      "canonical_image_id": "R2/38_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 378,
+      "before": 379,
+      "canonical_image_id": "R2/38_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 384,
+      "before": 384,
+      "canonical_image_id": "R2/39_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 354,
+      "before": 354,
+      "canonical_image_id": "R2/39_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 355,
+      "before": 355,
+      "canonical_image_id": "R2/3_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 439,
+      "before": 439,
+      "canonical_image_id": "R2/3_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 419,
+      "before": 419,
+      "canonical_image_id": "R2/3_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 326,
+      "before": 326,
+      "canonical_image_id": "R2/3_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 378,
+      "before": 379,
+      "canonical_image_id": "R2/3_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 378,
+      "before": 379,
+      "canonical_image_id": "R2/40_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 497,
+      "before": 498,
+      "canonical_image_id": "R2/40_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 417,
+      "before": 417,
+      "canonical_image_id": "R2/41_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 475,
+      "before": 475,
+      "canonical_image_id": "R2/41_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 342,
+      "before": 344,
+      "canonical_image_id": "R2/42_right_loop",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 495,
+      "before": 495,
+      "canonical_image_id": "R2/42_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 521,
+      "before": 521,
+      "canonical_image_id": "R2/43_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 413,
+      "before": 414,
+      "canonical_image_id": "R2/43_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 404,
+      "before": 404,
+      "canonical_image_id": "R2/44_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 503,
+      "before": 504,
+      "canonical_image_id": "R2/44_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 451,
+      "before": 452,
+      "canonical_image_id": "R2/45_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 410,
+      "before": 411,
+      "canonical_image_id": "R2/45_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 341,
+      "before": 341,
+      "canonical_image_id": "R2/46_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 355,
+      "before": 355,
+      "canonical_image_id": "R2/46_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 366,
+      "before": 366,
+      "canonical_image_id": "R2/47_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 391,
+      "before": 391,
+      "canonical_image_id": "R2/47_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 533,
+      "before": 534,
+      "canonical_image_id": "R2/48_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 479,
+      "before": 479,
+      "canonical_image_id": "R2/48_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 391,
+      "before": 391,
+      "canonical_image_id": "R2/49_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 360,
+      "before": 360,
+      "canonical_image_id": "R2/49_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 430,
+      "before": 430,
+      "canonical_image_id": "R2/4_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 433,
+      "before": 434,
+      "canonical_image_id": "R2/4_plain_arch",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 372,
+      "before": 372,
+      "canonical_image_id": "R2/4_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 429,
+      "before": 430,
+      "canonical_image_id": "R2/4_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 381,
+      "before": 381,
+      "canonical_image_id": "R2/50_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 367,
+      "before": 367,
+      "canonical_image_id": "R2/50_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 326,
+      "before": 326,
+      "canonical_image_id": "R2/51_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 484,
+      "before": 484,
+      "canonical_image_id": "R2/51_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 408,
+      "before": 409,
+      "canonical_image_id": "R2/52_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 448,
+      "before": 448,
+      "canonical_image_id": "R2/52_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 364,
+      "before": 366,
+      "canonical_image_id": "R2/53_right_loop",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 368,
+      "before": 369,
+      "canonical_image_id": "R2/53_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 453,
+      "before": 453,
+      "canonical_image_id": "R2/54_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 458,
+      "before": 459,
+      "canonical_image_id": "R2/54_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 467,
+      "before": 467,
+      "canonical_image_id": "R2/55_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 354,
+      "before": 354,
+      "canonical_image_id": "R2/55_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 442,
+      "before": 442,
+      "canonical_image_id": "R2/56_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 383,
+      "before": 383,
+      "canonical_image_id": "R2/56_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 380,
+      "before": 380,
+      "canonical_image_id": "R2/57_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 358,
+      "before": 358,
+      "canonical_image_id": "R2/57_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 408,
+      "before": 408,
+      "canonical_image_id": "R2/58_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 382,
+      "before": 382,
+      "canonical_image_id": "R2/58_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 411,
+      "before": 411,
+      "canonical_image_id": "R2/59_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 466,
+      "before": 466,
+      "canonical_image_id": "R2/59_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 441,
+      "before": 441,
+      "canonical_image_id": "R2/5_left_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 356,
+      "before": 356,
+      "canonical_image_id": "R2/5_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 372,
+      "before": 373,
+      "canonical_image_id": "R2/5_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 337,
+      "before": 337,
+      "canonical_image_id": "R2/5_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 487,
+      "before": 487,
+      "canonical_image_id": "R2/60_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 438,
+      "before": 439,
+      "canonical_image_id": "R2/60_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 454,
+      "before": 454,
+      "canonical_image_id": "R2/61_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 394,
+      "before": 394,
+      "canonical_image_id": "R2/62_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 382,
+      "before": 383,
+      "canonical_image_id": "R2/63_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 488,
+      "before": 488,
+      "canonical_image_id": "R2/64_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 385,
+      "before": 385,
+      "canonical_image_id": "R2/65_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 454,
+      "before": 454,
+      "canonical_image_id": "R2/66_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 387,
+      "before": 388,
+      "canonical_image_id": "R2/67_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 364,
+      "before": 365,
+      "canonical_image_id": "R2/68_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 476,
+      "before": 477,
+      "canonical_image_id": "R2/69_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 374,
+      "before": 374,
+      "canonical_image_id": "R2/6_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 327,
+      "before": 327,
+      "canonical_image_id": "R2/6_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 337,
+      "before": 337,
+      "canonical_image_id": "R2/6_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 362,
+      "before": 362,
+      "canonical_image_id": "R2/70_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 489,
+      "before": 489,
+      "canonical_image_id": "R2/71_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 334,
+      "before": 334,
+      "canonical_image_id": "R2/72_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 399,
+      "before": 400,
+      "canonical_image_id": "R2/73_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 425,
+      "before": 425,
+      "canonical_image_id": "R2/74_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 367,
+      "before": 367,
+      "canonical_image_id": "R2/7_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 365,
+      "before": 365,
+      "canonical_image_id": "R2/7_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 337,
+      "before": 337,
+      "canonical_image_id": "R2/8_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 374,
+      "before": 374,
+      "canonical_image_id": "R2/8_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 358,
+      "before": 358,
+      "canonical_image_id": "R2/9_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 383,
+      "before": 383,
+      "canonical_image_id": "R2/9_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 475,
+      "before": 475,
+      "canonical_image_id": "R3/10_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 431,
+      "before": 431,
+      "canonical_image_id": "R3/10_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 354,
+      "before": 354,
+      "canonical_image_id": "R3/11_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 364,
+      "before": 364,
+      "canonical_image_id": "R3/11_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 347,
+      "before": 347,
+      "canonical_image_id": "R3/12_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 469,
+      "before": 469,
+      "canonical_image_id": "R3/12_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 388,
+      "before": 389,
+      "canonical_image_id": "R3/13_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 487,
+      "before": 487,
+      "canonical_image_id": "R3/13_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 361,
+      "before": 361,
+      "canonical_image_id": "R3/14_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 454,
+      "before": 455,
+      "canonical_image_id": "R3/14_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 416,
+      "before": 417,
+      "canonical_image_id": "R3/15_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 397,
+      "before": 398,
+      "canonical_image_id": "R3/15_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 448,
+      "before": 449,
+      "canonical_image_id": "R3/16_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 394,
+      "before": 394,
+      "canonical_image_id": "R3/16_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 441,
+      "before": 441,
+      "canonical_image_id": "R3/17_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 416,
+      "before": 419,
+      "canonical_image_id": "R3/17_whorl",
+      "duplicates_removed": 3,
+      "partition": "test"
+    },
+    {
+      "after": 377,
+      "before": 377,
+      "canonical_image_id": "R3/18_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 409,
+      "before": 411,
+      "canonical_image_id": "R3/18_whorl",
+      "duplicates_removed": 2,
+      "partition": "validation"
+    },
+    {
+      "after": 453,
+      "before": 453,
+      "canonical_image_id": "R3/19_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 356,
+      "before": 356,
+      "canonical_image_id": "R3/19_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 512,
+      "before": 512,
+      "canonical_image_id": "R3/1_left_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 429,
+      "before": 429,
+      "canonical_image_id": "R3/1_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 367,
+      "before": 367,
+      "canonical_image_id": "R3/1_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 348,
+      "before": 348,
+      "canonical_image_id": "R3/1_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 343,
+      "before": 343,
+      "canonical_image_id": "R3/1_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 428,
+      "before": 428,
+      "canonical_image_id": "R3/20_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 350,
+      "before": 350,
+      "canonical_image_id": "R3/20_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 350,
+      "before": 351,
+      "canonical_image_id": "R3/21_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 375,
+      "before": 376,
+      "canonical_image_id": "R3/21_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 476,
+      "before": 476,
+      "canonical_image_id": "R3/22_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 457,
+      "before": 457,
+      "canonical_image_id": "R3/22_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 389,
+      "before": 389,
+      "canonical_image_id": "R3/23_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 526,
+      "before": 526,
+      "canonical_image_id": "R3/23_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 431,
+      "before": 431,
+      "canonical_image_id": "R3/24_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 445,
+      "before": 445,
+      "canonical_image_id": "R3/24_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 387,
+      "before": 388,
+      "canonical_image_id": "R3/25_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 383,
+      "before": 383,
+      "canonical_image_id": "R3/25_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 360,
+      "before": 361,
+      "canonical_image_id": "R3/26_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 344,
+      "before": 344,
+      "canonical_image_id": "R3/26_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 444,
+      "before": 444,
+      "canonical_image_id": "R3/27_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 403,
+      "before": 404,
+      "canonical_image_id": "R3/27_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 451,
+      "before": 451,
+      "canonical_image_id": "R3/28_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 440,
+      "before": 440,
+      "canonical_image_id": "R3/28_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 489,
+      "before": 489,
+      "canonical_image_id": "R3/29_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 388,
+      "before": 388,
+      "canonical_image_id": "R3/29_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 353,
+      "before": 354,
+      "canonical_image_id": "R3/2_left_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 429,
+      "before": 429,
+      "canonical_image_id": "R3/2_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 408,
+      "before": 409,
+      "canonical_image_id": "R3/2_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 345,
+      "before": 345,
+      "canonical_image_id": "R3/2_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 410,
+      "before": 410,
+      "canonical_image_id": "R3/2_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 473,
+      "before": 474,
+      "canonical_image_id": "R3/30_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 416,
+      "before": 416,
+      "canonical_image_id": "R3/30_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 536,
+      "before": 537,
+      "canonical_image_id": "R3/31_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 387,
+      "before": 387,
+      "canonical_image_id": "R3/31_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 522,
+      "before": 522,
+      "canonical_image_id": "R3/32_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 463,
+      "before": 464,
+      "canonical_image_id": "R3/32_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 409,
+      "before": 410,
+      "canonical_image_id": "R3/33_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 432,
+      "before": 432,
+      "canonical_image_id": "R3/33_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 407,
+      "before": 407,
+      "canonical_image_id": "R3/34_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 438,
+      "before": 438,
+      "canonical_image_id": "R3/34_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 364,
+      "before": 365,
+      "canonical_image_id": "R3/35_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 363,
+      "before": 363,
+      "canonical_image_id": "R3/35_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 433,
+      "before": 433,
+      "canonical_image_id": "R3/36_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 429,
+      "before": 430,
+      "canonical_image_id": "R3/36_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 410,
+      "before": 411,
+      "canonical_image_id": "R3/37_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 455,
+      "before": 456,
+      "canonical_image_id": "R3/37_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 530,
+      "before": 530,
+      "canonical_image_id": "R3/38_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 481,
+      "before": 481,
+      "canonical_image_id": "R3/38_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 348,
+      "before": 348,
+      "canonical_image_id": "R3/39_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 454,
+      "before": 454,
+      "canonical_image_id": "R3/39_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 358,
+      "before": 358,
+      "canonical_image_id": "R3/3_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 404,
+      "before": 404,
+      "canonical_image_id": "R3/3_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 399,
+      "before": 399,
+      "canonical_image_id": "R3/3_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 463,
+      "before": 463,
+      "canonical_image_id": "R3/3_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 497,
+      "before": 498,
+      "canonical_image_id": "R3/3_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 337,
+      "before": 337,
+      "canonical_image_id": "R3/40_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 374,
+      "before": 374,
+      "canonical_image_id": "R3/40_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 458,
+      "before": 459,
+      "canonical_image_id": "R3/41_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 315,
+      "before": 316,
+      "canonical_image_id": "R3/41_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 505,
+      "before": 506,
+      "canonical_image_id": "R3/42_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 363,
+      "before": 363,
+      "canonical_image_id": "R3/42_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 375,
+      "before": 376,
+      "canonical_image_id": "R3/43_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 498,
+      "before": 498,
+      "canonical_image_id": "R3/43_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 368,
+      "before": 368,
+      "canonical_image_id": "R3/44_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 436,
+      "before": 437,
+      "canonical_image_id": "R3/44_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 337,
+      "before": 337,
+      "canonical_image_id": "R3/45_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 397,
+      "before": 397,
+      "canonical_image_id": "R3/45_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 401,
+      "before": 401,
+      "canonical_image_id": "R3/46_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 426,
+      "before": 426,
+      "canonical_image_id": "R3/46_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 368,
+      "before": 368,
+      "canonical_image_id": "R3/47_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 348,
+      "before": 348,
+      "canonical_image_id": "R3/47_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 324,
+      "before": 324,
+      "canonical_image_id": "R3/48_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 338,
+      "before": 338,
+      "canonical_image_id": "R3/48_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 419,
+      "before": 420,
+      "canonical_image_id": "R3/49_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 473,
+      "before": 474,
+      "canonical_image_id": "R3/49_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 344,
+      "before": 344,
+      "canonical_image_id": "R3/4_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 462,
+      "before": 462,
+      "canonical_image_id": "R3/4_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 417,
+      "before": 417,
+      "canonical_image_id": "R3/4_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 333,
+      "before": 333,
+      "canonical_image_id": "R3/4_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 355,
+      "before": 355,
+      "canonical_image_id": "R3/50_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 389,
+      "before": 389,
+      "canonical_image_id": "R3/50_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 463,
+      "before": 464,
+      "canonical_image_id": "R3/51_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 376,
+      "before": 377,
+      "canonical_image_id": "R3/51_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 485,
+      "before": 486,
+      "canonical_image_id": "R3/52_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 362,
+      "before": 362,
+      "canonical_image_id": "R3/52_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 334,
+      "before": 334,
+      "canonical_image_id": "R3/53_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 493,
+      "before": 494,
+      "canonical_image_id": "R3/53_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 452,
+      "before": 452,
+      "canonical_image_id": "R3/54_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 459,
+      "before": 459,
+      "canonical_image_id": "R3/54_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 418,
+      "before": 418,
+      "canonical_image_id": "R3/55_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 466,
+      "before": 467,
+      "canonical_image_id": "R3/55_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 515,
+      "before": 516,
+      "canonical_image_id": "R3/56_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 414,
+      "before": 414,
+      "canonical_image_id": "R3/56_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 456,
+      "before": 457,
+      "canonical_image_id": "R3/57_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 370,
+      "before": 370,
+      "canonical_image_id": "R3/57_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 325,
+      "before": 325,
+      "canonical_image_id": "R3/58_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 403,
+      "before": 403,
+      "canonical_image_id": "R3/58_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 446,
+      "before": 447,
+      "canonical_image_id": "R3/59_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 472,
+      "before": 472,
+      "canonical_image_id": "R3/59_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 467,
+      "before": 467,
+      "canonical_image_id": "R3/5_left_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 432,
+      "before": 432,
+      "canonical_image_id": "R3/5_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 501,
+      "before": 502,
+      "canonical_image_id": "R3/5_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 328,
+      "before": 328,
+      "canonical_image_id": "R3/5_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 465,
+      "before": 468,
+      "canonical_image_id": "R3/60_right_loop",
+      "duplicates_removed": 3,
+      "partition": "train"
+    },
+    {
+      "after": 464,
+      "before": 464,
+      "canonical_image_id": "R3/60_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 433,
+      "before": 433,
+      "canonical_image_id": "R3/61_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 404,
+      "before": 405,
+      "canonical_image_id": "R3/62_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 441,
+      "before": 441,
+      "canonical_image_id": "R3/63_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 481,
+      "before": 481,
+      "canonical_image_id": "R3/64_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 390,
+      "before": 390,
+      "canonical_image_id": "R3/65_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 398,
+      "before": 398,
+      "canonical_image_id": "R3/66_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 382,
+      "before": 382,
+      "canonical_image_id": "R3/67_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 364,
+      "before": 364,
+      "canonical_image_id": "R3/68_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 458,
+      "before": 459,
+      "canonical_image_id": "R3/69_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 486,
+      "before": 486,
+      "canonical_image_id": "R3/6_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 379,
+      "before": 379,
+      "canonical_image_id": "R3/6_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 330,
+      "before": 331,
+      "canonical_image_id": "R3/6_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 366,
+      "before": 366,
+      "canonical_image_id": "R3/70_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 510,
+      "before": 510,
+      "canonical_image_id": "R3/71_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 504,
+      "before": 504,
+      "canonical_image_id": "R3/72_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 517,
+      "before": 517,
+      "canonical_image_id": "R3/73_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 393,
+      "before": 394,
+      "canonical_image_id": "R3/74_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 455,
+      "before": 457,
+      "canonical_image_id": "R3/7_right_loop",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 443,
+      "before": 443,
+      "canonical_image_id": "R3/7_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 414,
+      "before": 415,
+      "canonical_image_id": "R3/8_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 388,
+      "before": 388,
+      "canonical_image_id": "R3/8_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 438,
+      "before": 438,
+      "canonical_image_id": "R3/9_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 356,
+      "before": 356,
+      "canonical_image_id": "R3/9_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 407,
+      "before": 407,
+      "canonical_image_id": "R4/10_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 354,
+      "before": 354,
+      "canonical_image_id": "R4/10_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 482,
+      "before": 483,
+      "canonical_image_id": "R4/11_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 482,
+      "before": 482,
+      "canonical_image_id": "R4/11_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 469,
+      "before": 470,
+      "canonical_image_id": "R4/12_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 405,
+      "before": 406,
+      "canonical_image_id": "R4/12_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 346,
+      "before": 346,
+      "canonical_image_id": "R4/13_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 465,
+      "before": 466,
+      "canonical_image_id": "R4/13_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 465,
+      "before": 466,
+      "canonical_image_id": "R4/14_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 426,
+      "before": 426,
+      "canonical_image_id": "R4/14_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 371,
+      "before": 371,
+      "canonical_image_id": "R4/15_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 370,
+      "before": 370,
+      "canonical_image_id": "R4/15_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 476,
+      "before": 477,
+      "canonical_image_id": "R4/16_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 390,
+      "before": 390,
+      "canonical_image_id": "R4/16_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 336,
+      "before": 336,
+      "canonical_image_id": "R4/17_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 410,
+      "before": 410,
+      "canonical_image_id": "R4/17_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 303,
+      "before": 304,
+      "canonical_image_id": "R4/18_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 349,
+      "before": 349,
+      "canonical_image_id": "R4/18_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 500,
+      "before": 501,
+      "canonical_image_id": "R4/19_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 423,
+      "before": 423,
+      "canonical_image_id": "R4/19_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 495,
+      "before": 495,
+      "canonical_image_id": "R4/1_left_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 438,
+      "before": 438,
+      "canonical_image_id": "R4/1_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 421,
+      "before": 422,
+      "canonical_image_id": "R4/1_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 508,
+      "before": 509,
+      "canonical_image_id": "R4/1_tented_arch",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 335,
+      "before": 335,
+      "canonical_image_id": "R4/1_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 429,
+      "before": 430,
+      "canonical_image_id": "R4/20_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 374,
+      "before": 375,
+      "canonical_image_id": "R4/20_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 459,
+      "before": 459,
+      "canonical_image_id": "R4/21_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 446,
+      "before": 446,
+      "canonical_image_id": "R4/21_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 538,
+      "before": 538,
+      "canonical_image_id": "R4/22_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 340,
+      "before": 341,
+      "canonical_image_id": "R4/22_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 395,
+      "before": 395,
+      "canonical_image_id": "R4/23_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 372,
+      "before": 372,
+      "canonical_image_id": "R4/23_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 373,
+      "before": 374,
+      "canonical_image_id": "R4/24_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 333,
+      "before": 333,
+      "canonical_image_id": "R4/24_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 346,
+      "before": 346,
+      "canonical_image_id": "R4/25_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 414,
+      "before": 414,
+      "canonical_image_id": "R4/25_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 337,
+      "before": 338,
+      "canonical_image_id": "R4/26_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 348,
+      "before": 348,
+      "canonical_image_id": "R4/26_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 337,
+      "before": 337,
+      "canonical_image_id": "R4/27_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 318,
+      "before": 318,
+      "canonical_image_id": "R4/27_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 407,
+      "before": 408,
+      "canonical_image_id": "R4/28_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 394,
+      "before": 394,
+      "canonical_image_id": "R4/28_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 480,
+      "before": 483,
+      "canonical_image_id": "R4/29_right_loop",
+      "duplicates_removed": 3,
+      "partition": "train"
+    },
+    {
+      "after": 395,
+      "before": 395,
+      "canonical_image_id": "R4/29_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 364,
+      "before": 365,
+      "canonical_image_id": "R4/2_left_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 347,
+      "before": 350,
+      "canonical_image_id": "R4/2_plain_arch",
+      "duplicates_removed": 3,
+      "partition": "test"
+    },
+    {
+      "after": 364,
+      "before": 365,
+      "canonical_image_id": "R4/2_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 402,
+      "before": 403,
+      "canonical_image_id": "R4/2_tented_arch",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 405,
+      "before": 406,
+      "canonical_image_id": "R4/2_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 369,
+      "before": 369,
+      "canonical_image_id": "R4/30_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 367,
+      "before": 368,
+      "canonical_image_id": "R4/30_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 332,
+      "before": 332,
+      "canonical_image_id": "R4/31_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 326,
+      "before": 326,
+      "canonical_image_id": "R4/31_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 449,
+      "before": 449,
+      "canonical_image_id": "R4/32_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 499,
+      "before": 499,
+      "canonical_image_id": "R4/32_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 370,
+      "before": 370,
+      "canonical_image_id": "R4/33_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 478,
+      "before": 479,
+      "canonical_image_id": "R4/33_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 505,
+      "before": 505,
+      "canonical_image_id": "R4/34_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 333,
+      "before": 333,
+      "canonical_image_id": "R4/34_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 460,
+      "before": 462,
+      "canonical_image_id": "R4/35_right_loop",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 444,
+      "before": 445,
+      "canonical_image_id": "R4/35_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 351,
+      "before": 351,
+      "canonical_image_id": "R4/36_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 444,
+      "before": 444,
+      "canonical_image_id": "R4/36_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 392,
+      "before": 392,
+      "canonical_image_id": "R4/37_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 350,
+      "before": 350,
+      "canonical_image_id": "R4/37_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 449,
+      "before": 450,
+      "canonical_image_id": "R4/38_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 343,
+      "before": 343,
+      "canonical_image_id": "R4/38_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 459,
+      "before": 459,
+      "canonical_image_id": "R4/39_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 417,
+      "before": 417,
+      "canonical_image_id": "R4/39_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 387,
+      "before": 388,
+      "canonical_image_id": "R4/3_left_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 333,
+      "before": 333,
+      "canonical_image_id": "R4/3_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 341,
+      "before": 341,
+      "canonical_image_id": "R4/3_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 338,
+      "before": 338,
+      "canonical_image_id": "R4/3_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 432,
+      "before": 432,
+      "canonical_image_id": "R4/3_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 456,
+      "before": 458,
+      "canonical_image_id": "R4/40_right_loop",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 444,
+      "before": 446,
+      "canonical_image_id": "R4/40_whorl",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 370,
+      "before": 370,
+      "canonical_image_id": "R4/41_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 474,
+      "before": 474,
+      "canonical_image_id": "R4/41_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 412,
+      "before": 412,
+      "canonical_image_id": "R4/42_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 332,
+      "before": 333,
+      "canonical_image_id": "R4/42_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 372,
+      "before": 372,
+      "canonical_image_id": "R4/43_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 323,
+      "before": 324,
+      "canonical_image_id": "R4/43_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 435,
+      "before": 435,
+      "canonical_image_id": "R4/44_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 436,
+      "before": 436,
+      "canonical_image_id": "R4/44_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 505,
+      "before": 506,
+      "canonical_image_id": "R4/45_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 396,
+      "before": 396,
+      "canonical_image_id": "R4/45_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 342,
+      "before": 343,
+      "canonical_image_id": "R4/46_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 348,
+      "before": 348,
+      "canonical_image_id": "R4/46_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 452,
+      "before": 452,
+      "canonical_image_id": "R4/47_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 454,
+      "before": 454,
+      "canonical_image_id": "R4/47_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 282,
+      "before": 282,
+      "canonical_image_id": "R4/48_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 485,
+      "before": 486,
+      "canonical_image_id": "R4/48_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 444,
+      "before": 444,
+      "canonical_image_id": "R4/49_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 463,
+      "before": 464,
+      "canonical_image_id": "R4/49_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 344,
+      "before": 345,
+      "canonical_image_id": "R4/4_left_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 383,
+      "before": 383,
+      "canonical_image_id": "R4/4_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 380,
+      "before": 380,
+      "canonical_image_id": "R4/4_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 486,
+      "before": 486,
+      "canonical_image_id": "R4/4_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 361,
+      "before": 361,
+      "canonical_image_id": "R4/50_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 399,
+      "before": 399,
+      "canonical_image_id": "R4/50_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 470,
+      "before": 471,
+      "canonical_image_id": "R4/51_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 332,
+      "before": 332,
+      "canonical_image_id": "R4/51_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 340,
+      "before": 340,
+      "canonical_image_id": "R4/52_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 357,
+      "before": 357,
+      "canonical_image_id": "R4/52_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 359,
+      "before": 359,
+      "canonical_image_id": "R4/53_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 423,
+      "before": 423,
+      "canonical_image_id": "R4/53_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 445,
+      "before": 445,
+      "canonical_image_id": "R4/54_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 484,
+      "before": 484,
+      "canonical_image_id": "R4/54_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 466,
+      "before": 466,
+      "canonical_image_id": "R4/55_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 422,
+      "before": 422,
+      "canonical_image_id": "R4/55_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 388,
+      "before": 388,
+      "canonical_image_id": "R4/56_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 406,
+      "before": 406,
+      "canonical_image_id": "R4/56_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 378,
+      "before": 378,
+      "canonical_image_id": "R4/57_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 368,
+      "before": 368,
+      "canonical_image_id": "R4/57_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 409,
+      "before": 409,
+      "canonical_image_id": "R4/58_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 481,
+      "before": 481,
+      "canonical_image_id": "R4/58_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 390,
+      "before": 390,
+      "canonical_image_id": "R4/59_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 541,
+      "before": 541,
+      "canonical_image_id": "R4/59_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 475,
+      "before": 475,
+      "canonical_image_id": "R4/5_left_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 379,
+      "before": 379,
+      "canonical_image_id": "R4/5_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 406,
+      "before": 406,
+      "canonical_image_id": "R4/5_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 401,
+      "before": 401,
+      "canonical_image_id": "R4/5_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 443,
+      "before": 443,
+      "canonical_image_id": "R4/60_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 321,
+      "before": 321,
+      "canonical_image_id": "R4/60_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 458,
+      "before": 459,
+      "canonical_image_id": "R4/61_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 451,
+      "before": 452,
+      "canonical_image_id": "R4/62_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 412,
+      "before": 412,
+      "canonical_image_id": "R4/63_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 486,
+      "before": 486,
+      "canonical_image_id": "R4/64_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 320,
+      "before": 320,
+      "canonical_image_id": "R4/65_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 348,
+      "before": 348,
+      "canonical_image_id": "R4/66_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 503,
+      "before": 503,
+      "canonical_image_id": "R4/67_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 485,
+      "before": 486,
+      "canonical_image_id": "R4/68_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 363,
+      "before": 363,
+      "canonical_image_id": "R4/69_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 360,
+      "before": 360,
+      "canonical_image_id": "R4/6_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 356,
+      "before": 356,
+      "canonical_image_id": "R4/6_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 511,
+      "before": 511,
+      "canonical_image_id": "R4/6_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 484,
+      "before": 484,
+      "canonical_image_id": "R4/70_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 458,
+      "before": 458,
+      "canonical_image_id": "R4/71_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 400,
+      "before": 400,
+      "canonical_image_id": "R4/72_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 395,
+      "before": 395,
+      "canonical_image_id": "R4/73_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 432,
+      "before": 433,
+      "canonical_image_id": "R4/74_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 454,
+      "before": 454,
+      "canonical_image_id": "R4/7_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 380,
+      "before": 381,
+      "canonical_image_id": "R4/7_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 470,
+      "before": 470,
+      "canonical_image_id": "R4/8_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 509,
+      "before": 510,
+      "canonical_image_id": "R4/8_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 477,
+      "before": 477,
+      "canonical_image_id": "R4/9_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 460,
+      "before": 460,
+      "canonical_image_id": "R4/9_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 358,
+      "before": 358,
+      "canonical_image_id": "R5/10_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 386,
+      "before": 387,
+      "canonical_image_id": "R5/10_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 367,
+      "before": 367,
+      "canonical_image_id": "R5/11_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 423,
+      "before": 424,
+      "canonical_image_id": "R5/11_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 375,
+      "before": 375,
+      "canonical_image_id": "R5/12_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 377,
+      "before": 377,
+      "canonical_image_id": "R5/12_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 331,
+      "before": 331,
+      "canonical_image_id": "R5/13_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 470,
+      "before": 470,
+      "canonical_image_id": "R5/13_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 314,
+      "before": 314,
+      "canonical_image_id": "R5/14_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 392,
+      "before": 392,
+      "canonical_image_id": "R5/14_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 414,
+      "before": 416,
+      "canonical_image_id": "R5/15_right_loop",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 468,
+      "before": 469,
+      "canonical_image_id": "R5/15_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 441,
+      "before": 442,
+      "canonical_image_id": "R5/16_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 349,
+      "before": 349,
+      "canonical_image_id": "R5/16_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 362,
+      "before": 362,
+      "canonical_image_id": "R5/17_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 336,
+      "before": 336,
+      "canonical_image_id": "R5/17_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 369,
+      "before": 369,
+      "canonical_image_id": "R5/18_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 448,
+      "before": 449,
+      "canonical_image_id": "R5/18_whorl",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 343,
+      "before": 346,
+      "canonical_image_id": "R5/19_right_loop",
+      "duplicates_removed": 3,
+      "partition": "validation"
+    },
+    {
+      "after": 438,
+      "before": 438,
+      "canonical_image_id": "R5/19_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 508,
+      "before": 508,
+      "canonical_image_id": "R5/1_left_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 459,
+      "before": 459,
+      "canonical_image_id": "R5/1_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 354,
+      "before": 354,
+      "canonical_image_id": "R5/1_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 341,
+      "before": 341,
+      "canonical_image_id": "R5/1_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 358,
+      "before": 358,
+      "canonical_image_id": "R5/1_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 402,
+      "before": 402,
+      "canonical_image_id": "R5/20_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 487,
+      "before": 487,
+      "canonical_image_id": "R5/20_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 441,
+      "before": 441,
+      "canonical_image_id": "R5/21_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 518,
+      "before": 518,
+      "canonical_image_id": "R5/21_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 451,
+      "before": 451,
+      "canonical_image_id": "R5/22_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 401,
+      "before": 401,
+      "canonical_image_id": "R5/22_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 504,
+      "before": 504,
+      "canonical_image_id": "R5/23_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 452,
+      "before": 452,
+      "canonical_image_id": "R5/23_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 465,
+      "before": 465,
+      "canonical_image_id": "R5/24_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 354,
+      "before": 354,
+      "canonical_image_id": "R5/24_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 389,
+      "before": 389,
+      "canonical_image_id": "R5/25_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 341,
+      "before": 341,
+      "canonical_image_id": "R5/25_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 333,
+      "before": 333,
+      "canonical_image_id": "R5/26_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 373,
+      "before": 373,
+      "canonical_image_id": "R5/26_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 362,
+      "before": 362,
+      "canonical_image_id": "R5/27_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 417,
+      "before": 417,
+      "canonical_image_id": "R5/27_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 310,
+      "before": 310,
+      "canonical_image_id": "R5/28_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 415,
+      "before": 415,
+      "canonical_image_id": "R5/28_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 390,
+      "before": 390,
+      "canonical_image_id": "R5/29_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 417,
+      "before": 417,
+      "canonical_image_id": "R5/29_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 500,
+      "before": 500,
+      "canonical_image_id": "R5/2_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 525,
+      "before": 525,
+      "canonical_image_id": "R5/2_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 516,
+      "before": 516,
+      "canonical_image_id": "R5/2_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 362,
+      "before": 362,
+      "canonical_image_id": "R5/2_tented_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 479,
+      "before": 479,
+      "canonical_image_id": "R5/2_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 367,
+      "before": 368,
+      "canonical_image_id": "R5/30_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 424,
+      "before": 425,
+      "canonical_image_id": "R5/30_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 378,
+      "before": 378,
+      "canonical_image_id": "R5/31_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 384,
+      "before": 384,
+      "canonical_image_id": "R5/31_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 382,
+      "before": 382,
+      "canonical_image_id": "R5/32_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 400,
+      "before": 400,
+      "canonical_image_id": "R5/32_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 460,
+      "before": 460,
+      "canonical_image_id": "R5/33_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 364,
+      "before": 365,
+      "canonical_image_id": "R5/33_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 358,
+      "before": 358,
+      "canonical_image_id": "R5/34_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 551,
+      "before": 551,
+      "canonical_image_id": "R5/34_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 336,
+      "before": 337,
+      "canonical_image_id": "R5/35_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 481,
+      "before": 482,
+      "canonical_image_id": "R5/35_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 379,
+      "before": 379,
+      "canonical_image_id": "R5/36_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 421,
+      "before": 421,
+      "canonical_image_id": "R5/36_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 349,
+      "before": 349,
+      "canonical_image_id": "R5/37_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 373,
+      "before": 375,
+      "canonical_image_id": "R5/37_whorl",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 418,
+      "before": 418,
+      "canonical_image_id": "R5/38_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 465,
+      "before": 465,
+      "canonical_image_id": "R5/38_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 515,
+      "before": 515,
+      "canonical_image_id": "R5/39_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 461,
+      "before": 461,
+      "canonical_image_id": "R5/39_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 390,
+      "before": 390,
+      "canonical_image_id": "R5/3_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 460,
+      "before": 460,
+      "canonical_image_id": "R5/3_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 430,
+      "before": 431,
+      "canonical_image_id": "R5/3_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 388,
+      "before": 389,
+      "canonical_image_id": "R5/3_tented_arch",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 413,
+      "before": 413,
+      "canonical_image_id": "R5/3_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 509,
+      "before": 509,
+      "canonical_image_id": "R5/40_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 360,
+      "before": 360,
+      "canonical_image_id": "R5/40_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 457,
+      "before": 457,
+      "canonical_image_id": "R5/41_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 480,
+      "before": 480,
+      "canonical_image_id": "R5/41_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 427,
+      "before": 427,
+      "canonical_image_id": "R5/42_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 413,
+      "before": 416,
+      "canonical_image_id": "R5/42_whorl",
+      "duplicates_removed": 3,
+      "partition": "test"
+    },
+    {
+      "after": 421,
+      "before": 421,
+      "canonical_image_id": "R5/43_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 310,
+      "before": 310,
+      "canonical_image_id": "R5/43_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 501,
+      "before": 501,
+      "canonical_image_id": "R5/44_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 512,
+      "before": 513,
+      "canonical_image_id": "R5/44_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 396,
+      "before": 396,
+      "canonical_image_id": "R5/45_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 408,
+      "before": 408,
+      "canonical_image_id": "R5/45_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 467,
+      "before": 467,
+      "canonical_image_id": "R5/46_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 322,
+      "before": 323,
+      "canonical_image_id": "R5/46_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 501,
+      "before": 501,
+      "canonical_image_id": "R5/47_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 386,
+      "before": 387,
+      "canonical_image_id": "R5/47_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 377,
+      "before": 377,
+      "canonical_image_id": "R5/48_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 399,
+      "before": 399,
+      "canonical_image_id": "R5/48_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 344,
+      "before": 345,
+      "canonical_image_id": "R5/49_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 421,
+      "before": 421,
+      "canonical_image_id": "R5/49_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 477,
+      "before": 477,
+      "canonical_image_id": "R5/4_left_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 445,
+      "before": 445,
+      "canonical_image_id": "R5/4_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 354,
+      "before": 354,
+      "canonical_image_id": "R5/4_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 427,
+      "before": 427,
+      "canonical_image_id": "R5/4_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 515,
+      "before": 515,
+      "canonical_image_id": "R5/50_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 330,
+      "before": 330,
+      "canonical_image_id": "R5/50_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 497,
+      "before": 497,
+      "canonical_image_id": "R5/51_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 411,
+      "before": 412,
+      "canonical_image_id": "R5/51_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 429,
+      "before": 429,
+      "canonical_image_id": "R5/52_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 449,
+      "before": 449,
+      "canonical_image_id": "R5/52_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 497,
+      "before": 497,
+      "canonical_image_id": "R5/53_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 477,
+      "before": 479,
+      "canonical_image_id": "R5/53_whorl",
+      "duplicates_removed": 2,
+      "partition": "validation"
+    },
+    {
+      "after": 417,
+      "before": 417,
+      "canonical_image_id": "R5/54_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 496,
+      "before": 497,
+      "canonical_image_id": "R5/54_whorl",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 416,
+      "before": 416,
+      "canonical_image_id": "R5/55_right_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 365,
+      "before": 365,
+      "canonical_image_id": "R5/55_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 463,
+      "before": 464,
+      "canonical_image_id": "R5/56_right_loop",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 484,
+      "before": 485,
+      "canonical_image_id": "R5/56_whorl",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 476,
+      "before": 476,
+      "canonical_image_id": "R5/57_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 434,
+      "before": 434,
+      "canonical_image_id": "R5/57_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 501,
+      "before": 502,
+      "canonical_image_id": "R5/58_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 409,
+      "before": 409,
+      "canonical_image_id": "R5/58_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 429,
+      "before": 429,
+      "canonical_image_id": "R5/59_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 450,
+      "before": 450,
+      "canonical_image_id": "R5/59_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 369,
+      "before": 369,
+      "canonical_image_id": "R5/5_left_loop",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 384,
+      "before": 384,
+      "canonical_image_id": "R5/5_plain_arch",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 383,
+      "before": 383,
+      "canonical_image_id": "R5/5_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 355,
+      "before": 355,
+      "canonical_image_id": "R5/5_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 334,
+      "before": 334,
+      "canonical_image_id": "R5/60_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 489,
+      "before": 489,
+      "canonical_image_id": "R5/60_whorl",
+      "duplicates_removed": 0,
+      "partition": "validation"
+    },
+    {
+      "after": 462,
+      "before": 463,
+      "canonical_image_id": "R5/61_right_loop",
+      "duplicates_removed": 1,
+      "partition": "test"
+    },
+    {
+      "after": 438,
+      "before": 438,
+      "canonical_image_id": "R5/62_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 347,
+      "before": 347,
+      "canonical_image_id": "R5/63_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 323,
+      "before": 323,
+      "canonical_image_id": "R5/64_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 499,
+      "before": 499,
+      "canonical_image_id": "R5/65_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 403,
+      "before": 403,
+      "canonical_image_id": "R5/66_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 437,
+      "before": 437,
+      "canonical_image_id": "R5/67_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 403,
+      "before": 403,
+      "canonical_image_id": "R5/68_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 419,
+      "before": 419,
+      "canonical_image_id": "R5/69_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 407,
+      "before": 408,
+      "canonical_image_id": "R5/6_plain_arch",
+      "duplicates_removed": 1,
+      "partition": "train"
+    },
+    {
+      "after": 488,
+      "before": 488,
+      "canonical_image_id": "R5/6_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 471,
+      "before": 471,
+      "canonical_image_id": "R5/6_whorl",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 374,
+      "before": 375,
+      "canonical_image_id": "R5/70_right_loop",
+      "duplicates_removed": 1,
+      "partition": "validation"
+    },
+    {
+      "after": 422,
+      "before": 424,
+      "canonical_image_id": "R5/71_right_loop",
+      "duplicates_removed": 2,
+      "partition": "train"
+    },
+    {
+      "after": 433,
+      "before": 433,
+      "canonical_image_id": "R5/72_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 477,
+      "before": 477,
+      "canonical_image_id": "R5/73_right_loop",
+      "duplicates_removed": 0,
+      "partition": "test"
+    },
+    {
+      "after": 397,
+      "before": 397,
+      "canonical_image_id": "R5/74_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 456,
+      "before": 456,
+      "canonical_image_id": "R5/7_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 363,
+      "before": 363,
+      "canonical_image_id": "R5/7_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 370,
+      "before": 370,
+      "canonical_image_id": "R5/8_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 455,
+      "before": 455,
+      "canonical_image_id": "R5/8_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 448,
+      "before": 448,
+      "canonical_image_id": "R5/9_right_loop",
+      "duplicates_removed": 0,
+      "partition": "train"
+    },
+    {
+      "after": 478,
+      "before": 478,
+      "canonical_image_id": "R5/9_whorl",
+      "duplicates_removed": 0,
+      "partition": "train"
+    }
+  ],
+  "schema_version": 1,
+  "totals": {
+    "after": 305768,
+    "before": 306009,
+    "duplicates_removed": 241
+  }
+}
