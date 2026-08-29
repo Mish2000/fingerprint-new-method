@@ -15,6 +15,8 @@ and are not part of the repository.
 - [Experiment 002 results](docs/experiments/002-l3sf-pore-annotation-feasibility-results.md)
 - [Experiment 003 protocol](docs/experiments/003-l3sf-annotated-final-crosswalk-protocol.md)
 - [Experiment 003 results](docs/experiments/003-l3sf-annotated-final-crosswalk-results.md)
+- [Experiment 004 protocol](docs/experiments/004-pore-localization-and-sd300-transfer-protocol.md)
+- [Experiment 004 results](docs/experiments/004-pore-localization-and-sd300-transfer-results.md)
 
 ## External datasets
 
@@ -91,6 +93,19 @@ Python tooling can use the dependency metadata in `pyproject.toml`.
 
 The same dataset-independent checks run in continuous integration for pull
 requests and for updates to `main`.
+
+Experiment 004 additionally uses the project-local CUDA runtime. On the
+preregistered Windows host it is installed from the official CUDA 12.8 wheel
+index before running the experiment scripts:
+
+```powershell
+& .\.conda-env\python.exe -m pip install torch==2.11.0 `
+  --index-url https://download.pytorch.org/whl/cu128
+```
+
+OpenCV preprocessing is materialized in a deterministic local cache before
+training so that the conda-forge OpenCV and PyTorch OpenMP runtimes are never
+executed together in the training process.
 
 ## Artifact policy
 

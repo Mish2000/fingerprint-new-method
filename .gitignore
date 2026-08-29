@@ -6,6 +6,7 @@
 # Large, deterministic inventories are regenerated from the local datasets.
 /artifacts/experiment-002/inventory/annotations.csv
 /artifacts/experiment-003/local-large/
+/artifacts/experiment-004/local-large/
 
 # Project-local environments, IDE state, and tool caches.
 /.idea/
