@@ -1,0 +1,231 @@
+{
+  "audit_revision": 1,
+  "container_metadata": {
+    "annotated_dimensions": {
+      "512x512": 740
+    },
+    "annotated_formats": {
+      "JPEG": 740
+    },
+    "annotated_modes": {
+      "RGB": 740
+    },
+    "final_dimensions": {
+      "320x240": 7400
+    },
+    "final_formats": {
+      "PNG": 7400
+    },
+    "final_modes": {
+      "RGB": 7400
+    },
+    "metadata_crosswalk_field_found": false,
+    "metadata_key_counts": {
+      "annotated_exif_tag_ids": {},
+      "annotated_info_keys": {
+        "jfif": 740,
+        "jfif_density": 740,
+        "jfif_unit": 740,
+        "jfif_version": 740
+      },
+      "final_exif_tag_ids": {},
+      "final_info_keys": {}
+    }
+  },
+  "data_root_read_only": "${FINGERPRINT_DATASETS_ROOT}/L3_SF_V2/L3SF_V2",
+  "experiment_id": "003-l3sf-annotated-final-crosswalk",
+  "file_inventory": {
+    "all_file_count": 8881,
+    "annotated_512_count": 740,
+    "annotation_tsv_count": 740,
+    "archive_files": [],
+    "final_320_count": 7400,
+    "other_unclassified_files": [],
+    "text_metadata_files": [
+      {
+        "contains_explicit_filename_crosswalk": false,
+        "line_count": 106,
+        "mentions_740_annotations": true,
+        "mentions_cycle_gan": true,
+        "mentions_master": true,
+        "mentions_seed": true,
+        "relative_path": "L3-SF - Level Three Synthetic Fingerprint Generation.txt",
+        "sha256": "896d58452568eba5769b8842fef86d20d16900c3bb1c849c439eb7ac8bfb1474",
+        "size_bytes": 3798
+      }
+    ]
+  },
+  "findings": {
+    "not_found": [
+      "An explicit annotated_512-to-final_320 crosswalk.",
+      "Generation seeds, command logs, model checkpoints, acquisition parameters, or per-image provenance metadata.",
+      "EXIF or PNG text fields carrying identity correspondence.",
+      "A local archive containing additional metadata."
+    ],
+    "numeric_stem_warning": "Numeric components in the two filename schemes were not compared or used as correspondence evidence.",
+    "plausible": [
+      "The dimensions and full-fingerprint framing are compatible with a pre-acquisition pore-bearing L3 master, but neither fact identifies the exact pipeline stage by itself.",
+      "The equal 148-per-run cardinality permits a one-to-one identity relation, but cardinality alone is not correspondence evidence."
+    ],
+    "proved": [
+      "The local descriptive text places pore/scratch insertion before acquisition simulation, calls the post-acquisition crop/rotation a seed image, and places image translation after the seed.",
+      "The two image branches have five runs, with 148 annotated_512 images and 148 ten-impression final_320 identities per run.",
+      "No image container field, archive, manifest, or separate mapping file is present that explicitly links an annotated_512 basename to a final_320 identity."
+    ],
+    "supported": [
+      "annotated_512 is a pore-bearing representation at or after pore insertion, because it is paired one-to-one with pore-coordinate TSV files."
+    ]
+  },
+  "hash_audit": {
+    "cross_branch_byte_identical_file_count": 0,
+    "cross_branch_byte_identical_sha256": []
+  },
+  "observed_top_level_entries": [
+    "L3-SF",
+    "L3-SF - Level Three Synthetic Fingerprint Generation.txt",
+    "Pore ground truth"
+  ],
+  "pixel_arrays_decoded": false,
+  "pore_coordinate_files_read": false,
+  "structure": {
+    "annotated_filename_parse_failures": [],
+    "annotated_images_per_run": {
+      "R1": 148,
+      "R2": 148,
+      "R3": 148,
+      "R4": 148,
+      "R5": 148
+    },
+    "annotated_pattern_counts": {
+      "left_loop": 25,
+      "plain_arch": 30,
+      "right_loop": 370,
+      "tented_arch": 15,
+      "whorl": 300
+    },
+    "annotation_files_per_run": {
+      "R1": 148,
+      "R2": 148,
+      "R3": 148,
+      "R4": 148,
+      "R5": 148
+    },
+    "final_filename_parse_failures": [],
+    "final_identities_per_run": {
+      "R1": 148,
+      "R2": 148,
+      "R3": 148,
+      "R4": 148,
+      "R5": 148
+    },
+    "final_identity_count": 740,
+    "final_images_per_identity_distribution": {
+      "10": 740
+    },
+    "final_images_per_run": {
+      "R1": 1480,
+      "R2": 1480,
+      "R3": 1480,
+      "R4": 1480,
+      "R5": 1480
+    },
+    "incomplete_final_identities": {},
+    "runs": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ]
+  },
+  "timestamps": {
+    "annotated_512": {
+      "distinct_count": 21,
+      "maximum_utc": "2020-07-13T18:42:01+00:00",
+      "minimum_utc": "2020-07-13T18:41:21+00:00",
+      "most_common": [
+        {
+          "file_count": 46,
+          "timestamp_utc": "2020-07-13T18:41:59+00:00"
+        },
+        {
+          "file_count": 45,
+          "timestamp_utc": "2020-07-13T18:41:45+00:00"
+        },
+        {
+          "file_count": 45,
+          "timestamp_utc": "2020-07-13T18:41:44+00:00"
+        },
+        {
+          "file_count": 45,
+          "timestamp_utc": "2020-07-13T18:41:50+00:00"
+        },
+        {
+          "file_count": 45,
+          "timestamp_utc": "2020-07-13T18:41:49+00:00"
+        },
+        {
+          "file_count": 45,
+          "timestamp_utc": "2020-07-13T18:41:55+00:00"
+        },
+        {
+          "file_count": 45,
+          "timestamp_utc": "2020-07-13T18:41:54+00:00"
+        },
+        {
+          "file_count": 44,
+          "timestamp_utc": "2020-07-13T18:41:23+00:00"
+        },
+        {
+          "file_count": 44,
+          "timestamp_utc": "2020-07-13T18:41:22+00:00"
+        },
+        {
+          "file_count": 44,
+          "timestamp_utc": "2020-07-13T18:41:48+00:00"
+        }
+      ],
+      "scientific_role": "provenance_only_not_correspondence_evidence"
+    },
+    "final_320": {
+      "distinct_count": 8,
+      "maximum_utc": "2020-06-22T11:45:49+00:00",
+      "minimum_utc": "2020-06-22T11:36:14+00:00",
+      "most_common": [
+        {
+          "file_count": 1480,
+          "timestamp_utc": "2020-06-22T11:36:14+00:00"
+        },
+        {
+          "file_count": 1480,
+          "timestamp_utc": "2020-06-22T11:44:56+00:00"
+        },
+        {
+          "file_count": 1457,
+          "timestamp_utc": "2020-06-22T11:42:56+00:00"
+        },
+        {
+          "file_count": 1394,
+          "timestamp_utc": "2020-06-22T11:45:48+00:00"
+        },
+        {
+          "file_count": 862,
+          "timestamp_utc": "2020-06-22T11:45:27+00:00"
+        },
+        {
+          "file_count": 618,
+          "timestamp_utc": "2020-06-22T11:45:28+00:00"
+        },
+        {
+          "file_count": 86,
+          "timestamp_utc": "2020-06-22T11:45:49+00:00"
+        },
+        {
+          "file_count": 23,
+          "timestamp_utc": "2020-06-22T11:42:57+00:00"
+        }
+      ],
+      "scientific_role": "provenance_only_not_correspondence_evidence"
+    }
+  }
+}

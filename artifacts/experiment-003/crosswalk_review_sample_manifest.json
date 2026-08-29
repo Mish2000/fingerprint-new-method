@@ -1,0 +1,519 @@
+{
+  "audit_seed": "l3sf-exp003-crosswalk-review-v1",
+  "crosswalk_scores_computed_before_manifest_freeze": false,
+  "experiment_id": "003-l3sf-annotated-final-crosswalk",
+  "image_count": 50,
+  "manifest_revision": 1,
+  "per_run_pattern_quotas": {
+    "left_loop": 1,
+    "plain_arch": 1,
+    "right_loop": 4,
+    "tented_arch": 1,
+    "whorl": 3
+  },
+  "quality_based_replacement_allowed": false,
+  "selected_images": [
+    {
+      "audit_index": 1,
+      "canonical_annotated_id": "R1/5_left_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/5_left_loop.jpg",
+      "image_sha256": "34c5b40a7299aaf9f29b35062e9e0b26a81939eac5d6329158fa74b96129986c",
+      "pattern": "left_loop",
+      "run": "R1",
+      "selection_rank_sha256": "1fe5694a825f44d88f3141eb24397463a1dde794e76ec522efc2345019bf94ab",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 2,
+      "canonical_annotated_id": "R1/2_plain_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/2_plain_arch.jpg",
+      "image_sha256": "200604fc996a2aa428b77e750d208fc4870d9d6736acaee0dd7e27f4c8bdfb6c",
+      "pattern": "plain_arch",
+      "run": "R1",
+      "selection_rank_sha256": "313ec3cc91c747b93053137c64f546b4e7ff2b618a0deced8a47cb5466d80538",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 3,
+      "canonical_annotated_id": "R1/71_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/71_right_loop.jpg",
+      "image_sha256": "1a629d9f74bd0db89785e2148050240864592c88aff05e8e12a44ac914bf4da4",
+      "pattern": "right_loop",
+      "run": "R1",
+      "selection_rank_sha256": "01d4c4ecba51ab0f0d2e3efeb1209e0038cedba551dc38543ad563a8868e99f8",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 4,
+      "canonical_annotated_id": "R1/45_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/45_right_loop.jpg",
+      "image_sha256": "47cbe792c23570bdd0d810d8a62bd1bc6343c7da88f7cdf2d2dd9d82f3360ab3",
+      "pattern": "right_loop",
+      "run": "R1",
+      "selection_rank_sha256": "077689d5ed695a3ecfd225ea28eea961f1dc5b0c44ec19da368d834d4162024f",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 5,
+      "canonical_annotated_id": "R1/31_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/31_right_loop.jpg",
+      "image_sha256": "5a715eb944c11fece1a76c2458668b1224d95e520d4e93ec216aa228102cb042",
+      "pattern": "right_loop",
+      "run": "R1",
+      "selection_rank_sha256": "0adf26023e39d9d1c5ae37746698c950e2926ca0c502822948de78c716d938d2",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 6,
+      "canonical_annotated_id": "R1/70_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/70_right_loop.jpg",
+      "image_sha256": "208a6b13bde134982d9efd90383aff74e56bf9eb10f179297fdda7a977089210",
+      "pattern": "right_loop",
+      "run": "R1",
+      "selection_rank_sha256": "12c0724dc5520099f28b212f0a1a80882aaefe70a2f0871b5793f8c183ba6081",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 7,
+      "canonical_annotated_id": "R1/2_tented_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/2_tented_arch.jpg",
+      "image_sha256": "0d0161811d751c4eb2e4293464aee61b74bd037db34ec9f5028c6b0b2f17e582",
+      "pattern": "tented_arch",
+      "run": "R1",
+      "selection_rank_sha256": "33ec1b289452ce345c29b31c22831dafef61487d5879686fd9f49c240ed9d3dc",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 8,
+      "canonical_annotated_id": "R1/11_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/11_whorl.jpg",
+      "image_sha256": "5efa49c6ddd1ddfde5736985c8fdc4832a30ea8ada9519cfebab56bcddecea95",
+      "pattern": "whorl",
+      "run": "R1",
+      "selection_rank_sha256": "019083dc94c5d7fbda134886290ca3acb913992ef9d7ee0cf8b3d0c9f31b8527",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 9,
+      "canonical_annotated_id": "R1/24_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/24_whorl.jpg",
+      "image_sha256": "13c25a39901662a9791fc9e6b3fe55e2e7aea2a67eb487d5a053e3c0be2495b2",
+      "pattern": "whorl",
+      "run": "R1",
+      "selection_rank_sha256": "05024b4a3424f3ccae500756acdc04d0ff6007c1104063524cd496773d649d3b",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 10,
+      "canonical_annotated_id": "R1/13_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R1/13_whorl.jpg",
+      "image_sha256": "38a4255ab00294a17b5a43e17dd54862ebdc3a0ed180d436664648537313b266",
+      "pattern": "whorl",
+      "run": "R1",
+      "selection_rank_sha256": "054271d9639ec3ee37612cd6b535ad7d49c5682c5f43e0305fbefd1f138e0e44",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 11,
+      "canonical_annotated_id": "R2/5_left_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/5_left_loop.jpg",
+      "image_sha256": "a533b0211ce0c3200f1c1736ffb6e51d70533e555691d316d4e4fb7662ae0bce",
+      "pattern": "left_loop",
+      "run": "R2",
+      "selection_rank_sha256": "212563b4cab86e7981874eb78f7cfe88f707dcf4db0b9e2b592d3e38aa3232b9",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 12,
+      "canonical_annotated_id": "R2/5_plain_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/5_plain_arch.jpg",
+      "image_sha256": "5a01ae4533bbd58fc40e171446a0244fc685825249638d0bd9ece68d74d7f5f8",
+      "pattern": "plain_arch",
+      "run": "R2",
+      "selection_rank_sha256": "3b1e11ecae8f042e70119faed9802496112e4a5849db67d7e174b3a1069972e5",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 13,
+      "canonical_annotated_id": "R2/34_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/34_right_loop.jpg",
+      "image_sha256": "a2136b09bd7c84a1cc43872a40ef3ec5faf4ce4a9b92f2bb068143c24903e8de",
+      "pattern": "right_loop",
+      "run": "R2",
+      "selection_rank_sha256": "0184cccd72a2065ae9f2867581fcf7d370a95f76ab72d411e283f22b1d49c65c",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 14,
+      "canonical_annotated_id": "R2/14_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/14_right_loop.jpg",
+      "image_sha256": "d97a4ca8170e14ef67b95e6dbf47d9da4335068319d7fbb2f4dde082938686ac",
+      "pattern": "right_loop",
+      "run": "R2",
+      "selection_rank_sha256": "056585cbc2e58fab3f5b8d8b438097fbd53d5e0aeeb5a5f9864e00831d9eea3b",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 15,
+      "canonical_annotated_id": "R2/19_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/19_right_loop.jpg",
+      "image_sha256": "8419300bb888316ee9db1f3a59a914ff2ec8fca55d1dc0c96354f7905b0da523",
+      "pattern": "right_loop",
+      "run": "R2",
+      "selection_rank_sha256": "0642a43c52458e630fa9683087de39e2dbf660edced388a6a7ee6b5ce42aa638",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 16,
+      "canonical_annotated_id": "R2/6_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/6_right_loop.jpg",
+      "image_sha256": "46be5f85c27f38ebb10168eddb384d67b3080c843eba868f148a3496731c11e9",
+      "pattern": "right_loop",
+      "run": "R2",
+      "selection_rank_sha256": "0dd3f8cb48d6876a32381478179248d2327c90cb250b529f5cd7aef16055ebf3",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 17,
+      "canonical_annotated_id": "R2/1_tented_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/1_tented_arch.jpg",
+      "image_sha256": "922e388f63895c3df114e2b72839473cbb508edece0c13cef2501981af67b5f9",
+      "pattern": "tented_arch",
+      "run": "R2",
+      "selection_rank_sha256": "93e8731d881adcc9b8c58a8ec972b2e4e062497a218f0122043368af4ce9159a",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 18,
+      "canonical_annotated_id": "R2/53_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/53_whorl.jpg",
+      "image_sha256": "b65f4b251eef07e65f103ec48007a1769a0c687222cbaad2eb0869bc77387026",
+      "pattern": "whorl",
+      "run": "R2",
+      "selection_rank_sha256": "00248ad50aa6fd99b6e728cc34ee4cd7a55dbfae5db59f7b880bfa43f34e9ee7",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 19,
+      "canonical_annotated_id": "R2/31_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/31_whorl.jpg",
+      "image_sha256": "967b5066b68d948559ff2775fe3e51854090919059fe739cf6010b18b8fb6229",
+      "pattern": "whorl",
+      "run": "R2",
+      "selection_rank_sha256": "00a64812a5ce0f2b3e65ed54e3c2282b4f2fc1f4acd96dc0b8e65c2e669af1fc",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 20,
+      "canonical_annotated_id": "R2/1_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R2/1_whorl.jpg",
+      "image_sha256": "6e061e6be038efc44a44876f92a37d33e5ea900c144c82148e4621acc797d031",
+      "pattern": "whorl",
+      "run": "R2",
+      "selection_rank_sha256": "064f4f00a0b7adece7ff8716a19c213146bd0bc72cb2fc6c32de178f5c0bfcc8",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 21,
+      "canonical_annotated_id": "R3/2_left_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/2_left_loop.jpg",
+      "image_sha256": "7d7403accaba5acef8204eb261303094e1bf453fcd94e9a37bb3ae3fbe02feb0",
+      "pattern": "left_loop",
+      "run": "R3",
+      "selection_rank_sha256": "08ec289b2f98f1d4c78841dfde3c3fef26cfdff4ff791a4b54a69dbeb85dad2a",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 22,
+      "canonical_annotated_id": "R3/1_plain_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/1_plain_arch.jpg",
+      "image_sha256": "019438ad27b65d2d23153e94457059263368748c664051cbdf50b50141e6e328",
+      "pattern": "plain_arch",
+      "run": "R3",
+      "selection_rank_sha256": "0f94faa30bd0cdd4ac1fef2bec582da9b6aa80d980dd407745e6283aea88780f",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 23,
+      "canonical_annotated_id": "R3/8_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/8_right_loop.jpg",
+      "image_sha256": "e6c1ada0f6749629b5dbc41463edffa163a7fba17b09106845765b150f4eb1d4",
+      "pattern": "right_loop",
+      "run": "R3",
+      "selection_rank_sha256": "0696efdb7930d8b7e193ea6350a2928cad32593a8fec906510a1e6b3ca4daea0",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 24,
+      "canonical_annotated_id": "R3/21_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/21_right_loop.jpg",
+      "image_sha256": "4c75dd0504bfdc0c43a130db8d2884481a03193d56495f2121d4f2a7fcd2793d",
+      "pattern": "right_loop",
+      "run": "R3",
+      "selection_rank_sha256": "0743ff176d7c9d0692db74e211069fce0ebd7b98f56da65a8e1cea335d63580f",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 25,
+      "canonical_annotated_id": "R3/11_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/11_right_loop.jpg",
+      "image_sha256": "bf2957038edf6fe5a38f0adc5dd6bef36bbb1882ba74e913db1717d4d0dcbd70",
+      "pattern": "right_loop",
+      "run": "R3",
+      "selection_rank_sha256": "0824ffe2acaa885b4abffd9ccd1e74b7c80d329a2a6cdbc65e3eadfcbb1ff64e",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 26,
+      "canonical_annotated_id": "R3/64_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/64_right_loop.jpg",
+      "image_sha256": "7ce940554d0c51368d820002c4616d64eee82875fd9db11b8c022e1174105bbe",
+      "pattern": "right_loop",
+      "run": "R3",
+      "selection_rank_sha256": "0dffb0a4700fba5057db16d2aef407eafa34ed2f90de308ebef3ffff3814e1f3",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 27,
+      "canonical_annotated_id": "R3/3_tented_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/3_tented_arch.jpg",
+      "image_sha256": "7e8f44e610c0552acbc5f894d6a9422e1a2fefffd200019c0daf807b6affc66f",
+      "pattern": "tented_arch",
+      "run": "R3",
+      "selection_rank_sha256": "25702fa178ba5d218485e9804417d76c43a7bb4d0b1caf6d5cc213ab60500089",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 28,
+      "canonical_annotated_id": "R3/54_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/54_whorl.jpg",
+      "image_sha256": "965328565b60509961bb0ecc4bb7cfed983ea8e3c926b944952449a637e24df9",
+      "pattern": "whorl",
+      "run": "R3",
+      "selection_rank_sha256": "0016798dfa0601e8d40f101992429bb019b3a7f13445ababa102c1fb45a0b302",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 29,
+      "canonical_annotated_id": "R3/52_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/52_whorl.jpg",
+      "image_sha256": "f00de87598254073a68fa8896d89aac07d71f761fed256a7f0d3ecc4fa7cbbb2",
+      "pattern": "whorl",
+      "run": "R3",
+      "selection_rank_sha256": "01db7ebb9e7487f2de151b015696d8f5f10ffa48bcc17cc9badcf15911610dc6",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 30,
+      "canonical_annotated_id": "R3/44_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R3/44_whorl.jpg",
+      "image_sha256": "302c69305c9c1398c0109381548f04b89fa581ef799ead637348285b9bc62bb6",
+      "pattern": "whorl",
+      "run": "R3",
+      "selection_rank_sha256": "07f3b3e8c5c775682607ee224a5383a60b935c47ca3e83c0effb3efbdab51ac4",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 31,
+      "canonical_annotated_id": "R4/4_left_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/4_left_loop.jpg",
+      "image_sha256": "18f48e8aa80237a96856a39b181d9e6c95b0ad1c854c840448f9009827c48ca3",
+      "pattern": "left_loop",
+      "run": "R4",
+      "selection_rank_sha256": "14e955c5a30af34fc89f8a8359c7fd96dbc7d8ffabd74854e8083c8ecd4d6444",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 32,
+      "canonical_annotated_id": "R4/3_plain_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/3_plain_arch.jpg",
+      "image_sha256": "8bca16dc854c3d7156d73eaf6a0c8157e68d6b5ee29b912869200b71b94389d5",
+      "pattern": "plain_arch",
+      "run": "R4",
+      "selection_rank_sha256": "1227a5f49b4a9147e5ceafd7f1854ec2eb576c71206019be3842047b8ba2254c",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 33,
+      "canonical_annotated_id": "R4/57_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/57_right_loop.jpg",
+      "image_sha256": "15d50742e19cc29d1b48d4abca0a45207d8055d8e3d84e7ca0dfa4ef65b297ca",
+      "pattern": "right_loop",
+      "run": "R4",
+      "selection_rank_sha256": "01a1e234bf227232bd92f7f8d1b3f408f1a84c5e043014709770b2e4d6d23fd4",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 34,
+      "canonical_annotated_id": "R4/62_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/62_right_loop.jpg",
+      "image_sha256": "cd2f9ce510b091052df0d5fe5e569058dd514e5fc2ba69ad6a5ceb9f96f54b83",
+      "pattern": "right_loop",
+      "run": "R4",
+      "selection_rank_sha256": "04deb8bc25f15f0eea26876d27f655dd83329f2974322fc4c6d76dded8994638",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 35,
+      "canonical_annotated_id": "R4/5_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/5_right_loop.jpg",
+      "image_sha256": "37244395d308afff8b19f3a9e1230d7a05ef0202e0c3f75a7455519e5c1ee2d6",
+      "pattern": "right_loop",
+      "run": "R4",
+      "selection_rank_sha256": "09237b7d6c746cca89853035a0432c2150296c0303ecd209061e407384038e18",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 36,
+      "canonical_annotated_id": "R4/38_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/38_right_loop.jpg",
+      "image_sha256": "42aed74b676221ae8f7f1bc333fe37c6fb63d4fd14bb45b24ae8b193c5ee2bc3",
+      "pattern": "right_loop",
+      "run": "R4",
+      "selection_rank_sha256": "0a246553df9e7b98ccce6af5b55ceab8ca5be6b52b2cf5bd1fe9eb98788cc60a",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 37,
+      "canonical_annotated_id": "R4/3_tented_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/3_tented_arch.jpg",
+      "image_sha256": "50d57403c25721ddf0370d49f7722980469d94dc59d130fe58c0753a9bfc9e2c",
+      "pattern": "tented_arch",
+      "run": "R4",
+      "selection_rank_sha256": "5956721e7d909d145451d53654aef168ef64ada58cee0f2b5c3eb3c957e8e5cf",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 38,
+      "canonical_annotated_id": "R4/40_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/40_whorl.jpg",
+      "image_sha256": "f5b3595cc7580bc8672b4b60afd9d6fe7664a1bc8e483ba85a5eddb63696aa47",
+      "pattern": "whorl",
+      "run": "R4",
+      "selection_rank_sha256": "08f8bd1ae8ba9978f98ca8ef9088bfb00b6c5273d4999ce5b9d106a11b67b529",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 39,
+      "canonical_annotated_id": "R4/50_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/50_whorl.jpg",
+      "image_sha256": "fe8cbaa66463ec7cb68af89166b85f6b2771bfe5b79e60f525eab62f631f0e1c",
+      "pattern": "whorl",
+      "run": "R4",
+      "selection_rank_sha256": "0c16b98e3ae1828aa2e59ea2613051e21e7fe829743af6a63250afa1cbeda9cf",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 40,
+      "canonical_annotated_id": "R4/33_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R4/33_whorl.jpg",
+      "image_sha256": "4edce974b5844ebb45d197a84f1ef788bf69fc8bf7b39096bf58e368066998e7",
+      "pattern": "whorl",
+      "run": "R4",
+      "selection_rank_sha256": "1966ab67089fd28a536772f64abde920b689bf043c16995fef1fa49db6ed82f0",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 41,
+      "canonical_annotated_id": "R5/1_left_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/1_left_loop.jpg",
+      "image_sha256": "99c6413ea5ada18e64bf72660c0733a8a02dfa73c256a6cee8105785574f7512",
+      "pattern": "left_loop",
+      "run": "R5",
+      "selection_rank_sha256": "253763b06541e83f26a46f33ed3c7a8412e90d3be17a15e94af171e57a7d1881",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 42,
+      "canonical_annotated_id": "R5/1_plain_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/1_plain_arch.jpg",
+      "image_sha256": "893d0d794fb500a946fb32e83ee715bd0c5a8630032bc75f28bfc6a326c54859",
+      "pattern": "plain_arch",
+      "run": "R5",
+      "selection_rank_sha256": "15155d7e5c74d3c46e90f23084d592d14b633350b232bee43fa0b59c9e288229",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 43,
+      "canonical_annotated_id": "R5/24_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/24_right_loop.jpg",
+      "image_sha256": "342207951eea220a367163fde2c182ab3ac5e8615164edd9b6e1f09d5a887161",
+      "pattern": "right_loop",
+      "run": "R5",
+      "selection_rank_sha256": "00efea32f5d5fddd9c1ca217fa2ca4d551003b8ce53453e6eb0bc79c68a66552",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 44,
+      "canonical_annotated_id": "R5/38_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/38_right_loop.jpg",
+      "image_sha256": "3b3420211b426dcac5df3db3b205362ebc6c2507246bd1eaab4b2bde4ca39e03",
+      "pattern": "right_loop",
+      "run": "R5",
+      "selection_rank_sha256": "00fe17b6d8b5ade06e360acecc15ab2381909dc2553537bd76deaa01b8b46d00",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 45,
+      "canonical_annotated_id": "R5/16_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/16_right_loop.jpg",
+      "image_sha256": "f1413fc61b5fc69aed504c8a82762272ad83449bd4335aedd5c5a4472ba3d392",
+      "pattern": "right_loop",
+      "run": "R5",
+      "selection_rank_sha256": "03cda1f41f432ddca980051ed99ea4db8a046869f8932f6e59439525bf1f114f",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 46,
+      "canonical_annotated_id": "R5/11_right_loop",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/11_right_loop.jpg",
+      "image_sha256": "347b8c7a530a49c4a96a4c117cb457dfdc6fa6f425344b82a11ea5e87f58588b",
+      "pattern": "right_loop",
+      "run": "R5",
+      "selection_rank_sha256": "048131715c1ea92cf77e7c22a1724b73d059290fa47d462160a1306633f74fae",
+      "stratum_quota": 4
+    },
+    {
+      "audit_index": 47,
+      "canonical_annotated_id": "R5/1_tented_arch",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/1_tented_arch.jpg",
+      "image_sha256": "85d66c56282e5f662f8aa7a5b55046f44f553a3d151ae0d7715ea7f91a1799a5",
+      "pattern": "tented_arch",
+      "run": "R5",
+      "selection_rank_sha256": "12000658f2f5d97399268384ba4e7c776b0ef798a5852a1f7278bab72bac2a2d",
+      "stratum_quota": 1
+    },
+    {
+      "audit_index": 48,
+      "canonical_annotated_id": "R5/10_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/10_whorl.jpg",
+      "image_sha256": "47c6d31b8f3870c92fbee8ddf39596bed72dbef178b4b474b735fb997914a19e",
+      "pattern": "whorl",
+      "run": "R5",
+      "selection_rank_sha256": "033aaacfd1f259518e1dec7808e3ce7f0fe23b7c35c0395935dccf2bcff7b4db",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 49,
+      "canonical_annotated_id": "R5/27_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/27_whorl.jpg",
+      "image_sha256": "b2337ec34bebe4a8bd1ab69a1cf05c55e5da2cf78650baffa53501579e036b46",
+      "pattern": "whorl",
+      "run": "R5",
+      "selection_rank_sha256": "0750a422ef68313cc8d72faf84944f593438c553c78cb772922a1a81044d1819",
+      "stratum_quota": 3
+    },
+    {
+      "audit_index": 50,
+      "canonical_annotated_id": "R5/44_whorl",
+      "image_relative_path": "Pore ground truth/Fingerprint Images/R5/44_whorl.jpg",
+      "image_sha256": "c5b18a28f164be9257cbb7b4e04160f6e6b4f8f5037a8d3c1ddb058aa875c025",
+      "pattern": "whorl",
+      "run": "R5",
+      "selection_rank_sha256": "0acf47f201a117816a5db020a9713057eff6c4f87fd1f421eac7bfba81d492c6",
+      "stratum_quota": 3
+    }
+  ],
+  "selected_images_visually_viewed_before_manifest_freeze": false,
+  "selection_rule": "For each run and pattern, rank by SHA256(seed|run|canonical_annotated_id); select quotas 4 right_loop, 3 whorl, and 1 each left_loop/plain_arch/tented_arch."
+}
