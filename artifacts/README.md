@@ -19,4 +19,16 @@ The excluded Experiment 002 annotation inventory is regenerated with:
 Its expected size, row count, and checksum are recorded in
 `experiment-002/inventory/annotations.manifest.json`.
 
+Experiment 003 keeps its two-channel impression score matrices under the
+ignored `experiment-003/local-large/` directory. Regenerate them and their
+compact checksum manifest with:
+
+```powershell
+& .\.conda-env\python.exe .\scripts\experiment_003_build_crosswalk.py --overwrite
+```
+
+Its blinded comparison plates remain under the ignored
+`experiment-003/evidence-pixels/crosswalk-review/` directory and are regenerated
+with `scripts/experiment_003_prepare_crosswalk_review.py`.
+
 See `docs/data-and-licensing.md` before adding or publishing any new artifact.

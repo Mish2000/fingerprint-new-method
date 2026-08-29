@@ -1,0 +1,242 @@
+{
+  "annotated_count": 740,
+  "assignment_agreement_count": 3,
+  "automatic_95pct_threshold_pass": false,
+  "candidate_scope": "same_run_only_148_identities_10_impressions_each",
+  "channel_agreement_count": 4,
+  "channel_agreement_fraction": 0.005405405405405406,
+  "channel_diagnostics": {
+    "K_rootsift_affine": {
+      "all_three_channel_conditions_pass_count": 311,
+      "distinct_top1_identities_per_run": {
+        "R1": 119,
+        "R2": 115,
+        "R3": 120,
+        "R4": 113,
+        "R5": 108
+      },
+      "global_position_drop_change_count_distribution": {
+        "0": 425,
+        "1": 164,
+        "2": 102,
+        "3": 49
+      },
+      "margin_pass_count": 494,
+      "robust_separation": {
+        "count": 740,
+        "maximum": 518.057259939885,
+        "median": 9.650331403135173,
+        "minimum": 0.00015564242374760815,
+        "p05": 0.14248911950179483,
+        "p95": 150.44731486876472
+      },
+      "support_impression_count_distribution": {
+        "0": 335,
+        "1": 83,
+        "2": 58,
+        "3": 46,
+        "4": 34,
+        "5": 43,
+        "6": 29,
+        "7": 25,
+        "8": 29,
+        "9": 34,
+        "10": 24
+      },
+      "support_pass_count": 322,
+      "winner_leave_one_out_stable_count": 421
+    },
+    "O_ridge_orientation_affine": {
+      "all_three_channel_conditions_pass_count": 0,
+      "distinct_top1_identities_per_run": {
+        "R1": 76,
+        "R2": 75,
+        "R3": 75,
+        "R4": 70,
+        "R5": 71
+      },
+      "global_position_drop_change_count_distribution": {
+        "0": 33,
+        "1": 236,
+        "2": 274,
+        "3": 197
+      },
+      "margin_pass_count": 34,
+      "robust_separation": {
+        "count": 740,
+        "maximum": 4.762469083037741,
+        "median": 0.5528701192474851,
+        "minimum": 0.00018393865182606513,
+        "p05": 0.039528827209080616,
+        "p95": 2.444197870410128
+      },
+      "support_impression_count_distribution": {
+        "0": 634,
+        "1": 97,
+        "2": 8,
+        "3": 1
+      },
+      "support_pass_count": 1,
+      "winner_leave_one_out_stable_count": 31
+    }
+  },
+  "collision_count": 0,
+  "crosswalk_revision": 1,
+  "crosswalk_sha256": "365a6e7e94d8bc123d6361f31952e9692f9ce534897348fa225f6e26d20d0b7b",
+  "experiment_id": "003-l3sf-annotated-final-crosswalk",
+  "frozen_visual_review": {
+    "channels_agreed_in_frozen_review_before_visual_inspection": 0,
+    "classification_counts": {
+      "AMBIGUOUS": 12,
+      "CLEAR": 28,
+      "NOT_MATCH": 10
+    },
+    "clear_fraction": 0.56,
+    "clear_or_ambiguous_fraction": 0.8,
+    "protocol_contingency": "Because no consensus identity existed for the frozen sample, the preregistered combined Hungarian diagnostic is shown against the first distinct K/O local candidate. This review cannot upgrade AMBIGUOUS mappings or rescue Gate 1.",
+    "review_75pct_clear_threshold_pass": false,
+    "review_90pct_threshold_pass": false,
+    "review_count": 50
+  },
+  "gate_1_failure_reasons": [
+    "0 of 740 mappings met the preregistered STRONG definition; at least 703 were required.",
+    "Only 4 of 740 local top-1 candidates agreed between the two independent channels.",
+    "The frozen review cannot rescue an automatically ambiguous mapping and did not meet both visual thresholds."
+  ],
+  "gate_1_pass": false,
+  "gate_1_status": "FAIL_NO_RELIABLE_CROSSWALK",
+  "geometry_executed": false,
+  "geometry_stop_reason": "Gate 1 failed, so the preregistered stop rule prohibits annotation transfer.",
+  "per_run": {
+    "R1": {
+      "ambiguous_count": 148,
+      "annotated_count": 148,
+      "assignment_agreement_count": 0,
+      "channel_agreement_count": 1,
+      "collision_count": 0,
+      "status_by_pattern": {
+        "left_loop": {
+          "AMBIGUOUS": 5
+        },
+        "plain_arch": {
+          "AMBIGUOUS": 6
+        },
+        "right_loop": {
+          "AMBIGUOUS": 74
+        },
+        "tented_arch": {
+          "AMBIGUOUS": 3
+        },
+        "whorl": {
+          "AMBIGUOUS": 60
+        }
+      },
+      "strong_count": 0
+    },
+    "R2": {
+      "ambiguous_count": 148,
+      "annotated_count": 148,
+      "assignment_agreement_count": 2,
+      "channel_agreement_count": 2,
+      "collision_count": 0,
+      "status_by_pattern": {
+        "left_loop": {
+          "AMBIGUOUS": 5
+        },
+        "plain_arch": {
+          "AMBIGUOUS": 6
+        },
+        "right_loop": {
+          "AMBIGUOUS": 74
+        },
+        "tented_arch": {
+          "AMBIGUOUS": 3
+        },
+        "whorl": {
+          "AMBIGUOUS": 60
+        }
+      },
+      "strong_count": 0
+    },
+    "R3": {
+      "ambiguous_count": 148,
+      "annotated_count": 148,
+      "assignment_agreement_count": 0,
+      "channel_agreement_count": 0,
+      "collision_count": 0,
+      "status_by_pattern": {
+        "left_loop": {
+          "AMBIGUOUS": 5
+        },
+        "plain_arch": {
+          "AMBIGUOUS": 6
+        },
+        "right_loop": {
+          "AMBIGUOUS": 74
+        },
+        "tented_arch": {
+          "AMBIGUOUS": 3
+        },
+        "whorl": {
+          "AMBIGUOUS": 60
+        }
+      },
+      "strong_count": 0
+    },
+    "R4": {
+      "ambiguous_count": 148,
+      "annotated_count": 148,
+      "assignment_agreement_count": 0,
+      "channel_agreement_count": 0,
+      "collision_count": 0,
+      "status_by_pattern": {
+        "left_loop": {
+          "AMBIGUOUS": 5
+        },
+        "plain_arch": {
+          "AMBIGUOUS": 6
+        },
+        "right_loop": {
+          "AMBIGUOUS": 74
+        },
+        "tented_arch": {
+          "AMBIGUOUS": 3
+        },
+        "whorl": {
+          "AMBIGUOUS": 60
+        }
+      },
+      "strong_count": 0
+    },
+    "R5": {
+      "ambiguous_count": 148,
+      "annotated_count": 148,
+      "assignment_agreement_count": 1,
+      "channel_agreement_count": 1,
+      "collision_count": 0,
+      "status_by_pattern": {
+        "left_loop": {
+          "AMBIGUOUS": 5
+        },
+        "plain_arch": {
+          "AMBIGUOUS": 6
+        },
+        "right_loop": {
+          "AMBIGUOUS": 74
+        },
+        "tented_arch": {
+          "AMBIGUOUS": 3
+        },
+        "whorl": {
+          "AMBIGUOUS": 60
+        }
+      },
+      "strong_count": 0
+    }
+  },
+  "pore_annotations_used": false,
+  "status_counts": {
+    "AMBIGUOUS": 740
+  },
+  "strong_fraction": 0.0
+}

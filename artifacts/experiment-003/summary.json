@@ -1,0 +1,166 @@
+{
+  "artifacts": {
+    "crosswalk.csv": {
+      "sha256": "365a6e7e94d8bc123d6361f31952e9692f9ce534897348fa225f6e26d20d0b7b",
+      "size_bytes": 171726
+    },
+    "crosswalk_review.csv": {
+      "sha256": "3683c1f0d63ddde3bd69879236e3c8233a00c4222b396182b6fa834ce5ee8589",
+      "size_bytes": 9668
+    },
+    "crosswalk_review_summary.json": {
+      "sha256": "fcf56ec3bf75c279f5c7bc49dc592355e75df0d5949f0e645584e22aa3cd4c96",
+      "size_bytes": 592
+    },
+    "crosswalk_summary.json": {
+      "sha256": "6e446623fc73c92283a3b74585bc7e247f8908ca97da748c74e031d509b92d94",
+      "size_bytes": 6339
+    },
+    "pore_transfer_review.csv": {
+      "sha256": "50d9c48ae6454b02c51b6e989b04fcb39369880e8a400a5a820b71fd33baa5c5",
+      "size_bytes": 105
+    },
+    "registration_summary.csv": {
+      "sha256": "f2ebf475ca02d9dbfef2f55df2c27415a36d723c21ecd39075c00afe752f3742",
+      "size_bytes": 85
+    },
+    "score_matrices.manifest.json": {
+      "sha256": "8024eb9f3e854af17112b81523126f889de4dfa06c370471ce059475cee63090",
+      "size_bytes": 2794
+    },
+    "semantic_audit.json": {
+      "sha256": "05c832f04b478a1af3491ce1b4f273638986a6df19df5634a66afddd7b6f51cf",
+      "size_bytes": 7078
+    }
+  },
+  "decision": "NO_RELIABLE_CROSSWALK",
+  "experiment_id": "003-l3sf-annotated-final-crosswalk",
+  "gate_1": {
+    "automatic_strong_fraction": 0.0,
+    "failure_reasons": [
+      "0 of 740 mappings met the preregistered STRONG definition; at least 703 were required.",
+      "Only 4 of 740 local top-1 candidates agreed between the two independent channels.",
+      "The frozen review cannot rescue an automatically ambiguous mapping and did not meet both visual thresholds."
+    ],
+    "pass": false,
+    "visual_clear_fraction": 0.56,
+    "visual_clear_or_ambiguous_fraction": 0.8
+  },
+  "gate_2": {
+    "reason": "Gate 1 failed, so the preregistered stop rule prohibits annotation transfer.",
+    "status": "NOT_RUN"
+  },
+  "interpretation_limit": "This decision means the required evidence is insufficient; it does not prove that no latent relationship exists between the distributed branches.",
+  "methods": {
+    "candidate_groups_scored": 109520,
+    "channel_diagnostics": {
+      "K_rootsift_affine": {
+        "all_three_channel_conditions_pass_count": 311,
+        "distinct_top1_identities_per_run": {
+          "R1": 119,
+          "R2": 115,
+          "R3": 120,
+          "R4": 113,
+          "R5": 108
+        },
+        "global_position_drop_change_count_distribution": {
+          "0": 425,
+          "1": 164,
+          "2": 102,
+          "3": 49
+        },
+        "margin_pass_count": 494,
+        "robust_separation": {
+          "count": 740,
+          "maximum": 518.057259939885,
+          "median": 9.650331403135173,
+          "minimum": 0.00015564242374760815,
+          "p05": 0.14248911950179483,
+          "p95": 150.44731486876472
+        },
+        "support_impression_count_distribution": {
+          "0": 335,
+          "1": 83,
+          "2": 58,
+          "3": 46,
+          "4": 34,
+          "5": 43,
+          "6": 29,
+          "7": 25,
+          "8": 29,
+          "9": 34,
+          "10": 24
+        },
+        "support_pass_count": 322,
+        "winner_leave_one_out_stable_count": 421
+      },
+      "O_ridge_orientation_affine": {
+        "all_three_channel_conditions_pass_count": 0,
+        "distinct_top1_identities_per_run": {
+          "R1": 76,
+          "R2": 75,
+          "R3": 75,
+          "R4": 70,
+          "R5": 71
+        },
+        "global_position_drop_change_count_distribution": {
+          "0": 33,
+          "1": 236,
+          "2": 274,
+          "3": 197
+        },
+        "margin_pass_count": 34,
+        "robust_separation": {
+          "count": 740,
+          "maximum": 4.762469083037741,
+          "median": 0.5528701192474851,
+          "minimum": 0.00018393865182606513,
+          "p05": 0.039528827209080616,
+          "p95": 2.444197870410128
+        },
+        "support_impression_count_distribution": {
+          "0": 634,
+          "1": 97,
+          "2": 8,
+          "3": 1
+        },
+        "support_pass_count": 1,
+        "winner_leave_one_out_stable_count": 31
+      }
+    },
+    "cross_run_search_performed": false,
+    "impression_pairs_scored_per_channel": 1095200,
+    "one_to_one_assignment_used_as_proof": false,
+    "pore_annotations_used_for_crosswalk": false
+  },
+  "pixel_evidence_tracked_in_git": false,
+  "question_a": {
+    "answer": "EXACT_STAGE_NOT_PROVED",
+    "plausible_but_unproved_role": "The post-pore/post-scratch L3 Master Fingerprint described in the local method text, before acquisition simulation.",
+    "reason": "The local text defines that pipeline stage, and each annotated_512 has pore coordinates, but no file-level provenance links the distributed 512 images to a named generation stage.",
+    "supported_role": "A pore-bearing, pore-annotated representation at or after pore insertion and before or outside the distributed final_320 branch."
+  },
+  "question_b": {
+    "answer": "NO_RELIABLE_IDENTITY_CROSSWALK",
+    "channel_top1_agreement_count": 4,
+    "channel_top1_agreement_fraction": 0.005405405405405406,
+    "frozen_review_clear_count": 28,
+    "frozen_review_clear_or_ambiguous_count": 40,
+    "frozen_review_count": 50,
+    "required_strong_correspondence_count": 703,
+    "strong_correspondence_count": 0
+  },
+  "question_c": {
+    "answer": "NOT_EVALUATED_BY_STOP_RULE",
+    "pore_transfer_point_count": 0,
+    "reason": "Gate 1 failed; annotations must not be transferred without an identity crosswalk.",
+    "registration_pair_count": 0
+  },
+  "source_dataset_writes": 0,
+  "status": "COMPLETE_STOPPED_AT_GATE_1",
+  "supported_hypothesis": "H0",
+  "terminology": {
+    "annotated_branch": "annotated_512",
+    "final_branch": "final_320"
+  }
+}

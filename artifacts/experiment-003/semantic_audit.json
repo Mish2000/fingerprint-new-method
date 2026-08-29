@@ -77,8 +77,11 @@
     ]
   },
   "hash_audit": {
+    "annotated_512_path_sha256_manifest": "3cd6471702b1639a214ddc901249bd16c5134e24482a25aa108c5ece0fbd7fc5",
     "cross_branch_byte_identical_file_count": 0,
-    "cross_branch_byte_identical_sha256": []
+    "cross_branch_byte_identical_sha256": [],
+    "final_320_path_sha256_manifest": "fb0cb5cb856a813bf0a33888dd59b9fd64eee9d82d0c0e44534a0611276ab7c3",
+    "manifest_definition": "SHA256 of UTF-8 lines '<dataset-relative-path>\\t<file-sha256>\\n' sorted by relative path."
   },
   "observed_top_level_entries": [
     "L3-SF",

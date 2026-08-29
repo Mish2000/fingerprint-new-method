@@ -1,0 +1,51 @@
+audit_index,annotated_512_id,run,pattern,proposed_identity,proposed_source,alternative_identity,alternative_source,channels_agree_before_review,proposed_blind_group,reviewer_choice,reviewer_confidence,chosen_role,classification,reason
+1,R1/5_left_loop,R1,left_loop,120,preregistered_combined_hungarian_diagnostic,117,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A preserves the elongated loop topology while Group B is whorl-like.
+2,R1/2_plain_arch,R1,plain_arch,47,preregistered_combined_hungarian_diagnostic,8,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A is arch-like without a singular core; Group B is a whorl.
+3,R1/71_right_loop,R1,right_loop,63,preregistered_combined_hungarian_diagnostic,138,k_top1,false,B,B,AMBIGUOUS,PROPOSED,AMBIGUOUS,Group B is closer in loop shape but identity-level detail is not decisive.
+4,R1/45_right_loop,R1,right_loop,86,preregistered_combined_hungarian_diagnostic,40,o_top1,false,B,BOTH_UNCERTAIN,AMBIGUOUS,BOTH_UNCERTAIN,AMBIGUOUS,Both groups contain similar loop topology without a decisive ridge landmark.
+5,R1/31_right_loop,R1,right_loop,53,preregistered_combined_hungarian_diagnostic,59,o_top1,false,B,B,AMBIGUOUS,PROPOSED,AMBIGUOUS,Group B is closer in loop curvature but the evidence is not identity-specific.
+6,R1/70_right_loop,R1,right_loop,138,preregistered_combined_hungarian_diagnostic,101,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B preserves the elongated loop; Group A is circular-whorl-like.
+7,R1/2_tented_arch,R1,tented_arch,49,preregistered_combined_hungarian_diagnostic,19,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B preserves the tented-arch geometry; Group A is a rounded loop.
+8,R1/11_whorl,R1,whorl,4,preregistered_combined_hungarian_diagnostic,75,o_top1,false,B,A,CLEAR,ALTERNATIVE,NOT_MATCH,Group A preserves the spiral whorl flow; Group B is more concentric.
+9,R1/24_whorl,R1,whorl,35,preregistered_combined_hungarian_diagnostic,119,o_top1,false,A,A,AMBIGUOUS,PROPOSED,AMBIGUOUS,Group A is closer in oval whorl core geometry but fine structure remains uncertain.
+10,R1/13_whorl,R1,whorl,8,preregistered_combined_hungarian_diagnostic,16,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A preserves the spiral whorl flow; Group B is concentric.
+11,R2/5_left_loop,R2,left_loop,97,preregistered_combined_hungarian_diagnostic,48,k_top1,false,A,B,CLEAR,ALTERNATIVE,NOT_MATCH,Group B contains the loop core seen in the reference; Group A lacks it.
+12,R2/5_plain_arch,R2,plain_arch,121,preregistered_combined_hungarian_diagnostic,138,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B is the arch-like candidate; Group A contains clear loop cores.
+13,R2/34_right_loop,R2,right_loop,59,preregistered_combined_hungarian_diagnostic,136,o_top1,false,A,BOTH_UNCERTAIN,AMBIGUOUS,BOTH_UNCERTAIN,AMBIGUOUS,Both candidates are loop-like and neither has a decisive shared landmark.
+14,R2/14_right_loop,R2,right_loop,94,preregistered_combined_hungarian_diagnostic,9,k_top1,false,B,BOTH_UNCERTAIN,AMBIGUOUS,BOTH_UNCERTAIN,AMBIGUOUS,Both groups plausibly match the rotated loop flow.
+15,R2/19_right_loop,R2,right_loop,19,preregistered_combined_hungarian_diagnostic,114,o_top1,false,A,BOTH_UNCERTAIN,AMBIGUOUS,BOTH_UNCERTAIN,AMBIGUOUS,Both groups are plausible loops and scratches do not resolve identity.
+16,R2/6_right_loop,R2,right_loop,110,preregistered_combined_hungarian_diagnostic,78,k_top1,false,A,B,AMBIGUOUS,ALTERNATIVE,NOT_MATCH,Group B is closer in loop curvature but the match is not decisive.
+17,R2/1_tented_arch,R2,tented_arch,24,preregistered_combined_hungarian_diagnostic,125,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B preserves the tented-arch flow; Group A is a whorl.
+18,R2/53_whorl,R2,whorl,39,preregistered_combined_hungarian_diagnostic,44,k_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B preserves the whorl topology; Group A is loop-like.
+19,R2/31_whorl,R2,whorl,140,preregistered_combined_hungarian_diagnostic,85,k_top1,false,B,A,CLEAR,ALTERNATIVE,NOT_MATCH,Group A preserves the circular whorl; Group B is loop-like.
+20,R2/1_whorl,R2,whorl,18,preregistered_combined_hungarian_diagnostic,6,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A shares the irregular whorl core and structural scratch evidence.
+21,R3/2_left_loop,R3,left_loop,87,preregistered_combined_hungarian_diagnostic,130,o_top1,false,B,A,CLEAR,ALTERNATIVE,NOT_MATCH,Group A preserves the elongated loop; Group B is a whorl.
+22,R3/1_plain_arch,R3,plain_arch,22,preregistered_combined_hungarian_diagnostic,64,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A is arch-like; Group B is a spiral whorl.
+23,R3/8_right_loop,R3,right_loop,145,preregistered_combined_hungarian_diagnostic,51,o_top1,false,A,A,AMBIGUOUS,PROPOSED,AMBIGUOUS,Group A is closer in core geometry and a central interruption but is not decisive.
+24,R3/21_right_loop,R3,right_loop,28,preregistered_combined_hungarian_diagnostic,43,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A is loop-like; Group B is a whorl.
+25,R3/11_right_loop,R3,right_loop,3,preregistered_combined_hungarian_diagnostic,64,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B is loop-like; Group A is a whorl.
+26,R3/64_right_loop,R3,right_loop,17,preregistered_combined_hungarian_diagnostic,121,k_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B contains the loop core; Group A lacks a comparable core.
+27,R3/3_tented_arch,R3,tented_arch,74,preregistered_combined_hungarian_diagnostic,64,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B preserves the tented-arch geometry; Group A is a whorl.
+28,R3/54_whorl,R3,whorl,109,preregistered_combined_hungarian_diagnostic,6,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B preserves the concentric oval whorl; Group A is more spiral.
+29,R3/52_whorl,R3,whorl,105,preregistered_combined_hungarian_diagnostic,106,k_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B preserves the spiral whorl; Group A is loop-like.
+30,R3/44_whorl,R3,whorl,85,preregistered_combined_hungarian_diagnostic,88,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B preserves the whorl; Group A is loop-like.
+31,R4/4_left_loop,R4,left_loop,96,preregistered_combined_hungarian_diagnostic,67,o_top1,false,A,BOTH_UNCERTAIN,AMBIGUOUS,BOTH_UNCERTAIN,AMBIGUOUS,Both groups are loop-like and the reference scratch is not decisive.
+32,R4/3_plain_arch,R4,plain_arch,72,preregistered_combined_hungarian_diagnostic,25,o_top1,false,B,B,CLEAR,PROPOSED,CLEAR,Group B is arch-like; Group A is a whorl.
+33,R4/57_right_loop,R4,right_loop,7,preregistered_combined_hungarian_diagnostic,133,o_top1,false,B,BOTH_UNCERTAIN,AMBIGUOUS,BOTH_UNCERTAIN,AMBIGUOUS,Both groups are similar loops without an identity-level landmark.
+34,R4/62_right_loop,R4,right_loop,20,preregistered_combined_hungarian_diagnostic,8,o_top1,false,B,NEITHER,CLEAR,NEITHER,NOT_MATCH,Both candidates are whorls while the reference is a loop.
+35,R4/5_right_loop,R4,right_loop,122,preregistered_combined_hungarian_diagnostic,61,o_top1,false,B,B,AMBIGUOUS,PROPOSED,AMBIGUOUS,Group B is somewhat closer in loop shape but identity detail is insufficient.
+36,R4/38_right_loop,R4,right_loop,67,preregistered_combined_hungarian_diagnostic,35,k_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A is loop-like; Group B is a whorl.
+37,R4/3_tented_arch,R4,tented_arch,74,preregistered_combined_hungarian_diagnostic,146,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A preserves the tented-arch flow; Group B is a whorl.
+38,R4/40_whorl,R4,whorl,77,preregistered_combined_hungarian_diagnostic,64,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A preserves the spiral whorl flow; Group B is loop-like.
+39,R4/50_whorl,R4,whorl,101,preregistered_combined_hungarian_diagnostic,91,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A better preserves the elongated concentric whorl core.
+40,R4/33_whorl,R4,whorl,58,preregistered_combined_hungarian_diagnostic,119,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A preserves the spiral core without the unmatched central scratch.
+41,R5/1_left_loop,R5,left_loop,57,preregistered_combined_hungarian_diagnostic,36,k_top1,false,B,A,AMBIGUOUS,ALTERNATIVE,NOT_MATCH,Group A is closer in narrow loop geometry but the match is not decisive.
+42,R5/1_plain_arch,R5,plain_arch,22,preregistered_combined_hungarian_diagnostic,120,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A is arch-like; Group B is a loop.
+43,R5/24_right_loop,R5,right_loop,103,preregistered_combined_hungarian_diagnostic,33,k_top1,false,B,NEITHER,CLEAR,NEITHER,NOT_MATCH,Both candidates are whorls while the reference is a loop.
+44,R5/38_right_loop,R5,right_loop,67,preregistered_combined_hungarian_diagnostic,1,o_top1,false,A,B,AMBIGUOUS,ALTERNATIVE,NOT_MATCH,Group B is closer in elongated loop geometry but fine detail is insufficient.
+45,R5/16_right_loop,R5,right_loop,13,preregistered_combined_hungarian_diagnostic,68,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A is loop-like; Group B is a whorl.
+46,R5/11_right_loop,R5,right_loop,112,preregistered_combined_hungarian_diagnostic,147,k_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A shares the loop geometry and a prominent transverse interruption.
+47,R5/1_tented_arch,R5,tented_arch,109,preregistered_combined_hungarian_diagnostic,24,k_top1,false,B,A,CLEAR,ALTERNATIVE,NOT_MATCH,Group A preserves the tented-arch flow; Group B is a loop.
+48,R5/10_whorl,R5,whorl,2,preregistered_combined_hungarian_diagnostic,60,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A preserves the concentric oval whorl; Group B is spiral.
+49,R5/27_whorl,R5,whorl,41,preregistered_combined_hungarian_diagnostic,101,o_top1,false,A,A,AMBIGUOUS,PROPOSED,AMBIGUOUS,Group A is closer in elongated oval core shape but not decisive.
+50,R5/44_whorl,R5,whorl,85,preregistered_combined_hungarian_diagnostic,87,o_top1,false,A,A,CLEAR,PROPOSED,CLEAR,Group A preserves the spiral whorl; Group B is concentric.

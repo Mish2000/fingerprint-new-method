@@ -1,0 +1,14 @@
+{
+  "channels_agreed_in_frozen_review_before_visual_inspection": 0,
+  "classification_counts": {
+    "AMBIGUOUS": 12,
+    "CLEAR": 28,
+    "NOT_MATCH": 10
+  },
+  "clear_fraction": 0.56,
+  "clear_or_ambiguous_fraction": 0.8,
+  "protocol_contingency": "Because no consensus identity existed for the frozen sample, the preregistered combined Hungarian diagnostic is shown against the first distinct K/O local candidate. This review cannot upgrade AMBIGUOUS mappings or rescue Gate 1.",
+  "review_75pct_clear_threshold_pass": false,
+  "review_90pct_threshold_pass": false,
+  "review_count": 50
+}

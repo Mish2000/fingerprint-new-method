@@ -1,0 +1,51 @@
+audit_index,reviewer_choice,confidence,reason
+1,A,CLEAR,Group A preserves the elongated loop topology while Group B is whorl-like.
+2,A,CLEAR,Group A is arch-like without a singular core; Group B is a whorl.
+3,B,AMBIGUOUS,Group B is closer in loop shape but identity-level detail is not decisive.
+4,BOTH_UNCERTAIN,AMBIGUOUS,Both groups contain similar loop topology without a decisive ridge landmark.
+5,B,AMBIGUOUS,Group B is closer in loop curvature but the evidence is not identity-specific.
+6,B,CLEAR,Group B preserves the elongated loop; Group A is circular-whorl-like.
+7,B,CLEAR,Group B preserves the tented-arch geometry; Group A is a rounded loop.
+8,A,CLEAR,Group A preserves the spiral whorl flow; Group B is more concentric.
+9,A,AMBIGUOUS,Group A is closer in oval whorl core geometry but fine structure remains uncertain.
+10,A,CLEAR,Group A preserves the spiral whorl flow; Group B is concentric.
+11,B,CLEAR,Group B contains the loop core seen in the reference; Group A lacks it.
+12,B,CLEAR,Group B is the arch-like candidate; Group A contains clear loop cores.
+13,BOTH_UNCERTAIN,AMBIGUOUS,Both candidates are loop-like and neither has a decisive shared landmark.
+14,BOTH_UNCERTAIN,AMBIGUOUS,Both groups plausibly match the rotated loop flow.
+15,BOTH_UNCERTAIN,AMBIGUOUS,Both groups are plausible loops and scratches do not resolve identity.
+16,B,AMBIGUOUS,Group B is closer in loop curvature but the match is not decisive.
+17,B,CLEAR,Group B preserves the tented-arch flow; Group A is a whorl.
+18,B,CLEAR,Group B preserves the whorl topology; Group A is loop-like.
+19,A,CLEAR,Group A preserves the circular whorl; Group B is loop-like.
+20,A,CLEAR,Group A shares the irregular whorl core and structural scratch evidence.
+21,A,CLEAR,Group A preserves the elongated loop; Group B is a whorl.
+22,A,CLEAR,Group A is arch-like; Group B is a spiral whorl.
+23,A,AMBIGUOUS,Group A is closer in core geometry and a central interruption but is not decisive.
+24,A,CLEAR,Group A is loop-like; Group B is a whorl.
+25,B,CLEAR,Group B is loop-like; Group A is a whorl.
+26,B,CLEAR,Group B contains the loop core; Group A lacks a comparable core.
+27,B,CLEAR,Group B preserves the tented-arch geometry; Group A is a whorl.
+28,B,CLEAR,Group B preserves the concentric oval whorl; Group A is more spiral.
+29,B,CLEAR,Group B preserves the spiral whorl; Group A is loop-like.
+30,B,CLEAR,Group B preserves the whorl; Group A is loop-like.
+31,BOTH_UNCERTAIN,AMBIGUOUS,Both groups are loop-like and the reference scratch is not decisive.
+32,B,CLEAR,Group B is arch-like; Group A is a whorl.
+33,BOTH_UNCERTAIN,AMBIGUOUS,Both groups are similar loops without an identity-level landmark.
+34,NEITHER,CLEAR,Both candidates are whorls while the reference is a loop.
+35,B,AMBIGUOUS,Group B is somewhat closer in loop shape but identity detail is insufficient.
+36,A,CLEAR,Group A is loop-like; Group B is a whorl.
+37,A,CLEAR,Group A preserves the tented-arch flow; Group B is a whorl.
+38,A,CLEAR,Group A preserves the spiral whorl flow; Group B is loop-like.
+39,A,CLEAR,Group A better preserves the elongated concentric whorl core.
+40,A,CLEAR,Group A preserves the spiral core without the unmatched central scratch.
+41,A,AMBIGUOUS,Group A is closer in narrow loop geometry but the match is not decisive.
+42,A,CLEAR,Group A is arch-like; Group B is a loop.
+43,NEITHER,CLEAR,Both candidates are whorls while the reference is a loop.
+44,B,AMBIGUOUS,Group B is closer in elongated loop geometry but fine detail is insufficient.
+45,A,CLEAR,Group A is loop-like; Group B is a whorl.
+46,A,CLEAR,Group A shares the loop geometry and a prominent transverse interruption.
+47,A,CLEAR,Group A preserves the tented-arch flow; Group B is a loop.
+48,A,CLEAR,Group A preserves the concentric oval whorl; Group B is spiral.
+49,A,AMBIGUOUS,Group A is closer in elongated oval core shape but not decisive.
+50,A,CLEAR,Group A preserves the spiral whorl; Group B is concentric.

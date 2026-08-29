@@ -95,6 +95,15 @@ def timestamp_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
+def record_manifest_sha256(records: list[dict[str, Any]]) -> str:
+    """Hash the ordered relative-path/file-hash inventory without storing it twice."""
+
+    payload = "\n".join(
+        f"{record['relative_path']}\t{record['sha256']}" for record in sorted(records, key=lambda row: row["relative_path"])
+    )
+    return hashlib.sha256((payload + "\n").encode("utf-8")).hexdigest()
+
+
 def main() -> None:
     if not DATA_ROOT.is_dir():
         raise FileNotFoundError(f"Missing L3-SF data root below {datasets_root()}")
@@ -238,6 +247,9 @@ def main() -> None:
             "metadata_crosswalk_field_found": False,
         },
         "hash_audit": {
+            "final_320_path_sha256_manifest": record_manifest_sha256(final_records),
+            "annotated_512_path_sha256_manifest": record_manifest_sha256(annotated_records),
+            "manifest_definition": "SHA256 of UTF-8 lines '<dataset-relative-path>\\t<file-sha256>\\n' sorted by relative path.",
             "cross_branch_byte_identical_file_count": len(cross_branch_duplicate_hashes),
             "cross_branch_byte_identical_sha256": cross_branch_duplicate_hashes,
         },

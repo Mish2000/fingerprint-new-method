@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 
 import numpy as np
@@ -18,6 +19,7 @@ from fingerprint_new_method.experiment003 import (
     write_csv,
     write_json,
 )
+from fingerprint_new_method.paths import PROJECT_ROOT
 
 
 def test_parse_final_filename() -> None:
@@ -80,6 +82,16 @@ def test_serialization_is_stable(tmp_path) -> None:
     write_json(json_path, {"b": 2, "a": "שלום"})
     write_csv(csv_path, [{"b": 2, "a": 1}], fieldnames=["a", "b"])
     assert json_path.read_text(encoding="utf-8") == '{\n  "a": "שלום",\n  "b": 2\n}\n'
+    assert b"\r\n" not in json_path.read_bytes()
     assert json.loads(json_path.read_text(encoding="utf-8")) == {"a": "שלום", "b": 2}
     with csv_path.open(encoding="utf-8", newline="") as handle:
         assert list(csv.DictReader(handle)) == [{"a": "1", "b": "2"}]
+
+
+def test_published_summary_artifact_hashes_match_repository_bytes() -> None:
+    artifact_root = PROJECT_ROOT / "artifacts" / "experiment-003"
+    summary = json.loads((artifact_root / "summary.json").read_text(encoding="utf-8"))
+    for name, expected in summary["artifacts"].items():
+        payload = (artifact_root / name).read_bytes()
+        assert len(payload) == expected["size_bytes"]
+        assert hashlib.sha256(payload).hexdigest() == expected["sha256"]

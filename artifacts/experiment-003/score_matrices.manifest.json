@@ -1,0 +1,107 @@
+{
+  "experiment_id": "003-l3sf-annotated-final-crosswalk",
+  "files": [
+    {
+      "metric_names": [
+        "score",
+        "correspondences",
+        "inliers",
+        "inlier_ratio",
+        "residual",
+        "coverage_query",
+        "coverage_final",
+        "mean_weight"
+      ],
+      "name": "artifacts/experiment-003/local-large/r1_impression_scores.npz",
+      "rows_per_channel": 219040,
+      "sha256": "240b7ca470f66fc0e110f21fb36affaf55489614f7e890dca2403168441bc284",
+      "shape_per_metric": [
+        148,
+        1480
+      ],
+      "size_bytes": 6977151
+    },
+    {
+      "metric_names": [
+        "score",
+        "correspondences",
+        "inliers",
+        "inlier_ratio",
+        "residual",
+        "coverage_query",
+        "coverage_final",
+        "mean_weight"
+      ],
+      "name": "artifacts/experiment-003/local-large/r2_impression_scores.npz",
+      "rows_per_channel": 219040,
+      "sha256": "b58f0da5bf05f0a8bd7fc9b5a04e10bd6569ba26617e070545965afd4f45bf09",
+      "shape_per_metric": [
+        148,
+        1480
+      ],
+      "size_bytes": 6954655
+    },
+    {
+      "metric_names": [
+        "score",
+        "correspondences",
+        "inliers",
+        "inlier_ratio",
+        "residual",
+        "coverage_query",
+        "coverage_final",
+        "mean_weight"
+      ],
+      "name": "artifacts/experiment-003/local-large/r3_impression_scores.npz",
+      "rows_per_channel": 219040,
+      "sha256": "ec1819adf3b26bf127b6a0abc1c46066bf68114e44328ad0258fbad5785162b5",
+      "shape_per_metric": [
+        148,
+        1480
+      ],
+      "size_bytes": 6968735
+    },
+    {
+      "metric_names": [
+        "score",
+        "correspondences",
+        "inliers",
+        "inlier_ratio",
+        "residual",
+        "coverage_query",
+        "coverage_final",
+        "mean_weight"
+      ],
+      "name": "artifacts/experiment-003/local-large/r4_impression_scores.npz",
+      "rows_per_channel": 219040,
+      "sha256": "5df62630d30bfb6bbfe6a2c3ff792325be6df7aafa96f144cd24364106f5fcaf",
+      "shape_per_metric": [
+        148,
+        1480
+      ],
+      "size_bytes": 6976264
+    },
+    {
+      "metric_names": [
+        "score",
+        "correspondences",
+        "inliers",
+        "inlier_ratio",
+        "residual",
+        "coverage_query",
+        "coverage_final",
+        "mean_weight"
+      ],
+      "name": "artifacts/experiment-003/local-large/r5_impression_scores.npz",
+      "rows_per_channel": 219040,
+      "sha256": "1cb6e0c97912c93eed9916c7e1acb1aa5464073fc64e1d86dfe1660a0ec05ac4",
+      "shape_per_metric": [
+        148,
+        1480
+      ],
+      "size_bytes": 6963232
+    }
+  ],
+  "regeneration_command": "& .\\.conda-env\\python.exe .\\scripts\\experiment_003_build_crosswalk.py --overwrite",
+  "tracked_in_git": false
+}
