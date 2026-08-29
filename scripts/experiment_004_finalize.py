@@ -113,6 +113,56 @@ def _gate_a_report(test: dict[str, Any], baseline: dict[str, Any]) -> list[str]:
     return lines
 
 
+def _ridge_scale_report() -> list[str]:
+    """Report how the frozen ridge-period estimator behaved on each SD300 resolution."""
+
+    import csv
+    import statistics
+
+    preprocessing = _read_json(ARTIFACT_ROOT / "sd300_preprocessing_manifest.json")["records"]
+    with (ARTIFACT_ROOT / "sd300_registration_summary.csv").open("r", encoding="utf-8", newline="") as handle:
+        registrations = list(csv.DictReader(handle))
+    lines = [
+        "### נרמול ridge-scale ו־registration",
+        "",
+        "| ppi | תמונות תקינות | UNRELIABLE_DISPERSION | too few tiles | median period | median factor | בתוך הגבול הקפוא | mated VALID |",
+        "|---:|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for ppi in (1000, 2000):
+        rows = [row for key, row in preprocessing.items() if key.startswith(f"{ppi}|")]
+        if not rows:
+            continue
+        statuses = Counter(row["ridge_period_estimate"]["status"] for row in rows)
+        periods = [row["source_period_px"] for row in rows if row.get("source_period_px") is not None]
+        factors = [row["scale_factor"] for row in rows if row.get("scale_factor") is not None]
+        inside = sum(row.get("analysis_status", {}).get("frozen") == "OK" for row in rows)
+        mated_valid = sum(
+            str(row["ppi"]) == str(ppi)
+            and row["pair_type"] == "mated"
+            and row["status"] == "VALID"
+            and row.get("frozen_analysis_status") == "OK"
+            for row in registrations
+        )
+        lines.append(
+            f"| {ppi} | {statuses['OK']}/{len(rows)} | {statuses['UNRELIABLE_DISPERSION']} | "
+            f"{statuses['UNRELIABLE_TOO_FEW_TILES']} | "
+            f"{_format_float(statistics.median(periods) if periods else None, 1)} px | "
+            f"{_format_float(statistics.median(factors) if factors else None, 2)} | {inside}/{len(rows)} | "
+            f"{mated_valid}/20 |"
+        )
+    lines.extend(
+        [
+            "",
+            "אומדן ה־ridge period הקפוא מחפש lags בטווח `5-64 px`. ב־1000 ppi ה־period האמיתי הוא כ־16-22 px "
+            "וההרמוניה שלו כ־40-60 px נופלת גם היא בתוך הטווח, ולכן אומדני ה־tiles יוצאים דו־מודליים "
+            "ו־`MAD/median` חורג מן הסף הקפוא `0.25`. ב־2000 ppi ה־period הוא כ־40-50 px וההרמוניה שלו מחוץ "
+            "לטווח החיפוש, ולכן האומדן יציב. זהו הגורם היחיד שמנע registrations תקפים ברזולוציה הראשית.",
+            "",
+        ]
+    )
+    return lines
+
+
 def _write_results(summary: dict[str, Any], test: dict[str, Any], baseline: dict[str, Any], transfer: dict[str, Any]) -> None:
     protocol = _read_json(ARTIFACT_ROOT / "model_protocol.json")
     training = _read_json(ARTIFACT_ROOT / "training_runs.json")
@@ -146,6 +196,7 @@ def _write_results(summary: dict[str, Any], test: dict[str, Any], baseline: dict
     if transfer["status"] == "NOT_RUN_GATE_A_FAIL":
         lines.append("שער A נכשל ולכן SD300 לא נקרא ולא הורץ, בהתאם לתנאי העצירה.")
     else:
+        lines.extend(_ridge_scale_report())
         primary = transfer["ppi"]["1000"]
         lines.extend(
             [

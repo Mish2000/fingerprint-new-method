@@ -12,6 +12,24 @@
       "recorded_at_utc": "2026-08-29T20:21:16.033913+00:00",
       "stage": "SD300 1000 ppi scoring",
       "symptom": "KeyError 'relative_local_path' in the detection-density helper of experiment_004_score_sd300.py"
+    },
+    {
+      "cause": "The lookup assumed every selected image reaches inference.",
+      "decision_influence": "NONE",
+      "fix": "Return no detections when that image's preprocessing status is not OK; a missing heatmap for an image that did pass preprocessing still raises.",
+      "justification": "Such a pair already carries an INVALID registration and is excluded from every metric, so the change only prevents a crash in the sensitivity check. It cannot affect Gate A, the frozen 1000-ppi outputs, or Gate B.",
+      "recorded_at_utc": "2026-08-29T20:23:05.241243+00:00",
+      "stage": "SD300 cross-resolution sensitivity scoring",
+      "symptom": "Found by reading the code before the 2000-ppi run, not by a failure: the cross-resolution scorer looked up a heatmap for every 1000-ppi image, which raises KeyError for the 53 images that have no heatmap because they failed ridge-scale preprocessing."
+    },
+    {
+      "cause": "Cross-resolution rows splat the scoring result, which carries a mean match distance only for a VALID registration. The writer took its columns from the first row, which was an invalid one.",
+      "decision_influence": "NONE",
+      "fix": "Take the column union across rows in first-seen order and leave missing cells empty.",
+      "justification": "A serialization-only change in the 2000-ppi sensitivity output. No detection, registration status, repeatability value, or gate input is touched, and the 1000-ppi outputs were already frozen before this run.",
+      "recorded_at_utc": "2026-08-29T20:26:20.315144+00:00",
+      "stage": "SD300 cross-resolution sensitivity scoring",
+      "symptom": "ValueError: dict contains fields not in fieldnames: 'mean_match_distance' while writing the cross-resolution CSV"
     }
   ],
   "reason": "Frozen Experiment 004 test heatmap inference",

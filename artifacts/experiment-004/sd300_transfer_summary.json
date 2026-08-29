@@ -10,6 +10,22 @@
     "positive_seed_count": 0,
     "sufficient_paired_fingers": false
   },
+  "cross_resolution_1000_to_2000": {
+    "by_impression": {
+      "plain": {
+        "median_repeatability": 0.7976119402985075,
+        "valid_scores": 15
+      },
+      "roll": {
+        "median_repeatability": 0.04211208292840946,
+        "valid_scores": 3
+      }
+    },
+    "frozen_band_median_repeatability": 0.4161440357688808,
+    "frozen_band_valid_scores": 12,
+    "median_repeatability": 0.7943941470694958,
+    "valid_scores": 18
+  },
   "experiment_001_ratings_opened": false,
   "experiment_id": "004-pore-localization-and-sd300-transfer",
   "exploratory_scale_variant": {
@@ -184,6 +200,163 @@
           0.2,
           3.0
         ]
+      },
+      "2000": {
+        "analysis": "conformant",
+        "decides_gate_b": false,
+        "finger_median_deltas": [
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 1,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 2,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 3,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 4,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 5,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 6,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 7,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 8,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 9,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 10,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 11,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 12,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 13,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 14,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 15,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 16,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 17,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 18,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 19,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 20,
+            "seed_values": []
+          }
+        ],
+        "mated_valid_registrations": 2,
+        "non_mated_valid_registrations": 0,
+        "pairs_excluded_by_scale_band": 0,
+        "per_seed": {
+          "40401": {
+            "bootstrap": null,
+            "median_delta": null,
+            "paired_valid": 0,
+            "positive_delta_count": 0
+          },
+          "40402": {
+            "bootstrap": null,
+            "median_delta": null,
+            "paired_valid": 0,
+            "positive_delta_count": 0
+          },
+          "40403": {
+            "bootstrap": null,
+            "median_delta": null,
+            "paired_valid": 0,
+            "positive_delta_count": 0
+          }
+        },
+        "ppi": 2000,
+        "primary_bootstrap": null,
+        "primary_median_delta": null,
+        "primary_paired_fingers": 0,
+        "scale_factor_band": [
+          0.2,
+          3.0
+        ]
       }
     },
     "status": "EXPLORATORY_SENSITIVITY"
@@ -338,6 +511,163 @@
         }
       },
       "ppi": 1000,
+      "primary_bootstrap": null,
+      "primary_median_delta": null,
+      "primary_paired_fingers": 0,
+      "scale_factor_band": [
+        0.2,
+        1.5
+      ]
+    },
+    "2000": {
+      "analysis": "frozen",
+      "decides_gate_b": true,
+      "finger_median_deltas": [
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 1,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 2,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 3,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 4,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 5,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 6,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 7,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 8,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 9,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 10,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 11,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 12,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 13,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 14,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 15,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 16,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 17,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 18,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 19,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 20,
+          "seed_values": []
+        }
+      ],
+      "mated_valid_registrations": 2,
+      "non_mated_valid_registrations": 0,
+      "pairs_excluded_by_scale_band": 0,
+      "per_seed": {
+        "40401": {
+          "bootstrap": null,
+          "median_delta": null,
+          "paired_valid": 0,
+          "positive_delta_count": 0
+        },
+        "40402": {
+          "bootstrap": null,
+          "median_delta": null,
+          "paired_valid": 0,
+          "positive_delta_count": 0
+        },
+        "40403": {
+          "bootstrap": null,
+          "median_delta": null,
+          "paired_valid": 0,
+          "positive_delta_count": 0
+        }
+      },
+      "ppi": 2000,
       "primary_bootstrap": null,
       "primary_median_delta": null,
       "primary_paired_fingers": 0,

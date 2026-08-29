@@ -254,8 +254,2168 @@
       ],
       "size_bytes": 3731648,
       "source_id": "NIST/sd300b/images/1000/png/roll/00001050_roll_1000_04.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001027_plain_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/6880979a5479a3b8.npy",
+      "seed": 40401,
+      "sha256": "1e1248adc2a68a7f3534fd0a433a93bc84723e64a02679781e094dedb798bec5",
+      "shape": [
+        1327,
+        885
+      ],
+      "size_bytes": 4697708,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001027_plain_2000_10.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001036_plain_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/c28b78126db1c263.npy",
+      "seed": 40401,
+      "sha256": "19cec63e8184ca5edd73a49066a15bc362978e50cae384330b13202f2b71e8ba",
+      "shape": [
+        1607,
+        1021
+      ],
+      "size_bytes": 6563116,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001036_plain_2000_09.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001050_plain_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/b403f52c47fda663.npy",
+      "seed": 40401,
+      "sha256": "28d494b6e1260cc87800da2229f8e85bd8f768353b2ad22da2afb9159b0b4d44",
+      "shape": [
+        1452,
+        809
+      ],
+      "size_bytes": 4698800,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001050_plain_2000_04.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001061_plain_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/457f9110f7f0b151.npy",
+      "seed": 40401,
+      "sha256": "57f77060b61222808b07ed186843b795a20007eff54ba6ec8ce68b27e27f5282",
+      "shape": [
+        1272,
+        823
+      ],
+      "size_bytes": 4187552,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001061_plain_2000_04.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001085_plain_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/d367b260bf50dec6.npy",
+      "seed": 40401,
+      "sha256": "0812c13680c6ae799026c3b1a953de069eb0eb6bca6e875cdf86ffe6afec6f49",
+      "shape": [
+        795,
+        741
+      ],
+      "size_bytes": 2356508,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001085_plain_2000_10.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001159_plain_2000_12.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/b67e0b528d4267bd.npy",
+      "seed": 40401,
+      "sha256": "becd7ef546ab525e88813f493175dc83f6fb1fdad5ada41f1fdf966f3f9f4fe5",
+      "shape": [
+        2753,
+        1085
+      ],
+      "size_bytes": 11948148,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001159_plain_2000_12.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001187_plain_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/926e4aebd1f78ff8.npy",
+      "seed": 40401,
+      "sha256": "aafb4df3957a3c3c71ef559c33353efe82ef1906f8f185e647c56ac8f40a6ac8",
+      "shape": [
+        1216,
+        971
+      ],
+      "size_bytes": 4723072,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001187_plain_2000_05.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001234_plain_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/04038da1580b3b8e.npy",
+      "seed": 40401,
+      "sha256": "9609bbadb5f82058088ed2157e91dfed0a27e7c62ef32e478770f45b9aecd08f",
+      "shape": [
+        757,
+        757
+      ],
+      "size_bytes": 2292324,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001234_plain_2000_08.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001267_plain_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/d5230096eae18b73.npy",
+      "seed": 40401,
+      "sha256": "3c0a4d99e840679f2c5e1bbe5ebb30ad3aae6bf4b0533a697e09abfcd5440987",
+      "shape": [
+        1460,
+        1015
+      ],
+      "size_bytes": 5927728,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001267_plain_2000_03.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001314_plain_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/d56fa950dd2491ad.npy",
+      "seed": 40401,
+      "sha256": "2514346e0affee6cf557dc57cb131e3f1a7100359c2e064e489ca82be84e4155",
+      "shape": [
+        876,
+        1188
+      ],
+      "size_bytes": 4162880,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001314_plain_2000_03.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001335_plain_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/8c1505ef3f264bae.npy",
+      "seed": 40401,
+      "sha256": "1570ac527ce43f831ee76d923435ba71740b240a971bd4fc61a441e539ba4021",
+      "shape": [
+        1407,
+        908
+      ],
+      "size_bytes": 5110352,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001335_plain_2000_02.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001411_plain_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/8ac0b1bd8c45f325.npy",
+      "seed": 40401,
+      "sha256": "91c4fc8b8317b3422cd1631216dcbdc50527fa07066824405aa118f502489ce4",
+      "shape": [
+        1550,
+        1142
+      ],
+      "size_bytes": 7080528,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001411_plain_2000_07.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001580_plain_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/002b44d43ce86943.npy",
+      "seed": 40401,
+      "sha256": "5c9beb10163f85b68c63b5b9b002d9ffc04c5e8ed654471dad618f3c2be5b352",
+      "shape": [
+        1293,
+        1108
+      ],
+      "size_bytes": 5730704,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001580_plain_2000_09.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001593_plain_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/9bce39851fd722e9.npy",
+      "seed": 40401,
+      "sha256": "6be9090c021aeac14e78f5987b8b849866dd265bb0b1c71d0b8e164085f4919c",
+      "shape": [
+        1584,
+        871
+      ],
+      "size_bytes": 5518784,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001593_plain_2000_02.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001595_plain_2000_12.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/b3b3ce7012b819cc.npy",
+      "seed": 40401,
+      "sha256": "67c943eeb4fd89c0759c72e74c9d5b9bcb4bf7280faf3006e36644159c06f5b7",
+      "shape": [
+        3048,
+        1156
+      ],
+      "size_bytes": 14094080,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001595_plain_2000_12.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001668_plain_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/0d31e5ea63fe4a18.npy",
+      "seed": 40401,
+      "sha256": "c8385632713891528a264178ef02d8eacb0a564c97fa7597fe1f9f342758a2c2",
+      "shape": [
+        1576,
+        976
+      ],
+      "size_bytes": 6152832,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001668_plain_2000_05.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001711_plain_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/24470612d18bd6b2.npy",
+      "seed": 40401,
+      "sha256": "a6df7652cd044a7291efa31081445f8dd70959129d706f5599688ae1496a4691",
+      "shape": [
+        1410,
+        1028
+      ],
+      "size_bytes": 5798048,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001711_plain_2000_08.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001718_plain_2000_11.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/746cb713c56e8d59.npy",
+      "seed": 40401,
+      "sha256": "f1949e15c697bd20d3a52c8215ea34e247d0bad29e18cb31d10b76fd9d2dd66f",
+      "shape": [
+        2578,
+        1102
+      ],
+      "size_bytes": 11363952,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001718_plain_2000_11.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001741_plain_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/75a45cc0f3ade543.npy",
+      "seed": 40401,
+      "sha256": "6c963158828039bedac770c4540552be2d35825e70b8799dab149fbe64b9dc55",
+      "shape": [
+        1726,
+        1129
+      ],
+      "size_bytes": 7794744,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001741_plain_2000_07.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/plain/00001809_plain_2000_11.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/397e38adb226b9ca.npy",
+      "seed": 40401,
+      "sha256": "945478f1735b4e5fce4da8295533ca858886c8759f3111a9f0907871e5fddf83",
+      "shape": [
+        2693,
+        1151
+      ],
+      "size_bytes": 12398700,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001809_plain_2000_11.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001027_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/61bef9a42b979280.npy",
+      "seed": 40401,
+      "sha256": "47fa52b301274dd81cc9daa7728c7108197001772ddfeeb23ebb44f5f92d3fe0",
+      "shape": [
+        2031,
+        2513
+      ],
+      "size_bytes": 20415740,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001027_roll_2000_01.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001027_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/2d46f1180bbfb01c.npy",
+      "seed": 40401,
+      "sha256": "17fa581d732c059ce67064c5837cc3138f3a7ffbb23b0ed5058e351f7a7fad6e",
+      "shape": [
+        1831,
+        2296
+      ],
+      "size_bytes": 16816032,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001027_roll_2000_10.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001036_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/ada27d49a85c3261.npy",
+      "seed": 40401,
+      "sha256": "7e7c3fdba6f078a9f6dedb8b6fdab151be0122be1c580cb2cb576c20bb7cbb34",
+      "shape": [
+        2112,
+        2093
+      ],
+      "size_bytes": 17681792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001036_roll_2000_09.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001036_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/5d0d2b93dc6c1f6a.npy",
+      "seed": 40401,
+      "sha256": "c55509caa4a97d2b02ce36e53c86f1091da1cd2a64e580efa934a1a4bf803dcc",
+      "shape": [
+        2073,
+        2200
+      ],
+      "size_bytes": 18242528,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001036_roll_2000_10.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001050_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/2b17da3e3e91855b.npy",
+      "seed": 40401,
+      "sha256": "723bb168ef144154fe35f2a90eff3d052d27e4a5d0dda26738e123145bef6900",
+      "shape": [
+        1871,
+        2170
+      ],
+      "size_bytes": 16240408,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001050_roll_2000_04.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001050_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/5eaebdb6c9d6590b.npy",
+      "seed": 40401,
+      "sha256": "d27c44942cac62331cf68a4ee64e1122e81d5c458ebcdd7995ab53d544c53383",
+      "shape": [
+        1935,
+        2123
+      ],
+      "size_bytes": 16432148,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001050_roll_2000_05.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001061_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/0a4a1cd3390bfc6c.npy",
+      "seed": 40401,
+      "sha256": "ea7621e422da55bad069427e5640d84c9a41af859c9c40695c2e3986c7c261db",
+      "shape": [
+        1907,
+        2037
+      ],
+      "size_bytes": 15538364,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001061_roll_2000_04.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001061_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/cf9e6db6e131502f.npy",
+      "seed": 40401,
+      "sha256": "5b5f99a1183d72838d40694f6dfb7e91cefe667cf1a9745180cd53671c35fdc7",
+      "shape": [
+        1812,
+        2293
+      ],
+      "size_bytes": 16619792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001061_roll_2000_05.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001085_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/248b66038e96fe0b.npy",
+      "seed": 40401,
+      "sha256": "ea457d8389df702d0ab826ddb5dd9c29bf56fe3cdfc0627f54ac9bae85b833c7",
+      "shape": [
+        2232,
+        2229
+      ],
+      "size_bytes": 19900640,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001085_roll_2000_01.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001085_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/5f78050548dfce81.npy",
+      "seed": 40401,
+      "sha256": "aafc24997318e805389ee4d5eae03bc6b26e0fbb9ca4a01bea81c7baf434ce0a",
+      "shape": [
+        2013,
+        2051
+      ],
+      "size_bytes": 16514780,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001085_roll_2000_10.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001159_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/009ae12ce206a378.npy",
+      "seed": 40401,
+      "sha256": "a85201b3bf2b5010747c3b2ccba951a0c1466ebffe4119caab2ca5e97b658cd4",
+      "shape": [
+        1946,
+        2284
+      ],
+      "size_bytes": 17778784,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001159_roll_2000_06.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001159_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/06677bd0916c757b.npy",
+      "seed": 40401,
+      "sha256": "941601cba67813e5568afb7ec9a43fca6de774e854ef8f9ebbe4f69564c0d16e",
+      "shape": [
+        1887,
+        2040
+      ],
+      "size_bytes": 15398048,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001159_roll_2000_07.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001187_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/50fd2f724fb37d9d.npy",
+      "seed": 40401,
+      "sha256": "a5d3fa6891614ada35c23e14f9d1a2be58bcc53bc97cf4d3b0e604e015e81e5b",
+      "shape": [
+        2245,
+        2419
+      ],
+      "size_bytes": 21722748,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001187_roll_2000_05.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001187_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/72eb37dab72c4b92.npy",
+      "seed": 40401,
+      "sha256": "a1fffab09ee1c697514be9da770c5355c04953801377fddb3d2d03c6b0b17787",
+      "shape": [
+        2185,
+        2402
+      ],
+      "size_bytes": 20993608,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001187_roll_2000_06.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001234_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/931b975d3c3c021d.npy",
+      "seed": 40401,
+      "sha256": "378072120dc939c8174820d7369baabeefcc43b250ea46f551f113ea6e7108d8",
+      "shape": [
+        2173,
+        2321
+      ],
+      "size_bytes": 20174260,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001234_roll_2000_08.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001234_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/92fc470d0211f33a.npy",
+      "seed": 40401,
+      "sha256": "709d049181d49566b14844e8405a6ff22af7da0422b51f5ebc8ac5fdff57bd4c",
+      "shape": [
+        2100,
+        2243
+      ],
+      "size_bytes": 18841328,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001234_roll_2000_09.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001267_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/11107c86ca5e068f.npy",
+      "seed": 40401,
+      "sha256": "570f923cee2dfd24f801d7142d3c594a6d59d7478d338cce5d94f611e3627701",
+      "shape": [
+        2395,
+        2334
+      ],
+      "size_bytes": 22359848,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001267_roll_2000_03.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001267_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/0b06620a640ccc59.npy",
+      "seed": 40401,
+      "sha256": "627f244abf5a066acdb97fd0520dcecd60d7c503f9fc7938086fe4732f32f255",
+      "shape": [
+        2495,
+        2410
+      ],
+      "size_bytes": 24051928,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001267_roll_2000_04.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001314_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/eebe6d3dfa3a638c.npy",
+      "seed": 40401,
+      "sha256": "85cd35d4e66a9d1b0fc2cc294013f0c1a049e79072e1ce7c24845bcb11a73c7f",
+      "shape": [
+        2333,
+        2250
+      ],
+      "size_bytes": 20997128,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001314_roll_2000_03.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001314_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/10865079efc03b8f.npy",
+      "seed": 40401,
+      "sha256": "e8efeed0ee44dbf57e0462df36e13041fd89ed05d2c0449af594fa05c25d6dc6",
+      "shape": [
+        2255,
+        2139
+      ],
+      "size_bytes": 19293908,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001314_roll_2000_04.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001335_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/00eedd24e10761ab.npy",
+      "seed": 40401,
+      "sha256": "1102ee994a9b13f7318fbf0ba9c393258e8f93ec64638ecf58b2642004ee1c40",
+      "shape": [
+        2315,
+        2232
+      ],
+      "size_bytes": 20668448,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001335_roll_2000_02.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001335_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/a01c8d3bb027747c.npy",
+      "seed": 40401,
+      "sha256": "a7dac87d74258ea3637075298f097c454cecbc01114b03a3ea18f9a5f6398442",
+      "shape": [
+        2333,
+        2250
+      ],
+      "size_bytes": 20997128,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001335_roll_2000_03.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001411_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/72b97db20fecfdfe.npy",
+      "seed": 40401,
+      "sha256": "154938ea898385912404fc590da8309d270ea61ff839a41a2a9897f149526d7f",
+      "shape": [
+        2111,
+        2232
+      ],
+      "size_bytes": 18847136,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001411_roll_2000_07.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001411_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/249a0481651fce08.npy",
+      "seed": 40401,
+      "sha256": "98443ac5b9bbeea2547659b161d416e898104ab5665a93ab7fa1a2228c73f474",
+      "shape": [
+        2137,
+        2282
+      ],
+      "size_bytes": 19506664,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001411_roll_2000_08.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001580_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/293ec542184d07e6.npy",
+      "seed": 40401,
+      "sha256": "4b44a91a418bc493d12552a147d3473d63ebde685e60270ed5e151b9071772ed",
+      "shape": [
+        1907,
+        2037
+      ],
+      "size_bytes": 15538364,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001580_roll_2000_09.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001580_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/033e29d9823fb049.npy",
+      "seed": 40401,
+      "sha256": "c19b285bf1e25b19ea5fd15c178e193e14cd666b23776eb01a07f57d33cb4349",
+      "shape": [
+        2034,
+        2551
+      ],
+      "size_bytes": 20755064,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001580_roll_2000_10.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001593_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/dbab090067527881.npy",
+      "seed": 40401,
+      "sha256": "0dd8a88f481ea81731b62fe891de8ca184f2104bb75e4cb5f408d08e51150dcf",
+      "shape": [
+        2151,
+        2076
+      ],
+      "size_bytes": 17862032,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001593_roll_2000_02.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001593_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/596c8e0716f7a9a2.npy",
+      "seed": 40401,
+      "sha256": "7d670daaeb8049af354d2223a068563c1b1a1927d4e4d419f1d75e6e8af6c62a",
+      "shape": [
+        2108,
+        2054
+      ],
+      "size_bytes": 17319456,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001593_roll_2000_03.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001595_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/078d58dbcca8b847.npy",
+      "seed": 40401,
+      "sha256": "c58504ce2cdf0048178e671ae7da4ae0aff735ca33ce05294d383283b2397ed0",
+      "shape": [
+        2407,
+        2751
+      ],
+      "size_bytes": 26486756,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001595_roll_2000_06.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001595_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/cd7205e2dd042f71.npy",
+      "seed": 40401,
+      "sha256": "00821df3c71547a8162d5070b8a9680538191a094c7d20c14fc7080fad31a582",
+      "shape": [
+        2289,
+        2380
+      ],
+      "size_bytes": 21791408,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001595_roll_2000_07.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001668_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/e43b0cdf7d268ed6.npy",
+      "seed": 40401,
+      "sha256": "04ad57f0ce6a3d0d097404ec2c4fae74d2a71fa37c65079456a0b6423a0f047d",
+      "shape": [
+        2627,
+        2584
+      ],
+      "size_bytes": 27152800,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001668_roll_2000_05.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001668_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/2b597980cdc5955c.npy",
+      "seed": 40401,
+      "sha256": "2f8324139163a223997ca9a2d2d9814eaec9600bfc86d10fce41abdaffe068a8",
+      "shape": [
+        2312,
+        2513
+      ],
+      "size_bytes": 23240352,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001668_roll_2000_06.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001711_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/0312f7e399d00144.npy",
+      "seed": 40401,
+      "sha256": "9da725ff2ce54524b0f363cfc50ae7cf6a5ccbe8ea9b7b769b89f890cc33c212",
+      "shape": [
+        2264,
+        2282
+      ],
+      "size_bytes": 20665920,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001711_roll_2000_08.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001711_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/684ba18014148ffb.npy",
+      "seed": 40401,
+      "sha256": "6967a6fac739ea0e4a0ad4c2bd4295008af9737785169c329a11b9aee0c300d1",
+      "shape": [
+        2039,
+        2094
+      ],
+      "size_bytes": 17078792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001711_roll_2000_09.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001718_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/33a169b6055f09f9.npy",
+      "seed": 40401,
+      "sha256": "e96a637e0d3ce4856aa2f23f13461975dfe4cddec12bc7c5e23de9b16a2cd5c4",
+      "shape": [
+        2152,
+        2472
+      ],
+      "size_bytes": 21279104,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001718_roll_2000_01.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001718_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/33fe38ff9b150b9c.npy",
+      "seed": 40401,
+      "sha256": "2ffcadb27cad8c95128614cdc3a42bd02aeb12f82f4634cea155db8a6a5b238f",
+      "shape": [
+        2167,
+        2334
+      ],
+      "size_bytes": 20231240,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001718_roll_2000_02.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001741_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/f627fa9e96e5b84f.npy",
+      "seed": 40401,
+      "sha256": "1a702bf8da99b27c30d79f596c0ccb3954b69c0691bc89c570ba21c2adb88233",
+      "shape": [
+        2261,
+        2282
+      ],
+      "size_bytes": 20638536,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001741_roll_2000_07.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001741_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/3a666a2aead1ab3f.npy",
+      "seed": 40401,
+      "sha256": "d5391962effd06dc76f6957129b7a43ce2eabbc04916b5a1ec84f348f97d8d10",
+      "shape": [
+        2232,
+        2253
+      ],
+      "size_bytes": 20114912,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001741_roll_2000_08.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001809_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/3b96c514c88bc740.npy",
+      "seed": 40401,
+      "sha256": "7a151b967c9f333483d5938c405efa997e1b929d4692a6f55e45fa3c3bb3ee4f",
+      "shape": [
+        2063,
+        2369
+      ],
+      "size_bytes": 19549116,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001809_roll_2000_01.png"
+    },
+    "2000|40401|NIST/sd300c/images/2000/png/roll/00001809_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40401/c130f1e503cb6d49.npy",
+      "seed": 40401,
+      "sha256": "f41a30822ebef9474c953bf82b46e7fab55746af4fae86f4ef1b8d9c38fb0fde",
+      "shape": [
+        2028,
+        2185
+      ],
+      "size_bytes": 17724848,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001809_roll_2000_02.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001027_plain_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/6880979a5479a3b8.npy",
+      "seed": 40402,
+      "sha256": "7b131dc35b8e05e283545681427528a304f4c8f0b05e67314f51f29291c4753e",
+      "shape": [
+        1327,
+        885
+      ],
+      "size_bytes": 4697708,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001027_plain_2000_10.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001036_plain_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/c28b78126db1c263.npy",
+      "seed": 40402,
+      "sha256": "4c262c8fe280b5fd99caa46e87b001a6df0e3049ddbd4f5955b75d408f2dec06",
+      "shape": [
+        1607,
+        1021
+      ],
+      "size_bytes": 6563116,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001036_plain_2000_09.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001050_plain_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/b403f52c47fda663.npy",
+      "seed": 40402,
+      "sha256": "5d6979c73fd3aaf1a9a21372e0d54dc3cd605376467c11af60fe61b5953ecc59",
+      "shape": [
+        1452,
+        809
+      ],
+      "size_bytes": 4698800,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001050_plain_2000_04.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001061_plain_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/457f9110f7f0b151.npy",
+      "seed": 40402,
+      "sha256": "b554dded9ec0f01dcfd504901ca67904ad08c12b826f83268c70d7a5486ebd8b",
+      "shape": [
+        1272,
+        823
+      ],
+      "size_bytes": 4187552,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001061_plain_2000_04.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001085_plain_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/d367b260bf50dec6.npy",
+      "seed": 40402,
+      "sha256": "6bb6b4e6b5c36ccb9e9cb1d8a045204ce068faeb01b21192e72bbbf8b260ee68",
+      "shape": [
+        795,
+        741
+      ],
+      "size_bytes": 2356508,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001085_plain_2000_10.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001159_plain_2000_12.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/b67e0b528d4267bd.npy",
+      "seed": 40402,
+      "sha256": "1d20a31500cafe6d9f03b45ebfc6fccfd031d27355299755bb1b2bbd0d679992",
+      "shape": [
+        2753,
+        1085
+      ],
+      "size_bytes": 11948148,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001159_plain_2000_12.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001187_plain_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/926e4aebd1f78ff8.npy",
+      "seed": 40402,
+      "sha256": "34b81f54dcfbc9f50aa73e5cfd029c31f2097440566e8a5e8d5fed6464609e0e",
+      "shape": [
+        1216,
+        971
+      ],
+      "size_bytes": 4723072,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001187_plain_2000_05.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001234_plain_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/04038da1580b3b8e.npy",
+      "seed": 40402,
+      "sha256": "da7bf05ba7f8a0f5e63a7bf9c15373faa1887c76070eef8f80d29c6edbd9c7b4",
+      "shape": [
+        757,
+        757
+      ],
+      "size_bytes": 2292324,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001234_plain_2000_08.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001267_plain_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/d5230096eae18b73.npy",
+      "seed": 40402,
+      "sha256": "f9f20d72f2eb87f81f6a8aae642e676cc85bb64d24acd613df68f4d467ae0476",
+      "shape": [
+        1460,
+        1015
+      ],
+      "size_bytes": 5927728,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001267_plain_2000_03.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001314_plain_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/d56fa950dd2491ad.npy",
+      "seed": 40402,
+      "sha256": "adb744910fa873598edee779e1fe29b48b56bc91b135f5de985e27b204c8f15a",
+      "shape": [
+        876,
+        1188
+      ],
+      "size_bytes": 4162880,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001314_plain_2000_03.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001335_plain_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/8c1505ef3f264bae.npy",
+      "seed": 40402,
+      "sha256": "f14ecc2d0a5f58fe5c78b6cf86f7a8bb375f87efddea44047b6e1349cb1715b7",
+      "shape": [
+        1407,
+        908
+      ],
+      "size_bytes": 5110352,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001335_plain_2000_02.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001411_plain_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/8ac0b1bd8c45f325.npy",
+      "seed": 40402,
+      "sha256": "c97948ce4a4803f1b65cbe54407439592a1dc4c79b8a694c9fe5fa524d68d701",
+      "shape": [
+        1550,
+        1142
+      ],
+      "size_bytes": 7080528,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001411_plain_2000_07.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001580_plain_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/002b44d43ce86943.npy",
+      "seed": 40402,
+      "sha256": "0f6755e78988b0686dd57746a31dcc5828e847de534d17c915471f3363ef7ef9",
+      "shape": [
+        1293,
+        1108
+      ],
+      "size_bytes": 5730704,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001580_plain_2000_09.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001593_plain_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/9bce39851fd722e9.npy",
+      "seed": 40402,
+      "sha256": "102eaee7902397a502d96de1c881e9d142e6860a072d59e59dd53999dc875b93",
+      "shape": [
+        1584,
+        871
+      ],
+      "size_bytes": 5518784,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001593_plain_2000_02.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001595_plain_2000_12.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/b3b3ce7012b819cc.npy",
+      "seed": 40402,
+      "sha256": "611a988d1638c118896c7584a2f08c03487832413486dabb14b8bb5b4c4b1610",
+      "shape": [
+        3048,
+        1156
+      ],
+      "size_bytes": 14094080,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001595_plain_2000_12.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001668_plain_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/0d31e5ea63fe4a18.npy",
+      "seed": 40402,
+      "sha256": "7cdcaf312d7c4430b45b6cde9593764e2010c0f413c6bffc2810e47e1fe33dc0",
+      "shape": [
+        1576,
+        976
+      ],
+      "size_bytes": 6152832,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001668_plain_2000_05.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001711_plain_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/24470612d18bd6b2.npy",
+      "seed": 40402,
+      "sha256": "da4e79b8473a159433ebfb5faf9c24a6106e89dc41aff3e519806d1db2ffc87f",
+      "shape": [
+        1410,
+        1028
+      ],
+      "size_bytes": 5798048,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001711_plain_2000_08.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001718_plain_2000_11.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/746cb713c56e8d59.npy",
+      "seed": 40402,
+      "sha256": "e64b2690d357ad817ce79252d8336e1a698ad5abb5df73d44d76b8cbbf9dc5da",
+      "shape": [
+        2578,
+        1102
+      ],
+      "size_bytes": 11363952,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001718_plain_2000_11.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001741_plain_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/75a45cc0f3ade543.npy",
+      "seed": 40402,
+      "sha256": "2dfd71f912bd7adf37a39b8a3859233792104aee7578523f41ff5897d1998fb4",
+      "shape": [
+        1726,
+        1129
+      ],
+      "size_bytes": 7794744,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001741_plain_2000_07.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/plain/00001809_plain_2000_11.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/397e38adb226b9ca.npy",
+      "seed": 40402,
+      "sha256": "bf9ba85e8c2588d49af546a542954b29b83e28dcd477db655642117d4092ae10",
+      "shape": [
+        2693,
+        1151
+      ],
+      "size_bytes": 12398700,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001809_plain_2000_11.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001027_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/61bef9a42b979280.npy",
+      "seed": 40402,
+      "sha256": "df76a65ffa408e06090b031b05dc7cf89ea7d51c3aa92fa419f9279e04c95f4b",
+      "shape": [
+        2031,
+        2513
+      ],
+      "size_bytes": 20415740,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001027_roll_2000_01.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001027_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/2d46f1180bbfb01c.npy",
+      "seed": 40402,
+      "sha256": "7ba61d7ec8cc6d03b46c254bdfdec8616749c032fc69ed5ec41b8565964c61dd",
+      "shape": [
+        1831,
+        2296
+      ],
+      "size_bytes": 16816032,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001027_roll_2000_10.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001036_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/ada27d49a85c3261.npy",
+      "seed": 40402,
+      "sha256": "4cc4d1e6e1d02908531deb536177bcedc0f8124c0a5e85f721c6a9f6a261ab2c",
+      "shape": [
+        2112,
+        2093
+      ],
+      "size_bytes": 17681792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001036_roll_2000_09.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001036_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/5d0d2b93dc6c1f6a.npy",
+      "seed": 40402,
+      "sha256": "cc12ebb1bdcdbd91b09a7c1097e1551f7d3d130732e6ed2d2f5b5bdb5c4c15bd",
+      "shape": [
+        2073,
+        2200
+      ],
+      "size_bytes": 18242528,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001036_roll_2000_10.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001050_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/2b17da3e3e91855b.npy",
+      "seed": 40402,
+      "sha256": "08cb4f6bdc3b60d26acd74fc2febccd65ce9a7886d509366b210a7cdd44d5345",
+      "shape": [
+        1871,
+        2170
+      ],
+      "size_bytes": 16240408,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001050_roll_2000_04.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001050_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/5eaebdb6c9d6590b.npy",
+      "seed": 40402,
+      "sha256": "19f4271455e7bc92eb12c0d7a070a6a4aea2d272a10d2f1ac898767f857a8a9c",
+      "shape": [
+        1935,
+        2123
+      ],
+      "size_bytes": 16432148,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001050_roll_2000_05.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001061_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/0a4a1cd3390bfc6c.npy",
+      "seed": 40402,
+      "sha256": "88739899d39a93330485725288321db077d605113e0d9fec70c39b1cf45eb890",
+      "shape": [
+        1907,
+        2037
+      ],
+      "size_bytes": 15538364,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001061_roll_2000_04.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001061_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/cf9e6db6e131502f.npy",
+      "seed": 40402,
+      "sha256": "61d8b35ca36f500f4fceffb725209e942bda56a8be2f021c871676bf67974d64",
+      "shape": [
+        1812,
+        2293
+      ],
+      "size_bytes": 16619792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001061_roll_2000_05.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001085_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/248b66038e96fe0b.npy",
+      "seed": 40402,
+      "sha256": "9c45cde6c8d97c5e2bf33ed420f48c5980da8e40ffaa70551fb7177d0544a46f",
+      "shape": [
+        2232,
+        2229
+      ],
+      "size_bytes": 19900640,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001085_roll_2000_01.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001085_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/5f78050548dfce81.npy",
+      "seed": 40402,
+      "sha256": "7adff5fc02c7c03da8b4f54fce36e7596ac16b18c2a8b3a55d9915d5fd81ce0e",
+      "shape": [
+        2013,
+        2051
+      ],
+      "size_bytes": 16514780,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001085_roll_2000_10.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001159_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/009ae12ce206a378.npy",
+      "seed": 40402,
+      "sha256": "82abf210288c05fa7762d90487cf661b65698ab840594d7b97aded0f38b9593d",
+      "shape": [
+        1946,
+        2284
+      ],
+      "size_bytes": 17778784,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001159_roll_2000_06.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001159_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/06677bd0916c757b.npy",
+      "seed": 40402,
+      "sha256": "9fbe5227156a88b7e3d09daf88b75eb43b819745760f1794477d50a4cecb06c4",
+      "shape": [
+        1887,
+        2040
+      ],
+      "size_bytes": 15398048,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001159_roll_2000_07.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001187_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/50fd2f724fb37d9d.npy",
+      "seed": 40402,
+      "sha256": "f962bd044c82e585feafef910eae70b53ffa101add2032a7205ae21e639f2f0b",
+      "shape": [
+        2245,
+        2419
+      ],
+      "size_bytes": 21722748,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001187_roll_2000_05.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001187_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/72eb37dab72c4b92.npy",
+      "seed": 40402,
+      "sha256": "14a8f714d8c36cbd8324610559fd4f0ec5c7c5ad8128b66d6bc05bf64ed28577",
+      "shape": [
+        2185,
+        2402
+      ],
+      "size_bytes": 20993608,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001187_roll_2000_06.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001234_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/931b975d3c3c021d.npy",
+      "seed": 40402,
+      "sha256": "8cd3700ba9118779471632553a011a5ec0d0ffd6da5fd22176772777837b44e5",
+      "shape": [
+        2173,
+        2321
+      ],
+      "size_bytes": 20174260,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001234_roll_2000_08.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001234_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/92fc470d0211f33a.npy",
+      "seed": 40402,
+      "sha256": "0b1564c38db7b942b58202d4f02319f5858181494bed32578e79ab0001f2a6e5",
+      "shape": [
+        2100,
+        2243
+      ],
+      "size_bytes": 18841328,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001234_roll_2000_09.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001267_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/11107c86ca5e068f.npy",
+      "seed": 40402,
+      "sha256": "f90dbac8a5ec1e6d4b747f441782d788ed8b20447a3e156833356f3557c612a0",
+      "shape": [
+        2395,
+        2334
+      ],
+      "size_bytes": 22359848,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001267_roll_2000_03.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001267_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/0b06620a640ccc59.npy",
+      "seed": 40402,
+      "sha256": "a9ce9e79db5d4cd82975354ca0931e342a0def438d01a68442d3bd00a8db2125",
+      "shape": [
+        2495,
+        2410
+      ],
+      "size_bytes": 24051928,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001267_roll_2000_04.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001314_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/eebe6d3dfa3a638c.npy",
+      "seed": 40402,
+      "sha256": "896460b4634ab54cc84a5da8ea70d840ddde4b64b63afc03b36a76dcfeff467f",
+      "shape": [
+        2333,
+        2250
+      ],
+      "size_bytes": 20997128,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001314_roll_2000_03.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001314_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/10865079efc03b8f.npy",
+      "seed": 40402,
+      "sha256": "6593c9b54017021ea79af4c3644004ae6c2bb63a96966aebf0212075b4e88a89",
+      "shape": [
+        2255,
+        2139
+      ],
+      "size_bytes": 19293908,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001314_roll_2000_04.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001335_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/00eedd24e10761ab.npy",
+      "seed": 40402,
+      "sha256": "baee602de38c0a005f5ced6e48aa32ed7cb52c2ab759ea50a1947ba21a48e7f4",
+      "shape": [
+        2315,
+        2232
+      ],
+      "size_bytes": 20668448,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001335_roll_2000_02.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001335_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/a01c8d3bb027747c.npy",
+      "seed": 40402,
+      "sha256": "c2cf198a321135bc33a2dd8f5841d5557a2ba3da5ecc5643a86716211ea15a62",
+      "shape": [
+        2333,
+        2250
+      ],
+      "size_bytes": 20997128,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001335_roll_2000_03.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001411_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/72b97db20fecfdfe.npy",
+      "seed": 40402,
+      "sha256": "321b55e9204a75e7a5f679d6581071c7170390f4befc8fbd9b512a2d6ecffa52",
+      "shape": [
+        2111,
+        2232
+      ],
+      "size_bytes": 18847136,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001411_roll_2000_07.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001411_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/249a0481651fce08.npy",
+      "seed": 40402,
+      "sha256": "43e56405b83b0735ba4de5dccb6f4634591b0c835926c7fcf4250883450bbb44",
+      "shape": [
+        2137,
+        2282
+      ],
+      "size_bytes": 19506664,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001411_roll_2000_08.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001580_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/293ec542184d07e6.npy",
+      "seed": 40402,
+      "sha256": "9f2690f82d73fc21c37f2a21a05937e3945ec21e33a41e5f4d9bc1760baf9e90",
+      "shape": [
+        1907,
+        2037
+      ],
+      "size_bytes": 15538364,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001580_roll_2000_09.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001580_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/033e29d9823fb049.npy",
+      "seed": 40402,
+      "sha256": "780e0cd72a84d0c551281f1fac1bcb8fd4ec57c3513878f27fd7319fdfef6f84",
+      "shape": [
+        2034,
+        2551
+      ],
+      "size_bytes": 20755064,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001580_roll_2000_10.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001593_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/dbab090067527881.npy",
+      "seed": 40402,
+      "sha256": "a640a53ba5df3024a7544c0317eb601642d3e09a3f826771ead0415a6c711266",
+      "shape": [
+        2151,
+        2076
+      ],
+      "size_bytes": 17862032,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001593_roll_2000_02.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001593_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/596c8e0716f7a9a2.npy",
+      "seed": 40402,
+      "sha256": "8f35e0d9df1c56cb058e0a14bcc2565cb8090ecd7eb8046198d3a9085ab788d8",
+      "shape": [
+        2108,
+        2054
+      ],
+      "size_bytes": 17319456,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001593_roll_2000_03.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001595_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/078d58dbcca8b847.npy",
+      "seed": 40402,
+      "sha256": "4d155f268416547856c3b72fc2cd77f5cc3cc2484cf6502f54585a72e1cab1fe",
+      "shape": [
+        2407,
+        2751
+      ],
+      "size_bytes": 26486756,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001595_roll_2000_06.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001595_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/cd7205e2dd042f71.npy",
+      "seed": 40402,
+      "sha256": "fc8a5694a747c8bf9f7af922c181477683029ff9b8c0f8313c0b9082d2eda0e1",
+      "shape": [
+        2289,
+        2380
+      ],
+      "size_bytes": 21791408,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001595_roll_2000_07.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001668_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/e43b0cdf7d268ed6.npy",
+      "seed": 40402,
+      "sha256": "114029e65920b8cdde80aa74f3b8d277c8c56da2a2620213998a17accb33cd62",
+      "shape": [
+        2627,
+        2584
+      ],
+      "size_bytes": 27152800,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001668_roll_2000_05.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001668_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/2b597980cdc5955c.npy",
+      "seed": 40402,
+      "sha256": "9e3c4cf50b5f5544237a6c86fe2d862bfe855eb47fdd1807386a69f4732af24b",
+      "shape": [
+        2312,
+        2513
+      ],
+      "size_bytes": 23240352,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001668_roll_2000_06.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001711_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/0312f7e399d00144.npy",
+      "seed": 40402,
+      "sha256": "7630268329574f2403f32c41a54382f186880ba79adcbb498269d6e1f0743a2b",
+      "shape": [
+        2264,
+        2282
+      ],
+      "size_bytes": 20665920,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001711_roll_2000_08.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001711_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/684ba18014148ffb.npy",
+      "seed": 40402,
+      "sha256": "3bc85a3e7119b819f7066af8a429a0b7155757cc1bed7f06819da1c6b7dbabf3",
+      "shape": [
+        2039,
+        2094
+      ],
+      "size_bytes": 17078792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001711_roll_2000_09.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001718_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/33a169b6055f09f9.npy",
+      "seed": 40402,
+      "sha256": "e8daeec4b807a7d2436d2c52e30778c1797a0755355f237e193023af4fbe48d9",
+      "shape": [
+        2152,
+        2472
+      ],
+      "size_bytes": 21279104,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001718_roll_2000_01.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001718_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/33fe38ff9b150b9c.npy",
+      "seed": 40402,
+      "sha256": "6f178d3ee3ef8eff2feb192a7ee46a5b0a8721755122b0d2bdb2c2443bdf7ea6",
+      "shape": [
+        2167,
+        2334
+      ],
+      "size_bytes": 20231240,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001718_roll_2000_02.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001741_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/f627fa9e96e5b84f.npy",
+      "seed": 40402,
+      "sha256": "8e7afc7c88159a302dd71257b584382b362b24bd94d08f4ea314e0f2a48d2dc8",
+      "shape": [
+        2261,
+        2282
+      ],
+      "size_bytes": 20638536,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001741_roll_2000_07.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001741_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/3a666a2aead1ab3f.npy",
+      "seed": 40402,
+      "sha256": "c10560822ef408da8f004d015fce409e719983b941e6a4a49384e367fe2a6ea0",
+      "shape": [
+        2232,
+        2253
+      ],
+      "size_bytes": 20114912,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001741_roll_2000_08.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001809_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/3b96c514c88bc740.npy",
+      "seed": 40402,
+      "sha256": "a3937a906097071ac147b0577cf69e98b670b44a0472f2fafe1097f6842916b0",
+      "shape": [
+        2063,
+        2369
+      ],
+      "size_bytes": 19549116,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001809_roll_2000_01.png"
+    },
+    "2000|40402|NIST/sd300c/images/2000/png/roll/00001809_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40402/c130f1e503cb6d49.npy",
+      "seed": 40402,
+      "sha256": "e8d7b8631da447c6fa69f1ddfb24d2feb79a5815aaddd9c51f93b28e4dd36626",
+      "shape": [
+        2028,
+        2185
+      ],
+      "size_bytes": 17724848,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001809_roll_2000_02.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001027_plain_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/6880979a5479a3b8.npy",
+      "seed": 40403,
+      "sha256": "2b98ae5f3d625e134faa6b18ef23f51966439120dc0e042befd17e267c5bb20e",
+      "shape": [
+        1327,
+        885
+      ],
+      "size_bytes": 4697708,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001027_plain_2000_10.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001036_plain_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/c28b78126db1c263.npy",
+      "seed": 40403,
+      "sha256": "a1d5a65026c4babe0480eaf0bbddaf48fd13a750ab9d183bf05a3db5a6a4059e",
+      "shape": [
+        1607,
+        1021
+      ],
+      "size_bytes": 6563116,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001036_plain_2000_09.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001050_plain_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/b403f52c47fda663.npy",
+      "seed": 40403,
+      "sha256": "d3fb4259f04989981c9a2c922b1d4cee74516b11518d218f582d88b69bdcc859",
+      "shape": [
+        1452,
+        809
+      ],
+      "size_bytes": 4698800,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001050_plain_2000_04.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001061_plain_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/457f9110f7f0b151.npy",
+      "seed": 40403,
+      "sha256": "59d5f2c739c711a185368add0241f3aa0683bbdc37dc9560a629abe1f1cbf848",
+      "shape": [
+        1272,
+        823
+      ],
+      "size_bytes": 4187552,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001061_plain_2000_04.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001085_plain_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/d367b260bf50dec6.npy",
+      "seed": 40403,
+      "sha256": "fdb37e9f58b4b8fb886405d12880363c181365510253be65c307c3092aba3896",
+      "shape": [
+        795,
+        741
+      ],
+      "size_bytes": 2356508,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001085_plain_2000_10.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001159_plain_2000_12.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/b67e0b528d4267bd.npy",
+      "seed": 40403,
+      "sha256": "99ae1639471fcbe9b1878008fadadbfd8f5bbbef3dbd993a4bfb025fad2326eb",
+      "shape": [
+        2753,
+        1085
+      ],
+      "size_bytes": 11948148,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001159_plain_2000_12.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001187_plain_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/926e4aebd1f78ff8.npy",
+      "seed": 40403,
+      "sha256": "1ba6a7c431738f68db5310f24df0e7021217e52a2f8de806f367e7e8a4308168",
+      "shape": [
+        1216,
+        971
+      ],
+      "size_bytes": 4723072,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001187_plain_2000_05.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001234_plain_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/04038da1580b3b8e.npy",
+      "seed": 40403,
+      "sha256": "75ade0b5af89e062a0fbfa1406f099a072e13fa1f8d766be63dacd6a0c338940",
+      "shape": [
+        757,
+        757
+      ],
+      "size_bytes": 2292324,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001234_plain_2000_08.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001267_plain_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/d5230096eae18b73.npy",
+      "seed": 40403,
+      "sha256": "879caaa6a52b81fffdd3cc8fe756c32042c3d6db165459015f658f31bc920781",
+      "shape": [
+        1460,
+        1015
+      ],
+      "size_bytes": 5927728,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001267_plain_2000_03.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001314_plain_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/d56fa950dd2491ad.npy",
+      "seed": 40403,
+      "sha256": "589eaaf2ac5aebc5dbb85c2c8793e8ff0fb34eb56a94d629d0cb018a29287f4c",
+      "shape": [
+        876,
+        1188
+      ],
+      "size_bytes": 4162880,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001314_plain_2000_03.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001335_plain_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/8c1505ef3f264bae.npy",
+      "seed": 40403,
+      "sha256": "d1d43712e25ff7669481b4c9dec7d50ebe82df5f276586448e44a4e98e6b1d4d",
+      "shape": [
+        1407,
+        908
+      ],
+      "size_bytes": 5110352,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001335_plain_2000_02.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001411_plain_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/8ac0b1bd8c45f325.npy",
+      "seed": 40403,
+      "sha256": "cf4f60e01b4461156a265199ead4e3fe6f0394aa7e329c9db9d5c6cc3dba6d8d",
+      "shape": [
+        1550,
+        1142
+      ],
+      "size_bytes": 7080528,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001411_plain_2000_07.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001580_plain_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/002b44d43ce86943.npy",
+      "seed": 40403,
+      "sha256": "fe387299e8e3043d5b6fb2590843e8d5a6d7b936179d235815549d69bfefbb19",
+      "shape": [
+        1293,
+        1108
+      ],
+      "size_bytes": 5730704,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001580_plain_2000_09.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001593_plain_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/9bce39851fd722e9.npy",
+      "seed": 40403,
+      "sha256": "db84a0130f97721eb901217506318277cdd308874f327a38fdf0e5a660b8be8e",
+      "shape": [
+        1584,
+        871
+      ],
+      "size_bytes": 5518784,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001593_plain_2000_02.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001595_plain_2000_12.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/b3b3ce7012b819cc.npy",
+      "seed": 40403,
+      "sha256": "627239a218d02a1feb190e87ab4ec46d7760b1da0ec4cea5fe4c3bc82e457248",
+      "shape": [
+        3048,
+        1156
+      ],
+      "size_bytes": 14094080,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001595_plain_2000_12.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001668_plain_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/0d31e5ea63fe4a18.npy",
+      "seed": 40403,
+      "sha256": "9a5d2912410aa7f1b3c963729ea5c4bf9355b25ceb9c7162e7dde4e0209e6d3b",
+      "shape": [
+        1576,
+        976
+      ],
+      "size_bytes": 6152832,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001668_plain_2000_05.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001711_plain_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/24470612d18bd6b2.npy",
+      "seed": 40403,
+      "sha256": "ff3dae97f32d59079cd36f7eb0a3166ddd1ba499b1676d2ed4ef320950f42493",
+      "shape": [
+        1410,
+        1028
+      ],
+      "size_bytes": 5798048,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001711_plain_2000_08.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001718_plain_2000_11.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/746cb713c56e8d59.npy",
+      "seed": 40403,
+      "sha256": "b8ebfacd60c2c4ce6b61293198b3893c28c22f52012ca01dee3df035c23eb2ab",
+      "shape": [
+        2578,
+        1102
+      ],
+      "size_bytes": 11363952,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001718_plain_2000_11.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001741_plain_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/75a45cc0f3ade543.npy",
+      "seed": 40403,
+      "sha256": "cc59443f6ab7290f423c0b555d1b9f5dc24c3393257f75c1ceda26947ffd120d",
+      "shape": [
+        1726,
+        1129
+      ],
+      "size_bytes": 7794744,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001741_plain_2000_07.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/plain/00001809_plain_2000_11.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/397e38adb226b9ca.npy",
+      "seed": 40403,
+      "sha256": "0abd69a2d470255948ed0276cae59421675b738fe60896fedfaa3b19acbcea64",
+      "shape": [
+        2693,
+        1151
+      ],
+      "size_bytes": 12398700,
+      "source_id": "NIST/sd300c/images/2000/png/plain/00001809_plain_2000_11.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001027_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/61bef9a42b979280.npy",
+      "seed": 40403,
+      "sha256": "f60b65b511c48bc183e4a5bd8e9fcff5145e06855e6c01f02d79eefa1a0c2a4f",
+      "shape": [
+        2031,
+        2513
+      ],
+      "size_bytes": 20415740,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001027_roll_2000_01.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001027_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/2d46f1180bbfb01c.npy",
+      "seed": 40403,
+      "sha256": "ab87660190ee31e8b45f84ea9b0bf8891aa68b9fd4c83b70e22a68a72dfc6751",
+      "shape": [
+        1831,
+        2296
+      ],
+      "size_bytes": 16816032,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001027_roll_2000_10.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001036_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/ada27d49a85c3261.npy",
+      "seed": 40403,
+      "sha256": "31b7cb4a6ba1636863aadad3d1e326c364c61bf21383fd5f5ad4e87142db8ab7",
+      "shape": [
+        2112,
+        2093
+      ],
+      "size_bytes": 17681792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001036_roll_2000_09.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001036_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/5d0d2b93dc6c1f6a.npy",
+      "seed": 40403,
+      "sha256": "214647901fdee35caf68dd9aeb538ab0a5f34f0d099f9e194c10ae4d81932c19",
+      "shape": [
+        2073,
+        2200
+      ],
+      "size_bytes": 18242528,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001036_roll_2000_10.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001050_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/2b17da3e3e91855b.npy",
+      "seed": 40403,
+      "sha256": "c9d74174cc110a29ca98d316dc602045034560efa82b85c0baa1cfc1093a9b1e",
+      "shape": [
+        1871,
+        2170
+      ],
+      "size_bytes": 16240408,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001050_roll_2000_04.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001050_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/5eaebdb6c9d6590b.npy",
+      "seed": 40403,
+      "sha256": "59734a7136bba85e912b66accca8cf9a2fc85f8d0e147b2ce1a2c036621ae39a",
+      "shape": [
+        1935,
+        2123
+      ],
+      "size_bytes": 16432148,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001050_roll_2000_05.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001061_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/0a4a1cd3390bfc6c.npy",
+      "seed": 40403,
+      "sha256": "d5169989e645487dc8ae111fe147ebe917d1dc36697bfcf3721af66de386d45d",
+      "shape": [
+        1907,
+        2037
+      ],
+      "size_bytes": 15538364,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001061_roll_2000_04.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001061_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/cf9e6db6e131502f.npy",
+      "seed": 40403,
+      "sha256": "690f6cd969b1cc0f0e084db9a748fe30dc04e9bd1cfb4ae1b405e3f8500e8b41",
+      "shape": [
+        1812,
+        2293
+      ],
+      "size_bytes": 16619792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001061_roll_2000_05.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001085_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/248b66038e96fe0b.npy",
+      "seed": 40403,
+      "sha256": "bc4b78f9e9e29714d30a2b15b955ea6cce00cdd2632bba664b2589fe059d7395",
+      "shape": [
+        2232,
+        2229
+      ],
+      "size_bytes": 19900640,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001085_roll_2000_01.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001085_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/5f78050548dfce81.npy",
+      "seed": 40403,
+      "sha256": "8c17dde196279673524db8573089d5d472089dc15934c5c43d33dd3cbdcda8b9",
+      "shape": [
+        2013,
+        2051
+      ],
+      "size_bytes": 16514780,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001085_roll_2000_10.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001159_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/009ae12ce206a378.npy",
+      "seed": 40403,
+      "sha256": "10832291b0e316fa20b13b61938700f2c28760a372b5d557486b02d60e31729b",
+      "shape": [
+        1946,
+        2284
+      ],
+      "size_bytes": 17778784,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001159_roll_2000_06.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001159_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/06677bd0916c757b.npy",
+      "seed": 40403,
+      "sha256": "06cd645195b5155d2ec733c41b537374eb2f213eaa3520b754e0aee0ba62aba7",
+      "shape": [
+        1887,
+        2040
+      ],
+      "size_bytes": 15398048,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001159_roll_2000_07.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001187_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/50fd2f724fb37d9d.npy",
+      "seed": 40403,
+      "sha256": "f1b5cbdbbd3824a3b62ea982057dd106bfec79634c12351a1a2c10d27b36fbb7",
+      "shape": [
+        2245,
+        2419
+      ],
+      "size_bytes": 21722748,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001187_roll_2000_05.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001187_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/72eb37dab72c4b92.npy",
+      "seed": 40403,
+      "sha256": "035bb09dcd7e5e7ba15ba4f53902d1a5cc10b1dc9d6167a41795e1e8f49e5128",
+      "shape": [
+        2185,
+        2402
+      ],
+      "size_bytes": 20993608,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001187_roll_2000_06.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001234_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/931b975d3c3c021d.npy",
+      "seed": 40403,
+      "sha256": "30faadb29acf1c13a91ddcfeb8392b3894cd2b4140cc4b559426664b38b5baa7",
+      "shape": [
+        2173,
+        2321
+      ],
+      "size_bytes": 20174260,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001234_roll_2000_08.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001234_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/92fc470d0211f33a.npy",
+      "seed": 40403,
+      "sha256": "00ccf982c320bbc5910897abcd59bb581ed4a24a3946e7faed18357bc481321e",
+      "shape": [
+        2100,
+        2243
+      ],
+      "size_bytes": 18841328,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001234_roll_2000_09.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001267_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/11107c86ca5e068f.npy",
+      "seed": 40403,
+      "sha256": "93f16b3d5d536478d746ffad8f559068855a315843f7496ac32ca009fa71f96c",
+      "shape": [
+        2395,
+        2334
+      ],
+      "size_bytes": 22359848,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001267_roll_2000_03.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001267_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/0b06620a640ccc59.npy",
+      "seed": 40403,
+      "sha256": "4d2f502b66fbcb836cc9f1ce12eb453202465023c7a168937d465a6959cc6ce7",
+      "shape": [
+        2495,
+        2410
+      ],
+      "size_bytes": 24051928,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001267_roll_2000_04.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001314_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/eebe6d3dfa3a638c.npy",
+      "seed": 40403,
+      "sha256": "6b3a7d3cbb4bb5dc755690fc77e45188991e104f9e33f5a300ec2896bdc6f20f",
+      "shape": [
+        2333,
+        2250
+      ],
+      "size_bytes": 20997128,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001314_roll_2000_03.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001314_roll_2000_04.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/10865079efc03b8f.npy",
+      "seed": 40403,
+      "sha256": "34307489f85a08a8329cf0e83dfd890518b8c55eafe929e3ca4a84e4fb8938e6",
+      "shape": [
+        2255,
+        2139
+      ],
+      "size_bytes": 19293908,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001314_roll_2000_04.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001335_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/00eedd24e10761ab.npy",
+      "seed": 40403,
+      "sha256": "84867db758983007296465092feba1466c815832c76e188dc64eb98433a68c79",
+      "shape": [
+        2315,
+        2232
+      ],
+      "size_bytes": 20668448,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001335_roll_2000_02.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001335_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/a01c8d3bb027747c.npy",
+      "seed": 40403,
+      "sha256": "d5fced4af1bbd160bb1e906ac324f30f025c93ced81f722ac1a450020270dee8",
+      "shape": [
+        2333,
+        2250
+      ],
+      "size_bytes": 20997128,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001335_roll_2000_03.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001411_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/72b97db20fecfdfe.npy",
+      "seed": 40403,
+      "sha256": "4889a456eb0947c6cebe9f61d68e45469a5e63f1c3491721786ec28b318082d1",
+      "shape": [
+        2111,
+        2232
+      ],
+      "size_bytes": 18847136,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001411_roll_2000_07.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001411_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/249a0481651fce08.npy",
+      "seed": 40403,
+      "sha256": "af3b44e39f80bd93e785be619a721b41be966abdbbf4194cb0129054f54b1e4b",
+      "shape": [
+        2137,
+        2282
+      ],
+      "size_bytes": 19506664,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001411_roll_2000_08.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001580_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/293ec542184d07e6.npy",
+      "seed": 40403,
+      "sha256": "55ec9394ed17074cc3bc099888f4b9014a4d0899343308939ae46b2d29b8b133",
+      "shape": [
+        1907,
+        2037
+      ],
+      "size_bytes": 15538364,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001580_roll_2000_09.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001580_roll_2000_10.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/033e29d9823fb049.npy",
+      "seed": 40403,
+      "sha256": "053138b1f7269699881fff1e66cb1d092f8c526143640f557ac5712e2000415b",
+      "shape": [
+        2034,
+        2551
+      ],
+      "size_bytes": 20755064,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001580_roll_2000_10.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001593_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/dbab090067527881.npy",
+      "seed": 40403,
+      "sha256": "afb980883a4775d572bf64267c2f4177f14912e63cdc7ba3c76e318b5c3aa0b7",
+      "shape": [
+        2151,
+        2076
+      ],
+      "size_bytes": 17862032,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001593_roll_2000_02.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001593_roll_2000_03.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/596c8e0716f7a9a2.npy",
+      "seed": 40403,
+      "sha256": "a6ce1bf4e3c3fdbaf0179345e06a0619e6e31ac4f467ba40ff1a85eb216b5207",
+      "shape": [
+        2108,
+        2054
+      ],
+      "size_bytes": 17319456,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001593_roll_2000_03.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001595_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/078d58dbcca8b847.npy",
+      "seed": 40403,
+      "sha256": "c36a592a6f1887ac57bb24f35917f9c0dfc61e5a41bc843193253ccc1731dfe9",
+      "shape": [
+        2407,
+        2751
+      ],
+      "size_bytes": 26486756,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001595_roll_2000_06.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001595_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/cd7205e2dd042f71.npy",
+      "seed": 40403,
+      "sha256": "ec8f9de712bd52b2e55ea188ec70438012333b5a01dc3ef7ae09c39dbea232d9",
+      "shape": [
+        2289,
+        2380
+      ],
+      "size_bytes": 21791408,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001595_roll_2000_07.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001668_roll_2000_05.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/e43b0cdf7d268ed6.npy",
+      "seed": 40403,
+      "sha256": "96372e1eed9a9fe3f916c110bb754770f3dbaedc00e6e701eceed719b62ab37b",
+      "shape": [
+        2627,
+        2584
+      ],
+      "size_bytes": 27152800,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001668_roll_2000_05.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001668_roll_2000_06.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/2b597980cdc5955c.npy",
+      "seed": 40403,
+      "sha256": "f7d2c3b5ed7b78f7e0a14297f5a2d3ce821d9b39720c463be4d347ae20aa77d7",
+      "shape": [
+        2312,
+        2513
+      ],
+      "size_bytes": 23240352,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001668_roll_2000_06.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001711_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/0312f7e399d00144.npy",
+      "seed": 40403,
+      "sha256": "d4ed18337cf09d648873f0a783d161b6bd431e581801c3505988bb7956c5eaef",
+      "shape": [
+        2264,
+        2282
+      ],
+      "size_bytes": 20665920,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001711_roll_2000_08.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001711_roll_2000_09.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/684ba18014148ffb.npy",
+      "seed": 40403,
+      "sha256": "8064277e316d53a64510bd5cc03ad2d4d8e7d80cced243d08a7e40c235e2dc96",
+      "shape": [
+        2039,
+        2094
+      ],
+      "size_bytes": 17078792,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001711_roll_2000_09.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001718_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/33a169b6055f09f9.npy",
+      "seed": 40403,
+      "sha256": "f9273df19337c218a87bb221bb1ad6fc5da60888bfc53560c48e4302988d6d28",
+      "shape": [
+        2152,
+        2472
+      ],
+      "size_bytes": 21279104,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001718_roll_2000_01.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001718_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/33fe38ff9b150b9c.npy",
+      "seed": 40403,
+      "sha256": "7ade9120dd49c1d955332bb1ede0ced9db62a2b95682bd7540e8b16567c1fd50",
+      "shape": [
+        2167,
+        2334
+      ],
+      "size_bytes": 20231240,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001718_roll_2000_02.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001741_roll_2000_07.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/f627fa9e96e5b84f.npy",
+      "seed": 40403,
+      "sha256": "dee4dc70db12162cb72ad477355842308c6384f78027acb5c52455566feb67d8",
+      "shape": [
+        2261,
+        2282
+      ],
+      "size_bytes": 20638536,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001741_roll_2000_07.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001741_roll_2000_08.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/3a666a2aead1ab3f.npy",
+      "seed": 40403,
+      "sha256": "85ee7b4bdfcebbec2e6ba6b381dc25fe9cb3e8e326a3bbc43e3be63f81510b06",
+      "shape": [
+        2232,
+        2253
+      ],
+      "size_bytes": 20114912,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001741_roll_2000_08.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001809_roll_2000_01.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/3b96c514c88bc740.npy",
+      "seed": 40403,
+      "sha256": "40ec2175d3204bb2e31a9d10a36d03bb03cd5bb057b0baf0a99b548094dc11b0",
+      "shape": [
+        2063,
+        2369
+      ],
+      "size_bytes": 19549116,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001809_roll_2000_01.png"
+    },
+    "2000|40403|NIST/sd300c/images/2000/png/roll/00001809_roll_2000_02.png": {
+      "ppi": 2000,
+      "relative_local_path": "artifacts/experiment-004/local-large/sd300-heatmaps/2000/seed-40403/c130f1e503cb6d49.npy",
+      "seed": 40403,
+      "sha256": "5092810d9b2763d2e1d106589c3cc2fc3f5d1dd63af130c39a715f2b146dd3db",
+      "shape": [
+        2028,
+        2185
+      ],
+      "size_bytes": 17724848,
+      "source_id": "NIST/sd300c/images/2000/png/roll/00001809_roll_2000_02.png"
     }
   },
   "schema_version": 1,
-  "updated_at_utc": "2026-08-29T20:20:46.650455+00:00"
+  "updated_at_utc": "2026-08-29T20:25:23.983083+00:00"
 }

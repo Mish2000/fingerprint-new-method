@@ -1,0 +1,9 @@
+{
+  "cross_resolution_csv_sha256": "e5d6330448c7a2447b63ed74c78a3662756be58c3e481dcef84bc79e388c392c",
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "frozen_at_utc": "2026-08-29T20:26:49.114328+00:00",
+  "ratings_opened": false,
+  "repeatability_csv_sha256": "3bf668f11977a32534c79ae52f0697d8c14aecbe356168233b09ccee16d07334",
+  "schema_version": 1,
+  "transfer_summary_sha256": "35d7fee6a6a59b8a9a95ac5f90d2dcd4f9f6da172180a1c0ab2e968f817d22c8"
+}

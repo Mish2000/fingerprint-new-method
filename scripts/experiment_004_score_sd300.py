@@ -281,6 +281,38 @@ def _summarize(result_rows: Sequence[dict[str, Any]], ppi: int, analysis: str) -
     }
 
 
+def _union_fieldnames(rows: Sequence[dict[str, Any]]) -> list[str]:
+    """Column union in first-seen order: an invalid registration reports fewer fields."""
+
+    fieldnames: list[str] = []
+    for row in rows:
+        for key in row:
+            if key not in fieldnames:
+                fieldnames.append(key)
+    return fieldnames
+
+
+def _detections_or_empty(
+    heatmaps: dict[str, Any],
+    preprocessing: dict[str, Any],
+    *,
+    ppi: int,
+    seed: int,
+    source_id: str,
+    threshold: float,
+    radius: int,
+) -> np.ndarray:
+    """No heatmap exists for an image that failed ridge-scale preprocessing.
+
+    A missing heatmap for an image that did pass preprocessing is a real error and
+    is left to raise.
+    """
+
+    if _preprocessing_row(preprocessing, ppi, source_id)["status"] != "OK":
+        return np.empty((0, 2), dtype=np.float32)
+    return _detections(heatmaps, ppi=ppi, seed=seed, source_id=source_id, threshold=threshold, radius=radius)
+
+
 def _score_cross_resolution(
     pairs: dict[str, Any],
     preprocessing: dict[str, Any],
@@ -297,16 +329,18 @@ def _score_cross_resolution(
             for impression, key in (("plain", "plain_source_id"), ("roll", "mated_roll_source_id")):
                 source_1000 = first[key]
                 source_2000 = second[key]
-                detections_1000 = _detections(
+                detections_1000 = _detections_or_empty(
                     heatmaps,
+                    preprocessing,
                     ppi=1000,
                     seed=seed,
                     source_id=source_1000,
                     threshold=frozen["threshold"],
                     radius=frozen["nms_radius_px"],
                 )
-                detections_2000 = _detections(
+                detections_2000 = _detections_or_empty(
                     heatmaps,
+                    preprocessing,
                     ppi=2000,
                     seed=seed,
                     source_id=source_2000,
@@ -449,7 +483,8 @@ def main() -> None:
         frozen = _read_json(ARTIFACT_ROOT / "model_manifest.json")["frozen_inference"]
         cross_rows, cross_summary = _score_cross_resolution(pairs, preprocessing, heatmaps, frozen)
         cross_path = ARTIFACT_ROOT / "sd300_cross_resolution_repeatability.csv"
-        write_csv(cross_path, cross_rows, list(cross_rows[0]))
+        fieldnames = _union_fieldnames(cross_rows)
+        write_csv(cross_path, [{key: row.get(key) for key in fieldnames} for row in cross_rows], fieldnames)
         transfer["cross_resolution_1000_to_2000"] = cross_summary
         write_json(transfer_path, transfer)
         marker = {
