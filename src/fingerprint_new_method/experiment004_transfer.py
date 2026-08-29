@@ -171,12 +171,32 @@ class ScaledImage:
     estimate: RidgePeriodEstimate
 
 
-def normalize_ridge_scale(gray: np.ndarray, target_period_px: float) -> ScaledImage:
+#: Preregistered band of section 9; the primary analysis and Gate B use only this one.
+FROZEN_SCALE_FACTOR_BAND = (0.20, 1.50)
+#: Wide sanity guard of the frozen contingency amendment; exploratory sensitivity only.
+CONFORMANT_SCALE_FACTOR_BAND = (0.20, 3.00)
+SCALE_FACTOR_BANDS = {"frozen": FROZEN_SCALE_FACTOR_BAND, "conformant": CONFORMANT_SCALE_FACTOR_BAND}
+
+
+def scale_factor_status(scale_factor: float | None, band: tuple[float, float]) -> str:
+    """Classify one ridge-scale factor against an analysis band."""
+
+    if scale_factor is None:
+        return "PREPROCESSING_FAILURE"
+    return "OK" if band[0] <= float(scale_factor) <= band[1] else "PREPROCESSING_FAILURE"
+
+
+def normalize_ridge_scale(
+    gray: np.ndarray,
+    target_period_px: float,
+    *,
+    band: tuple[float, float] = FROZEN_SCALE_FACTOR_BAND,
+) -> ScaledImage:
     estimate = estimate_ridge_period(gray)
     if estimate.period_px is None:
         return ScaledImage("PREPROCESSING_FAILURE", None, None, target_period_px, None, estimate)
     factor = float(target_period_px / estimate.period_px)
-    if not 0.20 <= factor <= 1.50:
+    if scale_factor_status(factor, band) != "OK":
         return ScaledImage("PREPROCESSING_FAILURE", None, estimate.period_px, target_period_px, factor, estimate)
     interpolation = cv2.INTER_AREA if factor < 1.0 else cv2.INTER_CUBIC
     scaled = cv2.resize(gray, None, fx=factor, fy=factor, interpolation=interpolation)

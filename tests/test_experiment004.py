@@ -4,12 +4,14 @@ import itertools
 import json
 from pathlib import Path
 
+import cv2
 import numpy as np
 import pytest
 
 from fingerprint_new_method.experiment004 import (
     PATTERN_QUOTAS,
     RESUME_STATE_KEYS,
+    _plateau_representatives,
     affine_matrix,
     aggregate_point_metrics,
     assign_grouped_split,
@@ -32,6 +34,9 @@ from fingerprint_new_method.experiment004 import (
     validate_resume_state,
 )
 from fingerprint_new_method.experiment004_transfer import (
+    CONFORMANT_SCALE_FACTOR_BAND,
+    FROZEN_SCALE_FACTOR_BAND,
+    SCALE_FACTOR_BANDS,
     Registration,
     estimate_ridge_period,
     map_plain_to_roll,
@@ -39,6 +44,7 @@ from fingerprint_new_method.experiment004_transfer import (
     normalize_ridge_scale,
     registration_from_npz,
     registration_to_npz,
+    scale_factor_status,
     score_registered_detections,
 )
 
@@ -336,3 +342,109 @@ def test_resume_state_is_rejected_unless_it_continues_the_same_frozen_run() -> N
         assert validate_resume_state(
             truncated, seed=40401, model_configuration=configuration, require_full=False
         ) is truncated
+
+
+@pytest.mark.parametrize(
+    "factor, frozen, conformant",
+    [
+        (None, "PREPROCESSING_FAILURE", "PREPROCESSING_FAILURE"),
+        (0.19, "PREPROCESSING_FAILURE", "PREPROCESSING_FAILURE"),
+        (0.20, "OK", "OK"),
+        (1.50, "OK", "OK"),
+        (1.51, "PREPROCESSING_FAILURE", "OK"),
+        (1.70, "PREPROCESSING_FAILURE", "OK"),
+        (3.00, "PREPROCESSING_FAILURE", "OK"),
+        (3.01, "PREPROCESSING_FAILURE", "PREPROCESSING_FAILURE"),
+    ],
+)
+def test_scale_factor_bands_separate_frozen_primary_from_exploratory(
+    factor: float | None, frozen: str, conformant: str
+) -> None:
+    assert scale_factor_status(factor, FROZEN_SCALE_FACTOR_BAND) == frozen
+    assert scale_factor_status(factor, CONFORMANT_SCALE_FACTOR_BAND) == conformant
+    assert SCALE_FACTOR_BANDS == {"frozen": FROZEN_SCALE_FACTOR_BAND, "conformant": CONFORMANT_SCALE_FACTOR_BAND}
+
+
+def test_upscaling_beyond_the_frozen_band_fails_frozen_but_resizes_under_the_wide_band() -> None:
+    _, x_grid = np.mgrid[0:512, 0:512]
+    image = np.clip(127 + 90 * np.cos(2 * np.pi * x_grid / 20.0), 0, 255).astype(np.uint8)
+
+    strict = normalize_ridge_scale(image, target_period_px=34.0, band=FROZEN_SCALE_FACTOR_BAND)
+    assert strict.status == "PREPROCESSING_FAILURE"
+    assert strict.image is None
+    assert strict.scale_factor == pytest.approx(1.7, abs=0.12)
+
+    wide = normalize_ridge_scale(image, target_period_px=34.0, band=CONFORMANT_SCALE_FACTOR_BAND)
+    assert wide.status == "OK"
+    assert wide.image is not None
+    assert wide.scale_factor == pytest.approx(strict.scale_factor)
+    assert wide.image.shape[0] == pytest.approx(512 * wide.scale_factor, abs=2)
+
+    accepted = normalize_ridge_scale(image, target_period_px=20.0, band=FROZEN_SCALE_FACTOR_BAND)
+    widened = normalize_ridge_scale(image, target_period_px=20.0, band=CONFORMANT_SCALE_FACTOR_BAND)
+    assert accepted.status == "OK"
+    np.testing.assert_array_equal(accepted.image, widened.image)
+
+
+def _brute_force_nms(heatmap: np.ndarray, threshold: float, nms_radius: float) -> np.ndarray:
+    """Reference O(n^2) suppression, kept only to pin the fast implementation."""
+
+    values = np.asarray(heatmap, dtype=np.float32)
+    local_maximum = values == cv2.dilate(values, np.ones((3, 3), dtype=np.uint8))
+    candidates = local_maximum & np.isfinite(values) & (values >= float(threshold))
+    ordered = sorted(_plateau_representatives(values, candidates), key=lambda row: (-row[0], row[1], row[2]))
+    accepted: list[tuple[float, int, int]] = []
+    squared_radius = float(nms_radius) ** 2
+    for candidate in ordered:
+        _, y_value, x_value = candidate
+        if any((x_value - o_x) ** 2 + (y_value - o_y) ** 2 <= squared_radius for _, o_y, o_x in accepted):
+            continue
+        accepted.append(candidate)
+    return np.asarray([(x, y) for _, y, x in accepted], dtype=np.float32).reshape(-1, 2)
+
+
+@pytest.mark.parametrize("nms_radius", [0, 1, 2, 3, 4, 5.5])
+def test_bucketed_nms_matches_the_brute_force_reference(nms_radius: float) -> None:
+    generator = np.random.default_rng(4040104)
+    for _ in range(4):
+        heatmap = generator.random((96, 96)).astype(np.float32)
+        heatmap = np.round(heatmap, 2)  # force plateaus and score ties
+        fast = extract_peaks(heatmap, threshold=0.05, nms_radius=nms_radius)
+        np.testing.assert_array_equal(fast.coordinates, _brute_force_nms(heatmap, 0.05, nms_radius))
+        assert len(fast.scores) == len(fast.coordinates)
+
+
+def _exhaustive_matching_optimum(
+    predictions: np.ndarray, truth: np.ndarray, tolerance: float
+) -> tuple[int, float]:
+    """Brute-force optimum for tiny instances: max cardinality, then min distance."""
+
+    distances = np.linalg.norm(predictions[:, None, :] - truth[None, :, :], axis=2)
+    allowed = distances <= tolerance + 1e-12
+    for size in range(min(len(predictions), len(truth)), 0, -1):
+        totals = [
+            sum(distances[p, t] for p, t in zip(prediction_subset, truth_permutation, strict=True))
+            for prediction_subset in itertools.combinations(range(len(predictions)), size)
+            for truth_permutation in itertools.permutations(range(len(truth)), size)
+            if all(allowed[p, t] for p, t in zip(prediction_subset, truth_permutation, strict=True))
+        ]
+        if totals:
+            return size, min(totals)
+    return 0, 0.0
+
+
+def test_component_decomposed_matching_reaches_the_exhaustive_optimum() -> None:
+    generator = np.random.default_rng(40401004)
+    for _ in range(40):
+        prediction_count = int(generator.integers(1, 6))
+        truth_count = int(generator.integers(1, 6))
+        predictions = generator.uniform(0, 12, size=(prediction_count, 2)).round(1)
+        truth = generator.uniform(0, 12, size=(truth_count, 2)).round(1)
+        for tolerance in (2.0, 4.0, 6.0):
+            matches = optimal_point_matching(predictions, truth, tolerance)
+            cardinality, total = _exhaustive_matching_optimum(predictions, truth, tolerance)
+            assert len(matches) == cardinality
+            assert sum(row[2] for row in matches) == pytest.approx(total, abs=1e-9)
+            assert len({row[0] for row in matches}) == len(matches)
+            assert len({row[1] for row in matches}) == len(matches)
+            assert matches == sorted(matches)

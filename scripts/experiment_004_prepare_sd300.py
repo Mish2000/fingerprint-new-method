@@ -24,11 +24,14 @@ from fingerprint_new_method.experiment004 import (
     write_json,
 )
 from fingerprint_new_method.experiment004_transfer import (
+    CONFORMANT_SCALE_FACTOR_BAND,
+    SCALE_FACTOR_BANDS,
     Registration,
     build_sd300_pair_manifest,
     normalize_ridge_scale,
     register_ridge_images,
     registration_to_npz,
+    scale_factor_status,
 )
 
 
@@ -52,6 +55,13 @@ def _invalid_registration(reason: str, plain_shape: tuple[int, int], roll_shape:
         overlap_plain=np.zeros(plain_shape, dtype=bool),
         overlap_roll=np.zeros(roll_shape, dtype=bool),
     )
+
+
+def _pair_analysis_status(first: dict[str, Any], second: dict[str, Any], analysis: str) -> str:
+    """Both images must pass an analysis' scale band for the pair to enter it."""
+
+    statuses = {entry.get("analysis_status", {}).get(analysis, "PREPROCESSING_FAILURE") for entry in (first, second)}
+    return "OK" if statuses == {"OK"} else "PREPROCESSING_FAILURE"
 
 
 def main() -> None:
@@ -112,15 +122,21 @@ def main() -> None:
                 "ppi": ppi,
                 "source_id": source_id,
                 "status": "SOURCE_DECODE_FAILURE",
+                "analysis_status": {name: "PREPROCESSING_FAILURE" for name in SCALE_FACTOR_BANDS},
             }
             continue
-        scaled = normalize_ridge_scale(gray, target_period)
+        # The wide band is materialized once; the frozen primary analysis is a strict
+        # subset of it because an accepted image gets the identical resize either way.
+        scaled = normalize_ridge_scale(gray, target_period, band=CONFORMANT_SCALE_FACTOR_BAND)
         row: dict[str, Any] = {
             "ppi": ppi,
             "source_id": source_id,
             "source_sha256": sha256_file(source_path),
             "source_shape": list(gray.shape),
             "status": scaled.status,
+            "analysis_status": {
+                name: scale_factor_status(scaled.scale_factor, band) for name, band in SCALE_FACTOR_BANDS.items()
+            },
             "source_period_px": scaled.source_period_px,
             "target_period_px": scaled.target_period_px,
             "scale_factor": scaled.scale_factor,
@@ -174,6 +190,8 @@ def main() -> None:
                     "sample_index": record["sample_index"],
                     "ppi": ppi,
                     "pair_type": pair_type,
+                    "frozen_analysis_status": _pair_analysis_status(plain_entry, roll_entry, "frozen"),
+                    "conformant_analysis_status": _pair_analysis_status(plain_entry, roll_entry, "conformant"),
                     "subject_id": record["subject_id"],
                     "plain_position": record["anatomical_position"],
                     "roll_position": (
@@ -232,6 +250,8 @@ def main() -> None:
                         "sample_index": record["sample_index"],
                         "ppi": "1000x2000",
                         "pair_type": f"cross_resolution_{impression}",
+                        "frozen_analysis_status": _pair_analysis_status(first_entry, second_entry, "frozen"),
+                        "conformant_analysis_status": _pair_analysis_status(first_entry, second_entry, "conformant"),
                         "subject_id": record["subject_id"],
                         "plain_position": record["anatomical_position"],
                         "roll_position": record["anatomical_position"],
@@ -253,15 +273,25 @@ def main() -> None:
             print(f"cross-resolution registrations={record_index}/20", flush=True)
     fieldnames = list(registration_rows[0])
     write_csv(summary_path, registration_rows, fieldnames)
+    def _effective_status(row: dict[str, Any], analysis: str) -> str:
+        if row.get(f"{analysis}_analysis_status") != "OK":
+            return "INVALID"
+        return str(row["status"])
+
     status_summary = {
-        pair_type: {
-            status: sum(
-                str(row["ppi"]) == str(ppi) and row["pair_type"] == pair_type and row["status"] == status
-                for row in registration_rows
-            )
-            for status in ("VALID", "AMBIGUOUS", "INVALID")
+        analysis: {
+            pair_type: {
+                status: sum(
+                    str(row["ppi"]) == str(ppi)
+                    and row["pair_type"] == pair_type
+                    and _effective_status(row, analysis) == status
+                    for row in registration_rows
+                )
+                for status in ("VALID", "AMBIGUOUS", "INVALID")
+            }
+            for pair_type in ("mated", "non_mated")
         }
-        for pair_type in ("mated", "non_mated")
+        for analysis in SCALE_FACTOR_BANDS
     }
     registration_manifest = {
         "schema_version": 1,

@@ -162,14 +162,43 @@ def _write_results(summary: dict[str, Any], test: dict[str, Any], baseline: dict
                 f"מתוך `{transfer['unblinded_gate_b']['level3_usable_count']}` עם Delta חיובי.",
             ]
         )
+        lines.extend(
+            [
+                "",
+                f"מתוך 20 הזוגות ב־1000 ppi, `{primary.get('pairs_excluded_by_scale_band', 0)}` נפסלו על ידי "
+                f"גבול ה־scale factor הקפוא `{primary.get('scale_factor_band')}` לפני כל scoring.",
+            ]
+        )
         cross = transfer.get("cross_resolution_1000_to_2000")
         if cross:
             lines.extend(
                 [
                     "",
                     f"בדיקת sensitivity של אותו impression ב־1000↔2000 נתנה median repeatability "
-                    f"`{_format_float(cross['median_repeatability'])}` על `{cross['valid_scores']}` scores תקפים; "
-                    "היא אינה נספרת כאוכלוסייה נוספת.",
+                    f"`{_format_float(cross['median_repeatability'])}` על `{cross['valid_scores']}` scores תקפים "
+                    f"(בתוך הגבול הקפוא: `{_format_float(cross.get('frozen_band_median_repeatability'))}` על "
+                    f"`{cross.get('frozen_band_valid_scores', 0)}`); היא אינה נספרת כאוכלוסייה נוספת.",
+                ]
+            )
+        variant = transfer.get("exploratory_scale_variant")
+        if variant and variant["ppi"].get("1000"):
+            exploratory = variant["ppi"]["1000"]
+            gate_if_applied = variant.get("blinded_gate_b_if_applied", {}).get("outcome_before_unblind")
+            lines.extend(
+                [
+                    "",
+                    "### variant exploratory של גבול ה־scale",
+                    "",
+                    f"ה־contingency הוקפא ב־`{variant['frozen_at_utc']}`, לפני כל גישה ל־SD300 "
+                    f"(`{variant['amendment']}`). הוא אינו מכריע דבר: שער ב' וההכרעה הסופית חושבו מן הניתוח "
+                    "הראשי הקפוא בלבד.",
+                    "",
+                    f"תחת הכלל של המפרט (כישלון לפי אמינות האומדן בלבד, sanity guard "
+                    f"`{exploratory['scale_factor_band']}`) היו `{exploratory['mated_valid_registrations']}` "
+                    f"registrations תקפים ב־mated, median Delta של "
+                    f"`{_format_float(exploratory['primary_median_delta'])}` על "
+                    f"`{exploratory['primary_paired_fingers']}` fingers, ו־blinded outcome שהיה מתקבל: "
+                    f"`{gate_if_applied}`.",
                 ]
             )
     lines.extend(
@@ -207,6 +236,7 @@ def finalize_localization_fail(test: dict[str, Any], baseline: dict[str, Any]) -
         "conclusion": "לא הוכח pore-localization primitive מספיק טוב ב־L3-SF; אין להתקדם ל־matching.",
         "test_metrics_sha256": sha256_file(ARTIFACT_ROOT / "test_metrics.json"),
         "blindness_audit_sha256": sha256_file(ARTIFACT_ROOT / "blindness_audit.json"),
+        "scale_guard_contingency_sha256": sha256_file(ARTIFACT_ROOT / "scale_guard_contingency.json"),
         "sd300_accessed": False,
         "experiment_001_ratings_opened": False,
     }
@@ -302,6 +332,18 @@ def unblind_and_finalize(test: dict[str, Any], baseline: dict[str, Any]) -> None
         "conclusion": conclusion,
         "test_metrics_sha256": sha256_file(ARTIFACT_ROOT / "test_metrics.json"),
         "blindness_audit_sha256": sha256_file(ARTIFACT_ROOT / "blindness_audit.json"),
+        "scale_guard_contingency_sha256": sha256_file(ARTIFACT_ROOT / "scale_guard_contingency.json"),
+        "exploratory_scale_variant": {
+            "status": "EXPLORATORY_SENSITIVITY_ONLY",
+            "decides_gate_b": False,
+            "blinded_gate_b_if_applied": transfer.get("exploratory_scale_variant", {})
+            .get("blinded_gate_b_if_applied", {})
+            .get("outcome_before_unblind"),
+            "median_delta_1000_ppi": transfer.get("exploratory_scale_variant", {})
+            .get("ppi", {})
+            .get("1000", {})
+            .get("primary_median_delta"),
+        },
         "sd300_transfer_summary_sha256": sha256_file(transfer_path),
         "sd300_accessed": True,
         "experiment_001_ratings_opened": True,

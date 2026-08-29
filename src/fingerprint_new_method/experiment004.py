@@ -468,11 +468,27 @@ def extract_peaks(heatmap: np.ndarray, *, threshold: float, nms_radius: float) -
     ordered = sorted(_plateau_representatives(values, candidates), key=lambda row: (-row[0], row[1], row[2]))
     accepted: list[tuple[float, int, int]] = []
     squared_radius = float(nms_radius) ** 2
+    # Greedy suppression in the order above. The bucket grid only prunes the search:
+    # its cell side is at least the radius, so any accepted peak within the radius of
+    # a candidate lies in one of the nine cells around it. Decisions are unchanged.
+    cell_size = max(1, int(math.ceil(float(nms_radius))))
+    buckets: dict[tuple[int, int], list[tuple[int, int]]] = {}
     for candidate in ordered:
         _, y_value, x_value = candidate
-        if any((x_value - other_x) ** 2 + (y_value - other_y) ** 2 <= squared_radius for _, other_y, other_x in accepted):
+        cell_y, cell_x = y_value // cell_size, x_value // cell_size
+        neighbours = (
+            other
+            for offset_y in (-1, 0, 1)
+            for offset_x in (-1, 0, 1)
+            for other in buckets.get((cell_y + offset_y, cell_x + offset_x), ())
+        )
+        if any(
+            (x_value - other_x) ** 2 + (y_value - other_y) ** 2 <= squared_radius
+            for other_y, other_x in neighbours
+        ):
             continue
         accepted.append(candidate)
+        buckets.setdefault((cell_y, cell_x), []).append((y_value, x_value))
     coordinates = np.asarray([(x_value, y_value) for _, y_value, x_value in accepted], dtype=np.float32).reshape(-1, 2)
     scores = np.asarray([score for score, _, _ in accepted], dtype=np.float32)
     return PeakSet(coordinates=coordinates, scores=scores)
@@ -494,12 +510,38 @@ def _add_flow_edge(graph: list[list[_FlowEdge]], source: int, target: int, capac
     return forward
 
 
+def _component_roots(prediction_count: int, edges: Sequence[tuple[int, int, float]]) -> list[int]:
+    """Union-find over the bipartite candidate graph, returning each node's root."""
+
+    parent = list(range(prediction_count + max((edge[1] for edge in edges), default=-1) + 1))
+
+    def find(node: int) -> int:
+        root = node
+        while parent[root] != root:
+            root = parent[root]
+        while parent[node] != root:
+            parent[node], node = root, parent[node]
+        return root
+
+    for prediction_index, truth_index, _ in edges:
+        first, second = find(prediction_index), find(prediction_count + truth_index)
+        if first != second:
+            parent[max(first, second)] = min(first, second)
+    return [find(node) for node in range(len(parent))]
+
+
 def optimal_point_matching(
     predictions: np.ndarray | Sequence[Sequence[float]],
     ground_truth: np.ndarray | Sequence[Sequence[float]],
     tolerance: float,
 ) -> list[tuple[int, int, float]]:
-    """Maximum-cardinality, minimum-total-distance bipartite matching."""
+    """Maximum-cardinality, minimum-total-distance bipartite matching.
+
+    Candidate edges only span the tolerance, so the graph falls apart into small
+    local clusters. Each connected component is solved on its own, which is exact
+    because both cardinality and total distance are additive across components,
+    and it keeps whole-fingerprint matching tractable.
+    """
 
     if tolerance < 0:
         raise ValueError("tolerance cannot be negative")
@@ -508,31 +550,53 @@ def optimal_point_matching(
     if len(predicted) == 0 or len(truth) == 0:
         return []
 
-    prediction_count = len(predicted)
-    truth_count = len(truth)
+    edges: list[tuple[int, int, float]] = []
+    for prediction_index, coordinate in enumerate(predicted):
+        distances = np.sqrt(np.sum((truth - coordinate) ** 2, axis=1))
+        for truth_index in np.flatnonzero(distances <= tolerance + 1e-12):
+            edges.append((prediction_index, int(truth_index), float(distances[truth_index])))
+    if not edges:
+        return []
+
+    roots = _component_roots(len(predicted), edges)
+    grouped: dict[int, list[tuple[int, int, float]]] = defaultdict(list)
+    for edge in edges:
+        grouped[roots[edge[0]]].append(edge)
+    matches: list[tuple[int, int, float]] = []
+    for root in sorted(grouped):
+        matches.extend(_match_component(grouped[root]))
+    return sorted(matches)
+
+
+def _match_component(edges: Sequence[tuple[int, int, float]]) -> list[tuple[int, int, float]]:
+    """Min-cost max-flow over one connected component of the candidate graph."""
+
+    prediction_indices = sorted({edge[0] for edge in edges})
+    truth_indices = sorted({edge[1] for edge in edges})
+    prediction_position = {index: offset for offset, index in enumerate(prediction_indices)}
+    truth_position = {index: offset for offset, index in enumerate(truth_indices)}
+    prediction_count = len(prediction_indices)
+    truth_count = len(truth_indices)
     source = 0
     prediction_offset = 1
     truth_offset = prediction_offset + prediction_count
     sink = truth_offset + truth_count
     graph: list[list[_FlowEdge]] = [[] for _ in range(sink + 1)]
-    for prediction_index in range(prediction_count):
-        _add_flow_edge(graph, source, prediction_offset + prediction_index, 1, 0.0)
-    for truth_index in range(truth_count):
-        _add_flow_edge(graph, truth_offset + truth_index, sink, 1, 0.0)
+    for offset in range(prediction_count):
+        _add_flow_edge(graph, source, prediction_offset + offset, 1, 0.0)
+    for offset in range(truth_count):
+        _add_flow_edge(graph, truth_offset + offset, sink, 1, 0.0)
 
     edge_references: list[tuple[int, int, float, _FlowEdge]] = []
-    for prediction_index, coordinate in enumerate(predicted):
-        distances = np.sqrt(np.sum((truth - coordinate) ** 2, axis=1))
-        for truth_index in np.flatnonzero(distances <= tolerance + 1e-12):
-            distance = float(distances[truth_index])
-            edge = _add_flow_edge(
-                graph,
-                prediction_offset + prediction_index,
-                truth_offset + int(truth_index),
-                1,
-                distance,
-            )
-            edge_references.append((prediction_index, int(truth_index), distance, edge))
+    for prediction_index, truth_index, distance in edges:
+        edge = _add_flow_edge(
+            graph,
+            prediction_offset + prediction_position[prediction_index],
+            truth_offset + truth_position[truth_index],
+            1,
+            distance,
+        )
+        edge_references.append((prediction_index, truth_index, distance, edge))
 
     node_count = len(graph)
     potential = [0.0] * node_count
@@ -573,12 +637,11 @@ def optimal_point_matching(
             graph[node][edge.reverse].capacity += 1
             node = parent
 
-    matches = [
+    return [
         (prediction_index, truth_index, distance)
         for prediction_index, truth_index, distance, edge in edge_references
         if edge.capacity == 0
     ]
-    return sorted(matches)
 
 
 def point_metrics(

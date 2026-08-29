@@ -7,7 +7,7 @@ import csv
 import json
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Sequence
 
 import numpy as np
 
@@ -25,7 +25,11 @@ from fingerprint_new_method.experiment004 import (
     write_csv,
     write_json,
 )
-from fingerprint_new_method.experiment004_transfer import registration_from_npz, score_registered_detections
+from fingerprint_new_method.experiment004_transfer import (
+    SCALE_FACTOR_BANDS,
+    registration_from_npz,
+    score_registered_detections,
+)
 
 
 def _read_json(path: Path) -> dict[str, Any]:
@@ -70,6 +74,34 @@ def _existing_rows(path: Path, ppi: int) -> list[dict[str, Any]]:
         return []
     with path.open("r", encoding="utf-8", newline="") as handle:
         return [row for row in csv.DictReader(handle) if int(row["ppi"]) != ppi]
+
+
+def _pair_band_status(
+    preprocessing: dict[str, Any],
+    ppi: int,
+    first_source_id: str,
+    second_source_id: str,
+    analysis: str,
+) -> str:
+    """Both images of a pair must pass an analysis' ridge-scale band."""
+
+    statuses = {
+        _preprocessing_row(preprocessing, ppi, source_id).get("analysis_status", {}).get(analysis, "PREPROCESSING_FAILURE")
+        for source_id in (first_source_id, second_source_id)
+    }
+    return "OK" if statuses == {"OK"} else "PREPROCESSING_FAILURE"
+
+
+def _analysis_registration_status(row: dict[str, Any], analysis: str, pair_type: str) -> str:
+    if analysis == "frozen" and row[f"frozen_{pair_type}_pair"] != "OK":
+        return "INVALID"
+    return str(row[f"{pair_type}_registration_status"])
+
+
+def _analysis_delta(row: dict[str, Any], analysis: str) -> float | None:
+    if analysis == "frozen" and (row["frozen_mated_pair"] != "OK" or row["frozen_non_mated_pair"] != "OK"):
+        return None
+    return row["delta"]
 
 
 def score_plain_roll(ppi: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -127,6 +159,10 @@ def score_plain_roll(ppi: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 if mated_score["repeatability"] is not None and non_mated_score["repeatability"] is not None
                 else None
             )
+            frozen_pair = {
+                pair_type: _pair_band_status(preprocessing, ppi, source_ids["plain"], source_ids[pair_type], "frozen")
+                for pair_type in ("mated", "non_mated")
+            }
             plain_density = _density(plain, _preprocessing_row(preprocessing, ppi, source_ids["plain"]))
             mated_density = _density(mated, _preprocessing_row(preprocessing, ppi, source_ids["mated"]))
             non_mated_density = _density(
@@ -141,6 +177,8 @@ def score_plain_roll(ppi: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
                     "anatomical_position": record["anatomical_position"],
                     "ppi": ppi,
                     "seed": seed,
+                    "frozen_mated_pair": frozen_pair["mated"],
+                    "frozen_non_mated_pair": frozen_pair["non_mated"],
                     "mated_registration_status": mated_registration.status,
                     "non_mated_registration_status": non_mated_registration.status,
                     "mated_score_status": mated_score["status"],
@@ -173,10 +211,19 @@ def score_plain_roll(ppi: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
             )
         print(f"ppi={ppi} scored seed={seed}", flush=True)
 
+    return result_rows, {analysis: _summarize(result_rows, ppi, analysis) for analysis in ("frozen", "conformant")}
+
+
+def _summarize(result_rows: Sequence[dict[str, Any]], ppi: int, analysis: str) -> dict[str, Any]:
+    """Aggregate one ridge-scale analysis from the single shared scoring pass."""
+
     per_seed: dict[str, Any] = {}
     for seed in TRAINING_SEEDS:
-        rows = [row for row in result_rows if row["seed"] == seed and row["delta"] is not None]
-        values = [float(row["delta"]) for row in rows]
+        values = [
+            float(delta)
+            for row in result_rows
+            if row["seed"] == seed and (delta := _analysis_delta(row, analysis)) is not None
+        ]
         per_seed[str(seed)] = {
             "paired_valid": len(values),
             "median_delta": float(np.median(values)) if values else None,
@@ -186,9 +233,9 @@ def score_plain_roll(ppi: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     finger_medians: list[dict[str, Any]] = []
     for sample_index in range(1, 21):
         values = [
-            float(row["delta"])
+            float(delta)
             for row in result_rows
-            if int(row["sample_index"]) == sample_index and row["delta"] is not None
+            if int(row["sample_index"]) == sample_index and (delta := _analysis_delta(row, analysis)) is not None
         ]
         finger_medians.append(
             {
@@ -199,25 +246,29 @@ def score_plain_roll(ppi: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
             }
         )
     primary_values = [row["median_delta"] for row in finger_medians if row["median_delta"] is not None]
-    summary = {
+    first_seed_rows = [row for row in result_rows if row["seed"] == TRAINING_SEEDS[0]]
+    return {
         "ppi": ppi,
+        "analysis": analysis,
+        "scale_factor_band": list(SCALE_FACTOR_BANDS[analysis]),
+        "decides_gate_b": analysis == "frozen",
         "mated_valid_registrations": sum(
-            row["mated_registration_status"] == "VALID"
-            for row in result_rows
-            if row["seed"] == TRAINING_SEEDS[0]
+            _analysis_registration_status(row, analysis, "mated") == "VALID" for row in first_seed_rows
         ),
         "non_mated_valid_registrations": sum(
-            row["non_mated_registration_status"] == "VALID"
-            for row in result_rows
-            if row["seed"] == TRAINING_SEEDS[0]
+            _analysis_registration_status(row, analysis, "non_mated") == "VALID" for row in first_seed_rows
         ),
+        "pairs_excluded_by_scale_band": sum(
+            row["frozen_mated_pair"] != "OK" or row["frozen_non_mated_pair"] != "OK" for row in first_seed_rows
+        )
+        if analysis == "frozen"
+        else 0,
         "per_seed": per_seed,
         "finger_median_deltas": finger_medians,
         "primary_paired_fingers": len(primary_values),
         "primary_median_delta": float(np.median(primary_values)) if primary_values else None,
         "primary_bootstrap": paired_bootstrap_median(primary_values, seed=BOOTSTRAP_SEED) if primary_values else None,
     }
-    return result_rows, summary
 
 
 def _score_cross_resolution(
@@ -274,13 +325,29 @@ def _score_cross_resolution(
                         "seed": seed,
                         "impression": impression,
                         "registration_status": registration.status,
+                        "frozen_pair": "OK"
+                        if all(
+                            _preprocessing_row(preprocessing, resolution, source_id)
+                            .get("analysis_status", {})
+                            .get("frozen")
+                            == "OK"
+                            for resolution, source_id in ((1000, source_1000), (2000, source_2000))
+                        )
+                        else "PREPROCESSING_FAILURE",
                         **score,
                     }
                 )
     values = [row["repeatability"] for row in rows if row["repeatability"] is not None]
+    frozen_values = [
+        row["repeatability"]
+        for row in rows
+        if row["repeatability"] is not None and row["frozen_pair"] == "OK"
+    ]
     return rows, {
         "valid_scores": len(values),
         "median_repeatability": float(np.median(values)) if values else None,
+        "frozen_band_valid_scores": len(frozen_values),
+        "frozen_band_median_repeatability": float(np.median(frozen_values)) if frozen_values else None,
         "by_impression": {
             impression: {
                 "valid_scores": sum(row["impression"] == impression and row["repeatability"] is not None for row in rows),
@@ -300,7 +367,8 @@ def main() -> None:
     parser.add_argument("--ppi", required=True, type=int, choices=(1000, 2000))
     arguments = parser.parse_args()
     ppi = arguments.ppi
-    rows, summary = score_plain_roll(ppi)
+    rows, summaries = score_plain_roll(ppi)
+    summary = summaries["frozen"]
     csv_path = ARTIFACT_ROOT / "sd300_repeatability.csv"
     combined = _existing_rows(csv_path, ppi) + rows
     write_csv(csv_path, combined, list(combined[0]))
@@ -317,6 +385,17 @@ def main() -> None:
         }
     )
     transfer["ppi"][str(ppi)] = summary
+    variant = transfer.setdefault(
+        "exploratory_scale_variant",
+        {
+            "status": "EXPLORATORY_SENSITIVITY",
+            "frozen_at_utc": _read_json(ARTIFACT_ROOT / "scale_guard_contingency.json")["frozen_at_utc"],
+            "amendment": "docs/experiments/004-scale-guard-contingency-amendment.md",
+            "decides_gate_b": False,
+            "ppi": {},
+        },
+    )
+    variant["ppi"][str(ppi)] = summaries["conformant"]
 
     if ppi == 1000:
         median_delta = summary["primary_median_delta"]
@@ -330,6 +409,17 @@ def main() -> None:
             median_delta=median_delta,
             bootstrap_lower=lower,
             positive_seed_count=positive_seeds,
+        )
+        exploratory = summaries["conformant"]
+        variant["blinded_gate_b_if_applied"] = blinded_gate_b_decision(
+            mated_valid_registrations=exploratory["mated_valid_registrations"],
+            paired_fingers=exploratory["primary_paired_fingers"],
+            median_delta=exploratory["primary_median_delta"],
+            bootstrap_lower=exploratory["primary_bootstrap"]["lower"] if exploratory["primary_bootstrap"] else None,
+            positive_seed_count=sum(
+                row["median_delta"] is not None and row["median_delta"] > 0
+                for row in exploratory["per_seed"].values()
+            ),
         )
         write_json(transfer_path, transfer)
         marker = {
