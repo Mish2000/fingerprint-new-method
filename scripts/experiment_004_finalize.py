@@ -97,6 +97,42 @@ def _gate_a_report(test: dict[str, Any], baseline: dict[str, Any]) -> list[str]:
     lines.extend(
         [
             "",
+            "| seed | mean localization error | false positives לתמונה | mean recall לתמונה | predictions | GT |",
+            "|---:|---:|---:|---:|---:|---:|",
+        ]
+    )
+    for seed, summary in test["per_seed"].items():
+        primary = summary["aggregate"]["4"]
+        lines.append(
+            f"| {seed} | {_format_float(primary['mean_localization_error'], 3)} px | "
+            f"{_format_float(primary['false_positives_per_image'], 2)} | "
+            f"{_format_float(primary['mean_recall_per_image'])} | {primary['predictions']} | "
+            f"{primary['ground_truth']} |"
+        )
+    first_seed = next(iter(test["per_seed"]))
+    by_pattern = test["per_seed"][first_seed]["by_pattern_at_4px"]
+    lines.extend(
+        [
+            "",
+            f"F1@4 לפי pattern (seed {first_seed}): "
+            + ", ".join(f"{pattern}={_format_float(values['f1'])}" for pattern, values in by_pattern.items())
+            + ".",
+            "",
+            "annotations בטווח 8 px משולי התמונה דווחו בנפרד ולא הוסרו מן המדד הראשי: "
+            + ", ".join(
+                f"seed {seed} recall={_format_float(summary['edge_at_4px']['recall'])} "
+                f"({summary['edge_at_4px']['matched']}/{summary['edge_at_4px']['ground_truth']})"
+                for seed, summary in test["per_seed"].items()
+            )
+            + ".",
+            "",
+            "פירוט לכל תמונה, לכל seed, נמצא ב־`artifacts/experiment-004/test_per_image.csv` "
+            "(450 שורות: 150 תמונות test × 3 seeds).",
+        ]
+    )
+    lines.extend(
+        [
+            "",
             f"Median seed F1@4 היה `{_format_float(inputs['median_f1_4px'])}`; precision "
             f"`{_format_float(inputs['median_precision_4px'])}`; recall `{_format_float(inputs['median_recall_4px'])}`. "
             f"ה־baseline הקפוא קיבל F1@4 של `{_format_float(inputs['baseline_f1_4px'])}`, ולכן היתרון המוחלט "
@@ -163,6 +199,57 @@ def _ridge_scale_report() -> list[str]:
     return lines
 
 
+def _sd300_pair_report(transfer: dict[str, Any]) -> list[str]:
+    """Report why pairs dropped out, plus the preregistered density control."""
+
+    import csv
+    import statistics
+
+    preprocessing = _read_json(ARTIFACT_ROOT / "sd300_preprocessing_manifest.json")["records"]
+    with (ARTIFACT_ROOT / "sd300_repeatability.csv").open("r", encoding="utf-8", newline="") as handle:
+        repeatability = list(csv.DictReader(handle))
+
+    rows_1000 = [row for key, row in preprocessing.items() if key.startswith("1000|")]
+    unreliable = sum(row["ridge_period_estimate"]["status"] != "OK" for row in rows_1000)
+    reliable = [row for row in rows_1000 if row["ridge_period_estimate"]["status"] == "OK"]
+    outside_band = sum(row["analysis_status"]["frozen"] != "OK" for row in reliable)
+    lines = [
+        "",
+        f"ברזולוציה הראשית נפסלו `{unreliable}` מתוך `{len(rows_1000)}` התמונות משום שאומדן ה־ridge period "
+        f"שלהן לא היה אמין, ורק `{len(reliable)}` קיבלו אומדן אמין. מתוכן `{len(reliable) - outside_band}` "
+        f"היו בתוך הגבול הקפוא `{transfer['ppi']['1000'].get('scale_factor_band')}` ו־`{outside_band}` מחוצה לו. "
+        "כלומר הגורם החוסם היה כלל האמינות, ולא גבול ה־scale factor. בשום זוג לא עברו שתי התמונות יחד, "
+        "ולכן כל 40 ה־registrations ב־1000 ppi הם `INVALID` עם `PREPROCESSING_FAILURE`.",
+        "",
+        "ב־2000 ppi, שבו כל התמונות עברו preprocessing, ה־registration של `plain ↔ roll` הגיע ל־`VALID` "
+        f"ב־`{transfer['ppi']['2000']['mated_valid_registrations']}` מתוך 20 זוגות mated, "
+        f"ול־`VALID` ב־`{transfer['ppi']['2000']['non_mated_valid_registrations']}` מתוך 20 זוגות non-mated. "
+        "בקרת ה־non-mated דורשת registration תקף בין שתי אצבעות שונות — בדיוק מה שכלל התקפות נועד לדחות — "
+        "ולכן `Δ` אינו מוגדר גם ברזולוציה הזו. זו מגבלה מבנית של הפרוטוקול הקפוא, לא של ה־detector.",
+    ]
+
+    density_rows = [row for row in repeatability if row["ppi"] == "2000"]
+    if density_rows:
+        def _median(field: str) -> float | None:
+            values = [float(row[field]) for row in density_rows if row[field] not in ("", "None")]
+            return statistics.median(values) if values else None
+
+        lines.extend(
+            [
+                "",
+                "### בקרת density",
+                "",
+                f"ב־2000 ppi ה־detector הקפוא החזיר חציון של `{_median('plain_detections'):.0f}` detections "
+                f"ב־plain ו־`{_median('mated_roll_detections'):.0f}` ב־roll, כלומר "
+                f"`{_median('plain_detections_per_megapixel'):.0f}` detections למגה־פיקסל ו־"
+                f"`{_median('plain_detections_per_estimated_ridge_megapixel'):.0f}` למגה־פיקסל של שטח רכסים "
+                "מוערך. לשם השוואה, ב־L3-SF יש כ־413 pore annotations לתמונת 512×512, שהם כ־1,570 למגה־פיקסל. "
+                "כלומר ה־density אינו תוצר של detector שמציף את התמונה בנקודות.",
+            ]
+        )
+    return lines
+
+
 def _write_results(summary: dict[str, Any], test: dict[str, Any], baseline: dict[str, Any], transfer: dict[str, Any]) -> None:
     protocol = _read_json(ARTIFACT_ROOT / "model_protocol.json")
     training = _read_json(ARTIFACT_ROOT / "training_runs.json")
@@ -190,7 +277,34 @@ def _write_results(summary: dict[str, Any], test: dict[str, Any], baseline: dict
         f"ה־checkpoints נבחרו לפי validation loss בלבד. נשמרו {len(training['attempts'])} ניסיונות בסך הכול; "
         f"{sum(attempt['status'] != 'COMPLETED' for attempt in training['attempts'])} ניסיונות שלא הושלמו נשארו ב־manifest ואינם מוסתרים.",
         "",
+        "| seed | epochs | best epoch | best validation loss | דקות |",
+        "|---:|---:|---:|---:|---:|",
     ]
+    for seed, run in sorted(training["runs"].items()):
+        lines.append(
+            f"| {seed} | {run['epochs_completed']} | {run['best_epoch']} | "
+            f"{run['best_validation_loss']:.8f} | {run['elapsed_seconds'] / 60:.1f} |"
+        )
+    causes = Counter(
+        attempt.get("error_type") for attempt in training["attempts"] if attempt["status"] != "COMPLETED"
+    )
+    lines.extend(
+        [
+            "",
+            "כל seed נעצר בדיוק 12 epochs לאחר השיפור האחרון שגדול מ־`early_stopping_min_delta`, ולכן ה־checkpoint "
+            "הנבחר יושב בסוף הריצה: כלל ה־checkpoint משתמש בסף `1e-8` וכלל ה־early stopping בסף `1e-5`, כפי "
+            "שנקבע בפרוטוקול לפני האימון.",
+            "",
+            "סיבות הניסיונות שלא הושלמו: "
+            + ", ".join(f"`{cause}`×{count}" for cause, count in sorted(causes.items()))
+            + ". שניים מהם היו aborts של הסביבה (`forrtl: error (200)`) שנגרמו מסגירת חלון console; אחד היה "
+            "הפסקה מכוונת שאימתה את מנגנון ה־resume; היתר היו תיקוני מימוש ו־runtime לפני כל גישה ל־test. "
+            "הוספת ה־resume ברמת epoch היא שינוי תפעולי: סדר ה־batch נגזר מ־seed לכל epoch, ה־augmentation "
+            "נגזרת מ־`(seed, epoch, image_id)`, ואין שכבות סטוכסטיות, ולכן הריצה שחודשה שחזרה בדיוק את ערכי "
+            "ה־validation שלפני ההפסקה (`epoch 23 = 0.00189157` בשתי הריצות).",
+            "",
+        ]
+    )
     lines.extend(_gate_a_report(test, baseline))
     lines.extend(["", "## SD300", ""])
     if transfer["status"] == "NOT_RUN_GATE_A_FAIL":
@@ -213,13 +327,7 @@ def _write_results(summary: dict[str, Any], test: dict[str, Any], baseline: dict
                 f"מתוך `{transfer['unblinded_gate_b']['level3_usable_count']}` עם Delta חיובי.",
             ]
         )
-        lines.extend(
-            [
-                "",
-                f"מתוך 20 הזוגות ב־1000 ppi, `{primary.get('pairs_excluded_by_scale_band', 0)}` נפסלו על ידי "
-                f"גבול ה־scale factor הקפוא `{primary.get('scale_factor_band')}` לפני כל scoring.",
-            ]
-        )
+        lines.extend(_sd300_pair_report(transfer))
         cross = transfer.get("cross_resolution_1000_to_2000")
         if cross:
             lines.extend(

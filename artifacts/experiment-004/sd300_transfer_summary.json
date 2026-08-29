@@ -26,7 +26,8 @@
     "median_repeatability": 0.7943941470694958,
     "valid_scores": 18
   },
-  "experiment_001_ratings_opened": false,
+  "experiment_001_ratings_opened": true,
+  "experiment_001_ratings_sha256": "ded4048946cadd6ff8f9f7cbc73a785feef253feb1b50b15155234ef50bfea7e",
   "experiment_id": "004-pore-localization-and-sd300-transfer",
   "exploratory_scale_variant": {
     "amendment": "docs/experiments/004-scale-guard-contingency-amendment.md",
@@ -678,5 +679,37 @@
     }
   },
   "schema_version": 1,
-  "status": "BLINDED"
+  "status": "UNBLINDED_COMPLETE",
+  "unblinded_at_utc": "2026-08-29T20:29:04.289526+00:00",
+  "unblinded_gate_b": {
+    "classification_counts": {
+      "LEVEL3_USABLE": 11,
+      "NOT_LEVEL3_USABLE": 2,
+      "SCAN_REPEATABLE_BUT_ANATOMICALLY_UNVALIDATED": 7
+    },
+    "condition_5_at_least_8_of_11": false,
+    "descriptive_by_class": {
+      "LEVEL3_USABLE": {
+        "fingers": 11,
+        "median_delta": null,
+        "paired_valid_with_delta": 0,
+        "positive_delta_count": 0
+      },
+      "NOT_LEVEL3_USABLE": {
+        "fingers": 2,
+        "median_delta": null,
+        "paired_valid_with_delta": 0,
+        "positive_delta_count": 0
+      },
+      "SCAN_REPEATABLE_BUT_ANATOMICALLY_UNVALIDATED": {
+        "fingers": 7,
+        "median_delta": null,
+        "paired_valid_with_delta": 0,
+        "positive_delta_count": 0
+      }
+    },
+    "gate_b": "TRANSFER_INCONCLUSIVE",
+    "level3_usable_count": 11,
+    "level3_usable_positive_delta_count": 0
+  }
 }

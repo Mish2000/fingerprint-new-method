@@ -1,0 +1,21 @@
+{
+  "blindness_audit_sha256": "6a7c8bafc448bf2630300c77f09c1607a6c0a4dd1e9b4ad46322b4b80d98aea3",
+  "completed_at_utc": "2026-08-29T20:29:04.292526+00:00",
+  "conclusion": "ה־detector הצליח ב־synthetic domain, אך אין evidence מספיק להעברה משכנעת ל־SD300; המשך מחקר חייב להתמקד ב־domain robustness לפני שימוש ב־pores ל־recognition.",
+  "experiment_001_ratings_opened": true,
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "exploratory_scale_variant": {
+    "blinded_gate_b_if_applied": "TRANSFER_INCONCLUSIVE",
+    "decides_gate_b": false,
+    "median_delta_1000_ppi": null,
+    "status": "EXPLORATORY_SENSITIVITY_ONLY"
+  },
+  "final_decision": "SYNTHETIC_LOCALIZATION_ONLY",
+  "gate_a": "STRONG_PASS",
+  "gate_b": "TRANSFER_INCONCLUSIVE",
+  "scale_guard_contingency_sha256": "f0d6b3bd2c96739d0db0db58f4419de87c52a929f58fdc38b88339e73c6d5aca",
+  "schema_version": 1,
+  "sd300_accessed": true,
+  "sd300_transfer_summary_sha256": "c888fa17a674cbf7a9e423de6cfcc8f8087d44263ad48c3252ae44aa434adeec",
+  "test_metrics_sha256": "12443cd28a764760e061787754f0631073785cf9de0cdd109ae8acbbd7a5e788"
+}
