@@ -1,0 +1,42 @@
+{
+  "amendment_document": "docs/experiments/004-scale-guard-contingency-amendment.md",
+  "amendment_sha256": "d5d5d44f24cfe0afb1ca11569aa7d3b33cca529c44c17fe7c8a17e27062ed6e3",
+  "blindness_at_freeze": {
+    "experiment_001_ratings_opened": false,
+    "l3sf_test_opened": false,
+    "sd300_artifacts_present": [],
+    "sd300_files_read": 0
+  },
+  "configuration_id": "6a4ec24d7facfdc7c72e327827c31a0f3c3859046506d9b497f9c487661f8014",
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "frozen_at_utc": "2026-08-29T17:15:26.686750+00:00",
+  "primary_analysis": {
+    "allowed_scale_factor": [
+      0.2,
+      1.5
+    ],
+    "decides_gate_b": true,
+    "name": "frozen"
+  },
+  "protocol_commit": "6b95834a7ad0ce1b40176db49a6867a95ce10f42",
+  "reason": "The frozen scale guard [0.20, 1.50] can reject the primary 1000-ppi resolution wholesale because the L3-SF target ridge period is 34.0 px while a real 1000-ppi impression has a much shorter ridge period. The experiment specification defines preprocessing failure by estimate reliability, not by factor size.",
+  "schema_version": 1,
+  "secondary_analysis": {
+    "allowed_scale_factor": [
+      0.2,
+      3.0
+    ],
+    "decides_gate_b": false,
+    "failure_rule": "reliability only: minimum_tiles >= 5 and mad_over_median <= 0.25",
+    "name": "specification_conformant",
+    "status": "EXPLORATORY_SENSITIVITY"
+  },
+  "unchanged": [
+    "target_period_px",
+    "ridge period estimator",
+    "model weights, threshold, NMS, tiling",
+    "registration protocol and VALID/AMBIGUOUS/INVALID rule",
+    "4 px tolerance and repeatability definition",
+    "bootstrap seed and Gate A / Gate B thresholds"
+  ]
+}
