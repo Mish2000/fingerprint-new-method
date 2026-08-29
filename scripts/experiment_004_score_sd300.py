@@ -57,7 +57,17 @@ def _detections(
 
 
 def _density(detections: np.ndarray, preprocessing_row: dict[str, Any]) -> dict[str, Any]:
-    image = np.load(PROJECT_ROOT / preprocessing_row["relative_local_path"], allow_pickle=False)
+    relative_path = preprocessing_row.get("relative_local_path")
+    if relative_path is None:
+        # The image failed ridge-scale preprocessing, so no normalized raster exists
+        # and no area is defined; the detection count is still reported.
+        return {
+            "detections": len(detections),
+            "detections_per_megapixel": None,
+            "ridge_area_pixels": None,
+            "detections_per_estimated_ridge_megapixel": None,
+        }
+    image = np.load(PROJECT_ROOT / relative_path, allow_pickle=False)
     ridge_pixels = int(np.count_nonzero(ridge_area_mask(image)))
     return {
         "detections": len(detections),

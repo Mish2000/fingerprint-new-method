@@ -1,0 +1,352 @@
+{
+  "blinded_gate_b": {
+    "conditions_1_to_4": {
+      "at_least_15_mated_valid": false,
+      "bootstrap_lower_above_zero": false,
+      "median_delta_at_least_0_10": false,
+      "positive_direction_at_least_two_seeds": false
+    },
+    "outcome_before_unblind": "TRANSFER_INCONCLUSIVE",
+    "positive_seed_count": 0,
+    "sufficient_paired_fingers": false
+  },
+  "experiment_001_ratings_opened": false,
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "exploratory_scale_variant": {
+    "amendment": "docs/experiments/004-scale-guard-contingency-amendment.md",
+    "blinded_gate_b_if_applied": {
+      "conditions_1_to_4": {
+        "at_least_15_mated_valid": false,
+        "bootstrap_lower_above_zero": false,
+        "median_delta_at_least_0_10": false,
+        "positive_direction_at_least_two_seeds": false
+      },
+      "outcome_before_unblind": "TRANSFER_INCONCLUSIVE",
+      "positive_seed_count": 0,
+      "sufficient_paired_fingers": false
+    },
+    "decides_gate_b": false,
+    "frozen_at_utc": "2026-08-29T17:15:26.686750+00:00",
+    "ppi": {
+      "1000": {
+        "analysis": "conformant",
+        "decides_gate_b": false,
+        "finger_median_deltas": [
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 1,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 2,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 3,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 4,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 5,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 6,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 7,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 8,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 9,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 10,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 11,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 12,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 13,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 14,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 15,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 16,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 17,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 18,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 19,
+            "seed_values": []
+          },
+          {
+            "available_seeds": 0,
+            "median_delta": null,
+            "sample_index": 20,
+            "seed_values": []
+          }
+        ],
+        "mated_valid_registrations": 0,
+        "non_mated_valid_registrations": 0,
+        "pairs_excluded_by_scale_band": 0,
+        "per_seed": {
+          "40401": {
+            "bootstrap": null,
+            "median_delta": null,
+            "paired_valid": 0,
+            "positive_delta_count": 0
+          },
+          "40402": {
+            "bootstrap": null,
+            "median_delta": null,
+            "paired_valid": 0,
+            "positive_delta_count": 0
+          },
+          "40403": {
+            "bootstrap": null,
+            "median_delta": null,
+            "paired_valid": 0,
+            "positive_delta_count": 0
+          }
+        },
+        "ppi": 1000,
+        "primary_bootstrap": null,
+        "primary_median_delta": null,
+        "primary_paired_fingers": 0,
+        "scale_factor_band": [
+          0.2,
+          3.0
+        ]
+      }
+    },
+    "status": "EXPLORATORY_SENSITIVITY"
+  },
+  "ppi": {
+    "1000": {
+      "analysis": "frozen",
+      "decides_gate_b": true,
+      "finger_median_deltas": [
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 1,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 2,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 3,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 4,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 5,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 6,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 7,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 8,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 9,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 10,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 11,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 12,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 13,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 14,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 15,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 16,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 17,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 18,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 19,
+          "seed_values": []
+        },
+        {
+          "available_seeds": 0,
+          "median_delta": null,
+          "sample_index": 20,
+          "seed_values": []
+        }
+      ],
+      "mated_valid_registrations": 0,
+      "non_mated_valid_registrations": 0,
+      "pairs_excluded_by_scale_band": 20,
+      "per_seed": {
+        "40401": {
+          "bootstrap": null,
+          "median_delta": null,
+          "paired_valid": 0,
+          "positive_delta_count": 0
+        },
+        "40402": {
+          "bootstrap": null,
+          "median_delta": null,
+          "paired_valid": 0,
+          "positive_delta_count": 0
+        },
+        "40403": {
+          "bootstrap": null,
+          "median_delta": null,
+          "paired_valid": 0,
+          "positive_delta_count": 0
+        }
+      },
+      "ppi": 1000,
+      "primary_bootstrap": null,
+      "primary_median_delta": null,
+      "primary_paired_fingers": 0,
+      "scale_factor_band": [
+        0.2,
+        1.5
+      ]
+    }
+  },
+  "schema_version": 1,
+  "status": "BLINDED"
+}

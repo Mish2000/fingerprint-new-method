@@ -1,0 +1,9 @@
+{
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "frozen_at_utc": "2026-08-29T20:21:21.041284+00:00",
+  "ppi": 1000,
+  "ratings_opened": false,
+  "repeatability_csv_sha256": "d7069258c7ca7f25f6997876d58fb6affc3d45dd4c06bfcc2a467b120517e7c8",
+  "schema_version": 1,
+  "transfer_summary_sha256": "349ef405f4eb716d82e5769133770bd46e81179660552ec85d0b1132bac9edb4"
+}

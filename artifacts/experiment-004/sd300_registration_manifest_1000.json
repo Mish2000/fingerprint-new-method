@@ -1,0 +1,35 @@
+{
+  "configuration_id": "6a4ec24d7facfdc7c72e327827c31a0f3c3859046506d9b497f9c487661f8014",
+  "counts": {
+    "conformant": {
+      "mated": {
+        "AMBIGUOUS": 0,
+        "INVALID": 20,
+        "VALID": 0
+      },
+      "non_mated": {
+        "AMBIGUOUS": 0,
+        "INVALID": 20,
+        "VALID": 0
+      }
+    },
+    "frozen": {
+      "mated": {
+        "AMBIGUOUS": 0,
+        "INVALID": 20,
+        "VALID": 0
+      },
+      "non_mated": {
+        "AMBIGUOUS": 0,
+        "INVALID": 20,
+        "VALID": 0
+      }
+    }
+  },
+  "experiment_id": "004-pore-localization-and-sd300-transfer",
+  "frozen_at_utc": "2026-08-29T20:18:42.788343+00:00",
+  "ppi": 1000,
+  "schema_version": 1,
+  "status": "REGISTRATIONS_FROZEN_BEFORE_DETECTOR_SCORING",
+  "summary_csv_sha256": "4ae3dd820f1c4b074393bd34be58ad9857edaa8955c1599363be8d46a37e7d59"
+}

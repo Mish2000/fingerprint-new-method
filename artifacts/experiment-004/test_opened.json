@@ -3,7 +3,17 @@
   "experiment_id": "004-pore-localization-and-sd300-transfer",
   "opened_at_utc": "2026-08-29T20:16:31.886924+00:00",
   "pipeline_freeze_sha256": "3c119086461397e14292bb61cd06fb14a4fdd8a88b5d441256c40a8b9ec0ae0e",
-  "post_test_bug_events": [],
+  "post_test_bug_events": [
+    {
+      "cause": "The helper assumed every SD300 image has a normalized raster on disk. An image that fails ridge-scale preprocessing has no cached raster, and that path had never been exercised.",
+      "decision_influence": "NONE",
+      "fix": "Report the detection count and leave both density figures undefined when no normalized raster exists, which is what the protocol's density control means for such an image.",
+      "justification": "The fix follows the specification, not any observed result. It touches only the descriptive density control; it cannot change detections, registration statuses, repeatability, Gate A or Gate B. The L3-SF test had already been scored and frozen before this run.",
+      "recorded_at_utc": "2026-08-29T20:21:16.033913+00:00",
+      "stage": "SD300 1000 ppi scoring",
+      "symptom": "KeyError 'relative_local_path' in the detection-density helper of experiment_004_score_sd300.py"
+    }
+  ],
   "reason": "Frozen Experiment 004 test heatmap inference",
   "schema_version": 1
 }
