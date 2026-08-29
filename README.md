@@ -13,6 +13,7 @@ and are not part of the repository.
 - [Experiment 001 protocol](docs/experiments/001-sd300-level3-feasibility-preregistered-selection.md)
 - [Experiment 001 results](docs/experiments/001-sd300-level3-feasibility-results.md)
 - [Experiment 002 results](docs/experiments/002-l3sf-pore-annotation-feasibility-results.md)
+- [Experiment 003 protocol](docs/experiments/003-l3sf-annotated-final-crosswalk-protocol.md)
 
 ## External datasets
 
