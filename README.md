@@ -1,88 +1,105 @@
-# fingerprint-new-method
+# Pore Localization and Synthetic-to-Real Feasibility
 
-Reproducible research workspace for developing and qualifying fingerprint
-Level-3 primitives. The current work evaluates pore visibility, annotation
-fitness, and measurement feasibility; it does not claim a production-ready pore
-detector or fingerprint recognition system.
+A computer vision research project on locating fingerprint pores from image
+annotations. It combines data and label audits, a U-Net trained from scratch,
+point-level evaluation, and a frozen transfer study on real fingerprint scans.
+The engineering contribution is the measured pipeline and its evidence trail.
 
-The repository is private research software. External datasets remain read-only
-and are not part of the repository.
+**Status:** Experiment 004 completed on 29 August 2026. Further experiments are
+paused. The repository remains public for inspection of the implementation and
+results.
 
-## Experiments
+## Result and its boundary
 
-- [Experiment 001 protocol](docs/experiments/001-sd300-level3-feasibility-preregistered-selection.md)
-- [Experiment 001 results](docs/experiments/001-sd300-level3-feasibility-results.md)
-- [Experiment 002 results](docs/experiments/002-l3sf-pore-annotation-feasibility-results.md)
-- [Experiment 003 protocol](docs/experiments/003-l3sf-annotated-final-crosswalk-protocol.md)
-- [Experiment 003 results](docs/experiments/003-l3sf-annotated-final-crosswalk-results.md)
-- [Experiment 004 protocol](docs/experiments/004-pore-localization-and-sd300-transfer-protocol.md)
-- [Experiment 004 results](docs/experiments/004-pore-localization-and-sd300-transfer-results.md)
+On the synthetic test split, median **F1@4 = 0.9776** across three training seeds,
+compared with **0.7788** for the experiment's classical baseline: an absolute
+difference of **0.1988**, or **19.88 percentage points** on the F1 scale.
 
-## External datasets
+**Transfer to real SD300 scans remains inconclusive.** Valid mated registrations
+covered **0/20 pairs at 1000 PPI** and **2/20 at 2000 PPI**. Preprocessing failures
+and a limitation of the non-mated control prevented estimation of the intended
+transfer effect. This does not establish that the detector itself cannot
+generalize.
 
-Set `FINGERPRINT_DATASETS_ROOT` to the directory that contains the external
-dataset trees. If it is unset, scripts use a sibling directory named
-`fingerprint-datasets` next to the repository checkout.
+| Decision | Recorded outcome | Scope |
+| --- | --- | --- |
+| Gate A | `STRONG_PASS` | Localization against synthetic annotations |
+| Gate B | `TRANSFER_INCONCLUSIVE` | Frozen SD300 transfer assessment |
+| Final | `SYNTHETIC_LOCALIZATION_ONLY` | No demonstrated recognition improvement |
 
-Expected layout:
+F1@4 measures one-to-one agreement between predicted and annotated points within
+4 pixels. Each seed's score pools point counts across the **same 150 test
+images**; the headline is the median of those three scores. It is not fingerprint
+identification accuracy. Missing transfer estimates remain `null`, not zero.
 
-```text
-fingerprint-datasets/
-├── NIST/
-└── L3_SF_V2/
-    └── L3SF_V2/
+Read the [English case study](docs/case-study.md) for the method, all seed results,
+and the transfer diagnosis. Sources: [test metrics](artifacts/experiment-004/test_metrics.json),
+[baseline metrics](artifacts/experiment-004/baseline_metrics.json),
+[transfer summary](artifacts/experiment-004/sd300_transfer_summary.json), and
+[final decision](artifacts/experiment-004/summary.json).
+
+## Pipeline
+
+```mermaid
+flowchart LR
+    A["Grayscale<br/>image"] --> B["Percentile scaling<br/>and CLAHE"]
+    B --> C["U-Net<br/>heatmap"]
+    C --> D["Local maxima<br/>and NMS"]
+    D --> E["Point localization<br/>metrics"]
+    G["Annotation<br/>points"] --> E
 ```
 
-PowerShell override example:
+The diagram describes supervised synthetic localization. SD300 adds ridge-scale
+normalization, tiled inference, and registration for a separate repeatability
+assessment. Point-to-annotation assignment is an evaluation step, not an identity
+matcher. No fingerprint images, heatmaps, or reconstructable visual outputs are
+published here as examples.
 
-```powershell
-$env:FINGERPRINT_DATASETS_ROOT = 'D:\research-data\fingerprints'
-```
+## What was built
 
-Never commit source images. Review [the data and licensing policy](docs/data-and-licensing.md)
-before publishing any derived artifact.
+- **Data controls:** audited annotation coordinates and exact duplicates, then
+  split by `pattern + local_index`, keeping all five dataset runs together.
+  The [split manifest](artifacts/experiment-004/split_manifest.json) records
+  440/150/150 train/validation/test images in 88/30/30 leakage groups.
+- **Training:** a four-level U-Net with GroupNorm and **7,240,225 parameters**,
+  Gaussian heatmap targets, aligned image/point augmentation, and validation-loss
+  checkpoint selection. The same architecture and split were used for all seeds.
+- **Point extraction and measurement:** deterministic local maxima, non-maximum
+  suppression (NMS), optimal one-to-one assignment, and pooled precision/recall/F1.
+  Thresholds, NMS, and the local bright-extrema baseline were selected on
+  validation and frozen before test access.
+- **Execution and evidence:** epoch-boundary resume state, retained interrupted
+  attempts, cached preprocessing to address runtime compatibility, and manifests
+  binding local outputs to configurations and hashes.
+- **Transfer controls:** frozen preprocessing and registration validity checks,
+  with explicit unavailable results when the planned comparison cannot be made.
 
-## Python environment
+Implementation: [data, points, and metrics](src/fingerprint_new_method/experiment004.py),
+[model and training](src/fingerprint_new_method/experiment004_model.py),
+[transfer measurement](src/fingerprint_new_method/experiment004_transfer.py).
+The architecture follows the [U-Net family](https://arxiv.org/abs/1505.04597);
+this work does not claim a new architecture or superiority over external systems.
 
-The logical environment name is `fingerprint-new-method`; its physical prefix
-is the project-local `.conda-env/` directory. Python 3.12 packages come only
-from `conda-forge`.
+## Data scope
 
-- `environment.yml` records the human-maintained dependency intent.
-- `conda-lock.yaml` records the exact Windows package solution.
-- `pyproject.toml` provides package metadata and PyPI-facing requirements.
+Training and synthetic evaluation used **740 annotated 512 × 512 images** from
+[L3-SF](https://andrewyzy.github.io/L3-SF/), specifically `annotated_512`.
+The separate **7,400-image `final_320` branch was not used**: Experiment 003 did
+not establish an approved mapping between the branches. Pixel dimensions alone
+do not establish a physical sensor PPI for the synthetic images.
 
-Create or verify the environment from the lockfile:
+SD300 provides real scanned fingerprint cards for the transfer study. The 1000-
+and 2000-PPI scans are related views, not independent populations. Neither
+anatomical pore accuracy on SD300 nor identity verification, liveness, or
+production readiness was established.
 
-```powershell
-.\scripts\bootstrap_environment.ps1
-```
+## Start with the evidence and software checks
 
-Run commands without relying on shell activation:
+The [case study](docs/case-study.md) and tracked JSON summaries can be read without
+datasets, checkpoints, or a GPU. The existing tests use small synthetic fixtures
+and compact repository evidence; they do not run the research experiments.
 
-```powershell
-& .\.conda-env\python.exe -m pytest
-& .\.conda-env\python.exe .\scripts\experiment_002_finalize_review.py
-```
-
-To intentionally resolve changed requirements, recreate from `environment.yml`
-and export a new Windows lock from a Conda-enabled shell:
-
-```powershell
-.\scripts\bootstrap_environment.ps1 -Recreate -FromIntent
-conda export `
-  --prefix .\.conda-env `
-  --file .\conda-lock.yaml `
-  --override-channels `
-  --channel conda-forge `
-  --platform win-64
-```
-
-Do not install research dependencies into Conda `base`. The editable project
-install uses `--no-deps`: Conda owns the binary dependency graph, while ordinary
-Python tooling can use the dependency metadata in `pyproject.toml`.
-
-## Local quality checks
+With the existing Windows Python 3.12 environment, run from the repository root:
 
 ```powershell
 & .\.conda-env\python.exe -m pip check
@@ -91,37 +108,45 @@ Python tooling can use the dependency metadata in `pyproject.toml`.
 & .\.conda-env\python.exe -m compileall -q src scripts tests
 ```
 
-The same dataset-independent checks run in continuous integration for pull
-requests and for updates to `main`.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the check and PR workflow. For a fresh
+Windows setup, [the bootstrap script](scripts/bootstrap_environment.ps1) uses the
+committed [Conda lock](conda-lock.yaml); [environment.yml](environment.yml) records
+dependency intent. Keep research dependencies out of Conda `base`.
 
-Experiment 004 additionally uses the project-local CUDA runtime. On the
-preregistered Windows host it is installed from the official CUDA 12.8 wheel
-index before running the experiment scripts:
+[CI](.github/workflows/ci.yml) runs the dataset-independent checks on Linux with
+Python 3.12 and the package's development dependencies. PyTorch is optional for
+those checks. CI does not validate CUDA training, recover private outputs, or
+establish numerical equivalence across hardware.
 
-```powershell
-& .\.conda-env\python.exe -m pip install torch==2.11.0 `
-  --index-url https://download.pytorch.org/whl/cu128
-```
+Historical training and inference additionally require separately held datasets,
+local caches/checkpoints, and the recorded PyTorch runtime. Source data remains
+external and read-only, resolved through `FINGERPRINT_DATASETS_ROOT` or the sibling
+`fingerprint-datasets` directory. [Artifact regeneration commands](artifacts/README.md)
+document the completed experiments; they are not the getting-started workflow.
 
-OpenCV preprocessing is materialized in a deterministic local cache before
-training so that the conda-forge OpenCV and PyTorch OpenMP runtimes are never
-executed together in the training process.
+## Evidence map
 
-## Artifact policy
+Historical reports are in Hebrew; the [case study](docs/case-study.md) is the
+English reading path.
 
-Compact metrics and human-review tables are versioned. Large deterministic
-inventories and all pixel-bearing evidence remain local. See
-[artifacts/README.md](artifacts/README.md) for regeneration and checksum rules.
+| Experiment | Question | Evidence |
+| --- | --- | --- |
+| 001 | Are fine details visible and repeatable in real scans? | [Protocol](docs/experiments/001-sd300-level3-feasibility-preregistered-selection.md) · [Results](docs/experiments/001-sd300-level3-feasibility-results.md) |
+| 002 | Are the synthetic annotations usable for localization? | [Results](docs/experiments/002-l3sf-pore-annotation-feasibility-results.md) |
+| 003 | Can annotated and final synthetic branches be mapped? | [Protocol](docs/experiments/003-l3sf-annotated-final-crosswalk-protocol.md) · [Results](docs/experiments/003-l3sf-annotated-final-crosswalk-results.md) |
+| 004 | Can a trained localizer support a real-data transfer assessment? | [Protocol](docs/experiments/004-pore-localization-and-sd300-transfer-protocol.md) · [Results](docs/experiments/004-pore-localization-and-sd300-transfer-results.md) · [Exploratory amendment](docs/experiments/004-scale-guard-contingency-amendment.md) |
 
-## Repository layout
+These are historical results with their own protocol and output identities.
+Documentation updates do not imply that experiments ran on the latest commit.
 
-- `src/fingerprint_new_method/` — reusable project code and configuration.
-- `scripts/` — experiment and maintenance entry points.
-- `tests/` — fast, dataset-independent regression tests.
-- `docs/experiments/` — protocols and experiment reports.
-- `artifacts/` — compact tracked evidence plus manifests for local outputs.
+## Attribution and rights
 
-## Citation and rights
+This is a public research repository with **all rights reserved** under
+[LICENSE](LICENSE), not an open-source license grant. The
+`Private :: Do Not Upload` package classifier prevents PyPI publication;
+it does not describe GitHub visibility ([PyPA guidance](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#classifiers)).
 
-Repository citation metadata is provided in `CITATION.cff`. Repository-owned
-content is covered by `LICENSE`; external datasets retain their own terms.
+L3-SF is credited to André Brasil Vieira Wyzykowski, Mauricio Pamplona Segundo,
+and Rubisley de Paula Lemes. Dataset terms remain separate from repository rights.
+See [data and licensing](docs/data-and-licensing.md),
+[artifact policy](artifacts/README.md), and [citation metadata](CITATION.cff).
