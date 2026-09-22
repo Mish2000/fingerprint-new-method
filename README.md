@@ -139,6 +139,19 @@ English reading path.
 These are historical results with their own protocol and output identities.
 Documentation updates do not imply that experiments ran on the latest commit.
 
+## Related research projects
+
+This repository is the ML/CV case study in a broader research effort. Continuing
+Level-3 work is centered in
+[fingerprint-l3-benchmark](https://github.com/Mish2000/fingerprint-l3-benchmark).
+The [completed 500 PPI comparison](https://github.com/Mish2000/fingerprint-benchmark)
+shows the experiment infrastructure, and the
+[software workbench](https://github.com/Mish2000/fingerprint-research) demonstrates
+application and systems integration. The
+[research project map](https://github.com/Mish2000/fingerprint-l3-benchmark/blob/main/docs/research-projects.md)
+explains their roles. Their scores and metrics retain their own protocols; this
+localization result does not establish an improvement in fingerprint recognition.
+
 ## Attribution and rights
 
 This is a public research repository with **all rights reserved** under
