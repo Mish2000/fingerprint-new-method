@@ -141,16 +141,13 @@ Documentation updates do not imply that experiments ran on the latest commit.
 
 ## Related research projects
 
-This repository is the ML/CV case study in a broader research effort. Continuing
-Level-3 work is centered in
-[fingerprint-l3-benchmark](https://github.com/Mish2000/fingerprint-l3-benchmark).
-The [completed 500 PPI comparison](https://github.com/Mish2000/fingerprint-benchmark)
-shows the experiment infrastructure, and the
-[software workbench](https://github.com/Mish2000/fingerprint-research) demonstrates
-application and systems integration. The
-[research project map](https://github.com/Mish2000/fingerprint-l3-benchmark/blob/main/docs/research-projects.md)
-explains their roles. Their scores and metrics retain their own protocols; this
-localization result does not establish an improvement in fingerprint recognition.
+This repository preserves the synthetic pore-localization case study. Current
+recognition research on SD302, including a separately trained pore descriptor
+and measured verification improvements, is in
+[fingerprint-level3-recognition-research](https://github.com/Mish2000/fingerprint-level3-recognition-research).
+The [research overview](https://github.com/Mish2000/fingerprint-level3-recognition-research/blob/main/docs/research-projects.md)
+connects all five projects. The localization metrics here and the newer
+verification results answer different questions and retain their own protocols.
 
 ## Attribution and rights
 
